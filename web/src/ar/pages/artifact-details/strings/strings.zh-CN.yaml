@@ -1,0 +1,28 @@
+page: 制品 详情 Page
+downloadsThisWeek: 下载s This Week
+artifactLabelInputPlaceholder: 类型 input and hit enter
+labelsUpdated: 制品 labels updated successfully!
+totalDownloads: 总计 下载s
+createdAsyncDownloadRequest: 下载 request created successfully! Please do not close the window.
+artifactDeleted: Package deleted successfully!
+packageArchived: Package archived successfully!
+deleteModal:
+  title: 删除 Package
+  contentText: This action will delete package and all it's versions. Are you absolutely sure you want to proceed?
+  inputLabel: 类型 the package name to confirm
+  inputPlaceholder: Package 名称
+softDeleteModal:
+  title: 删除 Package
+  contentText: This action will delete package and all it's versions. You can still restore it from the deleted list.
+  inputLabel: 类型 the package name to confirm
+  inputPlaceholder: Package 名称
+  forceLabel: Permanently delete package and all it's versions.
+  forceSubText: This action will delete package and all it's versions permanently. You can not restore it back.
+restoreModal:
+  title: Restore Package
+  contentText: This action will restore package and all it's versions.
+  inputLabel: 类型 the package name to confirm
+  inputPlaceholder: Package 名称
+tabs:
+  versions: 版本s
+  properties: Properties

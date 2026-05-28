@@ -46,7 +46,7 @@ const SelectContextDialog: React.FC<SelectContextDialogProps> = ({
   isOpen,
   onClose,
   onApply,
-  title = 'Select Context',
+  title,
   width = 1000,
   selectedGitspaceId
 }) => {
@@ -54,6 +54,7 @@ const SelectContextDialog: React.FC<SelectContextDialogProps> = ({
   const RUNNING: EnumGitspaceFilterState = 'running'
   const [selectedId, setSelectedId] = useState<string | undefined>(undefined)
   const { getString } = useStrings()
+  const titleText = title || getString('cde.aiTasks.create.selectContext')
   const [page, setPage] = useState(1)
   const [limit] = useState(10)
   const { accountIdentifier = '', orgIdentifier = '', projectIdentifier = '' } = useGetCDEAPIParams()
@@ -243,8 +244,8 @@ const SelectContextDialog: React.FC<SelectContextDialogProps> = ({
         spacing="small"
         flex={{ justifyContent: 'space-between', alignItems: 'center' }}
         className={css.contextTitle}>
-        <Text font={{ variation: FontVariation.H5 }}>{title}</Text>
-        <Button aria-label="Close" icon="cross" variation={ButtonVariation.ICON} onClick={onClose} />
+        <Text font={{ variation: FontVariation.H5 }}>{titleText}</Text>
+        <Button aria-label={getString('close')} icon="cross" variation={ButtonVariation.ICON} onClick={onClose} />
       </Layout.Horizontal>
       <Container className={css.contextBody}>
         <Layout.Vertical spacing="large">

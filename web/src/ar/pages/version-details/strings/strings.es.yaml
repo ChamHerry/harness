@@ -1,0 +1,173 @@
+page: Version Detalles Page
+selectDigestPlaceholder: All Digest
+noDependencies: No Dependencies
+OCIVersionSelectorTab:
+  tag: Tag
+  digest: Digest
+tabs:
+  overview: Overview
+  artifactDetails: Artefacto Detalles
+  supplyChain: SBOM
+  securityTests: Vulnerabilities
+  deployments: Deployments
+  evaluationDetails: Evaluation Detalles
+  code: Code
+cards:
+  deploymentsCard:
+    title: Deployments
+    buildTitle: Build Pipeline
+    executionId: Execution ID
+  securityTests:
+    title: Vulnerabilities
+    totalIssues: Total Issues
+    critical: Critical
+    high: High
+    medium: Medium
+    low: Low
+    info: Info
+    ignored: Ignored
+  slsaCard:
+    title: SLSA
+    slsaVerificationStatus: SLSA Verification
+    slsaProvenance: SLSA Provenance
+    provenanceDataNotAvailable: Provenance data is not available
+  supplyChain:
+    title: SBOM
+    totalComponents: Total Dependencies
+    sbomScore: SBOM Quality Score
+    downloadSbom: Descargar SBOM
+    SBOMDataNotAvailable: SBOM data is not available
+    allowList: Allow List
+    denyListViolation: Deny List Incumplimiento
+  container:
+    title: Container
+    versionDigest: '{{ version}} ({{ digest }} digests)'
+overview:
+  generalInformation:
+    title: General Informatoion
+    name: '{{ $.artifactList.table.columns.name }}'
+    version: Version
+    packageType: Package type
+    repositoryPath: Registry path
+    digest: Digest
+    url: URL to file
+    projectUrl: Proyecto URL
+    size: '{{ $.digestList.table.columns.size }}'
+    downloads: '{{ $.repositoryList.table.columns.downloads }}'
+    uploadedBy: Subired At
+    createdAndLastModifiedAt: Creard | Last modified
+    createdAt: Creard At
+    modifiedAt: Modified At
+    description: Descripcion
+    pullCommand: Pull command
+    pullCommandByDigest: Pull command by digest
+    repository: Repositorio
+    documentation: Documentation
+    homepage: Homepage
+    license: License
+    buildHost: Build Host
+    buildTime: Build Hora
+    packager: Packager
+    platform: Platform
+    sourceRpm: Source RPM
+    vendor: Vendor
+    vcs: VCS
+    ref: Ref
+    hash: Hash
+    language: Language
+    tags: Tags
+    artifactType: Artefacto Tipo
+artifactDetails:
+  tabs:
+    layers: Layers
+    manifest: Manifest
+    readme: Readme
+    files: Files
+    dependencies: Dependencies
+  layers:
+    digest: '{{ $.digestList.table.columns.digest }}'
+    imageLayers: Imagen Layers
+    lastPush: Last Push
+    size: '{{ $.digestList.table.columns.size }}'
+    archSelectLabel: OS/ARCH
+    archSelectPlaceholder: Seleccionar OS/ARCH
+securityTests:
+  tabs:
+    overview: Overview
+    vulnerabilities: Vulnerabilities
+deploymentsTable:
+  noDeploymentsTitle: There are no deployments available.
+  columns:
+    environment: Environment
+    type: Tipo
+    services: Service/s
+    deploymentPipeline: Deployment Pipeline
+    triggeredBy: Triggered At
+    infra: Infrastructure
+    instanceCount: Instancia Count
+artifactFiles:
+  noFilesTitle: No files found
+  itemsPerPage: items per page
+  pageLabel: Page {{ page }}
+  table:
+    columns:
+      name: Nombre
+      path: Ruta
+      size: Tamano
+      checksum: Checksum
+      downloadCommand: Descargar Command
+      created: Creard
+      id: ID
+dependencyList:
+  dependencyNameWithRelease: '{{ name }} (release: {{ release }})'
+  table:
+    columns:
+      name: Dependency Nombre
+      version: Dependency Version
+versionDeleted: Artefacto version deleted successfully!
+versionArchived: Artefacto version archived successfully!
+versionRestored: Artefacto version restored successfully!
+deleteVersionModal:
+  title: Eliminar Artefacto Version
+  contentText: This action will delete version. Are you absolutely sure you want to proceed?
+  inputLabel: Tipo the version name to confirm
+  inputPlaceholder: Version Nombre
+copyVersionModal:
+  title: Copiar Version
+  source: Source
+  target: Target
+  registryName: Registry Nombre
+  packageName: Package Nombre
+  version: Version
+  organization: Organizacion
+  project: Proyecto
+  registry: Registry
+  selectOrganization: Seleccionar organization
+  selectProject: Seleccionar project
+  selectRegistry: Seleccionar registry
+  versionAndRegistryRequired: Version and target registry are obligatorio.
+softDeleteModal:
+  title: Eliminar Version
+  contentText: This action will delete version. You can still restore it from the deleted list.
+  inputLabel: Tipo the version name to confirm
+  inputPlaceholder: Version Nombre
+  forceLabel: Permanently delete version.
+  forceSubText: This action will delete version permanently. You can not restore it back.
+restoreModal:
+  title: Restore Version
+  contentText: This action will restore version.
+  inputLabel: Tipo the version name to confirm
+  inputPlaceholder: Version Nombre
+quarantineVersionModal:
+  title: Add to Quarantine
+  contentText: Proceeding will put this artifact to quarantine, making it not generally accessible. Please provide a reason for this action.
+  reasonField: Reason
+  versionQuarantined: Artefacto version quarantined successfully!
+  confirmButtonText: Quarantine
+  cancelButtonText: Cancelar
+removeFromQuarantineModal:
+  title: Remove from Quarantine
+  contentText: Proceeding will remove this artifact from quarantine, making it generally accessible. Please provide a reason for this action.
+  confirmButtonText: Remove from Quarantine
+  cancelButtonText: Cancelar
+  versionRemovedFromQuarantine: Artefacto version removed from quarantine successfully!

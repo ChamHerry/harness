@@ -1,0 +1,38 @@
+page: 免除 詳細 Page
+exemptionId: '(免除 ID: #{{ exemptionId}})'
+actions:
+  approve: Approve
+  reject: Reject
+cards:
+  section1:
+    title: Dependency In形式ion
+    packageName: Package name
+    versions: バージョン
+    upstreamProxy: Upstream proxy
+  section2:
+    title: 免除 詳細
+    requestedDate: Requested date
+    requestedBy: Requested by
+    duration: 免除 duration
+    expirationDate: Expiration date
+    businessJustification: Business justification
+    remediationPlan: Remediation plan
+    notes: Approval/Rejection Notes
+approveModal:
+  title: Approve dependency exemption
+  content: 説明
+  inputLabel: Reason
+  placeholder: タイプ a reason here
+  submitButton: Approve
+  cancelButton: キャンセル
+rejectModal:
+  title: Reject dependency exemption
+  content: 説明
+  inputLabel: Reason
+  placeholder: タイプ a reason here
+  submitButton: Reject
+  cancelButton: キャンセル
+toasters:
+  exemptionApproved: 免除 approved successfully
+  exemptionRejected: 免除 rejected successfully
+  failedToUpdateStatus: Failed to update status

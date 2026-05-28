@@ -80,7 +80,7 @@ export const ConnectWithSSHDialog: React.FC<ConnectWithSSHDialogProps> = ({ isOp
           </Card>
 
           <Layout.Horizontal className={css.buttonContainer}>
-            <Button text="Done" variation={ButtonVariation.PRIMARY} onClick={onClose} />
+            <Button text={getString('cde.sshDetails.done')} variation={ButtonVariation.PRIMARY} onClick={onClose} />
           </Layout.Horizontal>
         </Layout.Vertical>
       </Container>

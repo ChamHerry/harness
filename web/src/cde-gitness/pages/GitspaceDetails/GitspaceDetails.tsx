@@ -336,27 +336,33 @@ const GitspaceDetails = () => {
     if (standalone) {
       return [
         { url: routes.toCDEGitspaces({ space }), label: getString('cde.gitspaces') },
-        { url: routes.toCDEGitspaceDetail({ gitspaceId, space }), label: data?.name || 'Gitspace Name' }
+        {
+          url: routes.toCDEGitspaceDetail({ gitspaceId, space }),
+          label: data?.name || getString('cde.gitspaceNameFallback')
+        }
       ]
     }
     return [
       {
         url: `/account/${accountIdentifier}/module/cde`,
-        label: `Account: ${accountInfo.name}`
+        label: getString('cde.accountWithName', { name: accountInfo.name })
       },
       {
         url: `/account/${accountIdentifier}/module/cde/orgs/${orgIdentifier}`,
-        label: `Organization: ${orgIdentifier}`
+        label: getString('cde.organizationWithName', { name: orgIdentifier })
       },
       {
         url: `/account/${accountIdentifier}/module/cde/orgs/${orgIdentifier}/projects/${projectIdentifier}`,
-        label: `Project: ${projectIdentifier}`
+        label: getString('cde.projectWithName', { name: projectIdentifier })
       },
       {
         url: routes.toCDEGitspaces({ space }),
         label: getString('cde.gitspaces')
       },
-      { url: routes.toCDEGitspaceDetail({ gitspaceId, space }), label: data?.name || 'Gitspace Name' }
+      {
+        url: routes.toCDEGitspaceDetail({ gitspaceId, space }),
+        label: data?.name || getString('cde.gitspaceNameFallback')
+      }
     ]
   }
 
@@ -510,10 +516,10 @@ const GitspaceDetails = () => {
                             <Container width={300} padding="medium">
                               <Layout.Vertical spacing="small">
                                 <Text color={Color.WHITE} font="small">
-                                  We are provisioning the Gitspace
+                                  {getString('cde.details.provisioningTooltipTitle')}
                                 </Text>
                                 <Text color={Color.WHITE} font="small">
-                                  Please wait for a few minutes before the {selectedIde?.label} can be launched
+                                  {getString('cde.details.provisioningTooltipMessage', { ide: selectedIde?.label })}
                                 </Text>
                               </Layout.Vertical>
                             </Container>
@@ -554,10 +560,10 @@ const GitspaceDetails = () => {
                             <Container width={300} padding="medium">
                               <Layout.Vertical spacing="small">
                                 <Text color={Color.WHITE} font="small">
-                                  We are provisioning the Gitspace
+                                  {getString('cde.details.provisioningTooltipTitle')}
                                 </Text>
                                 <Text color={Color.WHITE} font="small">
-                                  Please wait for a few minutes before the {selectedIde?.label} can be launched
+                                  {getString('cde.details.provisioningTooltipMessage', { ide: selectedIde?.label })}
                                 </Text>
                               </Layout.Vertical>
                             </Container>
@@ -666,7 +672,7 @@ const GitspaceDetails = () => {
                     ) : (
                       <Container width="100%" className={css.consoleContainer}>
                         <LogSection
-                          title="Initialise"
+                          title={getString('cde.details.initialise')}
                           value={`init_${data?.name}`}
                           state={data?.state ?? ''}
                           logKey={(data as { initialize_log_key: string })?.initialize_log_key ?? ''}
@@ -679,7 +685,7 @@ const GitspaceDetails = () => {
                         />
 
                         <LogSection
-                          title="Container logs"
+                          title={getString('cde.details.containerLogs')}
                           value={data?.name ?? ''}
                           state={data?.state ?? ''}
                           logKey={data?.log_key ?? ''}
@@ -758,7 +764,7 @@ const GitspaceDetails = () => {
           <ConnectWithSSHDialog
             isOpen={isSSHDialogOpen}
             onClose={() => setIsSSHDialogOpen(false)}
-            connectionCommand={data?.instance?.ssh_command || 'SSH command not available'}
+            connectionCommand={data?.instance?.ssh_command || getString('cde.sshDetails.commandUnavailable')}
           />
         </Container>
       )}

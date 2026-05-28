@@ -77,7 +77,7 @@ export const ThirdPartyRepoImportForm = () => {
           }
         } else {
           if (url?.trim()?.length) {
-            errorMessage = 'Invalid URL Format'
+            errorMessage = getString('cde.create.invalidUrlFormat')
             setRepoCheckState(RepoCheckStatus.InValid)
           } else {
             if (repoCheckState) {

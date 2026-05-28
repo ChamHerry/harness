@@ -8,29 +8,105 @@ delete: 删除
 restore: 恢复
 prod: 生产
 nonProd: 非生产
+id: 'ID: {{ id }}'
+prodCount: '{{count}} Prod'
+nonProdCount: '{{count}} Non-Prod'
 copy: 复制
 view: 查看
+metadata: Metadata
+customMetadata: Custom Metadata
+loadMore: Load More
+noMatchingFilterData: 未找到符合筛选条件的结果
+stepNotFound: Step not found
+tabNotFound: Tab not found
+key: 密钥
+value: Value
+properties: Properties
 search: 搜索
 copied: 已复制
 download: 下载
 loading: 正在加载...
-available: '可用({{count}})'
-deleted: '已删除({{count}})'
-archived: '已归档({{count}})'
+addProperty: Add Property
+addMetadata: Add Metadata
+available: 可用({{count}})
+deleted: 已删除({{count}})
+archived: 已归档({{count}})
+status:
+  available: 可用
+  archived: Archived
+  blocked: Blocked
+  warning: Warning
+  passed: Passed
+  deleted: 删除d
+scanCategory:
+  license: License
+  packageAge: Package Age
+  security: Security
+  ossRiskLevel: OSS Risk Level
+  unknown: Unknown
+dateLabel: 日期
+timeLabel: 时间
+harnessAI: Harness AI
+new: NEW
+beta: BETA
+harLabel: '{{ $.repositoryList.artifactRegistry.label }}'
+na: N/A
+success: Success
+failed: Failed
+retriableError: Retriable 错误
+unknown: Unknown
+cancel: 取消
+comingSoon: Coming Soon.
+soon: SOON
+failedToLoadData: 数据加载失败，请重试！
+all: 全部
+noResultsFound: 未找到结果
+optionalField: '{{name}} (Optional)'
+description: '{{ $.versionDetails.overview.generalInformation.description }}'
+tagsLabel: '{{ $.artifactList.table.columns.tags }}'
+plusNewName: + New {{name}}
+enterPlaceholder: Enter {{name}}
+descriptionPlaceholder: Enter 描述
+noDescription: No 描述
+noReadme: No Readme
 lastUpdated: 上次更新
 createdAt: 创建时间
 modifiedAt: 修改时间
-all: 全部
-noResultsFound: 未找到结果
-noMatchingFilterData: 未找到符合筛选条件的结果
-failedToLoadData: 数据加载失败，请重试！
+plaintext: Plain Text
+encrypted: Encrypted
+details: 详情
+tags:
+  latest: LATEST
+  latestVersion: LATEST VERSION
+breadcrumbs:
+  repositories: '{{ $.repositoryList.pageHeading }}'
+  artifacts: '{{ $.artifactList.pageHeading }}'
+  upstreamProxies: '{{ $.repositoryDetails.repositoryForm.upstreamProxiesTitle }}'
+  exemptions: 豁免s
 actions:
   edit: 编辑
   delete: '{{ $.delete }}'
   softDelete: 归档
+  quarantine: Quarantine
   restore: 恢复
+  scan: Scan
   setupClient: 设置客户端
+  executions: Executions
+  copyCommand: 复制 Command
   deleteForce: 永久删除
+  requestExemption: Request 豁免
+  editExemption: 编辑 豁免
+cleanupPolicy:
+  name: Cleanup Policy 名称
+  addBtn: Add Cleanup Policy
+  cleanUpByTagPrefixes: Cleanup by <b>Tag Prefixes</b>
+  cleanUpByVersionPrefixes: Cleanup by <b>版本 Prefixes</b>
+  cleanUpByPackagePrefixes: Cleanup by <b>Package Prefixes</b>
+  cleanUpByArtifactsOlderThan: Cleanup by <b>制品s older than</b>
+  cleanUpByArtifactsOlderThanPlaceholder: Specify days
+  placeholder: specify $type prefix and press enter
+  addPattern: Add Pattern
+  infoMessage: Define the cleanup policy using the options below. Cleanup will occur when all the enabled options are met.
 packageTypes:
   dockerPackage: Docker 包
   helmPackage: Helm 包
@@ -67,7 +143,57 @@ repositoryTypes:
   conda: Conda
   dart: Dart
   composer: Composer
+sideNav:
+  repositories: '{{ $.repositoryList.pageHeading }}'
+  artifacts: '{{ $.artifactList.pageHeading }}'
+  upstreamProxies: '{{ $.repositoryDetails.repositoryForm.upstreamProxiesTitle }}'
 badges:
+  artifactRegistry: '{{ $.repositoryList.artifactRegistry.label }}'
+  upstreamProxy: '{{ $.repositoryList.upstreamProxy.label }}'
   projectScope: 项目
   orgScope: 组织
   accountScope: 账户
+  quarantined: Quarantined
+exemptionBadges:
+  approved: Approved
+  rejected: Rejected
+  pending: Pending
+  expired: Expired
+validationMessages:
+  required: 必填
+  repokeyRegExMessage: Registry name must start with letter and can only contain lowercase alphanumerics, _, . and -
+  nameRequired: 名称 is 必填
+  identifierRequired: Identifier is 必填
+  cleanupPolicy:
+    nameRequired: Cleanup policy name is 必填
+    expireDaysRequired: Expire days is 必填
+    positiveExpireDays: Expire days must be greater than 0
+  urlRequired: URL is 必填
+  urlPattern: URL must be valid and start with https://
+  genericURLPattern: URL must be valid and start with http:// or https://
+  userNameRequired: Username is 必填
+  passwordRequired: Password is 必填
+  accessKeyRequired: Access key is 必填
+  secretKeyRequired: 密钥 key is 必填
+  headerAlreadyExists: Header already exists
+  entityRequired: '{{entity}} is 必填'
+  stringMax: '{{entity}} must be 50 characters or less'
+  noNewLine: '{{entity}} cannot contain new lines'
+  uniqueValues: '{{entity}} must be unique'
+  equals: '{{{entity}}} must be equal to {{{value}}}'
+vulnerabilityStatus:
+  critical: C {{count}}
+  high: H {{count}}
+  medium: M {{count}}
+  low: L {{count}}
+labels:
+  title: 标签s
+  addLabel: Add 标签
+  addNewValue: Add New Value
+  addNewValueDynamic: Add New Value {{value}}
+  findALabel: Find a 标签
+  findAValue: Find a Value
+  findOrAddValue: Find or Add Value
+publicAccess:
+  oopsPageNotPublic: Oops! The page you are trying to access is not 公开.
+  tryOtherOptions: You can try the following option instead to get back on track.

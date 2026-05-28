@@ -1,0 +1,51 @@
+page: Upstream Porxy 詳細
+form:
+  title: Upstream Proxy Definition
+createForm:
+  title: 作成 a New Upstream Proxy
+  packageType: Package タイプ
+  key: Upstream Proxy キー
+  url: Remote Registry URL
+  urlPlaceholder: Specify URL
+  customRegistrySuffix: Custom Registry Suffix
+  customRegistrySuffixPlaceholder: Specify Custom Registry Suffix
+  source:
+    title: Source
+    dockerHub: Docker Hub
+    ecr: AWS ECR
+    custom: Custom
+    mavenCentral: Maven Central
+    npmjs: npmjs
+    pypi: PyPI
+    nugetOrg: NuGet.org
+    crates: Crates.io
+    goproxy: GoProxy
+    huggingface: Huggingface
+    bioconda: Bioconda
+    pubdev: Pub.dev
+    packagist: Packagist
+  authentication:
+    title: Authentication
+    userNameAndPassword: Username and Password
+    accessKeyAndSecretKey: Access キー and シークレット キー
+    anonymous: Anonymous
+    anonymousSubLabel: (No credentials 必須)
+    username: Username
+    password: Password
+    secretKey: シークレット キー
+    accessKey: Access キー
+  create: 作成 Upstream Proxy
+editForm:
+  title: 更新 Upstream Proxy
+  update: '{{ $.upstreamProxyDetails.editForm.title }}'
+  enterpriseAdvancedOptionsSubTitle: 設定 {{entities}} for the アーティファクトレジストリ.
+actions:
+  delete:
+    title: 削除 Upstream Registry
+    contentText: This action will delete registry and all it's images and versions. Are you absolutely sure you want to proceed?
+    repositoryDeleted: Upstream registry deleted successfully
+    inputLabel: タイプ the registry name or ID to confirm
+    inputPlaceholder: Registry 名前 or ID
+  createUpdateModal:
+    createSuccessMessage: Upstream proxy created successfully
+    updateSuccessMessage: Upstream proxy updated successfully

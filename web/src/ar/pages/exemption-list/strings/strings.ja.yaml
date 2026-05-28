@@ -1,0 +1,26 @@
+page: 免除 List Page
+cards:
+  totalExemptions: 合計 免除
+  approvedExemptions: Approved 免除
+  rejectedExemptions: Rejected 免除
+  pendingExemptions: Pending 免除
+  expiredExemptions: Expired 免除
+noExemptionsFound: No exemptions found
+expireAfter: '{{ days }} days after approval'
+table:
+  columns:
+    packageName: Package 名前
+    versions: バージョン
+    upstreamRegistry: Upstream Registry
+    requestedAt: Requested At
+    updatedAt: 更新d At
+    expiresAt: Expires At
+    status: ステータス
+  toasters:
+    exemptionDeleted: 免除 deleted successfully
+    exemptionDeleteError: Failed to delete exemption
+deleteModal:
+  title: 削除 免除
+  contentText: Are you sure you want to delete this exemption?
+  inputPlaceholder: タイプ the package name to confirm
+  inputLabel: Package 名前

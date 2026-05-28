@@ -150,7 +150,7 @@ const AITaskListing = () => {
         items={agentItems}
         value={filter.aitask_agents}
         onSelect={val => handleFilterChange('aitask_agents', val)}
-        placeholder="AI Agents"
+        placeholder={getString('cde.aiTasks.listing.aiAgents')}
         allowSearch={true}
         expandingSearchInputProps={{ autoFocus: false }}
       />
@@ -163,7 +163,7 @@ const AITaskListing = () => {
     TaskStatus.ERROR as EnumAITaskState
   ]
   const statusItems = allStatuses.map(s => ({
-    label: s.charAt(0).toUpperCase() + s.slice(1),
+    label: getString(`cde.aiTasks.status.${s}`),
     value: s
   })) as { label: string; value: EnumAITaskState }[]
 
@@ -182,7 +182,7 @@ const AITaskListing = () => {
 
   return (
     <>
-      <Page.Header title="Tasks" breadcrumbs={<Breadcrumbs links={getBreadcrumbLinks()} />} />
+      <Page.Header title={getString('cde.aiTasks.tasks')} breadcrumbs={<Breadcrumbs links={getBreadcrumbLinks()} />} />
       <Page.SubHeader>
         <Layout.Horizontal spacing="small" flex={{ alignItems: 'center', justifyContent: 'flex-start' }}>
           <Button

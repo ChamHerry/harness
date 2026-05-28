@@ -25,17 +25,17 @@ const getStatusColor = (status?: TypesAITask['state']) => {
   }
 }
 
-const getStatusText = (status?: TypesAITask['state']) => {
+const getStatusText = (getString: ReturnType<typeof useStrings>['getString'], status?: TypesAITask['state']) => {
   switch (status) {
     case TaskStatus.RUNNING:
-      return 'Running'
+      return getString('cde.aiTasks.status.running')
     case TaskStatus.COMPLETED:
-      return 'Completed'
+      return getString('cde.aiTasks.status.completed')
     case TaskStatus.ERROR:
-      return 'Error'
+      return getString('cde.aiTasks.status.error')
     case TaskStatus.UNINITIALIZED:
     default:
-      return 'Uninitialized'
+      return getString('cde.aiTasks.status.uninitialized')
   }
 }
 
@@ -104,13 +104,13 @@ export const AITaskDetailsCard = ({
           <Layout.Horizontal spacing={'small'} flex={{ alignItems: 'center', justifyContent: 'start' }}>
             {!isRunning && <Circle height={10} width={10} color={statusColor} fill={statusColor} />}
             <Text {...customProps} className={css.statusText}>
-              {getStatusText(taskState)}
+              {getStatusText(getString, taskState)}
             </Text>
           </Layout.Horizontal>
         </Layout.Vertical>
 
         <Layout.Vertical spacing="small" flex={{ justifyContent: 'center', alignItems: 'flex-start' }}>
-          <Text className={css.rowHeaders}>Gitspace</Text>
+          <Text className={css.rowHeaders}>{getString('cde.gitspaces')}</Text>
           <Layout.Horizontal spacing={'small'} flex={{ alignItems: 'center', justifyContent: 'start' }}>
             {ideOption?.icon && <img src={ideOption.icon} className={css.standardIcon} alt={'ide'} />}
             <Text lineClamp={1} className={css.providerText} title={data?.identifier}>
@@ -130,7 +130,7 @@ export const AITaskDetailsCard = ({
             }}>
             {getIconByRepoType({ repoType: data?.code_repo_type, height: 20 })}
             <Text
-              title={'RepoName'}
+              title={getString('cde.repository.repo')}
               className={css.clickableText}
               onClick={() => window.open(data?.code_repo_url || '', '_blank')}>
               {repoName}

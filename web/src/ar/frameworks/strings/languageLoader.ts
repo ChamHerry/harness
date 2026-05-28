@@ -112,6 +112,148 @@ const localizedLoaders: Partial<
       import(
         /* webpackChunkName: "ar-i18n-repository-details-ja" */ '@ar/pages/repository-details/strings/strings.ja.yaml'
       )
+  },
+  artifactDetails: {
+    'zh-CN': () =>
+      import(
+        /* webpackChunkName: "ar-i18n-artifact-details-zh-CN" */ '@ar/pages/artifact-details/strings/strings.zh-CN.yaml'
+      ),
+    es: () =>
+      import(
+        /* webpackChunkName: "ar-i18n-artifact-details-es" */ '@ar/pages/artifact-details/strings/strings.es.yaml'
+      ),
+    ja: () =>
+      import(/* webpackChunkName: "ar-i18n-artifact-details-ja" */ '@ar/pages/artifact-details/strings/strings.ja.yaml')
+  },
+  upstreamProxyDetails: {
+    'zh-CN': () =>
+      import(
+        /* webpackChunkName: "ar-i18n-upstream-proxy-details-zh-CN" */ '@ar/pages/upstream-proxy-details/strings/strings.zh-CN.yaml'
+      ),
+    es: () =>
+      import(
+        /* webpackChunkName: "ar-i18n-upstream-proxy-details-es" */ '@ar/pages/upstream-proxy-details/strings/strings.es.yaml'
+      ),
+    ja: () =>
+      import(
+        /* webpackChunkName: "ar-i18n-upstream-proxy-details-ja" */ '@ar/pages/upstream-proxy-details/strings/strings.ja.yaml'
+      )
+  },
+  versionDetails: {
+    'zh-CN': () =>
+      import(
+        /* webpackChunkName: "ar-i18n-version-details-zh-CN" */ '@ar/pages/version-details/strings/strings.zh-CN.yaml'
+      ),
+    es: () =>
+      import(/* webpackChunkName: "ar-i18n-version-details-es" */ '@ar/pages/version-details/strings/strings.es.yaml'),
+    ja: () =>
+      import(/* webpackChunkName: "ar-i18n-version-details-ja" */ '@ar/pages/version-details/strings/strings.ja.yaml')
+  },
+  versionList: {
+    'zh-CN': () =>
+      import(/* webpackChunkName: "ar-i18n-version-list-zh-CN" */ '@ar/pages/version-list/strings/strings.zh-CN.yaml'),
+    es: () =>
+      import(/* webpackChunkName: "ar-i18n-version-list-es" */ '@ar/pages/version-list/strings/strings.es.yaml'),
+    ja: () => import(/* webpackChunkName: "ar-i18n-version-list-ja" */ '@ar/pages/version-list/strings/strings.ja.yaml')
+  },
+  webhookList: {
+    'zh-CN': () =>
+      import(/* webpackChunkName: "ar-i18n-webhook-list-zh-CN" */ '@ar/pages/webhook-list/strings/strings.zh-CN.yaml'),
+    es: () =>
+      import(/* webpackChunkName: "ar-i18n-webhook-list-es" */ '@ar/pages/webhook-list/strings/strings.es.yaml'),
+    ja: () => import(/* webpackChunkName: "ar-i18n-webhook-list-ja" */ '@ar/pages/webhook-list/strings/strings.ja.yaml')
+  },
+  webhookDetails: {
+    'zh-CN': () =>
+      import(
+        /* webpackChunkName: "ar-i18n-webhook-details-zh-CN" */ '@ar/pages/webhook-details/strings/strings.zh-CN.yaml'
+      ),
+    es: () =>
+      import(/* webpackChunkName: "ar-i18n-webhook-details-es" */ '@ar/pages/webhook-details/strings/strings.es.yaml'),
+    ja: () =>
+      import(/* webpackChunkName: "ar-i18n-webhook-details-ja" */ '@ar/pages/webhook-details/strings/strings.ja.yaml')
+  },
+  webhookExecutionList: {
+    'zh-CN': () =>
+      import(
+        /* webpackChunkName: "ar-i18n-webhook-execution-list-zh-CN" */ '@ar/pages/webhook-execution-list/strings/strings.zh-CN.yaml'
+      ),
+    es: () =>
+      import(
+        /* webpackChunkName: "ar-i18n-webhook-execution-list-es" */ '@ar/pages/webhook-execution-list/strings/strings.es.yaml'
+      ),
+    ja: () =>
+      import(
+        /* webpackChunkName: "ar-i18n-webhook-execution-list-ja" */ '@ar/pages/webhook-execution-list/strings/strings.ja.yaml'
+      )
+  },
+  manageRegistries: {
+    'zh-CN': () =>
+      import(
+        /* webpackChunkName: "ar-i18n-manage-registries-zh-CN" */ '@ar/pages/manage-registries/strings/strings.zh-CN.yaml'
+      ),
+    es: () =>
+      import(
+        /* webpackChunkName: "ar-i18n-manage-registries-es" */ '@ar/pages/manage-registries/strings/strings.es.yaml'
+      ),
+    ja: () =>
+      import(
+        /* webpackChunkName: "ar-i18n-manage-registries-ja" */ '@ar/pages/manage-registries/strings/strings.ja.yaml'
+      )
+  },
+  labelsList: {
+    'zh-CN': () =>
+      import(/* webpackChunkName: "ar-i18n-labels-list-zh-CN" */ '@ar/pages/labels-list/strings/strings.zh-CN.yaml'),
+    es: () => import(/* webpackChunkName: "ar-i18n-labels-list-es" */ '@ar/pages/labels-list/strings/strings.es.yaml'),
+    ja: () => import(/* webpackChunkName: "ar-i18n-labels-list-ja" */ '@ar/pages/labels-list/strings/strings.ja.yaml')
+  },
+  dependencyFirewall: {
+    'zh-CN': () =>
+      import(
+        /* webpackChunkName: "ar-i18n-dependency-firewall-zh-CN" */ '@ar/pages/dependency-firewall/strings/strings.zh-CN.yaml'
+      ),
+    es: () =>
+      import(
+        /* webpackChunkName: "ar-i18n-dependency-firewall-es" */ '@ar/pages/dependency-firewall/strings/strings.es.yaml'
+      ),
+    ja: () =>
+      import(
+        /* webpackChunkName: "ar-i18n-dependency-firewall-ja" */ '@ar/pages/dependency-firewall/strings/strings.ja.yaml'
+      )
+  },
+  violationsList: {
+    'zh-CN': () =>
+      import(
+        /* webpackChunkName: "ar-i18n-violations-list-zh-CN" */ '@ar/pages/violations-list/strings/strings.zh-CN.yaml'
+      ),
+    es: () =>
+      import(/* webpackChunkName: "ar-i18n-violations-list-es" */ '@ar/pages/violations-list/strings/strings.es.yaml'),
+    ja: () =>
+      import(/* webpackChunkName: "ar-i18n-violations-list-ja" */ '@ar/pages/violations-list/strings/strings.ja.yaml')
+  },
+  exemptionList: {
+    'zh-CN': () =>
+      import(
+        /* webpackChunkName: "ar-i18n-exemption-list-zh-CN" */ '@ar/pages/exemption-list/strings/strings.zh-CN.yaml'
+      ),
+    es: () =>
+      import(/* webpackChunkName: "ar-i18n-exemption-list-es" */ '@ar/pages/exemption-list/strings/strings.es.yaml'),
+    ja: () =>
+      import(/* webpackChunkName: "ar-i18n-exemption-list-ja" */ '@ar/pages/exemption-list/strings/strings.ja.yaml')
+  },
+  exemptionDetails: {
+    'zh-CN': () =>
+      import(
+        /* webpackChunkName: "ar-i18n-exemption-details-zh-CN" */ '@ar/pages/exemption-details/strings/strings.zh-CN.yaml'
+      ),
+    es: () =>
+      import(
+        /* webpackChunkName: "ar-i18n-exemption-details-es" */ '@ar/pages/exemption-details/strings/strings.es.yaml'
+      ),
+    ja: () =>
+      import(
+        /* webpackChunkName: "ar-i18n-exemption-details-ja" */ '@ar/pages/exemption-details/strings/strings.ja.yaml'
+      )
   }
 }
 

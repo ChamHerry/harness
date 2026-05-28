@@ -1,29 +1,343 @@
+branchPlaceholder: 分支
 lastUsed: 上次使用
+introText1: Get ready to code in seconds
+introText2: Isolated cloud development environments with your favorite editor
+introText3: 连接 in seconds with a repository
+cloudDeveloperExperience: 云开发环境
+createGitspace: 创建 Gitspace
 deleteGitspace: 删除 Gitspace
 resetGitspace: 重置 Gitspace
 reset: 重置
 editGitspace: 编辑 Gitspace
 viewGitspace: 查看 Gitspace 详情
+updateGitspace: 更新 Gitspace
 gitspaces: Gitspaces
+noRepo: Don’t have a Git repo?
+createRepo: 创建 a repo in Harness
 newGitspace: + 新建 Gitspace
 manageGitspaces: 管理 Gitspaces
 noGitspaces: 你尚未创建任何 Gitspace
+gitspaceDetail: Gitspace 详情
+machine: 机器
+region: 区域
+allRegionDisabled: All regions disabled
+or: OR
+logs: 日志
+noData: 无数据
+changes: 变更
+noChange: No 变更
+hasChange: The Gitspace has changes
 used: 已用
 hours: 小时
 na: 不适用
 retry: 重试
+eventTimeline: 事件 时间line
+cpu: CPU
+memory: 内存
+disk: 磁盘
 created: 已创建
+edit: 编辑
+account: 账户
+accountWithName: 账户：{{name}}
+organization: 组织
+organizationWithName: 组织：{{name}}
+projectWithName: 项目：{{name}}
+gitspaceNameFallback: Gitspace 名称
+regionSelectWarning: 选择 a region first
+gitspaceUpdateSuccess: Gitspace updated successfully
+regionValidationMessage: 区域 is 必填
+repoValidationMessage: 仓库 is 必填
+gitspaceNameValidation: New Gitspace name must not be blank
+gitspaceNameMaxLengthValidation: 名称 cannot exceed 32 characters
+gitspaceNameFormatValidation: 名称 can contain letters, numbers, hyphens, underscores, and spaces, and must start and end with a letter or number.
+branchValidationMessage: 分支 is 必填
+machineValidationMessage: 机器 类型 is 必填
+sshValidationMessage: SSH 密钥 is 必填
 startingGitspace: 正在启动 Gitspace
 stopingGitspace: 正在停止 Gitspace
+sessionDuration: Last 启动ed
+lastActivated: Last Activated
+deleteGitspaceTitle: 删除 Gitspace '{{name}}'
 deleteGitspaceText: 此操作无法撤销。确定要继续删除吗？
+resetGitspaceTitle: 重置 Gitspace '{{name}}'
 resetGitspaceText: 此操作无法撤销。确定要继续重置吗？
 resetGitspaceSuccess: Gitspace 重置成功
 deleteSuccess: Gitspace 删除成功
+deleteInfraSuccess: Gitspace 基础设施 deleted successfully
+deleteMachineSuccess: 机器 type deleted successfully
+atleastOneRegion: Please add atleast one region
 repositoryAndBranch: 仓库和分支
+importInto: 导入 仓库 into Gitness
 status: 状态
+getStarted: Get started with Gitspaces by
+createImport: creating or importing repositories
+regionAndMachineSize: 区域 & 机器 大小
+copied: 已复制
 id: ID
 project: 项目
-account: 账户
+gitspaceInfra: Gitspace 基础设施
+configureGCPInfra: 配置 GCP Infrastructure
+gcpInfrastructure: GCP Infrastructure
+gcpInfrastructureName: GCP Infrastructure 名称
+awsInfrastructure: AWS Infrastructure
+awsInfrastructureName: AWS Infrastructure 名称
+configureAWSInfra: 配置 AWS Infrastructure
+configureGitspaceInfra: 配置 Gitspace 基础设施
+settings:
+  saveSuccess: 设置 saved successfully
+  gitProviders: Git 提供方s
+  accessMethods: Access Methods
+  cloudRegionsAndMachineTypes: Cloud 区域s and 机器 types
+  gitspaceImages: Gitspace 镜像
+  availableGitProviders: 可用 Git 提供方s
+  gitProvidersDescription: Customize which git provider you want to use
+  selectAllGitProviders: 选择 all git providers
+  availableCodeEditors: 可用 Access Methods
+  codeEditorsDescription: Limit the editors and access methods available for Gitspace creation
+  selectAllCodeEditors: 选择 All Access Methods
+  images:
+    manageGitspaceImages: Manage Gitspace 镜像
+    manageGitspaceImagesDescription: Customize which images will be available while creating Gitspaces
+    defaultGitspaceImage: Default Gitspace 镜像
+    defaultImageDescription: >-
+      By default, the image of every new Gitspace created is provided by Harness or the one which is mentioned in the repository used for
+      creating Gitspace. This setting allows you to set a default image path which all newly created Gitspaces can use.
+    provideDefaultImage: Provide Default 镜像
+    provideDefaultImagePathOrRegistry: Provide default 镜像 路径 or Registry
+    selectImageRegistryAccessType: 选择 镜像 Registry Access 类型
+    public: 公开
+    publicRegistryDescription: Use 公开ly available container images
+    private: 私有
+    privateRegistryDescription: Use 私有 registry with authenticated access
+    selectImageRegistryConnector: 选择 镜像 Registry 连接or
+    selectConnector: '-选择 连接or-'
+    imageRegistryOrPath: 镜像 Registry or 路径
+    imagePath: 镜像 路径
+    apply: 应用
+    cancel: 取消
+    allowedImagePathsAndRegistries: Allowed 镜像 路径s and Registries
+    allowedImagePathsDescription: >-
+      By default, if the repository contains an image path then it will use that image path to create the Gitspace. You can restrict by
+      specifying which image paths and registries are allowed to create Gitspace.
+    imagePathPlaceholder: Enter image path or registry
+    newImagePath: + New 镜像 路径
+    artifactRegistryConnector: 制品仓库 连接or
+    defaultPathToPrivateGitspaceImagePath: Default 路径 to 私有 Gitspace 镜像 路径
+    defaultPathToPublicGitspaceImagePath: Default 路径 to 公开 Gitspace 镜像 路径
+  providers:
+    github: GitHub
+    gitlab: GitLab
+    bitbucket: Bitbucket
+    other: Other
+  editors:
+    vsCode: By Microsoft
+    jetbrains: By JetBrains
+    aiNative: AI Native IDEs
+  other: Other
+  regions:
+    availableCloudRegions: 可用 Cloud 区域s
+    availableCloudRegionsDesc: Customize which cloud regions will be available while creating Gitspaces
+    regionsAvailable: regions available
+    selectRegionsDesc: 选择 which regions and machines will be available to create a Gitspace
+    region: 区域
+    machinesSelected: machines selected
+    selectMachineTypes: 选择 which machine types will be available to create a Gitspace
+    selectAllMachineTypes: 选择 all machine types
+delegate:
+  DelegateSelector: Delegate 选择or
+  delegateSelectorTags: Delegate 选择or Tags
+  noDelegateSelectors: No delegate selectors selected
+gitspaceInfraHome:
+  minMessage: '{{field}} should contain minimum {{count}} characters'
+  maxMessage: '{{field}} should not contain more than {{count}} characters'
+  minNumber: '{{field}} should be greater than {{count}}'
+  configureGCPButton: 配置 GCP infrastructure
+  configureAWSButton: 配置 AWS infrastructure
+  gatewayGroupName: 网关 Group 名称
+  gatewayGroupHealth: 网关 Group Health
+  gatewayInstanceName: 网关 实例 名称
+  gatewayversionnumber: 网关 version number
+  description: 配置 an infrastructure with locations and machines to be used as one of the infrastructure while creating a Gitspace
+  gcpSupportText: Currently we support GCP based infrastructure only.
+  learnMore: Learn more about Gitspace 基础设施
+  infraDetails: Infrastructure details
+  status: 状态
+  lastHeartbeat: Last Heartbeat
+  zoneDetails: 可用区 详情
+  noZonesAvailable: No zones available
+  waitingForConnection: Waiting for 连接ion
+  waitingMessage: It takes around 3-5 minutes to connect to the infrastructure. If it takes longer, please follow the
+  troubleshoot: troubleshoot guidelines
+  locationAndMachine: Locations and machines
+  regionsAndMachines: 区域s and machines
+  locationDetails: Location details
+  healthy: HEALTHY
+  unhealthy: UNHEALTHY
+  unknown: UNKNOWN
+  region: 区域
+  locationName: 区域 名称
+  defaultSubnet: Default subnet IP range
+  proxySubnet: Proxy subnet IP range
+  dnsManagedZone: DNS managed zone
+  envoyHealth: Envoy health
+  configureVMRunnerImage: VM Runner 详情
+  configureVMRunnerImageNote: 配置 the region and zone of the VM runner image.
+  machineImageName: 机器 镜像 名称
+  machineImageNamePlaceholder: Enter machine image name
+  machineImageNameRequired: 机器 镜像 名称 is 必填
+  runnerVMRegion: 区域
+  runnerVMZone: Availability 可用区
+  locationRequired: Location is 必填
+  invalidCidrFormat: 无效 CIDR 格式
+  defaultSubnetRequired: Default 子网 is 必填
+  proxySubnetRequired: Proxy 子网 is 必填
+  domainRequired: 域名 is 必填
+  editRegion: 编辑 区域
+  defaultSubnetPlaceholder: e.g 10.6.0.0/16
+  proxySubnetPlaceholder: e.g 10.3.0.0/16
+  domainPlaceholder: e.g us-west-ga.io
+  sizePlaceholder: e.g 100
+  invalidImageNameFormat: 无效 image name 格式
+  machines: 机器s
+  machine: 机器
+  diskType: Persistent 磁盘 类型
+  bootType: Boot 大小 类型
+  diskSize: Persistent 磁盘 大小 (in GB)
+  persistentDisk: Persistent 磁盘
+  bootSizeColumn: Boot 大小
+  bootDisk: Boot 磁盘
+  bootDiskType: Boot 磁盘 类型
+  bootDiskSize: Boot 磁盘 大小 (in GB)
+  bootSize: Boot 大小 (in GB)
+  cpu: CPU (in Cores)
+  memoryInGb: 内存 (in GB)
+  newMachine: New 机器
+  newRegion: New 区域
+  noRegionConfigured: No regions configured
+  noRegionConfiguredText: 配置 a new region to let users create a Gitspace
+  addnewRegion: Add New 区域
+  machineType: 机器 类型
+  zone: 可用区
+  diskSizeMessage: Persistent 磁盘 大小 is 必填
+  zoneMessage: 可用区 is 必填
+  diskTypeMessage: Persistent 磁盘 类型 is 必填
+  bootTypeMessage: Boot 大小 类型 is 必填
+  bootSizeMessage: Boot 大小 is 必填
+  cpuMessage: CPU is 必填
+  memoryMessage: 内存 is 必填
+  createNewMachine: 创建 a new machine type
+  deleteMachineTitle: 删除 “{{name}}” machine type?
+  addMachineNote: You can add machines once the infrastructure is connected.
+  noMachineAvailable: No machines available
+  addMachineType: Add machine types to make the region available for use
+  operatingSystem: Operating System
+  architecture: Architecture
+  osRequired: Operating system is 必填
+  architectureRequired: Architecture is 必填
+  machineName: 机器 名称
+  nameMessage: 名称 is 必填
+  domainMessage: 域名 is 必填
+  machineTypeMessage: 机器 type is 必填
+  instanceTypeMessage: 实例 type is 必填
+  instanceMessage: 实例 is 必填
+  dangerZone: Danger 可用区
+  deleteThisInfra: 删除 this infrastructure
+  deleteWarning: Once you delete the infra, there is no going back. Please be certain
+  deleteInfraText: This action cannot be undone. Are you sure you want to proceed to delete?
+  deleteInfraTitle: 删除 this infrastructure?
+  create: 创建
+configureInfra:
+  project: GCP 项目
+  configure: 配置
+  learnMoreAboutHybrid: Learn more about hybrid infra
+  gatewayImageName: 网关 机器 镜像 名称
+  machineImageName: 机器 镜像 名称
+  gatewayDetails: 网关 详情
+  vmRunnerDetails: VM Runner 详情
+  gatewayImageNamePlaceholder: Enter gateway image name
+  gatewayImageNameRequired: 网关 镜像 名称 is 必填
+  configureZones: 配置 可用区s
+  newZone: New 可用区
+  updateTime: Last 更新d
+  provideInfraDetails: Provide Infrastructure 详情
+  downloadAndApply: 下载 and 应用 YAML
+  downloadInfraYaml: 下载 Infra YAML
+  yamlNotAvailable: YAML not available yet
+  yamlLoading: 加载中...
+  applyYamlAndVerifyConnection: 应用 YAML and Verify 连接ion
+  basicDetails: Basic 详情
+  learnMore: Learn More
+  cancel: 取消
+  id: Id
+  NumberOfInstance: Number of 网关 实例s
+  infraName: Infrastructure 名称
+  name: 名称
+  domain: 域名
+  subdomain: Subdomain
+  gateway: 网关
+  numberOfInstance: Number of 实例s
+  numberOfLocations: Number of Locations
+  machineType: 机器 类型
+  gatewayMachineType: 网关 机器 类型
+  configureLocations: 配置 区域s
+  configureLocationNote: Users will only be able to host gitspaces in these regions only.
+  gatewayNoteText: More number of instances better reliability of running the Gitspace. However more number of instances incur more costs
+  basicNoteText: The domain on which all the gitspaces created by this infra will be accessible
+  defaultImageNoteText: If not specified, Harness will use a default image name
+  instanceNoteText: >-
+    To ensure better availability, we recommend running more than one instance. If you don’t specify a number, 3 instances will be created
+    by default.
+Aws:
+  title: AWS
+  VpcCidrBlock: VPC CIDR Block
+  domainExample: e.g. gitspace.harness.io
+  instanceName: 实例 名称
+  instanceType: 实例 类型
+  privateSubnetCidr: 私有 子网 CIDR
+  publicSubnetCidr: 公开 子网 CIDR
+  gatewayInstanceType: 网关 实例 类型
+  configureRegionsAndZones: 配置 区域s and 可用区s
+  regionConfigNote: Once the region is configured, you can't change the AWS region selection, sub-domain and configured zones. You can add only one region.
+  gatewayAmi: 网关 AMI
+  gatewayAmiId: 网关 AMI ID
+  gatewayAmiIdPlaceholder: 输入网关 AMI ID
+  gatewayAmiIdRequired: 网关 AMI ID 为必填项
+  gatewayAmiImage: 网关 AMI 镜像
+  runnerAmiId: Runner AMI ID
+  runnerAmiIdPlaceholder: Enter Runner AMI ID
+  runnerAmiIdRequired: Runner AMI ID is 必填
+  machineAmiId: 机器 AMI ID
+  machineAmiIdPlaceholder: Enter 机器 AMI ID
+  machineAmiIdRequired: 机器 AMI ID is 必填
+  invalidAmiIdFormat: 无效 AMI ID 格式
+  availabilityZone: Availability 可用区
+  numberOfAvailabilityZone: '# of Availability 可用区'
+  privateSubnet: 私有 子网 CIDR Block
+  publicSubnet: 公开 子网 CIDR Block
+  privateSubnetRequired: 私有 子网 is 必填
+  publicSubnetRequired: 公开 子网 is 必填
+  minZonesRequired: At least 2 zones are 必填
+  configureNewRegion: 配置 New 区域
+  selectAwsRegion: 选择 AWS 区域
+  selectZone: 选择 zone
+  selectRegionFirst: 选择 region first
+  subnetPlaceholder: 10.0.1.0/24
+  domainPlaceholder: us-west
+  numberOfRegions: Number of 区域s
+  singleRegionRestriction: AWS infrastructure is currently restricted to a single region.
+downloadAndApplySection:
+  title: 下载 and apply YAML to terraform module
+  back: Back
+  done: 完成
+  downloadYaml: 下载 YAML
+  downloadGeneratedYaml: 下载 the generated YAML file
+  applyYamlText: 应用 the YAML in the terraform module and run following commands
+sshSelect:
+  30days: 30 Days
+  90days: 90 Days
+  180days: 180 Days
+  noexpiration: No Expiration
+  deleteToken: 删除 SSH 令牌 '{{name}}'
 homePage:
   start: 开始
   noSetupRequired: 无需设置
@@ -41,6 +355,165 @@ listing:
   cleaning: 清理中
   ownerAndCreated: 所有者和创建时间
   infrastructureDetails: 基础设施详情
+create:
+  repositoryDetails: 仓库详情
+  gitnessRepositories: Harness 仓库
+  thirdPartyGitRepositories: Other 公开 Git 仓库
+  branchPlaceholder: Enter the 分支 name
+  selectBranchPlaceholder: 选择 branch
+  searchRepositoryPlaceholder: 搜索 for a repository
+  searchBranchPlaceholder: 搜索 for a branch
+  repoNotFound: 创建 a repo <strong>{{repo}}</strong>
+  gitspaceNameLabel: Gitspace 名称
+  gitspaceNamePlaceholder: Provide name
+  gitspaceNameHelpertext1: Great Gitspace names are short and memorable. Need some inspiration?
+  gitspaceNameHelpertext2: 'Try this:'
+  sshKey: SSH 密钥
+  gitspaceSSHAddNote: There are no keys configured. Please add an SSH key.
+  gitspaceSSHhelpertext1: By default we will create the SSH key used to login to the Gitspace.
+  gitspaceSSHhelpertext2: You can add keys under Preferences in User 设置.
+  gitspaceCreateSuccess: Gitspace created successfully
+  gitspaceCreateFailed: Gitspace creation failed
+  infraProviderSuccess: Gitspace 基础设施 created successfully
+  infraProviderFailed: Gitspace 基础设施 creation failed
+  machineCreateSuccess: 机器 created successfully
+  machineCreateFailed: 机器 creation failed
+  gitprovider: Git 提供方
+  infraProviderType: Infra 提供方 类型
+  infraProviderTypeText: Your Gitspace will run on the selected infra provider type
+  machineType: 机器 类型
+  region: 区域
+  regionText: Your Gitspace will run in the selected region
+  machineTypeNote: Resources for your Gitspace
+  scmEmpty: All SCM options are disabled
+  ideEmpty: All IDEs disabled
+  selectGitProvider: 选择 a Git 提供方
+  githubOauthhelpertext2: 配置 the OAuth in Profile
+  githubOauthhelpertext3: Visit the User Profile 设置.
+  githubOauthhelpertext5: After configuring return back to this page to connect the 私有 repositories
+  ideNote: Your Gitspace will open in the selected IDE to code
+  selectIde: 选择 an IDE
+  scmOptions:
+    harnessCode: Harness Code
+    githubCloud: GitHub Cloud
+    gitlabCloud: GitLab Cloud
+    bitbucket: Bitbucket
+    anyPublicGitRepository: Any 公开 Git repository
+    gitness: Gitness
+    githubEnterprise: GitHub Enterprise
+    gitlabOnPrem: GitLab On-prem
+    bitbucketServer: Bitbucket Server
+  yourGitProvider: 你的 Git 提供方
+  configureOauthMessage: 请配置 {{provider}} OAuth 以连接你有权限访问的仓库
+  configureOauthStep: 在 OAuth 区域选择 {{provider}} 并连接
+  repositoryUrlOrNamePlaceholder: 输入 URL 或仓库名称
+  fetchingRepositories: 正在获取仓库
+  noRepositoriesFound: 未找到仓库
+  branchNamePlaceholder: 输入分支名称
+  fetchingBranches: 正在获取分支
+  noBranchesFound: 未找到分支
+  invalidUrlFormat: URL 格式无效
+  addSshKeyTitle: 添加 SSH 密钥
+  addSshKeyDescription: 添加 SSH 密钥以通过 SSH 安全访问 Gitspaces。
+  sshKeyUsageNote: SSH 密钥用于安全连接到工作区
+  learnCreateSshKey: 了解如何创建 SSH 密钥
+  keyName: 密钥名称
+  sshKeyPlaceholder: >-
+    Begins with 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'ssh-ed25519',
+    'sk-ecdsa-sha2-nistp256@openssh.com', or 'sk-ssh-ed25519@openssh.com'
+  addKey: 添加密钥
+  selectSshKey: 选择 SSH 密钥
+  subtext: 启动 Coding, no setup 必填. Dedicated cloud development environments with your favorite editor.
+  importWarning: Currently we support only third party 公开 repositories. In order to use a 私有 git repository, please import the repository into Gitness.
+  unsaved:
+    title: Unsaved 变更
+    message: You have unsaved changes, On switching all unsaved changes will be lost
+update:
+  infraProviderFailed: Gitspace 基础设施 updation failed
+  infraProviderSuccess: Gitspace 基础设施 updated successfully
+  editGitspace: 编辑 Gitspace
+  updateGitspace: 更新 Gitspace
+  gitspaceUpdateSuccess: Gitspace updated successfully
+  gitspaceUpdateFailed: Failed to update gitspace
+  allMachineDisabled: All machines disabled
+  errorChosenIDE: Chosen IDE has been disabled by the admin. Please choose a different one.
+  errorAllIDE: All IDEs have been disabled by the admin. Cannot update the gitspace.
+  errorAllResources: Admin has disabled all available machine resources for this gitspace. Cannot update the gitspace.
+  gitspaceUpdateNote: Your changes won't be lost by updating the IDE or machine type. Your Gitspace has to be restarted after the update.
+usageDashboard:
+  title: 用量 仪表板
+  usageTab: 用量
+  gitspacesTab: Gitspaces
+  comingSoon: Coming Soon
+  searchOrgPlaceholder: 搜索 组织s...
+  searchProjectPlaceholder: 搜索 项目s...
+  searchPlaceholder: 搜索 Gitspaces...
+  projects: 项目s
+  organizations: 组织s
+  loadMore: Load More
+  clearAll: Clear All
+  allProjects: All 项目s
+  noResultsFound: 未找到结果
+  tryDifferentKeywords: Try different keywords
+  loading: 加载中...
+  sortBy: Sort By
+  total: 总计
+  genericError: 发生错误
+aiTasks:
+  tasks: 任务s
+  status:
+    running: Running
+    completed: Completed
+    error: 错误
+    uninitialized: Uninitialized
+  create:
+    createTask: 创建 任务
+    welcome: Hello {{userName}}, What are we coding next?
+    selectedGitspace: 选择ed Gitspace
+    addContext: Add 上下文
+    selectActiveGitspace: 选择 an active Gitspace
+    createTaskNote: Tackle bugs, small feature request, and any other software engineering tasks, with direct export to any Git tool
+    selectContext: 选择 上下文
+    runTask: Run 任务
+    startWithActiveGitspace: 启动 with an active Gitspace
+    loadingGitspaces: 加载中 Gitspaces
+    promptPlaceholder: Enter the initial prompt ...
+    aiTaskCreateSuccess: AI task created successfully
+    aiTaskCreateFailed: Failed to create AI task
+    noGitspacesFound: No active Gitspaces found
+    claudeAI: Claude AI
+    selectAIAgent: 选择 AI agent
+    context: 上下文
+    aiAgent: AI agent
+    initialPrompt: Initial prompt
+    requiredSingle: '{{field}} 为必填项'
+    requiredTwo: '{{first}} 和 {{second}} 为必填项'
+    requiredThree: '{{first}}、{{second}} 和 {{third}} 为必填项'
+  listing:
+    contextDetails: 上下文 详情
+    noTasksFound: No 任务s Found
+    aiAgents: AI Agents
+    aiAgent: AI Agent
+    newTask: New 任务
+  errorCard:
+    title: There has been an error in running the task
+  details:
+    claudeAgentLabel: Claude Agent
+    waitingForAgent: Waiting for agent response
+    responseError: An error occurred while generating the response
+    errorFallback: 任务 failed during agent execution. Please check the Gitspace 日志 for details.
+    openIde: 打开 IDE
+    ideTooltip:
+      taskError: '{{ide}} can’t be opened because the task encountered an error.'
+      gitspaceInactive: '{{ide}} can’t be opened because the Gitspace isn’t active. 启动 the Gitspace and try again.'
+      taskWaiting: Setting things up. {{ide}} will be available once the task finishes.
+    aiUsageMetrics: AI 用量 Metrics
+    duration: 持续时间 (seconds)
+    totalCost: 总计 Cost (USD)
+    inputTokens: Input 令牌s
+    outputTokens: Output 令牌s
+    llmModels: LLM Models
+    noModels: 无模型
 details:
   actions: 更多操作
   openCursor: 打开 Cursor
@@ -50,11 +523,87 @@ details:
   openJetBrain: 打开 JetBrains Gateway
   goToDashboard: 前往仪表板
   startGitspace: 启动 Gitspace
+  stopProvising: 停止 Provising
+  noData: 无数据 for Gitspace
+  gitspaceActivity: Gitspace 活动
+  provisioningGitspace: Provisioning the Gitspace...
+  gitspaceStopped: Gitspace is stopped
+  gitspaceRunning: Gitspace is running
   stopGitspace: 停止 Gitspace
+  fetchingGitspace: 获取中 Gitspace 详情
+  fetchingLogs: 获取中 gitspace logs
+  logsFailed: Gitspace 日志 api failed
+  noLogsFound: No gitspace logs found
+  wrongIdentifier: 无效 gitspace id or project params
+  fetchingDetails: 获取中 Gitspace 事件 ....
+  containerLogs: Container 日志
+  containerLogsSubText: 日志 showing activity inside container
+  initialise: 初始化
+  startGitspaceConfirmTitle: 是否启动 Gitspace “{{name}}”？
+  startGitspaceConfirmMessage: 点击“启动 Gitspace”后，Gitspace 将开始预配。
+  stopGitspaceConfirmTitle: 是否停止 Gitspace “{{name}}”？
+  stopGitspaceConfirmMessage: 点击“停止 Gitspace”后，Gitspace 将开始取消预配。
+  provisioningTooltipTitle: 正在预配 Gitspace
+  provisioningTooltipMessage: 请等待几分钟，然后再启动 {{ide}}
+sshDetails:
+  connectWithSSH: 连接 with SSH
+  connectViaSSH: 连接 via SSH
+  congratsText: 🎉 Congratulations — your Gitspace is now active! To start using it, connect it with your SSH
+  step1: 打开 Terminal
+  step2: 复制 and execute the command
+  step3: Wait for few minutes while the IDE gets connected to the Gitspace
+  done: 完成
+  sshDisabledText: 连接 with SSH has been disabled by your administrator
+  sshDisabledVSCodeWeb1: 连接 With SSH is unavailable for VSCode Web
+  sshDisabledVSCodeWeb2: To enable SSH, edit your Gitspace and
+  sshDisabledVSCodeWeb3: 选择 a different IDE.
+  commandUnavailable: SSH 命令不可用
+repository:
+  repo: 仓库
+  selectRepository: 选择 仓库
+  pasteRepo: Paste a Git URL to create Gitspace
+  pasterRepoSubtext: You can use any 公开 Git repository to create a Gitspace
+  privateRepoWarning: Repo URL is of 私有 repository
+  publicRepo: You can use any 公开 Git repository to create a Gitspace
+  continueWith: Continue with
+  repositoryURL: 仓库 URL
 ide:
+  browser: VS Code Browser
+  desktop: VS Code Desktop
+  intellij: IntelliJ IDEA
+  goland: GoLand
+  webstorm: WebStorm
+  clion: CLion
+  phpstorm: PhpStorm
+  rubymine: RubyMine
+  pycharm: PyCharm
+  rider: Rider
+  windsurf: Windsurf
+  cursor: Cursor
+  bymircosoft: By Microsoft
+  byjetbrain: By JetBrains
+  byainative: AI Native IDEs
+  title: IDE
+  selectIDE: 选择 IDE
+  vsCode: VS Code
   openVSCode: 在 VS Code 桌面版中打开
   openBrowser: 在浏览器中打开
   errorEmptyURL: 未设置基础 URL，请刷新后重试
+regionMachineType: 区域 & 机器 类型
+infraProvider: Infra 提供方
+minuteUsage: Minute 用量
+renewsEveryMonth: Renews 1st of every month
+remainingOfTotal: remaining of <strong>{{total}}</strong>
+renewTooltip:
+  line1: With our beta plan, you receive 2,000 free minutes of Gitspace usage each month.
+  line2: These minutes automatically renew every 30 days, resetting on the 1st of each month.
+  haveQuestion: Have questions ?
+  contactUs: Contact Us
+changesTooltip:
+  description: You can monitor updates to your Gitspaces using this flag. If there are active changes, this status updates to “Has 变更”.
+  learnMore: Learn more about Gitspace changes
+lastUsedTooltip: 时间stamp indicating when the Gitspace was last used.
+lastStartedTooltip: 时间stamp indicating when the Gitspace was most recently started.
 lastStarted: 上次启动
 gitspaceStatus:
   active: 活跃
@@ -66,3 +615,10 @@ gitspaceOwners:
   myGitspaces: 我的 Gitspaces
 sortBy: 排序方式
 total: 总数
+errorCard:
+  title: There has been an error in running the Gitspace
+  viewLog: 查看 Container 日志
+  retryGitspace: 重试 starting Gitspace
+  learnMore: Learn more in Docs
+  unabletoResolve: Unable to resolve?
+  contactUs: Contact Us

@@ -1,3 +1,11 @@
+page: ダイジェスト List Page
 table:
+  noDigestTitle: No ダイジェスト
+  aboutDigest: No ダイジェスト available.
   columns:
+    digest: ダイジェスト
+    osArch: OS/Arch
     size: サイズ
+    uploadedBy: アップロードed At
+    downloads: ダウンロードs
+    scanStatus: Scan ステータス

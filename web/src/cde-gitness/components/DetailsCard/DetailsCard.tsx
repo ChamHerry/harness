@@ -79,7 +79,10 @@ export const DetailsCard = ({
               e.stopPropagation()
             }}>
             {getIconByRepoType({ repoType: code_repo_type, height: 20 })}
-            <Text title={'RepoName'} className={css.clickableText} onClick={() => window.open(code_repo_url, '_blank')}>
+            <Text
+              title={getString('cde.repository.repo')}
+              className={css.clickableText}
+              onClick={() => window.open(code_repo_url, '_blank')}>
               {repoName}
             </Text>
             <Text color={Color.PRIMARY_7}>:</Text>
@@ -128,7 +131,7 @@ export const DetailsCard = ({
         {/* Conditional SSH Key field - only shown when ssh_token_identifier exists */}
         {data?.ssh_token_identifier && (
           <Layout.Vertical spacing="small" flex={{ justifyContent: 'center', alignItems: 'flex-start' }}>
-            <Text className={css.rowHeaders}>{'SSH Key'}</Text>
+            <Text className={css.rowHeaders}>{getString('cde.create.sshKey')}</Text>
             <Layout.Horizontal spacing={'small'} flex={{ alignItems: 'center', justifyContent: 'start' }}>
               <img src={Secret} className={css.standardIcon} alt={'secret'} />
               <Text lineClamp={1} className={css.providerText} title={data.ssh_token_identifier}>

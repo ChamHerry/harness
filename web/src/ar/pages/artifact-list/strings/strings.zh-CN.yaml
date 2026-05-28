@@ -1,8 +1,39 @@
+page: 制品 List Page
 pageHeading: 制品
+deployedArtifacts: Deployed 制品s
+viewArtifactDetails: 查看 制品 详情
 table:
+  noArtifactsTitle: There are no artifacts available.
+  noArchivedArtifactsTitle: There are no archived artifacts.
+  allRepositories: Registries
+  latestVersions: Latest 版本s
+  allVersions: All 版本s
   columns:
-    tags: 标签
-    repository: 注册表
     name: 名称
+    artifactName: 制品 名称
+    scanStatus: Evaluation 状态
+    repository: 注册表
+    tags: 标签
+    downloads: 下载s
+    latestVersion: Latest 版本
+    pullCommand: 下载 Command
+    environments: Environments
+    sto: Security Vulnerabilities
+    lastUpdated: 上传ed At
+    archivedAt: Archived At
+    size: 大小
+    type: 类型
+    version: Tags / 版本
   actions:
+    editRepository: 编辑 Registry
     deleteRepository: 删除注册表
+    deleteArtifact: 删除
+    download: 下载
+    archivePackage: Archive
+    restorePackage: Restore
+    VulnerabilityStatus:
+      scanned: Scanned
+      nonScanned: Not Scanned
+      scanStatus: Evaluation 状态
+      partiallyScanned: '{{ scanned }}/{{ total }} Scanned'
+      digestMenuItemText: '{{archName}} (digest: {{digest}})'

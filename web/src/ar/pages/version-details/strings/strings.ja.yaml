@@ -1,0 +1,173 @@
+page: バージョン 詳細 Page
+selectDigestPlaceholder: All ダイジェスト
+noDependencies: No Dependencies
+OCIVersionSelectorTab:
+  tag: Tag
+  digest: ダイジェスト
+tabs:
+  overview: Overview
+  artifactDetails: アーティファクト 詳細
+  supplyChain: SBOM
+  securityTests: Vulnerabilities
+  deployments: Deployments
+  evaluationDetails: Evaluation 詳細
+  code: Code
+cards:
+  deploymentsCard:
+    title: Deployments
+    buildTitle: Build Pipeline
+    executionId: Execution ID
+  securityTests:
+    title: Vulnerabilities
+    totalIssues: 合計 Issues
+    critical: Critical
+    high: High
+    medium: Medium
+    low: Low
+    info: Info
+    ignored: Ignored
+  slsaCard:
+    title: SLSA
+    slsaVerificationStatus: SLSA Verification
+    slsaProvenance: SLSA Provenance
+    provenanceDataNotAvailable: Provenance data is not available
+  supplyChain:
+    title: SBOM
+    totalComponents: 合計 Dependencies
+    sbomScore: SBOM Quality Score
+    downloadSbom: ダウンロード SBOM
+    SBOMDataNotAvailable: SBOM data is not available
+    allowList: Allow List
+    denyListViolation: Deny List 違反
+  container:
+    title: Container
+    versionDigest: '{{ version}} ({{ digest }} digests)'
+overview:
+  generalInformation:
+    title: General In形式ion
+    name: '{{ $.artifactList.table.columns.name }}'
+    version: バージョン
+    packageType: Package type
+    repositoryPath: Registry path
+    digest: ダイジェスト
+    url: URL to file
+    projectUrl: プロジェクト URL
+    size: '{{ $.digestList.table.columns.size }}'
+    downloads: '{{ $.repositoryList.table.columns.downloads }}'
+    uploadedBy: アップロードed At
+    createdAndLastModifiedAt: 作成d | Last modified
+    createdAt: 作成d At
+    modifiedAt: Modified At
+    description: 説明
+    pullCommand: Pull command
+    pullCommandByDigest: Pull command by digest
+    repository: リポジトリ
+    documentation: Documentation
+    homepage: Homepage
+    license: License
+    buildHost: Build Host
+    buildTime: Build 時刻
+    packager: Packager
+    platform: Platform
+    sourceRpm: Source RPM
+    vendor: Vendor
+    vcs: VCS
+    ref: Ref
+    hash: Hash
+    language: Language
+    tags: Tags
+    artifactType: アーティファクト タイプ
+artifactDetails:
+  tabs:
+    layers: Layers
+    manifest: Manifest
+    readme: Readme
+    files: Files
+    dependencies: Dependencies
+  layers:
+    digest: '{{ $.digestList.table.columns.digest }}'
+    imageLayers: イメージ Layers
+    lastPush: Last Push
+    size: '{{ $.digestList.table.columns.size }}'
+    archSelectLabel: OS/ARCH
+    archSelectPlaceholder: 選択 OS/ARCH
+securityTests:
+  tabs:
+    overview: Overview
+    vulnerabilities: Vulnerabilities
+deploymentsTable:
+  noDeploymentsTitle: There are no deployments available.
+  columns:
+    environment: Environment
+    type: タイプ
+    services: Service/s
+    deploymentPipeline: Deployment Pipeline
+    triggeredBy: Triggered At
+    infra: Infrastructure
+    instanceCount: インスタンス Count
+artifactFiles:
+  noFilesTitle: No files found
+  itemsPerPage: items per page
+  pageLabel: Page {{ page }}
+  table:
+    columns:
+      name: 名前
+      path: パス
+      size: サイズ
+      checksum: Checksum
+      downloadCommand: ダウンロード Command
+      created: 作成d
+      id: ID
+dependencyList:
+  dependencyNameWithRelease: '{{ name }} (release: {{ release }})'
+  table:
+    columns:
+      name: Dependency 名前
+      version: Dependency バージョン
+versionDeleted: アーティファクト version deleted successfully!
+versionArchived: アーティファクト version archived successfully!
+versionRestored: アーティファクト version restored successfully!
+deleteVersionModal:
+  title: 削除 アーティファクト バージョン
+  contentText: This action will delete version. Are you absolutely sure you want to proceed?
+  inputLabel: タイプ the version name to confirm
+  inputPlaceholder: バージョン 名前
+copyVersionModal:
+  title: コピー バージョン
+  source: Source
+  target: Target
+  registryName: Registry 名前
+  packageName: Package 名前
+  version: バージョン
+  organization: 組織
+  project: プロジェクト
+  registry: Registry
+  selectOrganization: 選択 organization
+  selectProject: 選択 project
+  selectRegistry: 選択 registry
+  versionAndRegistryRequired: バージョン and target registry are 必須.
+softDeleteModal:
+  title: 削除 バージョン
+  contentText: This action will delete version. You can still restore it from the deleted list.
+  inputLabel: タイプ the version name to confirm
+  inputPlaceholder: バージョン 名前
+  forceLabel: Permanently delete version.
+  forceSubText: This action will delete version permanently. You can not restore it back.
+restoreModal:
+  title: Restore バージョン
+  contentText: This action will restore version.
+  inputLabel: タイプ the version name to confirm
+  inputPlaceholder: バージョン 名前
+quarantineVersionModal:
+  title: Add to Quarantine
+  contentText: Proceeding will put this artifact to quarantine, making it not generally accessible. Please provide a reason for this action.
+  reasonField: Reason
+  versionQuarantined: アーティファクト version quarantined successfully!
+  confirmButtonText: Quarantine
+  cancelButtonText: キャンセル
+removeFromQuarantineModal:
+  title: Remove from Quarantine
+  contentText: Proceeding will remove this artifact from quarantine, making it generally accessible. Please provide a reason for this action.
+  confirmButtonText: Remove from Quarantine
+  cancelButtonText: キャンセル
+  versionRemovedFromQuarantine: アーティファクト version removed from quarantine successfully!

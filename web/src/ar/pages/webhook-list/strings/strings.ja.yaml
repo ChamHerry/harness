@@ -1,0 +1,34 @@
+newWebhook: New Webhook
+webhookCreated: Webhook created successfully
+webhookUpdated: Webhook updated successfully
+webhookDeleted: Webhook deleted successfully
+triggers:
+  artifactCreation: アーティファクト Creation
+  artifactDeletion: アーティファクト Deletion
+  artifactModification: アーティファクト Modification
+table:
+  columns:
+    name: Webhook
+    trigger: イベント
+  noWebhooksTitle: There are no webhooks available
+formFields:
+  name: 名前
+  id: Id
+  description: 説明
+  url: Payload URL
+  secret: シークレット
+  triggerLabel: Which events do you like to trigger this webhook?
+  allTrigger: Send me everything
+  customTrigger: Let me select individual events
+  SSLVerification: SSL Verification
+  enableSSLVerification: Enable SSL Verification
+  advanced: Advanced
+  extraHeader: キー
+  extraHeaderPlaceholder: Enter Header
+  extraValue: Value
+  extraValuePlaceholder: Enter Value
+  addNewKeyValuePair: Add New キー Value Pair
+  enabled: 有効
+deleteModal:
+  title: 削除 Webhook
+  message: Are you sure you want to delete this webhook?

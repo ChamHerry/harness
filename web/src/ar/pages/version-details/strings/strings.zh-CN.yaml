@@ -1,0 +1,173 @@
+page: 版本 详情 Page
+selectDigestPlaceholder: All 摘要
+noDependencies: No Dependencies
+OCIVersionSelectorTab:
+  tag: Tag
+  digest: 摘要
+tabs:
+  overview: Overview
+  artifactDetails: 制品 详情
+  supplyChain: SBOM
+  securityTests: Vulnerabilities
+  deployments: Deployments
+  evaluationDetails: Evaluation 详情
+  code: Code
+cards:
+  deploymentsCard:
+    title: Deployments
+    buildTitle: Build Pipeline
+    executionId: Execution ID
+  securityTests:
+    title: Vulnerabilities
+    totalIssues: 总计 Issues
+    critical: Critical
+    high: High
+    medium: Medium
+    low: Low
+    info: Info
+    ignored: Ignored
+  slsaCard:
+    title: SLSA
+    slsaVerificationStatus: SLSA Verification
+    slsaProvenance: SLSA Provenance
+    provenanceDataNotAvailable: Provenance data is not available
+  supplyChain:
+    title: SBOM
+    totalComponents: 总计 Dependencies
+    sbomScore: SBOM Quality Score
+    downloadSbom: 下载 SBOM
+    SBOMDataNotAvailable: SBOM data is not available
+    allowList: Allow List
+    denyListViolation: Deny List 违规项
+  container:
+    title: Container
+    versionDigest: '{{ version}} ({{ digest }} digests)'
+overview:
+  generalInformation:
+    title: General In格式ion
+    name: '{{ $.artifactList.table.columns.name }}'
+    version: 版本
+    packageType: Package type
+    repositoryPath: Registry path
+    digest: 摘要
+    url: URL to file
+    projectUrl: 项目 URL
+    size: '{{ $.digestList.table.columns.size }}'
+    downloads: '{{ $.repositoryList.table.columns.downloads }}'
+    uploadedBy: 上传ed At
+    createdAndLastModifiedAt: 创建d | Last modified
+    createdAt: 创建d At
+    modifiedAt: Modified At
+    description: 描述
+    pullCommand: Pull command
+    pullCommandByDigest: Pull command by digest
+    repository: 仓库
+    documentation: Documentation
+    homepage: Homepage
+    license: License
+    buildHost: Build Host
+    buildTime: Build 时间
+    packager: Packager
+    platform: Platform
+    sourceRpm: Source RPM
+    vendor: Vendor
+    vcs: VCS
+    ref: Ref
+    hash: Hash
+    language: Language
+    tags: Tags
+    artifactType: 制品 类型
+artifactDetails:
+  tabs:
+    layers: Layers
+    manifest: Manifest
+    readme: Readme
+    files: Files
+    dependencies: Dependencies
+  layers:
+    digest: '{{ $.digestList.table.columns.digest }}'
+    imageLayers: 镜像 Layers
+    lastPush: Last Push
+    size: '{{ $.digestList.table.columns.size }}'
+    archSelectLabel: OS/ARCH
+    archSelectPlaceholder: 选择 OS/ARCH
+securityTests:
+  tabs:
+    overview: Overview
+    vulnerabilities: Vulnerabilities
+deploymentsTable:
+  noDeploymentsTitle: There are no deployments available.
+  columns:
+    environment: Environment
+    type: 类型
+    services: Service/s
+    deploymentPipeline: Deployment Pipeline
+    triggeredBy: Triggered At
+    infra: Infrastructure
+    instanceCount: 实例 Count
+artifactFiles:
+  noFilesTitle: No files found
+  itemsPerPage: items per page
+  pageLabel: Page {{ page }}
+  table:
+    columns:
+      name: 名称
+      path: 路径
+      size: 大小
+      checksum: Checksum
+      downloadCommand: 下载 Command
+      created: 创建d
+      id: ID
+dependencyList:
+  dependencyNameWithRelease: '{{ name }} (release: {{ release }})'
+  table:
+    columns:
+      name: Dependency 名称
+      version: Dependency 版本
+versionDeleted: 制品 version deleted successfully!
+versionArchived: 制品 version archived successfully!
+versionRestored: 制品 version restored successfully!
+deleteVersionModal:
+  title: 删除 制品 版本
+  contentText: This action will delete version. Are you absolutely sure you want to proceed?
+  inputLabel: 类型 the version name to confirm
+  inputPlaceholder: 版本 名称
+copyVersionModal:
+  title: 复制 版本
+  source: Source
+  target: Target
+  registryName: Registry 名称
+  packageName: Package 名称
+  version: 版本
+  organization: 组织
+  project: 项目
+  registry: Registry
+  selectOrganization: 选择 organization
+  selectProject: 选择 project
+  selectRegistry: 选择 registry
+  versionAndRegistryRequired: 版本 and target registry are 必填.
+softDeleteModal:
+  title: 删除 版本
+  contentText: This action will delete version. You can still restore it from the deleted list.
+  inputLabel: 类型 the version name to confirm
+  inputPlaceholder: 版本 名称
+  forceLabel: Permanently delete version.
+  forceSubText: This action will delete version permanently. You can not restore it back.
+restoreModal:
+  title: Restore 版本
+  contentText: This action will restore version.
+  inputLabel: 类型 the version name to confirm
+  inputPlaceholder: 版本 名称
+quarantineVersionModal:
+  title: Add to Quarantine
+  contentText: Proceeding will put this artifact to quarantine, making it not generally accessible. Please provide a reason for this action.
+  reasonField: Reason
+  versionQuarantined: 制品 version quarantined successfully!
+  confirmButtonText: Quarantine
+  cancelButtonText: 取消
+removeFromQuarantineModal:
+  title: Remove from Quarantine
+  contentText: Proceeding will remove this artifact from quarantine, making it generally accessible. Please provide a reason for this action.
+  confirmButtonText: Remove from Quarantine
+  cancelButtonText: 取消
+  versionRemovedFromQuarantine: 制品 version removed from quarantine successfully!

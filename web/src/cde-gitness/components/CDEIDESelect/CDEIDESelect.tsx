@@ -74,9 +74,9 @@ export const CDEIDESelect = ({
           <Code className={css.icon} />
           <Layout.Vertical spacing="small">
             <Text color={Color.GREY_500} font={{ weight: 'bold' }}>
-              IDE
+              {getString('cde.ide.title')}
             </Text>
-            <Text font="small">Your Gitspace will open in the selected IDE to code</Text>
+            <Text font="small">{getString('cde.create.ideNote')}</Text>
           </Layout.Vertical>
         </Layout.Horizontal>
       }

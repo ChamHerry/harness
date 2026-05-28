@@ -1,0 +1,34 @@
+newWebhook: New Webhook
+webhookCreated: Webhook created successfully
+webhookUpdated: Webhook updated successfully
+webhookDeleted: Webhook deleted successfully
+triggers:
+  artifactCreation: Artefacto Creation
+  artifactDeletion: Artefacto Deletion
+  artifactModification: Artefacto Modification
+table:
+  columns:
+    name: Webhook
+    trigger: Evento
+  noWebhooksTitle: There are no webhooks available
+formFields:
+  name: Nombre
+  id: Id
+  description: Descripcion
+  url: Payload URL
+  secret: Secreto
+  triggerLabel: Which events do you like to trigger this webhook?
+  allTrigger: Send me everything
+  customTrigger: Let me select individual events
+  SSLVerification: SSL Verification
+  enableSSLVerification: Enable SSL Verification
+  advanced: Advanced
+  extraHeader: Clave
+  extraHeaderPlaceholder: Enter Header
+  extraValue: Value
+  extraValuePlaceholder: Enter Value
+  addNewKeyValuePair: Add New Clave Value Pair
+  enabled: Habilitado
+deleteModal:
+  title: Eliminar Webhook
+  message: Are you sure you want to delete this webhook?

@@ -36,7 +36,7 @@ const VMRunnerDetails: React.FC<VMRunnerDetailsProps> = ({ infraDetails, provide
         <Container className={css.collapsibleContent}>
           <Container className={css.detailsGrid}>
             <Container className={css.detailsGridItem}>
-              <Text className={css.rowHeader}>Region</Text>
+              <Text className={css.rowHeader}>{getString('cde.region')}</Text>
               <Text
                 className={css.rowContent}
                 color={Color.BLACK}
@@ -48,7 +48,7 @@ const VMRunnerDetails: React.FC<VMRunnerDetailsProps> = ({ infraDetails, provide
               </Text>
             </Container>
             <Container className={css.detailsGridItem}>
-              <Text className={css.rowHeader}>Zone</Text>
+              <Text className={css.rowHeader}>{getString('cde.gitspaceInfraHome.zone')}</Text>
               <Text className={css.rowContent}>
                 {provider === HYBRID_VM_GCP
                   ? infraDetails?.metadata?.runner?.zone || ''

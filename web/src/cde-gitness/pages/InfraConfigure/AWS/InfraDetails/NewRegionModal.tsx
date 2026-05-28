@@ -45,26 +45,26 @@ interface NewRegionModalForm {
   identifier: number
 }
 
-const validationSchema = () =>
+const validationSchema = (getString: ReturnType<typeof useStrings>['getString']) =>
   Yup.object().shape({
-    location: Yup.string().required('Location is required'),
+    location: Yup.string().required(getString('cde.gitspaceInfraHome.locationRequired')),
     gatewayAmiId: Yup.string()
-      .required('Gateway AMI ID is required')
-      .matches(AWS_AMI_ID_PATTERN, 'Invalid AMI ID format.'),
-    domain: Yup.string().required('Domain is required'),
+      .required(getString('cde.Aws.gatewayAmiIdRequired'))
+      .matches(AWS_AMI_ID_PATTERN, getString('cde.Aws.invalidAmiIdFormat')),
+    domain: Yup.string().required(getString('cde.gitspaceInfraHome.domainRequired')),
     zones: Yup.array()
       .of(
         Yup.object().shape({
-          zone: Yup.string().required('Zone is required'),
+          zone: Yup.string().required(getString('cde.gitspaceInfraHome.zoneMessage')),
           privateSubnet: Yup.string()
-            .matches(cidrRegex({ exact: true }), 'Invalid CIDR format')
-            .required('Private Subnet is required'),
+            .matches(cidrRegex({ exact: true }), getString('cde.gitspaceInfraHome.invalidCidrFormat'))
+            .required(getString('cde.Aws.privateSubnetRequired')),
           publicSubnet: Yup.string()
-            .matches(cidrRegex({ exact: true }), 'Invalid CIDR format')
-            .required('Public Subnet is required')
+            .matches(cidrRegex({ exact: true }), getString('cde.gitspaceInfraHome.invalidCidrFormat'))
+            .required(getString('cde.Aws.publicSubnetRequired'))
         })
       )
-      .min(2, 'At least 2 zones are required')
+      .min(2, getString('cde.Aws.minZonesRequired'))
   })
 
 const NewRegionModal = ({
@@ -139,9 +139,9 @@ const NewRegionModal = ({
       onClose={() => setIsOpen(false)}
       width={950}
       height={720}
-      title={isEditMode ? 'Edit Region' : getString('cde.Aws.configureNewRegion')}>
+      title={isEditMode ? getString('cde.gitspaceInfraHome.editRegion') : getString('cde.Aws.configureNewRegion')}>
       <Formik<NewRegionModalForm>
-        validationSchema={validationSchema}
+        validationSchema={validationSchema(getString)}
         onSubmit={formValues => {
           const fullDomain = formValues.domain ? `${formValues.domain}.${values.domain}` : values.domain
           onSubmit({
@@ -169,7 +169,7 @@ const NewRegionModal = ({
                 <Text className="form-group--label" font={{ variation: FontVariation.BODY }} color={Color.GREY_500}>
                   {getString('cde.Aws.gatewayAmiId')}
                 </Text>
-                <FormInput.Text name="gatewayAmiId" placeholder="e.g. ami-12345678" />
+                <FormInput.Text name="gatewayAmiId" placeholder={getString('cde.Aws.gatewayAmiIdPlaceholder')} />
               </div>
               <div className={`form-group ${css.marginTop20}`}>
                 <Text className="form-group--label" font={{ variation: FontVariation.BODY }} color={Color.GREY_500}>
@@ -177,7 +177,11 @@ const NewRegionModal = ({
                 </Text>
                 <div className={css.inputContainer}>
                   <div className={css.inputWrapper}>
-                    <FormInput.Text name="domain" placeholder="us-west" disabled={isEditMode} />
+                    <FormInput.Text
+                      name="domain"
+                      placeholder={getString('cde.Aws.domainPlaceholder')}
+                      disabled={isEditMode}
+                    />
                     <span className={css.domainSuffix}>.{values?.domain}</span>
                   </div>
                 </div>
@@ -227,6 +231,7 @@ interface ZonesTableProps {
 }
 
 const ZonesTable = ({ formikProps, isEditMode = false }: ZonesTableProps) => {
+  const { getString } = useStrings()
   const zones = formikProps.values.zones || []
 
   // Create a stable reference to setFieldValue to prevent re-renders
@@ -278,29 +283,41 @@ const ZonesTable = ({ formikProps, isEditMode = false }: ZonesTableProps) => {
       return (
         <FormInput.Select
           name={`zones[${index}].zone`}
-          placeholder={selectedRegion ? 'Select zone' : 'Select region first'}
+          placeholder={selectedRegion ? getString('cde.Aws.selectZone') : getString('cde.Aws.selectRegionFirst')}
           items={zoneOptions}
           disabled={isEditMode || !selectedRegion || zoneOptions.length === 0}
         />
       )
     },
-    [formikProps.values.location, isEditMode]
+    [formikProps.values.location, getString, isEditMode]
   )
 
   const PrivateSubnetCell = React.useCallback(
     ({ row }: { row: any }) => {
       const index = row.index
-      return <FormInput.Text name={`zones[${index}].privateSubnet`} placeholder="10.0.1.0/24" disabled={isEditMode} />
+      return (
+        <FormInput.Text
+          name={`zones[${index}].privateSubnet`}
+          placeholder={getString('cde.Aws.subnetPlaceholder')}
+          disabled={isEditMode}
+        />
+      )
     },
-    [isEditMode]
+    [getString, isEditMode]
   )
 
   const PublicSubnetCell = React.useCallback(
     ({ row }: { row: any }) => {
       const index = row.index
-      return <FormInput.Text name={`zones[${index}].publicSubnet`} placeholder="10.0.1.0/24" disabled={isEditMode} />
+      return (
+        <FormInput.Text
+          name={`zones[${index}].publicSubnet`}
+          placeholder={getString('cde.Aws.subnetPlaceholder')}
+          disabled={isEditMode}
+        />
+      )
     },
-    [isEditMode]
+    [getString, isEditMode]
   )
 
   const ActionCell = React.useCallback(
@@ -322,19 +339,19 @@ const ZonesTable = ({ formikProps, isEditMode = false }: ZonesTableProps) => {
     (): Column<ZoneConfig>[] =>
       [
         {
-          Header: 'Zone',
+          Header: getString('cde.gitspaceInfraHome.zone'),
           accessor: 'zone',
           Cell: ZoneCell,
           width: '30%'
         },
         {
-          Header: 'Private Subnet CIDR Block',
+          Header: getString('cde.Aws.privateSubnet'),
           accessor: 'privateSubnet',
           Cell: PrivateSubnetCell,
           width: '30%'
         },
         {
-          Header: 'Public Subnet CIDR Block',
+          Header: getString('cde.Aws.publicSubnet'),
           accessor: 'publicSubnet',
           Cell: PublicSubnetCell,
           width: '30%'
@@ -346,11 +363,10 @@ const ZonesTable = ({ formikProps, isEditMode = false }: ZonesTableProps) => {
           width: '10%'
         }
       ] as Column<ZoneConfig>[],
-    [ZoneCell, PrivateSubnetCell, PublicSubnetCell, ActionCell]
+    [ZoneCell, PrivateSubnetCell, PublicSubnetCell, ActionCell, getString]
   )
 
   const tableData = React.useMemo(() => zones, [zones])
-  const { getString } = useStrings()
 
   return (
     <Container>

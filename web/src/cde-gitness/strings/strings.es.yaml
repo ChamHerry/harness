@@ -1,29 +1,343 @@
+branchPlaceholder: Rama
 lastUsed: Último uso
+introText1: Get ready to code in seconds
+introText2: Isolated cloud development environments with your favorite editor
+introText3: Conectar in seconds with a repository
+cloudDeveloperExperience: Entornos de desarrollo en la nube
+createGitspace: Crear Gitspace
 deleteGitspace: Eliminar Gitspace
 resetGitspace: Restablecer Gitspace
 reset: Restablecer
 editGitspace: Editar Gitspace
 viewGitspace: Ver detalles de Gitspace
+updateGitspace: Actualizar Gitspace
 gitspaces: Gitspaces
+noRepo: Don’t have a Git repo?
+createRepo: Crear a repo in Harness
 newGitspace: + Nuevo Gitspace
 manageGitspaces: Administrar Gitspaces
 noGitspaces: Aún no ha creado ningún Gitspace
+gitspaceDetail: Detalle de Gitspace
+machine: Maquina
+region: Region
+allRegionDisabled: All regions disabled
+or: OR
+logs: Registros
+noData: Sin datos
+changes: Cambios
+noChange: No Cambio
+hasChange: The Gitspace has changes
 used: Usado
 hours: Horas
 na: N/D
 retry: Reintentar
+eventTimeline: Evento Horaline
+cpu: CPU
+memory: Memoria
+disk: Disco
 created: Creado
+edit: Editar
+account: Cuenta
+accountWithName: 'Cuenta: {{name}}'
+organization: Organizacion
+organizationWithName: 'Organizacion: {{name}}'
+projectWithName: 'Proyecto: {{name}}'
+gitspaceNameFallback: Nombre de Gitspace
+regionSelectWarning: Seleccionar a region first
+gitspaceUpdateSuccess: Gitspace updated successfully
+regionValidationMessage: Region is obligatorio
+repoValidationMessage: Repositorio is obligatorio
+gitspaceNameValidation: New Gitspace name must not be blank
+gitspaceNameMaxLengthValidation: Nombre cannot exceed 32 characters
+gitspaceNameFormatValidation: Nombre can contain letters, numbers, hyphens, underscores, and spaces, and must start and end with a letter or number.
+branchValidationMessage: Rama is obligatorio
+machineValidationMessage: Maquina Tipo is obligatorio
+sshValidationMessage: SSH Clave is obligatorio
 startingGitspace: Iniciando Gitspace
 stopingGitspace: Deteniendo Gitspace
+sessionDuration: Last Iniciared
+lastActivated: Last Activated
+deleteGitspaceTitle: Eliminar Gitspace '{{name}}'
 deleteGitspaceText: Esta acción no se puede deshacer. ¿Seguro que desea continuar con la eliminación?
+resetGitspaceTitle: Restablecer Gitspace '{{name}}'
 resetGitspaceText: Esta acción no se puede deshacer. ¿Seguro que desea continuar con el restablecimiento?
 resetGitspaceSuccess: Gitspace restablecido correctamente
 deleteSuccess: Gitspace eliminado correctamente
+deleteInfraSuccess: Infraestructura de Gitspace deleted successfully
+deleteMachineSuccess: Maquina type deleted successfully
+atleastOneRegion: Please add atleast one region
 repositoryAndBranch: Repositorio y rama
+importInto: Importar Repositorio into Gitness
 status: Estado
+getStarted: Get started with Gitspaces by
+createImport: creating or importing repositories
+regionAndMachineSize: Region & Maquina Tamano
+copied: Copiado
 id: ID
 project: Proyecto
-account: Cuenta
+gitspaceInfra: Infraestructura de Gitspace
+configureGCPInfra: Configurar GCP Infrastructure
+gcpInfrastructure: GCP Infrastructure
+gcpInfrastructureName: GCP Infrastructure Nombre
+awsInfrastructure: AWS Infrastructure
+awsInfrastructureName: AWS Infrastructure Nombre
+configureAWSInfra: Configurar AWS Infrastructure
+configureGitspaceInfra: Configurar Infraestructura de Gitspace
+settings:
+  saveSuccess: Configuracion saved successfully
+  gitProviders: Git Proveedors
+  accessMethods: Access Methods
+  cloudRegionsAndMachineTypes: Cloud Regiones and Maquina types
+  gitspaceImages: Imagennes de Gitspace
+  availableGitProviders: Disponible Git Proveedors
+  gitProvidersDescription: Customize which git provider you want to use
+  selectAllGitProviders: Seleccionar all git providers
+  availableCodeEditors: Disponible Access Methods
+  codeEditorsDescription: Limit the editors and access methods available for Gitspace creation
+  selectAllCodeEditors: Seleccionar All Access Methods
+  images:
+    manageGitspaceImages: Manage Imagennes de Gitspace
+    manageGitspaceImagesDescription: Customize which images will be available while creating Gitspaces
+    defaultGitspaceImage: Default Imagenn de Gitspace
+    defaultImageDescription: >-
+      By default, the image of every new Gitspace created is provided by Harness or the one which is mentioned in the repository used for
+      creating Gitspace. This setting allows you to set a default image path which all newly created Gitspaces can use.
+    provideDefaultImage: Provide Default Imagen
+    provideDefaultImagePathOrRegistry: Provide default Imagen Ruta or Registry
+    selectImageRegistryAccessType: Seleccionar Imagen Registry Access Tipo
+    public: Publico
+    publicRegistryDescription: Use publicoly available container images
+    private: Privado
+    privateRegistryDescription: Use privado registry with authenticated access
+    selectImageRegistryConnector: Seleccionar Imagen Registry Conectaror
+    selectConnector: '-Seleccionar Conectaror-'
+    imageRegistryOrPath: Imagen Registry or Ruta
+    imagePath: Imagen Ruta
+    apply: Aplicar
+    cancel: Cancelar
+    allowedImagePathsAndRegistries: Allowed Imagen Rutas and Registries
+    allowedImagePathsDescription: >-
+      By default, if the repository contains an image path then it will use that image path to create the Gitspace. You can restrict by
+      specifying which image paths and registries are allowed to create Gitspace.
+    imagePathPlaceholder: Enter image path or registry
+    newImagePath: + New Imagen Ruta
+    artifactRegistryConnector: Registro de artefactos Conectaror
+    defaultPathToPrivateGitspaceImagePath: Default Ruta to Privado Imagenn de Gitspace Ruta
+    defaultPathToPublicGitspaceImagePath: Default Ruta to Publico Imagenn de Gitspace Ruta
+  providers:
+    github: GitHub
+    gitlab: GitLab
+    bitbucket: Bitbucket
+    other: Other
+  editors:
+    vsCode: By Microsoft
+    jetbrains: By JetBrains
+    aiNative: AI Native IDEs
+  other: Other
+  regions:
+    availableCloudRegions: Disponible Cloud Regiones
+    availableCloudRegionsDesc: Customize which cloud regions will be available while creating Gitspaces
+    regionsAvailable: regions available
+    selectRegionsDesc: Seleccionar which regions and machines will be available to create a Gitspace
+    region: Region
+    machinesSelected: machines selected
+    selectMachineTypes: Seleccionar which machine types will be available to create a Gitspace
+    selectAllMachineTypes: Seleccionar all machine types
+delegate:
+  DelegateSelector: Delegate Seleccionaror
+  delegateSelectorTags: Delegate Seleccionaror Tags
+  noDelegateSelectors: No delegate selectors selected
+gitspaceInfraHome:
+  minMessage: '{{field}} should contain minimum {{count}} characters'
+  maxMessage: '{{field}} should not contain more than {{count}} characters'
+  minNumber: '{{field}} should be greater than {{count}}'
+  configureGCPButton: Configurar GCP infrastructure
+  configureAWSButton: Configurar AWS infrastructure
+  gatewayGroupName: Gateway Group Nombre
+  gatewayGroupHealth: Gateway Group Health
+  gatewayInstanceName: Gateway Instancia Nombre
+  gatewayversionnumber: Gateway version number
+  description: Configurar an infrastructure with locations and machines to be used as one of the infrastructure while creating a Gitspace
+  gcpSupportText: Currently we support GCP based infrastructure only.
+  learnMore: Learn more about Infraestructura de Gitspace
+  infraDetails: Infrastructure details
+  status: Estado
+  lastHeartbeat: Last Heartbeat
+  zoneDetails: Zona Detalles
+  noZonesAvailable: No zones available
+  waitingForConnection: Waiting for Conectarion
+  waitingMessage: It takes around 3-5 minutes to connect to the infrastructure. If it takes longer, please follow the
+  troubleshoot: troubleshoot guidelines
+  locationAndMachine: Locations and machines
+  regionsAndMachines: Regiones and machines
+  locationDetails: Location details
+  healthy: HEALTHY
+  unhealthy: UNHEALTHY
+  unknown: UNKNOWN
+  region: Region
+  locationName: Region Nombre
+  defaultSubnet: Default subnet IP range
+  proxySubnet: Proxy subnet IP range
+  dnsManagedZone: DNS managed zone
+  envoyHealth: Envoy health
+  configureVMRunnerImage: VM Runner Detalles
+  configureVMRunnerImageNote: Configurar the region and zone of the VM runner image.
+  machineImageName: Maquina Imagen Nombre
+  machineImageNamePlaceholder: Enter machine image name
+  machineImageNameRequired: Maquina Imagen Nombre is obligatorio
+  runnerVMRegion: Region
+  runnerVMZone: Availability Zona
+  locationRequired: Location is obligatorio
+  invalidCidrFormat: Invalido CIDR formato
+  defaultSubnetRequired: Default Subred is obligatorio
+  proxySubnetRequired: Proxy Subred is obligatorio
+  domainRequired: Dominio is obligatorio
+  editRegion: Editar Region
+  defaultSubnetPlaceholder: e.g 10.6.0.0/16
+  proxySubnetPlaceholder: e.g 10.3.0.0/16
+  domainPlaceholder: e.g us-west-ga.io
+  sizePlaceholder: e.g 100
+  invalidImageNameFormat: Invalido image name formato
+  machines: Maquinas
+  machine: Maquina
+  diskType: Persistent Disco Tipo
+  bootType: Boot Tamano Tipo
+  diskSize: Persistent Disco Tamano (in GB)
+  persistentDisk: Persistent Disco
+  bootSizeColumn: Boot Tamano
+  bootDisk: Boot Disco
+  bootDiskType: Boot Disco Tipo
+  bootDiskSize: Boot Disco Tamano (in GB)
+  bootSize: Boot Tamano (in GB)
+  cpu: CPU (in Cores)
+  memoryInGb: Memoria (in GB)
+  newMachine: New Maquina
+  newRegion: New Region
+  noRegionConfigured: No regions configured
+  noRegionConfiguredText: Configurar a new region to let users create a Gitspace
+  addnewRegion: Add New Region
+  machineType: Maquina Tipo
+  zone: Zona
+  diskSizeMessage: Persistent Disco Tamano is obligatorio
+  zoneMessage: Zona is obligatorio
+  diskTypeMessage: Persistent Disco Tipo is obligatorio
+  bootTypeMessage: Boot Tamano Tipo is obligatorio
+  bootSizeMessage: Boot Tamano is obligatorio
+  cpuMessage: CPU is obligatorio
+  memoryMessage: Memoria is obligatorio
+  createNewMachine: Crear a new machine type
+  deleteMachineTitle: Eliminar “{{name}}” machine type?
+  addMachineNote: You can add machines once the infrastructure is connected.
+  noMachineAvailable: No machines available
+  addMachineType: Add machine types to make the region available for use
+  operatingSystem: Operating System
+  architecture: Architecture
+  osRequired: Operating system is obligatorio
+  architectureRequired: Architecture is obligatorio
+  machineName: Maquina Nombre
+  nameMessage: Nombre is obligatorio
+  domainMessage: Dominio is obligatorio
+  machineTypeMessage: Maquina type is obligatorio
+  instanceTypeMessage: Instancia type is obligatorio
+  instanceMessage: Instancia is obligatorio
+  dangerZone: Danger Zona
+  deleteThisInfra: Eliminar this infrastructure
+  deleteWarning: Once you delete the infra, there is no going back. Please be certain
+  deleteInfraText: This action cannot be undone. Are you sure you want to proceed to delete?
+  deleteInfraTitle: Eliminar this infrastructure?
+  create: Crear
+configureInfra:
+  project: GCP Proyecto
+  configure: Configurar
+  learnMoreAboutHybrid: Learn more about hybrid infra
+  gatewayImageName: Gateway Maquina Imagen Nombre
+  machineImageName: Maquina Imagen Nombre
+  gatewayDetails: Gateway Detalles
+  vmRunnerDetails: VM Runner Detalles
+  gatewayImageNamePlaceholder: Enter gateway image name
+  gatewayImageNameRequired: Gateway Imagen Nombre is obligatorio
+  configureZones: Configurar Zonas
+  newZone: New Zona
+  updateTime: Last Actualizard
+  provideInfraDetails: Provide Infrastructure Detalles
+  downloadAndApply: Descargar and Aplicar YAML
+  downloadInfraYaml: Descargar Infra YAML
+  yamlNotAvailable: YAML not available yet
+  yamlLoading: Cargando...
+  applyYamlAndVerifyConnection: Aplicar YAML and Verify Conectarion
+  basicDetails: Basic Detalles
+  learnMore: Learn More
+  cancel: Cancelar
+  id: Id
+  NumberOfInstance: Number of Gateway Instancias
+  infraName: Infrastructure Nombre
+  name: Nombre
+  domain: Dominio
+  subdomain: Subdomain
+  gateway: Gateway
+  numberOfInstance: Number of Instancias
+  numberOfLocations: Number of Locations
+  machineType: Maquina Tipo
+  gatewayMachineType: Gateway Maquina Tipo
+  configureLocations: Configurar Regiones
+  configureLocationNote: Users will only be able to host gitspaces in these regions only.
+  gatewayNoteText: More number of instances better reliability of running the Gitspace. However more number of instances incur more costs
+  basicNoteText: The domain on which all the gitspaces created by this infra will be accessible
+  defaultImageNoteText: If not specified, Harness will use a default image name
+  instanceNoteText: >-
+    To ensure better availability, we recommend running more than one instance. If you don’t specify a number, 3 instances will be created
+    by default.
+Aws:
+  title: AWS
+  VpcCidrBlock: VPC CIDR Block
+  domainExample: e.g. gitspace.harness.io
+  instanceName: Instancia Nombre
+  instanceType: Instancia Tipo
+  privateSubnetCidr: Privado Subred CIDR
+  publicSubnetCidr: Publico Subred CIDR
+  gatewayInstanceType: Gateway Instancia Tipo
+  configureRegionsAndZones: Configurar Regiones and Zonas
+  regionConfigNote: Once the region is configured, you can't change the AWS region selection, sub-domain and configured zones. You can add only one region.
+  gatewayAmi: Gateway AMI
+  gatewayAmiId: Gateway AMI ID
+  gatewayAmiIdPlaceholder: Ingrese el ID de AMI de gateway
+  gatewayAmiIdRequired: El ID de AMI de gateway es obligatorio
+  gatewayAmiImage: Gateway AMI Imagen
+  runnerAmiId: Runner AMI ID
+  runnerAmiIdPlaceholder: Enter Runner AMI ID
+  runnerAmiIdRequired: Runner AMI ID is obligatorio
+  machineAmiId: Maquina AMI ID
+  machineAmiIdPlaceholder: Enter Maquina AMI ID
+  machineAmiIdRequired: Maquina AMI ID is obligatorio
+  invalidAmiIdFormat: Invalido AMI ID formato
+  availabilityZone: Availability Zona
+  numberOfAvailabilityZone: '# of Availability Zona'
+  privateSubnet: Privado Subred CIDR Block
+  publicSubnet: Publico Subred CIDR Block
+  privateSubnetRequired: Privado Subred is obligatorio
+  publicSubnetRequired: Publico Subred is obligatorio
+  minZonesRequired: At least 2 zones are obligatorio
+  configureNewRegion: Configurar New Region
+  selectAwsRegion: Seleccionar AWS Region
+  selectZone: Seleccionar zone
+  selectRegionFirst: Seleccionar region first
+  subnetPlaceholder: 10.0.1.0/24
+  domainPlaceholder: us-west
+  numberOfRegions: Number of Regiones
+  singleRegionRestriction: AWS infrastructure is currently restricted to a single region.
+downloadAndApplySection:
+  title: Descargar and apply YAML to terraform module
+  back: Back
+  done: Listo
+  downloadYaml: Descargar YAML
+  downloadGeneratedYaml: Descargar the generated YAML file
+  applyYamlText: Aplicar the YAML in the terraform module and run following commands
+sshSelect:
+  30days: 30 Days
+  90days: 90 Days
+  180days: 180 Days
+  noexpiration: No Expiration
+  deleteToken: Eliminar SSH Token '{{name}}'
 homePage:
   start: Comenzar
   noSetupRequired: sin configuración requerida
@@ -41,6 +355,167 @@ listing:
   cleaning: Limpiando
   ownerAndCreated: Propietario y fecha de creación
   infrastructureDetails: Detalles de infraestructura
+create:
+  repositoryDetails: Detalles del repositorio
+  gitnessRepositories: Harness Repositorios
+  thirdPartyGitRepositories: Other Publico Git Repositorios
+  branchPlaceholder: Enter the Rama name
+  selectBranchPlaceholder: Seleccionar branch
+  searchRepositoryPlaceholder: Buscar for a repository
+  searchBranchPlaceholder: Buscar for a branch
+  repoNotFound: Crear a repo <strong>{{repo}}</strong>
+  gitspaceNameLabel: Nombre de Gitspace
+  gitspaceNamePlaceholder: Provide name
+  gitspaceNameHelpertext1: Great Gitspace names are short and memorable. Need some inspiration?
+  gitspaceNameHelpertext2: 'Try this:'
+  sshKey: SSH Clave
+  gitspaceSSHAddNote: There are no keys configured. Please add an SSH key.
+  gitspaceSSHhelpertext1: By default we will create the SSH key used to login to the Gitspace.
+  gitspaceSSHhelpertext2: You can add keys under Preferences in User Configuracion.
+  gitspaceCreateSuccess: Gitspace created successfully
+  gitspaceCreateFailed: Gitspace creation failed
+  infraProviderSuccess: Infraestructura de Gitspace created successfully
+  infraProviderFailed: Infraestructura de Gitspace creation failed
+  machineCreateSuccess: Maquina created successfully
+  machineCreateFailed: Maquina creation failed
+  gitprovider: Git Proveedor
+  infraProviderType: Infra Proveedor Tipo
+  infraProviderTypeText: Your Gitspace will run on the selected infra provider type
+  machineType: Maquina Tipo
+  region: Region
+  regionText: Your Gitspace will run in the selected region
+  machineTypeNote: Resources for your Gitspace
+  scmEmpty: All SCM options are disabled
+  ideEmpty: All IDEs disabled
+  selectGitProvider: Seleccionar a Git Proveedor
+  githubOauthhelpertext2: Configurar the OAuth in Profile
+  githubOauthhelpertext3: Visit the User Profile Configuracion.
+  githubOauthhelpertext5: After configuring return back to this page to connect the privado repositories
+  ideNote: Your Gitspace will open in the selected IDE to code
+  selectIde: Seleccionar an IDE
+  scmOptions:
+    harnessCode: Harness Code
+    githubCloud: GitHub Cloud
+    gitlabCloud: GitLab Cloud
+    bitbucket: Bitbucket
+    anyPublicGitRepository: Any publico Git repository
+    gitness: Gitness
+    githubEnterprise: GitHub Enterprise
+    gitlabOnPrem: GitLab On-prem
+    bitbucketServer: Bitbucket Server
+  yourGitProvider: su proveedor Git
+  configureOauthMessage: Configure OAuth de {{provider}} para conectarse a los repositorios a los que tiene acceso
+  configureOauthStep: En la seccion OAuth, seleccione {{provider}} y conecte
+  repositoryUrlOrNamePlaceholder: Ingrese una URL o escriba el nombre del repositorio
+  fetchingRepositories: Obteniendo repositorios
+  noRepositoriesFound: No se encontraron repositorios
+  branchNamePlaceholder: Ingrese el nombre de la rama
+  fetchingBranches: Obteniendo ramas
+  noBranchesFound: No se encontraron ramas
+  invalidUrlFormat: Formato de URL invalido
+  addSshKeyTitle: Agregar clave SSH
+  addSshKeyDescription: Agregue una clave SSH para acceder de forma segura a Gitspaces mediante SSH.
+  sshKeyUsageNote: Las claves SSH se usan para conectarse de forma segura a los espacios de trabajo
+  learnCreateSshKey: Aprenda a crear una clave SSH
+  keyName: Nombre de la clave
+  sshKeyPlaceholder: >-
+    Begins with 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'ssh-ed25519',
+    'sk-ecdsa-sha2-nistp256@openssh.com', or 'sk-ssh-ed25519@openssh.com'
+  addKey: Agregar clave
+  selectSshKey: Seleccionar clave SSH
+  subtext: Iniciar Coding, no setup obligatorio. Dedicated cloud development environments with your favorite editor.
+  importWarning: >-
+    Currently we support only third party publico repositories. In order to use a privado git repository, please import the repository into
+    Gitness.
+  unsaved:
+    title: Unsaved Cambios
+    message: You have unsaved changes, On switching all unsaved changes will be lost
+update:
+  infraProviderFailed: Infraestructura de Gitspace updation failed
+  infraProviderSuccess: Infraestructura de Gitspace updated successfully
+  editGitspace: Editar Gitspace
+  updateGitspace: Actualizar Gitspace
+  gitspaceUpdateSuccess: Gitspace updated successfully
+  gitspaceUpdateFailed: Failed to update gitspace
+  allMachineDisabled: All machines disabled
+  errorChosenIDE: Chosen IDE has been disabled by the admin. Please choose a different one.
+  errorAllIDE: All IDEs have been disabled by the admin. Cannot update the gitspace.
+  errorAllResources: Admin has disabled all available machine resources for this gitspace. Cannot update the gitspace.
+  gitspaceUpdateNote: Your changes won't be lost by updating the IDE or machine type. Your Gitspace has to be restarted after the update.
+usageDashboard:
+  title: Uso Panel
+  usageTab: Uso
+  gitspacesTab: Gitspaces
+  comingSoon: Coming Soon
+  searchOrgPlaceholder: Buscar Organizaciones...
+  searchProjectPlaceholder: Buscar Proyectos...
+  searchPlaceholder: Buscar Gitspaces...
+  projects: Proyectos
+  organizations: Organizaciones
+  loadMore: Load More
+  clearAll: Clear All
+  allProjects: All Proyectos
+  noResultsFound: No se encontraron resultados
+  tryDifferentKeywords: Try different keywords
+  loading: Cargando...
+  sortBy: Sort By
+  total: Total
+  genericError: Ocurrio un error
+aiTasks:
+  tasks: Tareas
+  status:
+    running: Running
+    completed: Completed
+    error: Error
+    uninitialized: Uninitialized
+  create:
+    createTask: Crear Tarea
+    welcome: Hello {{userName}}, What are we coding next?
+    selectedGitspace: Seleccionared Gitspace
+    addContext: Add Contexto
+    selectActiveGitspace: Seleccionar an active Gitspace
+    createTaskNote: Tackle bugs, small feature request, and any other software engineering tasks, with direct export to any Git tool
+    selectContext: Seleccionar Contexto
+    runTask: Run Tarea
+    startWithActiveGitspace: Iniciar with an active Gitspace
+    loadingGitspaces: Cargando Gitspaces
+    promptPlaceholder: Enter the initial prompt ...
+    aiTaskCreateSuccess: AI task created successfully
+    aiTaskCreateFailed: Failed to create AI task
+    noGitspacesFound: No active Gitspaces found
+    claudeAI: Claude AI
+    selectAIAgent: Seleccionar AI agent
+    context: Contexto
+    aiAgent: AI agent
+    initialPrompt: Initial prompt
+    requiredSingle: '{{field}} es obligatorio'
+    requiredTwo: '{{first}} y {{second}} son obligatorios'
+    requiredThree: '{{first}}, {{second}} y {{third}} son obligatorios'
+  listing:
+    contextDetails: Contexto Detalles
+    noTasksFound: No Tareas Found
+    aiAgents: AI Agents
+    aiAgent: AI Agent
+    newTask: New Tarea
+  errorCard:
+    title: There has been an error in running the task
+  details:
+    claudeAgentLabel: Claude Agent
+    waitingForAgent: Waiting for agent response
+    responseError: An error occurred while generating the response
+    errorFallback: Tarea failed during agent execution. Please check the registros de Gitspace for details.
+    openIde: Abrir IDE
+    ideTooltip:
+      taskError: '{{ide}} can’t be opened because the task encountered an error.'
+      gitspaceInactive: '{{ide}} can’t be opened because the Gitspace isn’t active. Iniciar the Gitspace and try again.'
+      taskWaiting: Setting things up. {{ide}} will be available once the task finishes.
+    aiUsageMetrics: AI Uso Metrics
+    duration: Duracion (seconds)
+    totalCost: Total Cost (USD)
+    inputTokens: Input Tokens
+    outputTokens: Output Tokens
+    llmModels: LLM Models
+    noModels: Sin modelos
 details:
   actions: Más acciones
   openCursor: Abrir Cursor
@@ -50,11 +525,87 @@ details:
   openJetBrain: Abrir JetBrains Gateway
   goToDashboard: Ir al panel
   startGitspace: Iniciar Gitspace
+  stopProvising: Detener Provising
+  noData: Sin datos for Gitspace
+  gitspaceActivity: Gitspace Actividad
+  provisioningGitspace: Provisioning the Gitspace...
+  gitspaceStopped: Gitspace is stopped
+  gitspaceRunning: Gitspace is running
   stopGitspace: Detener Gitspace
+  fetchingGitspace: Obteniendo Detalles de Gitspace
+  fetchingLogs: Obteniendo gitspace logs
+  logsFailed: registros de Gitspace api failed
+  noLogsFound: No gitspace logs found
+  wrongIdentifier: Invalido gitspace id or project params
+  fetchingDetails: Obteniendo Gitspace Eventos ....
+  containerLogs: Container Registros
+  containerLogsSubText: Registros showing activity inside container
+  initialise: Inicializar
+  startGitspaceConfirmTitle: ¿Desea iniciar el Gitspace “{{name}}”?
+  startGitspaceConfirmMessage: Al hacer clic en “Iniciar Gitspace”, el gitspace comenzara a aprovisionarse.
+  stopGitspaceConfirmTitle: ¿Desea detener el Gitspace “{{name}}”?
+  stopGitspaceConfirmMessage: Al hacer clic en “Detener Gitspace”, el gitspace comenzara a desaprovisionarse.
+  provisioningTooltipTitle: Estamos aprovisionando el Gitspace
+  provisioningTooltipMessage: Espere unos minutos antes de iniciar {{ide}}
+sshDetails:
+  connectWithSSH: Conectar with SSH
+  connectViaSSH: Conectar via SSH
+  congratsText: 🎉 Congratulations — your Gitspace is now active! To start using it, connect it with your SSH
+  step1: Abrir Terminal
+  step2: Copiar and execute the command
+  step3: Wait for few minutes while the IDE gets connected to the Gitspace
+  done: Listo
+  sshDisabledText: Conectar with SSH has been disabled by your administrator
+  sshDisabledVSCodeWeb1: Conectar With SSH is unavailable for VSCode Web
+  sshDisabledVSCodeWeb2: To enable SSH, edit your Gitspace and
+  sshDisabledVSCodeWeb3: Seleccionar a different IDE.
+  commandUnavailable: Comando SSH no disponible
+repository:
+  repo: Repositorio
+  selectRepository: Seleccionar Repositorio
+  pasteRepo: Paste a Git URL to create Gitspace
+  pasterRepoSubtext: You can use any publico Git repository to create a Gitspace
+  privateRepoWarning: Repo URL is of Privado repository
+  publicRepo: You can use any publico Git repository to create a Gitspace
+  continueWith: Continue with
+  repositoryURL: URL del repositorio
 ide:
+  browser: VS Code Browser
+  desktop: VS Code Desktop
+  intellij: IntelliJ IDEA
+  goland: GoLand
+  webstorm: WebStorm
+  clion: CLion
+  phpstorm: PhpStorm
+  rubymine: RubyMine
+  pycharm: PyCharm
+  rider: Rider
+  windsurf: Windsurf
+  cursor: Cursor
+  bymircosoft: By Microsoft
+  byjetbrain: By JetBrains
+  byainative: AI Native IDEs
+  title: IDE
+  selectIDE: Seleccionar IDE
+  vsCode: VS Code
   openVSCode: Abrir en VS Code Desktop
   openBrowser: Abrir en el navegador
   errorEmptyURL: URL base no configurada, actualice e inténtelo de nuevo
+regionMachineType: Region & Maquina Tipo
+infraProvider: Infra Proveedor
+minuteUsage: Minute Uso
+renewsEveryMonth: Renews 1st of every month
+remainingOfTotal: remaining of <strong>{{total}}</strong>
+renewTooltip:
+  line1: With our beta plan, you receive 2,000 free minutes of Gitspace usage each month.
+  line2: These minutes automatically renew every 30 days, resetting on the 1st of each month.
+  haveQuestion: Have questions ?
+  contactUs: Contact Us
+changesTooltip:
+  description: You can monitor updates to your Gitspaces using this flag. If there are active changes, this status updates to “Has Cambios”.
+  learnMore: Learn more about Gitspace changes
+lastUsedTooltip: Horastamp indicating when the Gitspace was last used.
+lastStartedTooltip: Horastamp indicating when the Gitspace was most recently started.
 lastStarted: Último inicio
 gitspaceStatus:
   active: Activo
@@ -66,3 +617,10 @@ gitspaceOwners:
   myGitspaces: Mis Gitspaces
 sortBy: Ordenar por
 total: Total
+errorCard:
+  title: There has been an error in running the Gitspace
+  viewLog: Ver Container Registros
+  retryGitspace: Reintentar starting Gitspace
+  learnMore: Learn more in Docs
+  unabletoResolve: Unable to resolve?
+  contactUs: Contact Us

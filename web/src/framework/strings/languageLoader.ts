@@ -169,9 +169,9 @@ export async function buildStrings(langId: LangLocale = 'en'): Promise<StringsMa
   try {
     const [mainModule, cdeModule] = await Promise.all([
       import(/* webpackChunkName: "i18n-[request]" */ `../../i18n/strings.${resourceLocale}.yaml`),
-      import(/* webpackChunkName: "i18n-cde-[request]" */ `../../cde-gitness/strings/strings.${resourceLocale}.yaml`).catch(
-        () => ({ default: cdeStringRecordsEN })
-      )
+      import(
+        /* webpackChunkName: "i18n-cde-[request]" */ `../../cde-gitness/strings/strings.${resourceLocale}.yaml`
+      ).catch(() => ({ default: cdeStringRecordsEN }))
     ])
 
     const merged = {

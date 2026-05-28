@@ -1,0 +1,39 @@
+page: バージョン List Page
+table:
+  noVersionsTitle: There are no versions available.
+  noArchivedVersionsTitle: There are no archived versions.
+  notScanned: Not Scanned
+  columns:
+    version: バージョン
+    size: '{{ $.digestList.table.columns.size }}'
+    digests: ダイジェストs
+    fileCount: File Count
+    pullCommand: ダウンロード Command
+    activelyDeployed: アクティブly Deployed
+    downloads: '{{ $.repositoryList.table.columns.downloads }}'
+    publishedByAt: '{{ $.versionDetails.artifactDetails.layers.lastPush }}'
+    archivedAt: Archived At
+    deployments: '{{ $.versionDetails.tabs.deployments }}'
+    tags: Tags
+    scanStatus: Evaluation ステータス
+actions:
+  addTag: Add Tag
+  addTagDescription: >-
+    Add tags by typing in the field below and pressing enter. Tags are unique across versions. If you add a tag that is already used by
+    another version, the tag will be moved to this version.
+  addTagPlaceholder: タイプ tag name and press Enter
+  tagNameEntity: Tag name
+  copyVersion: コピー バージョン
+  deleteVersion: 削除
+  archiveVersion: Archive
+  restoreVersion: Restore
+  quarantine: Quarantine
+  removeQuarantine: Remove From Quarantine
+  reEvaluate: Re-Evaluate
+messages:
+  addTagSuccess: Tag added successfully
+  addTagFailed: Failed to add tag
+  copyVersionSuccess: バージョン copied successfully
+  copyVersionFailed: Failed to copy version
+  reEvaluateSuccess: Submitted request for Re-Evaluation successfully!
+  reEvaluateFailed: Failed to submit request!

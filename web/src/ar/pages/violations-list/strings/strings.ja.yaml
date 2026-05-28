@@ -1,0 +1,91 @@
+page: 違反 List Page
+noViolationsFound: No 違反 Found
+evaluatedAt: Evaluated At {{value}}
+cards:
+  totalViolations: 合計 違反
+  blockedViolations: Blocked 違反
+  warningViolations: Warning 違反
+  dependencies: Dependencies
+table:
+  columns:
+    package: Dependency And バージョン
+    registry: Upstream Proxy
+    policySet: Policy Set Violated
+    status: ステータス
+    lastEvaluatedAt: Evaluated At
+    actions:
+      violationDetails: 違反 詳細
+violationDetailsModal:
+  title: 違反 詳細
+  basicInformationSection:
+    title: Basic In形式ion
+    packageName: Package 名前
+    version: バージョン
+    upstreamProxy: Upstream Proxy
+    status: ステータス
+    policySetViolated: Policy Set Violated
+  violatedPoliciesSection:
+    policySetViolated: Policy Set Violated
+    policiesViolated: Policies Violated
+    policyViolated: Policy Violated
+    policyName: 'Policy 名前: {{{policyName}}}'
+    category: Category
+    title: Violated Policies
+    ossRiskLevelViolation:
+      ossRiskLevel: OSS Risk Level
+    packageAgeViolation:
+      packageAgeThreshold: Package Age Threshold
+      publishedOn: Published On
+    licenseViolation:
+      allowedLicenses: Allowed Licenses
+      blockedLicense: Blocked License
+      packageLicense: Package License
+    securityViolation:
+      cveId: CVE ID
+      cvssScore: CVSS Score
+      cvssThreshold: CVSS Threshold
+  fixInformationSection:
+    title: Fix In形式ion
+    fixAvailable: Fix 利用可能
+    fixedVersion: Fixed バージョン
+    currentVersion: Current バージョン
+  evaluationDetailsSection:
+    title: Evaluation
+    firstDetected: First Detected
+    lastDetected: Last Detected
+  actions:
+    requestException: Request 免除
+    reEvaluate: Re-Evaluate
+editExemptionForm:
+  title: 編集 dependency exemption
+  subTitle: >-
+    免除 allow temporary use of blocked dependencies when business-critical. When you submit a request, all users with the "免除 Approver" role
+    will be notified. Any approver can review and act on your request.
+  actions:
+    submit: 保存 変更
+    cancel: キャンセル
+  toasters:
+    success: 免除 request updated successfully
+    error: Failed to update exemption request
+createExemptionForm:
+  title: Request dependency exemption
+  subTitle: >-
+    免除 allow temporary use of blocked dependencies when business-critical. When you submit a request, all users with the "免除 Approver" role
+    will be notified. Any approver can review and act on your request.
+  basicInformationSection:
+    title: Basic In形式ion
+    packageName: Package 名前
+    version: バージョン
+  exemptionDetailsAndJustificationSection:
+    title: 免除 details and justification
+    exemptionDuration: 免除 duration (in days)
+    businessJustification: Business justification
+    businessJustificationPlaceholder: Explain why this exemption is necessary for your operation
+    remediationPlan: Remediation plan
+    remediationPlanPlaceholder: Describe your plan to upgrade or replace the dependency
+  actions:
+    submit: Send 免除 Request
+    cancel: キャンセル
+  toasters:
+    success: 免除 request submitted successfully
+    error: Failed to submit exemption request

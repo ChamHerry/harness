@@ -7,6 +7,7 @@ endif
 
 tools = $(addprefix $(GOBIN)/, golangci-lint goimports govulncheck protoc-gen-go protoc-gen-go-grpc gci)
 deps = $(addprefix $(GOBIN)/, wire dbmate)
+WEB_DIST_DIR := web/dist
 
 ifneq (,$(wildcard ./.local.env))
     include ./.local.env
@@ -39,7 +40,7 @@ tools: $(tools) ## Install tools required for the build
 ###############################################################################
 
 web-build: ## Build the web frontend
-	@echo "Building web frontend"
+	@echo "Building web frontend into $(WEB_DIST_DIR)"
 	@cd web && yarn install && yarn build
 
 build: generate ## Build the all-in-one Harness binary
@@ -50,9 +51,9 @@ web-dist-placeholder:
 	@test -f web/dist/index.html || mkdir -p web/dist
 	@test -f web/dist/index.html || printf '<!doctype html><html><body>dev placeholder</body></html>' > web/dist/index.html
 
-dev: generate web-dist-placeholder ## Run backend server in development mode
-	@echo "Starting Harness backend server"
-	go run ./cmd/gitness server
+dev: generate web-build ## Build frontend and run backend server in development mode
+	@echo "Starting Harness backend server with static frontend from $(WEB_DIST_DIR)"
+	GITNESS_DEVELOPMENT_UI_SOURCE_OVERRIDE=$(WEB_DIST_DIR) go run ./cmd/gitness server
 
 web: ## Run frontend dev server
 	@echo "Starting web frontend dev server"
@@ -212,4 +213,4 @@ $(GOBIN)/gci:
 help: ## show help message
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m\033[0m\n"} /^[$$()% 0-9a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
 
-.PHONY: delete-tools update-tools help format lint dev web
+.PHONY: delete-tools update-tools help format lint dev web web-build

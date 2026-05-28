@@ -1321,8 +1321,11 @@ export interface StringsMap {
   'cde.Aws.configureNewRegion': string
   'cde.Aws.configureRegionsAndZones': string
   'cde.Aws.domainExample': string
+  'cde.Aws.domainPlaceholder': string
   'cde.Aws.gatewayAmi': string
   'cde.Aws.gatewayAmiId': string
+  'cde.Aws.gatewayAmiIdPlaceholder': string
+  'cde.Aws.gatewayAmiIdRequired': string
   'cde.Aws.gatewayAmiImage': string
   'cde.Aws.gatewayInstanceType': string
   'cde.Aws.instanceName': string
@@ -1331,29 +1334,42 @@ export interface StringsMap {
   'cde.Aws.machineAmiId': string
   'cde.Aws.machineAmiIdPlaceholder': string
   'cde.Aws.machineAmiIdRequired': string
+  'cde.Aws.minZonesRequired': string
   'cde.Aws.numberOfAvailabilityZone': string
   'cde.Aws.numberOfRegions': string
   'cde.Aws.privateSubnet': string
   'cde.Aws.privateSubnetCidr': string
+  'cde.Aws.privateSubnetRequired': string
   'cde.Aws.publicSubnet': string
   'cde.Aws.publicSubnetCidr': string
+  'cde.Aws.publicSubnetRequired': string
   'cde.Aws.regionConfigNote': string
   'cde.Aws.runnerAmiId': string
   'cde.Aws.runnerAmiIdPlaceholder': string
   'cde.Aws.runnerAmiIdRequired': string
   'cde.Aws.selectAwsRegion': string
+  'cde.Aws.selectRegionFirst': string
+  'cde.Aws.selectZone': string
   'cde.Aws.singleRegionRestriction': string
+  'cde.Aws.subnetPlaceholder': string
   'cde.Aws.title': string
   'cde.account': string
+  'cde.accountWithName': string
   'cde.aiTasks.create.addContext': string
+  'cde.aiTasks.create.aiAgent': string
   'cde.aiTasks.create.aiTaskCreateFailed': string
   'cde.aiTasks.create.aiTaskCreateSuccess': string
   'cde.aiTasks.create.claudeAI': string
+  'cde.aiTasks.create.context': string
   'cde.aiTasks.create.createTask': string
   'cde.aiTasks.create.createTaskNote': string
+  'cde.aiTasks.create.initialPrompt': string
   'cde.aiTasks.create.loadingGitspaces': string
   'cde.aiTasks.create.noGitspacesFound': string
   'cde.aiTasks.create.promptPlaceholder': string
+  'cde.aiTasks.create.requiredSingle': string
+  'cde.aiTasks.create.requiredThree': string
+  'cde.aiTasks.create.requiredTwo': string
   'cde.aiTasks.create.runTask': string
   'cde.aiTasks.create.selectAIAgent': string
   'cde.aiTasks.create.selectActiveGitspace': string
@@ -1370,6 +1386,7 @@ export interface StringsMap {
   'cde.aiTasks.details.ideTooltip.taskWaiting': string
   'cde.aiTasks.details.inputTokens': string
   'cde.aiTasks.details.llmModels': string
+  'cde.aiTasks.details.noModels': string
   'cde.aiTasks.details.openIde': string
   'cde.aiTasks.details.outputTokens': string
   'cde.aiTasks.details.responseError': string
@@ -1381,6 +1398,10 @@ export interface StringsMap {
   'cde.aiTasks.listing.contextDetails': string
   'cde.aiTasks.listing.newTask': string
   'cde.aiTasks.listing.noTasksFound': string
+  'cde.aiTasks.status.completed': string
+  'cde.aiTasks.status.error': string
+  'cde.aiTasks.status.running': string
+  'cde.aiTasks.status.uninitialized': string
   'cde.aiTasks.tasks': string
   'cde.allRegionDisabled': string
   'cde.atleastOneRegion': string
@@ -1435,7 +1456,15 @@ export interface StringsMap {
   'cde.configureInfra.yamlNotAvailable': string
   'cde.copied': string
   'cde.cpu': string
+  'cde.create.addKey': string
+  'cde.create.addSshKeyDescription': string
+  'cde.create.addSshKeyTitle': string
+  'cde.create.branchNamePlaceholder': string
   'cde.create.branchPlaceholder': string
+  'cde.create.configureOauthMessage': string
+  'cde.create.configureOauthStep': string
+  'cde.create.fetchingBranches': string
+  'cde.create.fetchingRepositories': string
   'cde.create.githubOauthhelpertext2': string
   'cde.create.githubOauthhelpertext3': string
   'cde.create.githubOauthhelpertext5': string
@@ -1457,25 +1486,44 @@ export interface StringsMap {
   'cde.create.infraProviderSuccess': string
   'cde.create.infraProviderType': string
   'cde.create.infraProviderTypeText': string
+  'cde.create.invalidUrlFormat': string
+  'cde.create.keyName': string
+  'cde.create.learnCreateSshKey': string
   'cde.create.machineCreateFailed': string
   'cde.create.machineCreateSuccess': string
   'cde.create.machineType': string
   'cde.create.machineTypeNote': string
+  'cde.create.noBranchesFound': string
+  'cde.create.noRepositoriesFound': string
   'cde.create.region': string
   'cde.create.regionText': string
   'cde.create.repoNotFound': string
   'cde.create.repositoryDetails': string
+  'cde.create.repositoryUrlOrNamePlaceholder': string
   'cde.create.scmEmpty': string
+  'cde.create.scmOptions.anyPublicGitRepository': string
+  'cde.create.scmOptions.bitbucket': string
+  'cde.create.scmOptions.bitbucketServer': string
+  'cde.create.scmOptions.githubCloud': string
+  'cde.create.scmOptions.githubEnterprise': string
+  'cde.create.scmOptions.gitlabCloud': string
+  'cde.create.scmOptions.gitlabOnPrem': string
+  'cde.create.scmOptions.gitness': string
+  'cde.create.scmOptions.harnessCode': string
   'cde.create.searchBranchPlaceholder': string
   'cde.create.searchRepositoryPlaceholder': string
   'cde.create.selectBranchPlaceholder': string
   'cde.create.selectGitProvider': string
   'cde.create.selectIde': string
+  'cde.create.selectSshKey': string
   'cde.create.sshKey': string
+  'cde.create.sshKeyPlaceholder': string
+  'cde.create.sshKeyUsageNote': string
   'cde.create.subtext': string
   'cde.create.thirdPartyGitRepositories': string
   'cde.create.unsaved.message': string
   'cde.create.unsaved.title': string
+  'cde.create.yourGitProvider': string
   'cde.createGitspace': string
   'cde.createImport': string
   'cde.createRepo': string
@@ -1500,6 +1548,7 @@ export interface StringsMap {
   'cde.details.gitspaceRunning': string
   'cde.details.gitspaceStopped': string
   'cde.details.goToDashboard': string
+  'cde.details.initialise': string
   'cde.details.logsFailed': string
   'cde.details.noData': string
   'cde.details.noLogsFound': string
@@ -1508,8 +1557,14 @@ export interface StringsMap {
   'cde.details.openEditor': string
   'cde.details.openJetBrain': string
   'cde.details.provisioningGitspace': string
+  'cde.details.provisioningTooltipMessage': string
+  'cde.details.provisioningTooltipTitle': string
   'cde.details.startGitspace': string
+  'cde.details.startGitspaceConfirmMessage': string
+  'cde.details.startGitspaceConfirmTitle': string
   'cde.details.stopGitspace': string
+  'cde.details.stopGitspaceConfirmMessage': string
+  'cde.details.stopGitspaceConfirmTitle': string
   'cde.details.stopProvising': string
   'cde.details.wrongIdentifier': string
   'cde.disk': string
@@ -1556,6 +1611,8 @@ export interface StringsMap {
   'cde.gitspaceInfraHome.createNewMachine': string
   'cde.gitspaceInfraHome.dangerZone': string
   'cde.gitspaceInfraHome.defaultSubnet': string
+  'cde.gitspaceInfraHome.defaultSubnetPlaceholder': string
+  'cde.gitspaceInfraHome.defaultSubnetRequired': string
   'cde.gitspaceInfraHome.deleteInfraText': string
   'cde.gitspaceInfraHome.deleteInfraTitle': string
   'cde.gitspaceInfraHome.deleteMachineTitle': string
@@ -1568,6 +1625,9 @@ export interface StringsMap {
   'cde.gitspaceInfraHome.diskTypeMessage': string
   'cde.gitspaceInfraHome.dnsManagedZone': string
   'cde.gitspaceInfraHome.domainMessage': string
+  'cde.gitspaceInfraHome.domainPlaceholder': string
+  'cde.gitspaceInfraHome.domainRequired': string
+  'cde.gitspaceInfraHome.editRegion': string
   'cde.gitspaceInfraHome.envoyHealth': string
   'cde.gitspaceInfraHome.gatewayGroupHealth': string
   'cde.gitspaceInfraHome.gatewayGroupName': string
@@ -1578,12 +1638,14 @@ export interface StringsMap {
   'cde.gitspaceInfraHome.infraDetails': string
   'cde.gitspaceInfraHome.instanceMessage': string
   'cde.gitspaceInfraHome.instanceTypeMessage': string
+  'cde.gitspaceInfraHome.invalidCidrFormat': string
   'cde.gitspaceInfraHome.invalidImageNameFormat': string
   'cde.gitspaceInfraHome.lastHeartbeat': string
   'cde.gitspaceInfraHome.learnMore': string
   'cde.gitspaceInfraHome.locationAndMachine': string
   'cde.gitspaceInfraHome.locationDetails': string
   'cde.gitspaceInfraHome.locationName': string
+  'cde.gitspaceInfraHome.locationRequired': string
   'cde.gitspaceInfraHome.machine': string
   'cde.gitspaceInfraHome.machineImageName': string
   'cde.gitspaceInfraHome.machineImageNamePlaceholder': string
@@ -1608,10 +1670,13 @@ export interface StringsMap {
   'cde.gitspaceInfraHome.osRequired': string
   'cde.gitspaceInfraHome.persistentDisk': string
   'cde.gitspaceInfraHome.proxySubnet': string
+  'cde.gitspaceInfraHome.proxySubnetPlaceholder': string
+  'cde.gitspaceInfraHome.proxySubnetRequired': string
   'cde.gitspaceInfraHome.region': string
   'cde.gitspaceInfraHome.regionsAndMachines': string
   'cde.gitspaceInfraHome.runnerVMRegion': string
   'cde.gitspaceInfraHome.runnerVMZone': string
+  'cde.gitspaceInfraHome.sizePlaceholder': string
   'cde.gitspaceInfraHome.status': string
   'cde.gitspaceInfraHome.troubleshoot': string
   'cde.gitspaceInfraHome.unhealthy': string
@@ -1621,6 +1686,7 @@ export interface StringsMap {
   'cde.gitspaceInfraHome.zone': string
   'cde.gitspaceInfraHome.zoneDetails': string
   'cde.gitspaceInfraHome.zoneMessage': string
+  'cde.gitspaceNameFallback': string
   'cde.gitspaceNameFormatValidation': string
   'cde.gitspaceNameMaxLengthValidation': string
   'cde.gitspaceNameValidation': string
@@ -1693,8 +1759,11 @@ export interface StringsMap {
   'cde.noGitspaces': string
   'cde.noRepo': string
   'cde.or': string
+  'cde.organization': string
+  'cde.organizationWithName': string
   'cde.owners': string
   'cde.project': string
+  'cde.projectWithName': string
   'cde.region': string
   'cde.regionAndMachineSize': string
   'cde.regionMachineType': string
@@ -1775,9 +1844,11 @@ export interface StringsMap {
   'cde.settings.selectAllCodeEditors': string
   'cde.settings.selectAllGitProviders': string
   'cde.sortBy': string
+  'cde.sshDetails.commandUnavailable': string
   'cde.sshDetails.congratsText': string
   'cde.sshDetails.connectViaSSH': string
   'cde.sshDetails.connectWithSSH': string
+  'cde.sshDetails.done': string
   'cde.sshDetails.sshDisabledText': string
   'cde.sshDetails.sshDisabledVSCodeWeb1': string
   'cde.sshDetails.sshDisabledVSCodeWeb2': string
@@ -1810,6 +1881,7 @@ export interface StringsMap {
   'cde.usageDashboard.allProjects': string
   'cde.usageDashboard.clearAll': string
   'cde.usageDashboard.comingSoon': string
+  'cde.usageDashboard.genericError': string
   'cde.usageDashboard.gitspacesTab': string
   'cde.usageDashboard.loadMore': string
   'cde.usageDashboard.loading': string

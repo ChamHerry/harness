@@ -31,17 +31,17 @@ const getStatusColor = (status?: TypesAITask['state']) => {
   }
 }
 
-const getStatusText = (status?: TypesAITask['state']) => {
+const getStatusText = (getString: ReturnType<typeof useStrings>['getString'], status?: TypesAITask['state']) => {
   switch (status) {
     case TaskStatus.RUNNING:
-      return 'Running'
+      return getString('cde.aiTasks.status.running')
     case TaskStatus.COMPLETED:
-      return 'Completed'
+      return getString('cde.aiTasks.status.completed')
     case TaskStatus.ERROR:
-      return 'Error'
+      return getString('cde.aiTasks.status.error')
     case TaskStatus.UNINITIALIZED:
     default:
-      return 'Uninitialized'
+      return getString('cde.aiTasks.status.uninitialized')
   }
 }
 
@@ -176,6 +176,7 @@ const RenderContextDetails: Renderer<CellProps<TypesAITask>> = ({ row }) => {
 }
 
 const RenderAITaskStatus: Renderer<CellProps<TypesAITask>> = ({ row }) => {
+  const { getString } = useStrings()
   const { state } = row.original
   const color = getStatusColor(state)
   const isRunning = state === TaskStatus.RUNNING
@@ -187,7 +188,7 @@ const RenderAITaskStatus: Renderer<CellProps<TypesAITask>> = ({ row }) => {
     <Layout.Horizontal spacing="small" flex={{ alignItems: 'center', justifyContent: 'start' }}>
       {!isRunning && <Circle height={10} width={10} color={color} fill={color} />}
       <Text {...customProps} color={Color.BLACK} font={{ weight: 'semi-bold' }}>
-        {getStatusText(state)}
+        {getStatusText(getString, state)}
       </Text>
     </Layout.Horizontal>
   )

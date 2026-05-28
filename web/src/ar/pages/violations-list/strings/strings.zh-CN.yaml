@@ -1,0 +1,91 @@
+page: 违规项s List Page
+noViolationsFound: No 违规项s Found
+evaluatedAt: Evaluated At {{value}}
+cards:
+  totalViolations: 总计 违规项s
+  blockedViolations: Blocked 违规项s
+  warningViolations: Warning 违规项s
+  dependencies: Dependencies
+table:
+  columns:
+    package: Dependency And 版本
+    registry: Upstream Proxy
+    policySet: Policy Set Violated
+    status: 状态
+    lastEvaluatedAt: Evaluated At
+    actions:
+      violationDetails: 违规项 详情
+violationDetailsModal:
+  title: 违规项 详情
+  basicInformationSection:
+    title: Basic In格式ion
+    packageName: Package 名称
+    version: 版本
+    upstreamProxy: Upstream Proxy
+    status: 状态
+    policySetViolated: Policy Set Violated
+  violatedPoliciesSection:
+    policySetViolated: Policy Set Violated
+    policiesViolated: Policies Violated
+    policyViolated: Policy Violated
+    policyName: 'Policy 名称: {{{policyName}}}'
+    category: Category
+    title: Violated Policies
+    ossRiskLevelViolation:
+      ossRiskLevel: OSS Risk Level
+    packageAgeViolation:
+      packageAgeThreshold: Package Age Threshold
+      publishedOn: Published On
+    licenseViolation:
+      allowedLicenses: Allowed Licenses
+      blockedLicense: Blocked License
+      packageLicense: Package License
+    securityViolation:
+      cveId: CVE ID
+      cvssScore: CVSS Score
+      cvssThreshold: CVSS Threshold
+  fixInformationSection:
+    title: Fix In格式ion
+    fixAvailable: Fix 可用
+    fixedVersion: Fixed 版本
+    currentVersion: Current 版本
+  evaluationDetailsSection:
+    title: Evaluation
+    firstDetected: First Detected
+    lastDetected: Last Detected
+  actions:
+    requestException: Request 豁免
+    reEvaluate: Re-Evaluate
+editExemptionForm:
+  title: 编辑 dependency exemption
+  subTitle: >-
+    豁免 allow temporary use of blocked dependencies when business-critical. When you submit a request, all users with the "豁免 Approver" role
+    will be notified. Any approver can review and act on your request.
+  actions:
+    submit: 保存 变更
+    cancel: 取消
+  toasters:
+    success: 豁免 request updated successfully
+    error: Failed to update exemption request
+createExemptionForm:
+  title: Request dependency exemption
+  subTitle: >-
+    豁免 allow temporary use of blocked dependencies when business-critical. When you submit a request, all users with the "豁免 Approver" role
+    will be notified. Any approver can review and act on your request.
+  basicInformationSection:
+    title: Basic In格式ion
+    packageName: Package 名称
+    version: 版本
+  exemptionDetailsAndJustificationSection:
+    title: 豁免 details and justification
+    exemptionDuration: 豁免 duration (in days)
+    businessJustification: Business justification
+    businessJustificationPlaceholder: Explain why this exemption is necessary for your operation
+    remediationPlan: Remediation plan
+    remediationPlanPlaceholder: Describe your plan to upgrade or replace the dependency
+  actions:
+    submit: Send 豁免 Request
+    cancel: 取消
+  toasters:
+    success: 豁免 request submitted successfully
+    error: Failed to submit exemption request

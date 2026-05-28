@@ -137,7 +137,9 @@ const GitspacesTabPanel: React.FC = () => {
   })
 
   const errorMessage =
-    error || settingsError ? error?.message || settingsError?.message || 'An error occurred' : undefined
+    error || settingsError
+      ? error?.message || settingsError?.message || getString('cde.usageDashboard.genericError')
+      : undefined
 
   const totalCount = pagination?.totalItems || 0
 

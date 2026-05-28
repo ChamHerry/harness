@@ -1,0 +1,28 @@
+page: アーティファクト 詳細 Page
+downloadsThisWeek: ダウンロードs This Week
+artifactLabelInputPlaceholder: タイプ input and hit enter
+labelsUpdated: アーティファクト labels updated successfully!
+totalDownloads: 合計 ダウンロードs
+createdAsyncDownloadRequest: ダウンロード request created successfully! Please do not close the window.
+artifactDeleted: Package deleted successfully!
+packageArchived: Package archived successfully!
+deleteModal:
+  title: 削除 Package
+  contentText: This action will delete package and all it's versions. Are you absolutely sure you want to proceed?
+  inputLabel: タイプ the package name to confirm
+  inputPlaceholder: Package 名前
+softDeleteModal:
+  title: 削除 Package
+  contentText: This action will delete package and all it's versions. You can still restore it from the deleted list.
+  inputLabel: タイプ the package name to confirm
+  inputPlaceholder: Package 名前
+  forceLabel: Permanently delete package and all it's versions.
+  forceSubText: This action will delete package and all it's versions permanently. You can not restore it back.
+restoreModal:
+  title: Restore Package
+  contentText: This action will restore package and all it's versions.
+  inputLabel: タイプ the package name to confirm
+  inputPlaceholder: Package 名前
+tabs:
+  versions: バージョン
+  properties: Properties

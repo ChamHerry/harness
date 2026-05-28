@@ -1,0 +1,38 @@
+page: 豁免 详情 Page
+exemptionId: '(豁免 ID: #{{ exemptionId}})'
+actions:
+  approve: Approve
+  reject: Reject
+cards:
+  section1:
+    title: Dependency In格式ion
+    packageName: Package name
+    versions: 版本s
+    upstreamProxy: Upstream proxy
+  section2:
+    title: 豁免 详情
+    requestedDate: Requested date
+    requestedBy: Requested by
+    duration: 豁免 duration
+    expirationDate: Expiration date
+    businessJustification: Business justification
+    remediationPlan: Remediation plan
+    notes: Approval/Rejection Notes
+approveModal:
+  title: Approve dependency exemption
+  content: 描述
+  inputLabel: Reason
+  placeholder: 类型 a reason here
+  submitButton: Approve
+  cancelButton: 取消
+rejectModal:
+  title: Reject dependency exemption
+  content: 描述
+  inputLabel: Reason
+  placeholder: 类型 a reason here
+  submitButton: Reject
+  cancelButton: 取消
+toasters:
+  exemptionApproved: 豁免 approved successfully
+  exemptionRejected: 豁免 rejected successfully
+  failedToUpdateStatus: Failed to update status

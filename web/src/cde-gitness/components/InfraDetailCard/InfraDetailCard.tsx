@@ -36,7 +36,7 @@ function InfraDetailCard({ infraDetails, regionCount, provider }: InfraDetailCar
       infraDetails?.metadata?.delegate_selectors?.map((d: { selector: string }) => d.selector) || []
 
     if (delegateSelectors.length === 0) {
-      return <Text className={css.noTagsMessage}>No delegate selectors selected</Text>
+      return <Text className={css.noTagsMessage}>{getString('cde.delegate.noDelegateSelectors')}</Text>
     }
 
     const displayTags = delegateSelectors.slice(0, 2)

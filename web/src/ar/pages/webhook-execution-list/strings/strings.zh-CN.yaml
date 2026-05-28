@@ -1,0 +1,19 @@
+retriggerExecution: Retrigger Execution
+retriggerExecutionSuccess: Retrigger execution successful
+table:
+  columns:
+    id: Execution ID
+    lastTriggered: Last Triggered
+    event: 事件
+    payload: Request Payload
+    response: Server Response
+    status: 状态
+executionDetailsDrawer:
+  triggeredEvent: Triggered 事件
+  at: At
+  duration: 持续时间
+  durationValue: '{{ duration }}s'
+  payload: Payload
+  response: '{{ $.webhookExecutionList.table.columns.response }}'
+  error: 错误
+  status: '{{ $.webhookExecutionList.table.columns.status }}'

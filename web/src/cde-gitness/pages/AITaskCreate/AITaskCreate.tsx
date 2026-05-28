@@ -223,17 +223,21 @@ const AITaskCreate = () => {
         {formik => {
           const errors = formik.errors || {}
           const missing: string[] = []
-          if (errors.gitspace_config_id) missing.push('Context')
-          if (errors.ai_agent) missing.push('AI agent')
-          if (errors.initial_prompt) missing.push('Initial prompt')
+          if (errors.gitspace_config_id) missing.push(getString('cde.aiTasks.create.context'))
+          if (errors.ai_agent) missing.push(getString('cde.aiTasks.create.aiAgent'))
+          if (errors.initial_prompt) missing.push(getString('cde.aiTasks.create.initialPrompt'))
 
           let errorMessage = ''
           if (missing.length === 1) {
-            errorMessage = `${missing[0]} is required`
+            errorMessage = getString('cde.aiTasks.create.requiredSingle', { field: missing[0] })
           } else if (missing.length === 2) {
-            errorMessage = `${missing[0]} and ${missing[1]} are required`
+            errorMessage = getString('cde.aiTasks.create.requiredTwo', { first: missing[0], second: missing[1] })
           } else if (missing.length === 3) {
-            errorMessage = `${missing[0]}, ${missing[1]} and ${missing[2]} are required`
+            errorMessage = getString('cde.aiTasks.create.requiredThree', {
+              first: missing[0],
+              second: missing[1],
+              third: missing[2]
+            })
           }
 
           return (

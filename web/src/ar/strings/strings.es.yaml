@@ -8,29 +8,105 @@ delete: Eliminar
 restore: Restaurar
 prod: Prod
 nonProd: No prod
+id: 'ID: {{ id }}'
+prodCount: '{{count}} Prod'
+nonProdCount: '{{count}} Non-Prod'
 copy: Copiar
 view: Ver
+metadata: Metadata
+customMetadata: Custom Metadata
+loadMore: Load More
+noMatchingFilterData: No se encontraron resultados que coincidan con los filtros
+stepNotFound: Step not found
+tabNotFound: Tab not found
+key: Clave
+value: Value
+properties: Properties
 search: Buscar
 copied: Copiado
 download: Descargar
 loading: Cargando...
-available: 'Disponibles({{count}})'
-deleted: 'Eliminados({{count}})'
-archived: 'Archivados({{count}})'
+addProperty: Add Property
+addMetadata: Add Metadata
+available: Disponibles({{count}})
+deleted: Eliminados({{count}})
+archived: Archivados({{count}})
+status:
+  available: Disponible
+  archived: Archived
+  blocked: Blocked
+  warning: Warning
+  passed: Passed
+  deleted: Eliminard
+scanCategory:
+  license: License
+  packageAge: Package Age
+  security: Security
+  ossRiskLevel: OSS Risk Level
+  unknown: Unknown
+dateLabel: Fecha
+timeLabel: Hora
+harnessAI: Harness AI
+new: NEW
+beta: BETA
+harLabel: '{{ $.repositoryList.artifactRegistry.label }}'
+na: N/A
+success: Success
+failed: Failed
+retriableError: Retriable Error
+unknown: Unknown
+cancel: Cancelar
+comingSoon: Coming Soon.
+soon: SOON
+failedToLoadData: No se pudieron cargar los datos. Inténtelo de nuevo.
+all: Todo
+noResultsFound: No se encontraron resultados
+optionalField: '{{name}} (Optional)'
+description: '{{ $.versionDetails.overview.generalInformation.description }}'
+tagsLabel: '{{ $.artifactList.table.columns.tags }}'
+plusNewName: + New {{name}}
+enterPlaceholder: Enter {{name}}
+descriptionPlaceholder: Enter Descripcion
+noDescription: No Descripcion
+noReadme: No Readme
 lastUpdated: Última actualización
 createdAt: Creado el
 modifiedAt: Modificado el
-all: Todo
-noResultsFound: No se encontraron resultados
-noMatchingFilterData: No se encontraron resultados que coincidan con los filtros
-failedToLoadData: No se pudieron cargar los datos. Inténtelo de nuevo.
+plaintext: Plain Text
+encrypted: Encrypted
+details: Detalles
+tags:
+  latest: LATEST
+  latestVersion: LATEST VERSION
+breadcrumbs:
+  repositories: '{{ $.repositoryList.pageHeading }}'
+  artifacts: '{{ $.artifactList.pageHeading }}'
+  upstreamProxies: '{{ $.repositoryDetails.repositoryForm.upstreamProxiesTitle }}'
+  exemptions: Exenciones
 actions:
   edit: Editar
   delete: '{{ $.delete }}'
   softDelete: Archivar
+  quarantine: Quarantine
   restore: Restaurar
+  scan: Scan
   setupClient: Configurar cliente
+  executions: Executions
+  copyCommand: Copiar Command
   deleteForce: Eliminar permanentemente
+  requestExemption: Request Exencion
+  editExemption: Editar Exencion
+cleanupPolicy:
+  name: Cleanup Policy Nombre
+  addBtn: Add Cleanup Policy
+  cleanUpByTagPrefixes: Cleanup by <b>Tag Prefixes</b>
+  cleanUpByVersionPrefixes: Cleanup by <b>Version Prefixes</b>
+  cleanUpByPackagePrefixes: Cleanup by <b>Package Prefixes</b>
+  cleanUpByArtifactsOlderThan: Cleanup by <b>Artefactos older than</b>
+  cleanUpByArtifactsOlderThanPlaceholder: Specify days
+  placeholder: specify $type prefix and press enter
+  addPattern: Add Pattern
+  infoMessage: Define the cleanup policy using the options below. Cleanup will occur when all the enabled options are met.
 packageTypes:
   dockerPackage: Paquete Docker
   helmPackage: Paquete Helm
@@ -46,7 +122,7 @@ packageTypes:
   huggingfacePackage: Paquete Huggingface
   condaPackage: Paquete Conda
   dartPackage: Paquete Dart
-  package: 'Paquete {{ name }}'
+  package: Paquete {{ name }}
 repositoryTypes:
   docker: Docker
   helm: Helm
@@ -67,7 +143,57 @@ repositoryTypes:
   conda: Conda
   dart: Dart
   composer: Composer
+sideNav:
+  repositories: '{{ $.repositoryList.pageHeading }}'
+  artifacts: '{{ $.artifactList.pageHeading }}'
+  upstreamProxies: '{{ $.repositoryDetails.repositoryForm.upstreamProxiesTitle }}'
 badges:
+  artifactRegistry: '{{ $.repositoryList.artifactRegistry.label }}'
+  upstreamProxy: '{{ $.repositoryList.upstreamProxy.label }}'
   projectScope: Proyecto
   orgScope: Organización
   accountScope: Cuenta
+  quarantined: Quarantined
+exemptionBadges:
+  approved: Approved
+  rejected: Rejected
+  pending: Pending
+  expired: Expired
+validationMessages:
+  required: Obligatorio
+  repokeyRegExMessage: Registry name must start with letter and can only contain lowercase alphanumerics, _, . and -
+  nameRequired: Nombre is obligatorio
+  identifierRequired: Identifier is obligatorio
+  cleanupPolicy:
+    nameRequired: Cleanup policy name is obligatorio
+    expireDaysRequired: Expire days is obligatorio
+    positiveExpireDays: Expire days must be greater than 0
+  urlRequired: URL is obligatorio
+  urlPattern: URL must be valid and start with https://
+  genericURLPattern: URL must be valid and start with http:// or https://
+  userNameRequired: Username is obligatorio
+  passwordRequired: Password is obligatorio
+  accessKeyRequired: Access key is obligatorio
+  secretKeyRequired: Secreto key is obligatorio
+  headerAlreadyExists: Header already exists
+  entityRequired: '{{entity}} is obligatorio'
+  stringMax: '{{entity}} must be 50 characters or less'
+  noNewLine: '{{entity}} cannot contain new lines'
+  uniqueValues: '{{entity}} must be unique'
+  equals: '{{{entity}}} must be equal to {{{value}}}'
+vulnerabilityStatus:
+  critical: C {{count}}
+  high: H {{count}}
+  medium: M {{count}}
+  low: L {{count}}
+labels:
+  title: Etiquetas
+  addLabel: Add Etiqueta
+  addNewValue: Add New Value
+  addNewValueDynamic: Add New Value {{value}}
+  findALabel: Find a Etiqueta
+  findAValue: Find a Value
+  findOrAddValue: Find or Add Value
+publicAccess:
+  oopsPageNotPublic: Oops! The page you are trying to access is not publico.
+  tryOtherOptions: You can try the following option instead to get back on track.

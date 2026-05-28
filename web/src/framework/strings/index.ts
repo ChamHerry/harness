@@ -18,5 +18,12 @@ export { useStrings, String } from './String'
 export type { UseStringsReturn } from './String'
 export { useStringsContext, StringsContext } from './StringsContext'
 export type { StringKeys } from './StringsContext'
-export { LOCALE_LABELS, SUPPORTED_LOCALES, resolveLocale, storeLocale, getStoredLocale, detectBrowserLanguage } from './languageLoader'
+export {
+  LOCALE_LABELS,
+  SUPPORTED_LOCALES,
+  resolveLocale,
+  storeLocale,
+  getStoredLocale,
+  detectBrowserLanguage
+} from './languageLoader'
 export type { LangLocale, LanguageRecord } from './languageLoader'

@@ -185,7 +185,7 @@ function AwsMachineModal({
                 <CustomInput
                   label={getString('cde.gitspaceInfraHome.diskSize')}
                   name="disk_size"
-                  placeholder="e.g 100"
+                  placeholder={getString('cde.gitspaceInfraHome.sizePlaceholder')}
                   type="text"
                   value={disk_size}
                   autoComplete="off"
@@ -214,7 +214,7 @@ function AwsMachineModal({
                 <CustomInput
                   label={getString('cde.gitspaceInfraHome.bootDiskSize')}
                   name="boot_size"
-                  placeholder="e.g 100"
+                  placeholder={getString('cde.gitspaceInfraHome.sizePlaceholder')}
                   type="text"
                   autoComplete="off"
                   value={boot_size}

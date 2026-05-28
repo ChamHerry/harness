@@ -39,7 +39,8 @@
     "services": "restful-react import --config restful-react.config.js",
     "postservices": "prettier --write src/services/**/*.tsx",
     "strings": "npm-run-all strings:*",
-    "strings:genTypes": "node scripts/strings/generateTypesCli.mjs"
+    "strings:genTypes": "node scripts/strings/generateTypesCli.mjs",
+    "strings:checkCoverage": "node scripts/strings/checkLocaleCoverage.cjs"
   },
   "dependencies": {
     "@blueprintjs/core": "3.26.1",

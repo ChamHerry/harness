@@ -1,0 +1,26 @@
+page: Exencion List Page
+cards:
+  totalExemptions: Total Exenciones
+  approvedExemptions: Approved Exenciones
+  rejectedExemptions: Rejected Exenciones
+  pendingExemptions: Pending Exenciones
+  expiredExemptions: Expired Exenciones
+noExemptionsFound: No exemptions found
+expireAfter: '{{ days }} days after approval'
+table:
+  columns:
+    packageName: Package Nombre
+    versions: Versiones
+    upstreamRegistry: Upstream Registry
+    requestedAt: Requested At
+    updatedAt: Actualizard At
+    expiresAt: Expires At
+    status: Estado
+  toasters:
+    exemptionDeleted: Exencion deleted successfully
+    exemptionDeleteError: Failed to delete exemption
+deleteModal:
+  title: Eliminar Exencion
+  contentText: Are you sure you want to delete this exemption?
+  inputPlaceholder: Tipo the package name to confirm
+  inputLabel: Package Nombre

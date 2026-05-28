@@ -32,6 +32,7 @@ import { Menu, MenuItem } from '@blueprintjs/core'
 import { defaultTo, omit } from 'lodash-es'
 import { useGetSpaceParam } from 'hooks/useGetSpaceParam'
 import { useStrings } from 'framework/strings'
+import type { StringKeys } from 'framework/strings'
 import { useAppContext } from 'AppContext'
 import { getErrorMessage } from 'utils/Utils'
 import { useFindGitspaceSettings } from 'services/cde'
@@ -60,6 +61,7 @@ import css from './GitspaceCreate.module.scss'
 
 export interface SCMType {
   name: string
+  labelKey: StringKeys
   value: EnumGitspaceCodeRepoType
   icon: string
 }
@@ -73,26 +75,96 @@ export interface RepoQueryParams {
 }
 
 export const scmOptions: SCMType[] = [
-  { name: 'Harness Code', value: EnumGitspaceCodeRepoType.HARNESS_CODE, icon: harnessCode },
-  { name: 'GitHub Cloud', value: EnumGitspaceCodeRepoType.GITHUB, icon: github },
-  { name: 'GitLab Cloud', value: EnumGitspaceCodeRepoType.GITLAB, icon: gitlab },
-  { name: 'Bitbucket', value: EnumGitspaceCodeRepoType.BITBUCKET, icon: bitbucket },
-  { name: 'Any public Git repository', value: EnumGitspaceCodeRepoType.UNKNOWN, icon: genericGit },
-  { name: 'Gitness', value: EnumGitspaceCodeRepoType.GITNESS, icon: gitnessIcon }
+  {
+    name: 'Harness Code',
+    labelKey: 'cde.create.scmOptions.harnessCode',
+    value: EnumGitspaceCodeRepoType.HARNESS_CODE,
+    icon: harnessCode
+  },
+  {
+    name: 'GitHub Cloud',
+    labelKey: 'cde.create.scmOptions.githubCloud',
+    value: EnumGitspaceCodeRepoType.GITHUB,
+    icon: github
+  },
+  {
+    name: 'GitLab Cloud',
+    labelKey: 'cde.create.scmOptions.gitlabCloud',
+    value: EnumGitspaceCodeRepoType.GITLAB,
+    icon: gitlab
+  },
+  {
+    name: 'Bitbucket',
+    labelKey: 'cde.create.scmOptions.bitbucket',
+    value: EnumGitspaceCodeRepoType.BITBUCKET,
+    icon: bitbucket
+  },
+  {
+    name: 'Any public Git repository',
+    labelKey: 'cde.create.scmOptions.anyPublicGitRepository',
+    value: EnumGitspaceCodeRepoType.UNKNOWN,
+    icon: genericGit
+  },
+  {
+    name: 'Gitness',
+    labelKey: 'cde.create.scmOptions.gitness',
+    value: EnumGitspaceCodeRepoType.GITNESS,
+    icon: gitnessIcon
+  }
 ]
 
 export const onPremSCMOptions: SCMType[] = [
-  { name: 'GitHub Enterprise', value: EnumGitspaceCodeRepoType.GITHUB_ENTERPRISE, icon: github },
-  { name: 'GitLab On-prem', value: EnumGitspaceCodeRepoType.GITLAB_ON_PREM, icon: gitlab },
-  { name: 'Bitbucket Server', value: EnumGitspaceCodeRepoType.BITBUCKET_SERVER, icon: bitbucket },
-  { name: 'Any public Git repository', value: EnumGitspaceCodeRepoType.UNKNOWN, icon: genericGit }
+  {
+    name: 'GitHub Enterprise',
+    labelKey: 'cde.create.scmOptions.githubEnterprise',
+    value: EnumGitspaceCodeRepoType.GITHUB_ENTERPRISE,
+    icon: github
+  },
+  {
+    name: 'GitLab On-prem',
+    labelKey: 'cde.create.scmOptions.gitlabOnPrem',
+    value: EnumGitspaceCodeRepoType.GITLAB_ON_PREM,
+    icon: gitlab
+  },
+  {
+    name: 'Bitbucket Server',
+    labelKey: 'cde.create.scmOptions.bitbucketServer',
+    value: EnumGitspaceCodeRepoType.BITBUCKET_SERVER,
+    icon: bitbucket
+  },
+  {
+    name: 'Any public Git repository',
+    labelKey: 'cde.create.scmOptions.anyPublicGitRepository',
+    value: EnumGitspaceCodeRepoType.UNKNOWN,
+    icon: genericGit
+  }
 ]
 
 export const scmOptionsCDE: SCMType[] = [
-  { name: 'Harness Code', value: EnumGitspaceCodeRepoType.HARNESS_CODE, icon: harnessCode },
-  { name: 'GitHub Cloud', value: EnumGitspaceCodeRepoType.GITHUB, icon: github },
-  { name: 'GitLab Cloud', value: EnumGitspaceCodeRepoType.GITLAB, icon: gitlab },
-  { name: 'Bitbucket', value: EnumGitspaceCodeRepoType.BITBUCKET, icon: bitbucket },
+  {
+    name: 'Harness Code',
+    labelKey: 'cde.create.scmOptions.harnessCode',
+    value: EnumGitspaceCodeRepoType.HARNESS_CODE,
+    icon: harnessCode
+  },
+  {
+    name: 'GitHub Cloud',
+    labelKey: 'cde.create.scmOptions.githubCloud',
+    value: EnumGitspaceCodeRepoType.GITHUB,
+    icon: github
+  },
+  {
+    name: 'GitLab Cloud',
+    labelKey: 'cde.create.scmOptions.gitlabCloud',
+    value: EnumGitspaceCodeRepoType.GITLAB,
+    icon: gitlab
+  },
+  {
+    name: 'Bitbucket',
+    labelKey: 'cde.create.scmOptions.bitbucket',
+    value: EnumGitspaceCodeRepoType.BITBUCKET,
+    icon: bitbucket
+  },
   ...onPremSCMOptions
 ]
 
@@ -151,6 +223,8 @@ export const CDECreateGitspace = () => {
   }, [suggestedName])
 
   const filteredIdeOptions = useFilteredIdeOptions(ideOptions, gitspaceSettings, getString)
+
+  const getSCMOptionName = (option?: SCMType): string => (option ? getString(option.labelKey) : '')
 
   const defaultIdeType = useMemo(() => {
     return filteredIdeOptions.length > 0 ? filteredIdeOptions[0].value : undefined
@@ -262,7 +336,7 @@ export const CDECreateGitspace = () => {
                               <Text font={{ variation: FontVariation.SMALL }}>
                                 {getString('cde.create.gitprovider')}
                               </Text>
-                              <Text>{defaultTo(scmOption?.name || {}, '')}</Text>
+                              <Text>{getSCMOptionName(scmOption)}</Text>
                             </Layout.Vertical>
                           </>
                         )}
@@ -272,14 +346,14 @@ export const CDECreateGitspace = () => {
                       <Menu>
                         {filteredSCMOptions.map(item => (
                           <MenuItem
-                            active={item.name === scmOption?.name}
+                            active={item.value === scmOption?.value}
                             key={item.name}
                             text={
                               <Layout.Horizontal
                                 spacing="large"
                                 flex={{ justifyContent: 'flex-start', alignItems: 'center' }}>
                                 <img height={24} width={24} src={item.icon} />
-                                <Text>{item.name}</Text>
+                                <Text>{getSCMOptionName(item)}</Text>
                               </Layout.Horizontal>
                             }
                             onClick={() => {
@@ -308,9 +382,9 @@ export const CDECreateGitspace = () => {
                       <Container padding="medium" background={Color.YELLOW_100} border={{ color: Color.YELLOW_400 }}>
                         <Layout.Vertical spacing="large">
                           <Text>
-                            {`Please Configure ${
-                              scmOption?.name || 'your Git provider'
-                            } OAuth to connect to the repositories you have access`}
+                            {getString('cde.create.configureOauthMessage', {
+                              provider: getSCMOptionName(scmOption) || getString('cde.create.yourGitProvider')
+                            })}
                           </Text>
                           <Button
                             width="250px"
@@ -326,9 +400,11 @@ export const CDECreateGitspace = () => {
                                 <Text>{getString('cde.create.githubOauthhelpertext3')}</Text>
                               </li>
                               <li>
-                                <Text>{`Under OAuth section, select ${
-                                  scmOption?.name || 'your Git provider'
-                                } and connect`}</Text>
+                                <Text>
+                                  {getString('cde.create.configureOauthStep', {
+                                    provider: getSCMOptionName(scmOption) || getString('cde.create.yourGitProvider')
+                                  })}
+                                </Text>
                               </li>
                               <li>
                                 <Text>{getString('cde.create.githubOauthhelpertext5')}</Text>

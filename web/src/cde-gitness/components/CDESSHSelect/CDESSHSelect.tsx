@@ -91,12 +91,12 @@ export const CDESSHSelect = ({ isEditMode = false, isFromUsageDashboard = false,
     ]
 
     return (
-      <Dialog isOpen onClose={hideModal} title="Add SSH Key" className={css.main}>
+      <Dialog isOpen onClose={hideModal} title={getString('cde.create.addSshKeyTitle')} className={css.main}>
         <Layout.Vertical spacing="large">
-          <Text margin="larg">Add an SSH key for secure access to Gitspaces via SSH.</Text>
+          <Text margin="larg">{getString('cde.create.addSshKeyDescription')}</Text>
           <Layout.Horizontal className={css.note} spacing="small">
             <Text icon="info-messaging" font="small" iconProps={{ size: 24 }}>
-              SSH key are used to connect securely to workspaces
+              {getString('cde.create.sshKeyUsageNote')}
             </Text>
             <Text
               font="small"
@@ -106,7 +106,7 @@ export const CDESSHSelect = ({ isEditMode = false, isFromUsageDashboard = false,
                 e.preventDefault()
                 window.open('https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key', '_blank')
               }}>
-              Learn how to create an SSH Key
+              {getString('cde.create.learnCreateSshKey')}
             </Text>
           </Layout.Horizontal>
           <Formik<{
@@ -153,7 +153,7 @@ export const CDESSHSelect = ({ isEditMode = false, isFromUsageDashboard = false,
             {formikProps => {
               return (
                 <FormikForm>
-                  <FormInput.Text name="sshKeyName" label="Key Name" />
+                  <FormInput.Text name="sshKeyName" label={getString('cde.create.keyName')} />
                   <FormInput.DropDown
                     items={expiryOptions}
                     name="expiry"
@@ -167,17 +167,17 @@ export const CDESSHSelect = ({ isEditMode = false, isFromUsageDashboard = false,
                     }}
                   />
                   <FormInput.TextArea
-                    placeholder={`Begins with 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'ssh-ed25519', 'sk-ecdsa-sha2-nistp256@openssh.com', or 'sk-ssh-ed25519@openssh.com'`}
+                    placeholder={getString('cde.create.sshKeyPlaceholder')}
                     name="sshKeyValue"
-                    label="SSH Key"
+                    label={getString('cde.create.sshKey')}
                     className={css.sshKeyValue}
                   />
                   <Layout.Horizontal spacing="large">
                     <Button variation={ButtonVariation.PRIMARY} type="submit">
-                      Add Key
+                      {getString('cde.create.addKey')}
                     </Button>
                     <Button onClick={hideModal} variation={ButtonVariation.TERTIARY}>
-                      Cancel
+                      {getString('cancel')}
                     </Button>
                   </Layout.Horizontal>
                 </FormikForm>
@@ -228,7 +228,11 @@ export const CDESSHSelect = ({ isEditMode = false, isFromUsageDashboard = false,
           </Layout.Vertical>
         </Layout.Horizontal>
       }
-      label={<Text icon={loading ? 'loading' : undefined}>{values?.ssh_token_identifier || 'Select SSH Key'}</Text>}
+      label={
+        <Text icon={loading ? 'loading' : undefined}>
+          {values?.ssh_token_identifier || getString('cde.create.selectSshKey')}
+        </Text>
+      }
       formikName="ssh_token_identifier"
       menu={
         <Container className={isEditMode ? css.editModal : undefined}>
@@ -272,7 +276,7 @@ export const CDESSHSelect = ({ isEditMode = false, isFromUsageDashboard = false,
                 openModal()
               }}
               className={css.addsshButton}>
-              Add SSH Key
+              {getString('cde.create.addSshKeyTitle')}
             </Button>
           </Menu>
         </Container>

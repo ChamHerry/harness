@@ -1,0 +1,26 @@
+page: 豁免 List Page
+cards:
+  totalExemptions: 总计 豁免s
+  approvedExemptions: Approved 豁免s
+  rejectedExemptions: Rejected 豁免s
+  pendingExemptions: Pending 豁免s
+  expiredExemptions: Expired 豁免s
+noExemptionsFound: No exemptions found
+expireAfter: '{{ days }} days after approval'
+table:
+  columns:
+    packageName: Package 名称
+    versions: 版本s
+    upstreamRegistry: Upstream Registry
+    requestedAt: Requested At
+    updatedAt: 更新d At
+    expiresAt: Expires At
+    status: 状态
+  toasters:
+    exemptionDeleted: 豁免 deleted successfully
+    exemptionDeleteError: Failed to delete exemption
+deleteModal:
+  title: 删除 豁免
+  contentText: Are you sure you want to delete this exemption?
+  inputPlaceholder: 类型 the package name to confirm
+  inputLabel: Package 名称

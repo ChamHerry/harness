@@ -1,8 +1,39 @@
+page: アーティファクト List Page
 pageHeading: アーティファクト
+deployedArtifacts: Deployed アーティファクト
+viewArtifactDetails: 表示 アーティファクト 詳細
 table:
+  noArtifactsTitle: There are no artifacts available.
+  noArchivedArtifactsTitle: There are no archived artifacts.
+  allRepositories: Registries
+  latestVersions: Latest バージョン
+  allVersions: All バージョン
   columns:
-    tags: タグ
-    repository: レジストリ
     name: 名前
+    artifactName: アーティファクト 名前
+    scanStatus: Evaluation ステータス
+    repository: レジストリ
+    tags: タグ
+    downloads: ダウンロードs
+    latestVersion: Latest バージョン
+    pullCommand: ダウンロード Command
+    environments: Environments
+    sto: Security Vulnerabilities
+    lastUpdated: アップロードed At
+    archivedAt: Archived At
+    size: サイズ
+    type: タイプ
+    version: Tags / バージョン
   actions:
+    editRepository: 編集 Registry
     deleteRepository: レジストリを削除
+    deleteArtifact: 削除
+    download: ダウンロード
+    archivePackage: Archive
+    restorePackage: Restore
+    VulnerabilityStatus:
+      scanned: Scanned
+      nonScanned: Not Scanned
+      scanStatus: Evaluation ステータス
+      partiallyScanned: '{{ scanned }}/{{ total }} Scanned'
+      digestMenuItemText: '{{archName}} (digest: {{digest}})'

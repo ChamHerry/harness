@@ -43,15 +43,15 @@ const GitspaceCreate = () => {
     return [
       {
         url: `/account/${accountIdentifier}/module/cde`,
-        label: `Account: ${accountInfo.name}`
+        label: getString('cde.accountWithName', { name: accountInfo.name })
       },
       {
         url: `/account/${accountIdentifier}/module/cde/orgs/${orgIdentifier}`,
-        label: `Organization: ${orgIdentifier}`
+        label: getString('cde.organizationWithName', { name: orgIdentifier })
       },
       {
         url: `/account/${accountIdentifier}/module/cde/orgs/${orgIdentifier}/projects/${projectIdentifier}`,
-        label: `Project: ${projectIdentifier}`
+        label: getString('cde.projectWithName', { name: projectIdentifier })
       },
       {
         url: routes.toCDEGitspaces({ space }),

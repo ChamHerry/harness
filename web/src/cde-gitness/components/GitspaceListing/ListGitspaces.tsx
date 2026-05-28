@@ -566,14 +566,14 @@ export const RenderActions = ({
         titleText={
           <Layout.Vertical flex={{ alignItems: 'self-start' }}>
             <img src={gitspaceIcon} height={44} />
-            <Text color={Color.BLACK} font="medium">{`Do you want to stop the Gitspace “${name}” ?`}</Text>
+            <Text color={Color.BLACK} font="medium">
+              {getString('cde.details.stopGitspaceConfirmTitle', { name })}
+            </Text>
           </Layout.Vertical>
         }
         contentText={
           <Container>
-            <Text margin={{ bottom: 'xxlarge' }}>
-              By clicking on “Stop Gitspace”, the gitspace will start de-provisioning.
-            </Text>
+            <Text margin={{ bottom: 'xxlarge' }}>{getString('cde.details.stopGitspaceConfirmMessage')}</Text>
             <Layout.Horizontal width="100%" flex={{ justifyContent: 'space-between', alignItems: 'self-start' }}>
               <Layout.Horizontal spacing="medium">
                 <Button
@@ -620,14 +620,14 @@ export const RenderActions = ({
         titleText={
           <Layout.Vertical flex={{ alignItems: 'self-start' }}>
             <img src={gitspaceIcon} height={44} />
-            <Text color={Color.BLACK} font="medium">{`Do you want to start the Gitspace “${name}” ?`}</Text>
+            <Text color={Color.BLACK} font="medium">
+              {getString('cde.details.startGitspaceConfirmTitle', { name })}
+            </Text>
           </Layout.Vertical>
         }
         contentText={
           <Container>
-            <Text margin={{ bottom: 'xxlarge' }}>
-              By clicking on “Start Gitspace”, the gitspace will start provisioning.
-            </Text>
+            <Text margin={{ bottom: 'xxlarge' }}>{getString('cde.details.startGitspaceConfirmMessage')}</Text>
             <Layout.Horizontal width="100%" flex={{ justifyContent: 'space-between', alignItems: 'self-start' }}>
               <Layout.Horizontal spacing="medium">
                 <Button
@@ -817,14 +817,14 @@ export const ListGitspaces = ({
         titleText={
           <Layout.Vertical flex={{ alignItems: 'self-start' }}>
             <img src={gitspaceIcon} height={44} />
-            <Text color={Color.BLACK} font="medium">{`Do you want to start the Gitspace “${currentRow?.name}” ?`}</Text>
+            <Text color={Color.BLACK} font="medium">
+              {getString('cde.details.startGitspaceConfirmTitle', { name: currentRow?.name })}
+            </Text>
           </Layout.Vertical>
         }
         contentText={
           <Container>
-            <Text margin={{ bottom: 'xxlarge' }}>
-              By clicking on “Start Gitspace”, the gitspace will start provisioning.
-            </Text>
+            <Text margin={{ bottom: 'xxlarge' }}>{getString('cde.details.startGitspaceConfirmMessage')}</Text>
             <Layout.Horizontal width="100%" flex={{ justifyContent: 'space-between', alignItems: 'self-start' }}>
               <Layout.Horizontal spacing="medium">
                 <Button

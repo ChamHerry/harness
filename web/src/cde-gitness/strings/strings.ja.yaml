@@ -1,29 +1,343 @@
+branchPlaceholder: ブランチ
 lastUsed: 最終使用
+introText1: Get ready to code in seconds
+introText2: Isolated cloud development environments with your favorite editor
+introText3: 接続 in seconds with a repository
+cloudDeveloperExperience: クラウド開発環境
+createGitspace: 作成 Gitspace
 deleteGitspace: Gitspace を削除
 resetGitspace: Gitspace をリセット
 reset: リセット
 editGitspace: Gitspace を編集
 viewGitspace: Gitspace 詳細を表示
+updateGitspace: 更新 Gitspace
 gitspaces: Gitspaces
+noRepo: Don’t have a Git repo?
+createRepo: 作成 a repo in Harness
 newGitspace: + 新しい Gitspace
 manageGitspaces: Gitspaces を管理
 noGitspaces: まだ Gitspace が作成されていません
+gitspaceDetail: Gitspace の詳細
+machine: マシン
+region: リージョン
+allRegionDisabled: All regions disabled
+or: OR
+logs: ログ
+noData: データなし
+changes: 変更
+noChange: No 変更
+hasChange: The Gitspace has changes
 used: 使用済み
 hours: 時間
 na: N/A
 retry: 再試行
+eventTimeline: イベント 時刻line
+cpu: CPU
+memory: メモリ
+disk: ディスク
 created: 作成済み
+edit: 編集
+account: アカウント
+accountWithName: 'アカウント: {{name}}'
+organization: 組織
+organizationWithName: '組織: {{name}}'
+projectWithName: 'プロジェクト: {{name}}'
+gitspaceNameFallback: Gitspace 名
+regionSelectWarning: 選択 a region first
+gitspaceUpdateSuccess: Gitspace updated successfully
+regionValidationMessage: リージョン is 必須
+repoValidationMessage: リポジトリ is 必須
+gitspaceNameValidation: New Gitspace name must not be blank
+gitspaceNameMaxLengthValidation: 名前 cannot exceed 32 characters
+gitspaceNameFormatValidation: 名前 can contain letters, numbers, hyphens, underscores, and spaces, and must start and end with a letter or number.
+branchValidationMessage: ブランチ is 必須
+machineValidationMessage: マシン タイプ is 必須
+sshValidationMessage: SSH キー is 必須
 startingGitspace: Gitspace を起動中
 stopingGitspace: Gitspace を停止中
+sessionDuration: Last 開始ed
+lastActivated: Last Activated
+deleteGitspaceTitle: 削除 Gitspace '{{name}}'
 deleteGitspaceText: この操作は元に戻せません。削除を続行してもよろしいですか？
+resetGitspaceTitle: リセット Gitspace '{{name}}'
 resetGitspaceText: この操作は元に戻せません。リセットを続行してもよろしいですか？
 resetGitspaceSuccess: Gitspace をリセットしました
 deleteSuccess: Gitspace を削除しました
+deleteInfraSuccess: Gitspace インフラストラクチャ deleted successfully
+deleteMachineSuccess: マシン type deleted successfully
+atleastOneRegion: Please add atleast one region
 repositoryAndBranch: リポジトリとブランチ
+importInto: インポート リポジトリ into Gitness
 status: ステータス
+getStarted: Get started with Gitspaces by
+createImport: creating or importing repositories
+regionAndMachineSize: リージョン & マシン サイズ
+copied: コピー済み
 id: ID
 project: プロジェクト
-account: アカウント
+gitspaceInfra: Gitspace インフラストラクチャ
+configureGCPInfra: 設定 GCP Infrastructure
+gcpInfrastructure: GCP Infrastructure
+gcpInfrastructureName: GCP Infrastructure 名前
+awsInfrastructure: AWS Infrastructure
+awsInfrastructureName: AWS Infrastructure 名前
+configureAWSInfra: 設定 AWS Infrastructure
+configureGitspaceInfra: 設定 Gitspace インフラストラクチャ
+settings:
+  saveSuccess: 設定 saved successfully
+  gitProviders: Git プロバイダーs
+  accessMethods: Access Methods
+  cloudRegionsAndMachineTypes: Cloud リージョン and マシン types
+  gitspaceImages: Gitspace イメージ
+  availableGitProviders: 利用可能 Git プロバイダーs
+  gitProvidersDescription: Customize which git provider you want to use
+  selectAllGitProviders: 選択 all git providers
+  availableCodeEditors: 利用可能 Access Methods
+  codeEditorsDescription: Limit the editors and access methods available for Gitspace creation
+  selectAllCodeEditors: 選択 All Access Methods
+  images:
+    manageGitspaceImages: Manage Gitspace イメージ
+    manageGitspaceImagesDescription: Customize which images will be available while creating Gitspaces
+    defaultGitspaceImage: Default Gitspace イメージ
+    defaultImageDescription: >-
+      By default, the image of every new Gitspace created is provided by Harness or the one which is mentioned in the repository used for
+      creating Gitspace. This setting allows you to set a default image path which all newly created Gitspaces can use.
+    provideDefaultImage: Provide Default イメージ
+    provideDefaultImagePathOrRegistry: Provide default イメージ パス or Registry
+    selectImageRegistryAccessType: 選択 イメージ Registry Access タイプ
+    public: 公開
+    publicRegistryDescription: Use 公開ly available container images
+    private: プライベート
+    privateRegistryDescription: Use プライベート registry with authenticated access
+    selectImageRegistryConnector: 選択 イメージ Registry 接続or
+    selectConnector: '-選択 接続or-'
+    imageRegistryOrPath: イメージ Registry or パス
+    imagePath: イメージ パス
+    apply: 適用
+    cancel: キャンセル
+    allowedImagePathsAndRegistries: Allowed イメージ パスs and Registries
+    allowedImagePathsDescription: >-
+      By default, if the repository contains an image path then it will use that image path to create the Gitspace. You can restrict by
+      specifying which image paths and registries are allowed to create Gitspace.
+    imagePathPlaceholder: Enter image path or registry
+    newImagePath: + New イメージ パス
+    artifactRegistryConnector: アーティファクトレジストリ 接続or
+    defaultPathToPrivateGitspaceImagePath: Default パス to プライベート Gitspace イメージ パス
+    defaultPathToPublicGitspaceImagePath: Default パス to 公開 Gitspace イメージ パス
+  providers:
+    github: GitHub
+    gitlab: GitLab
+    bitbucket: Bitbucket
+    other: Other
+  editors:
+    vsCode: By Microsoft
+    jetbrains: By JetBrains
+    aiNative: AI Native IDEs
+  other: Other
+  regions:
+    availableCloudRegions: 利用可能 Cloud リージョン
+    availableCloudRegionsDesc: Customize which cloud regions will be available while creating Gitspaces
+    regionsAvailable: regions available
+    selectRegionsDesc: 選択 which regions and machines will be available to create a Gitspace
+    region: リージョン
+    machinesSelected: machines selected
+    selectMachineTypes: 選択 which machine types will be available to create a Gitspace
+    selectAllMachineTypes: 選択 all machine types
+delegate:
+  DelegateSelector: Delegate 選択or
+  delegateSelectorTags: Delegate 選択or Tags
+  noDelegateSelectors: No delegate selectors selected
+gitspaceInfraHome:
+  minMessage: '{{field}} should contain minimum {{count}} characters'
+  maxMessage: '{{field}} should not contain more than {{count}} characters'
+  minNumber: '{{field}} should be greater than {{count}}'
+  configureGCPButton: 設定 GCP infrastructure
+  configureAWSButton: 設定 AWS infrastructure
+  gatewayGroupName: ゲートウェイ Group 名前
+  gatewayGroupHealth: ゲートウェイ Group Health
+  gatewayInstanceName: ゲートウェイ インスタンス 名前
+  gatewayversionnumber: ゲートウェイ version number
+  description: 設定 an infrastructure with locations and machines to be used as one of the infrastructure while creating a Gitspace
+  gcpSupportText: Currently we support GCP based infrastructure only.
+  learnMore: Learn more about Gitspace インフラストラクチャ
+  infraDetails: Infrastructure details
+  status: ステータス
+  lastHeartbeat: Last Heartbeat
+  zoneDetails: ゾーン 詳細
+  noZonesAvailable: No zones available
+  waitingForConnection: Waiting for 接続ion
+  waitingMessage: It takes around 3-5 minutes to connect to the infrastructure. If it takes longer, please follow the
+  troubleshoot: troubleshoot guidelines
+  locationAndMachine: Locations and machines
+  regionsAndMachines: リージョン and machines
+  locationDetails: Location details
+  healthy: HEALTHY
+  unhealthy: UNHEALTHY
+  unknown: UNKNOWN
+  region: リージョン
+  locationName: リージョン 名前
+  defaultSubnet: Default subnet IP range
+  proxySubnet: Proxy subnet IP range
+  dnsManagedZone: DNS managed zone
+  envoyHealth: Envoy health
+  configureVMRunnerImage: VM Runner 詳細
+  configureVMRunnerImageNote: 設定 the region and zone of the VM runner image.
+  machineImageName: マシン イメージ 名前
+  machineImageNamePlaceholder: Enter machine image name
+  machineImageNameRequired: マシン イメージ 名前 is 必須
+  runnerVMRegion: リージョン
+  runnerVMZone: Availability ゾーン
+  locationRequired: Location is 必須
+  invalidCidrFormat: 無効 CIDR 形式
+  defaultSubnetRequired: Default サブネット is 必須
+  proxySubnetRequired: Proxy サブネット is 必須
+  domainRequired: ドメイン is 必須
+  editRegion: 編集 リージョン
+  defaultSubnetPlaceholder: e.g 10.6.0.0/16
+  proxySubnetPlaceholder: e.g 10.3.0.0/16
+  domainPlaceholder: e.g us-west-ga.io
+  sizePlaceholder: e.g 100
+  invalidImageNameFormat: 無効 image name 形式
+  machines: マシン
+  machine: マシン
+  diskType: Persistent ディスク タイプ
+  bootType: Boot サイズ タイプ
+  diskSize: Persistent ディスク サイズ (in GB)
+  persistentDisk: Persistent ディスク
+  bootSizeColumn: Boot サイズ
+  bootDisk: Boot ディスク
+  bootDiskType: Boot ディスク タイプ
+  bootDiskSize: Boot ディスク サイズ (in GB)
+  bootSize: Boot サイズ (in GB)
+  cpu: CPU (in Cores)
+  memoryInGb: メモリ (in GB)
+  newMachine: New マシン
+  newRegion: New リージョン
+  noRegionConfigured: No regions configured
+  noRegionConfiguredText: 設定 a new region to let users create a Gitspace
+  addnewRegion: Add New リージョン
+  machineType: マシン タイプ
+  zone: ゾーン
+  diskSizeMessage: Persistent ディスク サイズ is 必須
+  zoneMessage: ゾーン is 必須
+  diskTypeMessage: Persistent ディスク タイプ is 必須
+  bootTypeMessage: Boot サイズ タイプ is 必須
+  bootSizeMessage: Boot サイズ is 必須
+  cpuMessage: CPU is 必須
+  memoryMessage: メモリ is 必須
+  createNewMachine: 作成 a new machine type
+  deleteMachineTitle: 削除 “{{name}}” machine type?
+  addMachineNote: You can add machines once the infrastructure is connected.
+  noMachineAvailable: No machines available
+  addMachineType: Add machine types to make the region available for use
+  operatingSystem: Operating System
+  architecture: Architecture
+  osRequired: Operating system is 必須
+  architectureRequired: Architecture is 必須
+  machineName: マシン 名前
+  nameMessage: 名前 is 必須
+  domainMessage: ドメイン is 必須
+  machineTypeMessage: マシン type is 必須
+  instanceTypeMessage: インスタンス type is 必須
+  instanceMessage: インスタンス is 必須
+  dangerZone: Danger ゾーン
+  deleteThisInfra: 削除 this infrastructure
+  deleteWarning: Once you delete the infra, there is no going back. Please be certain
+  deleteInfraText: This action cannot be undone. Are you sure you want to proceed to delete?
+  deleteInfraTitle: 削除 this infrastructure?
+  create: 作成
+configureInfra:
+  project: GCP プロジェクト
+  configure: 設定
+  learnMoreAboutHybrid: Learn more about hybrid infra
+  gatewayImageName: ゲートウェイ マシン イメージ 名前
+  machineImageName: マシン イメージ 名前
+  gatewayDetails: ゲートウェイ 詳細
+  vmRunnerDetails: VM Runner 詳細
+  gatewayImageNamePlaceholder: Enter gateway image name
+  gatewayImageNameRequired: ゲートウェイ イメージ 名前 is 必須
+  configureZones: 設定 ゾーン
+  newZone: New ゾーン
+  updateTime: Last 更新d
+  provideInfraDetails: Provide Infrastructure 詳細
+  downloadAndApply: ダウンロード and 適用 YAML
+  downloadInfraYaml: ダウンロード Infra YAML
+  yamlNotAvailable: YAML not available yet
+  yamlLoading: 読み込み中...
+  applyYamlAndVerifyConnection: 適用 YAML and Verify 接続ion
+  basicDetails: Basic 詳細
+  learnMore: Learn More
+  cancel: キャンセル
+  id: Id
+  NumberOfInstance: Number of ゲートウェイ インスタンスs
+  infraName: Infrastructure 名前
+  name: 名前
+  domain: ドメイン
+  subdomain: Subdomain
+  gateway: ゲートウェイ
+  numberOfInstance: Number of インスタンスs
+  numberOfLocations: Number of Locations
+  machineType: マシン タイプ
+  gatewayMachineType: ゲートウェイ マシン タイプ
+  configureLocations: 設定 リージョン
+  configureLocationNote: Users will only be able to host gitspaces in these regions only.
+  gatewayNoteText: More number of instances better reliability of running the Gitspace. However more number of instances incur more costs
+  basicNoteText: The domain on which all the gitspaces created by this infra will be accessible
+  defaultImageNoteText: If not specified, Harness will use a default image name
+  instanceNoteText: >-
+    To ensure better availability, we recommend running more than one instance. If you don’t specify a number, 3 instances will be created
+    by default.
+Aws:
+  title: AWS
+  VpcCidrBlock: VPC CIDR Block
+  domainExample: e.g. gitspace.harness.io
+  instanceName: インスタンス 名前
+  instanceType: インスタンス タイプ
+  privateSubnetCidr: プライベート サブネット CIDR
+  publicSubnetCidr: 公開 サブネット CIDR
+  gatewayInstanceType: ゲートウェイ インスタンス タイプ
+  configureRegionsAndZones: 設定 リージョン and ゾーン
+  regionConfigNote: Once the region is configured, you can't change the AWS region selection, sub-domain and configured zones. You can add only one region.
+  gatewayAmi: ゲートウェイ AMI
+  gatewayAmiId: ゲートウェイ AMI ID
+  gatewayAmiIdPlaceholder: ゲートウェイ AMI ID を入力
+  gatewayAmiIdRequired: ゲートウェイ AMI ID は必須です
+  gatewayAmiImage: ゲートウェイ AMI イメージ
+  runnerAmiId: Runner AMI ID
+  runnerAmiIdPlaceholder: Enter Runner AMI ID
+  runnerAmiIdRequired: Runner AMI ID is 必須
+  machineAmiId: マシン AMI ID
+  machineAmiIdPlaceholder: Enter マシン AMI ID
+  machineAmiIdRequired: マシン AMI ID is 必須
+  invalidAmiIdFormat: 無効 AMI ID 形式
+  availabilityZone: Availability ゾーン
+  numberOfAvailabilityZone: '# of Availability ゾーン'
+  privateSubnet: プライベート サブネット CIDR Block
+  publicSubnet: 公開 サブネット CIDR Block
+  privateSubnetRequired: プライベート サブネット is 必須
+  publicSubnetRequired: 公開 サブネット is 必須
+  minZonesRequired: At least 2 zones are 必須
+  configureNewRegion: 設定 New リージョン
+  selectAwsRegion: 選択 AWS リージョン
+  selectZone: 選択 zone
+  selectRegionFirst: 選択 region first
+  subnetPlaceholder: 10.0.1.0/24
+  domainPlaceholder: us-west
+  numberOfRegions: Number of リージョン
+  singleRegionRestriction: AWS infrastructure is currently restricted to a single region.
+downloadAndApplySection:
+  title: ダウンロード and apply YAML to terraform module
+  back: Back
+  done: 完了
+  downloadYaml: ダウンロード YAML
+  downloadGeneratedYaml: ダウンロード the generated YAML file
+  applyYamlText: 適用 the YAML in the terraform module and run following commands
+sshSelect:
+  30days: 30 Days
+  90days: 90 Days
+  180days: 180 Days
+  noexpiration: No Expiration
+  deleteToken: 削除 SSH トークン '{{name}}'
 homePage:
   start: 開始
   noSetupRequired: セットアップ不要
@@ -41,6 +355,167 @@ listing:
   cleaning: クリーンアップ中
   ownerAndCreated: 所有者と作成日時
   infrastructureDetails: インフラ詳細
+create:
+  repositoryDetails: リポジトリの詳細
+  gitnessRepositories: Harness リポジトリ
+  thirdPartyGitRepositories: Other 公開 Git リポジトリ
+  branchPlaceholder: Enter the ブランチ name
+  selectBranchPlaceholder: 選択 branch
+  searchRepositoryPlaceholder: 検索 for a repository
+  searchBranchPlaceholder: 検索 for a branch
+  repoNotFound: 作成 a repo <strong>{{repo}}</strong>
+  gitspaceNameLabel: Gitspace 名
+  gitspaceNamePlaceholder: Provide name
+  gitspaceNameHelpertext1: Great Gitspace names are short and memorable. Need some inspiration?
+  gitspaceNameHelpertext2: 'Try this:'
+  sshKey: SSH キー
+  gitspaceSSHAddNote: There are no keys configured. Please add an SSH key.
+  gitspaceSSHhelpertext1: By default we will create the SSH key used to login to the Gitspace.
+  gitspaceSSHhelpertext2: You can add keys under Preferences in User 設定.
+  gitspaceCreateSuccess: Gitspace created successfully
+  gitspaceCreateFailed: Gitspace creation failed
+  infraProviderSuccess: Gitspace インフラストラクチャ created successfully
+  infraProviderFailed: Gitspace インフラストラクチャ creation failed
+  machineCreateSuccess: マシン created successfully
+  machineCreateFailed: マシン creation failed
+  gitprovider: Git プロバイダー
+  infraProviderType: Infra プロバイダー タイプ
+  infraProviderTypeText: Your Gitspace will run on the selected infra provider type
+  machineType: マシン タイプ
+  region: リージョン
+  regionText: Your Gitspace will run in the selected region
+  machineTypeNote: Resources for your Gitspace
+  scmEmpty: All SCM options are disabled
+  ideEmpty: All IDEs disabled
+  selectGitProvider: 選択 a Git プロバイダー
+  githubOauthhelpertext2: 設定 the OAuth in Profile
+  githubOauthhelpertext3: Visit the User Profile 設定.
+  githubOauthhelpertext5: After configuring return back to this page to connect the プライベート repositories
+  ideNote: Your Gitspace will open in the selected IDE to code
+  selectIde: 選択 an IDE
+  scmOptions:
+    harnessCode: Harness Code
+    githubCloud: GitHub Cloud
+    gitlabCloud: GitLab Cloud
+    bitbucket: Bitbucket
+    anyPublicGitRepository: Any 公開 Git repository
+    gitness: Gitness
+    githubEnterprise: GitHub Enterprise
+    gitlabOnPrem: GitLab On-prem
+    bitbucketServer: Bitbucket Server
+  yourGitProvider: Git プロバイダー
+  configureOauthMessage: アクセス可能なリポジトリに接続するには {{provider}} OAuth を設定してください
+  configureOauthStep: OAuth セクションで {{provider}} を選択して接続してください
+  repositoryUrlOrNamePlaceholder: URL を入力するかリポジトリ名を入力
+  fetchingRepositories: リポジトリを取得中
+  noRepositoriesFound: リポジトリが見つかりません
+  branchNamePlaceholder: ブランチ名を入力
+  fetchingBranches: ブランチを取得中
+  noBranchesFound: ブランチが見つかりません
+  invalidUrlFormat: URL 形式が無効です
+  addSshKeyTitle: SSH キーを追加
+  addSshKeyDescription: SSH 経由で Gitspaces に安全にアクセスするための SSH キーを追加します。
+  sshKeyUsageNote: SSH キーはワークスペースへ安全に接続するために使用されます
+  learnCreateSshKey: SSH キーの作成方法を見る
+  keyName: キー名
+  sshKeyPlaceholder: >-
+    Begins with 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'ssh-ed25519',
+    'sk-ecdsa-sha2-nistp256@openssh.com', or 'sk-ssh-ed25519@openssh.com'
+  addKey: キーを追加
+  selectSshKey: SSH キーを選択
+  subtext: 開始 Coding, no setup 必須. Dedicated cloud development environments with your favorite editor.
+  importWarning: >-
+    Currently we support only third party 公開 repositories. In order to use a プライベート git repository, please import the repository into
+    Gitness.
+  unsaved:
+    title: Unsaved 変更
+    message: You have unsaved changes, On switching all unsaved changes will be lost
+update:
+  infraProviderFailed: Gitspace インフラストラクチャ updation failed
+  infraProviderSuccess: Gitspace インフラストラクチャ updated successfully
+  editGitspace: 編集 Gitspace
+  updateGitspace: 更新 Gitspace
+  gitspaceUpdateSuccess: Gitspace updated successfully
+  gitspaceUpdateFailed: Failed to update gitspace
+  allMachineDisabled: All machines disabled
+  errorChosenIDE: Chosen IDE has been disabled by the admin. Please choose a different one.
+  errorAllIDE: All IDEs have been disabled by the admin. Cannot update the gitspace.
+  errorAllResources: Admin has disabled all available machine resources for this gitspace. Cannot update the gitspace.
+  gitspaceUpdateNote: Your changes won't be lost by updating the IDE or machine type. Your Gitspace has to be restarted after the update.
+usageDashboard:
+  title: 使用量 ダッシュボード
+  usageTab: 使用量
+  gitspacesTab: Gitspaces
+  comingSoon: Coming Soon
+  searchOrgPlaceholder: 検索 組織...
+  searchProjectPlaceholder: 検索 プロジェクト...
+  searchPlaceholder: 検索 Gitspaces...
+  projects: プロジェクト
+  organizations: 組織
+  loadMore: Load More
+  clearAll: Clear All
+  allProjects: All プロジェクト
+  noResultsFound: 結果が見つかりません
+  tryDifferentKeywords: Try different keywords
+  loading: 読み込み中...
+  sortBy: Sort By
+  total: 合計
+  genericError: エラーが発生しました
+aiTasks:
+  tasks: タスク
+  status:
+    running: Running
+    completed: Completed
+    error: エラー
+    uninitialized: Uninitialized
+  create:
+    createTask: 作成 タスク
+    welcome: Hello {{userName}}, What are we coding next?
+    selectedGitspace: 選択ed Gitspace
+    addContext: Add コンテキスト
+    selectActiveGitspace: 選択 an active Gitspace
+    createTaskNote: Tackle bugs, small feature request, and any other software engineering tasks, with direct export to any Git tool
+    selectContext: 選択 コンテキスト
+    runTask: Run タスク
+    startWithActiveGitspace: 開始 with an active Gitspace
+    loadingGitspaces: 読み込み中 Gitspaces
+    promptPlaceholder: Enter the initial prompt ...
+    aiTaskCreateSuccess: AI task created successfully
+    aiTaskCreateFailed: Failed to create AI task
+    noGitspacesFound: No active Gitspaces found
+    claudeAI: Claude AI
+    selectAIAgent: 選択 AI agent
+    context: コンテキスト
+    aiAgent: AI agent
+    initialPrompt: Initial prompt
+    requiredSingle: '{{field}} は必須です'
+    requiredTwo: '{{first}} と {{second}} は必須です'
+    requiredThree: '{{first}}、{{second}}、{{third}} は必須です'
+  listing:
+    contextDetails: コンテキスト 詳細
+    noTasksFound: No タスク Found
+    aiAgents: AI Agents
+    aiAgent: AI Agent
+    newTask: New タスク
+  errorCard:
+    title: There has been an error in running the task
+  details:
+    claudeAgentLabel: Claude Agent
+    waitingForAgent: Waiting for agent response
+    responseError: An error occurred while generating the response
+    errorFallback: タスク failed during agent execution. Please check the Gitspace ログ for details.
+    openIde: 開く IDE
+    ideTooltip:
+      taskError: '{{ide}} can’t be opened because the task encountered an error.'
+      gitspaceInactive: '{{ide}} can’t be opened because the Gitspace isn’t active. 開始 the Gitspace and try again.'
+      taskWaiting: Setting things up. {{ide}} will be available once the task finishes.
+    aiUsageMetrics: AI 使用量 Metrics
+    duration: 期間 (seconds)
+    totalCost: 合計 Cost (USD)
+    inputTokens: Input トークンs
+    outputTokens: Output トークンs
+    llmModels: LLM Models
+    noModels: モデルなし
 details:
   actions: その他の操作
   openCursor: Cursor を開く
@@ -50,11 +525,87 @@ details:
   openJetBrain: JetBrains Gateway を開く
   goToDashboard: ダッシュボードへ移動
   startGitspace: Gitspace を開始
+  stopProvising: 停止 Provising
+  noData: データなし for Gitspace
+  gitspaceActivity: Gitspace アクティビティ
+  provisioningGitspace: Provisioning the Gitspace...
+  gitspaceStopped: Gitspace is stopped
+  gitspaceRunning: Gitspace is running
   stopGitspace: Gitspace を停止
+  fetchingGitspace: 取得中 Gitspace の詳細
+  fetchingLogs: 取得中 gitspace logs
+  logsFailed: Gitspace ログ api failed
+  noLogsFound: No gitspace logs found
+  wrongIdentifier: 無効 gitspace id or project params
+  fetchingDetails: 取得中 Gitspace イベントs ....
+  containerLogs: Container ログ
+  containerLogsSubText: ログ showing activity inside container
+  initialise: 初期化
+  startGitspaceConfirmTitle: Gitspace “{{name}}” を開始しますか？
+  startGitspaceConfirmMessage: 「Gitspace を開始」をクリックすると、Gitspace のプロビジョニングが開始されます。
+  stopGitspaceConfirmTitle: Gitspace “{{name}}” を停止しますか？
+  stopGitspaceConfirmMessage: 「Gitspace を停止」をクリックすると、Gitspace のデプロビジョニングが開始されます。
+  provisioningTooltipTitle: Gitspace をプロビジョニング中です
+  provisioningTooltipMessage: '{{ide}} を起動できるまで数分お待ちください'
+sshDetails:
+  connectWithSSH: 接続 with SSH
+  connectViaSSH: 接続 via SSH
+  congratsText: 🎉 Congratulations — your Gitspace is now active! To start using it, connect it with your SSH
+  step1: 開く Terminal
+  step2: コピー and execute the command
+  step3: Wait for few minutes while the IDE gets connected to the Gitspace
+  done: 完了
+  sshDisabledText: 接続 with SSH has been disabled by your administrator
+  sshDisabledVSCodeWeb1: 接続 With SSH is unavailable for VSCode Web
+  sshDisabledVSCodeWeb2: To enable SSH, edit your Gitspace and
+  sshDisabledVSCodeWeb3: 選択 a different IDE.
+  commandUnavailable: SSH コマンドを利用できません
+repository:
+  repo: リポジトリ
+  selectRepository: 選択 リポジトリ
+  pasteRepo: Paste a Git URL to create Gitspace
+  pasterRepoSubtext: You can use any 公開 Git repository to create a Gitspace
+  privateRepoWarning: Repo URL is of プライベート repository
+  publicRepo: You can use any 公開 Git repository to create a Gitspace
+  continueWith: Continue with
+  repositoryURL: リポジトリ URL
 ide:
+  browser: VS Code Browser
+  desktop: VS Code Desktop
+  intellij: IntelliJ IDEA
+  goland: GoLand
+  webstorm: WebStorm
+  clion: CLion
+  phpstorm: PhpStorm
+  rubymine: RubyMine
+  pycharm: PyCharm
+  rider: Rider
+  windsurf: Windsurf
+  cursor: Cursor
+  bymircosoft: By Microsoft
+  byjetbrain: By JetBrains
+  byainative: AI Native IDEs
+  title: IDE
+  selectIDE: 選択 IDE
+  vsCode: VS Code
   openVSCode: VS Code Desktop で開く
   openBrowser: ブラウザで開く
   errorEmptyURL: ベース URL が設定されていません。更新して再試行してください
+regionMachineType: リージョン & マシン タイプ
+infraProvider: Infra プロバイダー
+minuteUsage: Minute 使用量
+renewsEveryMonth: Renews 1st of every month
+remainingOfTotal: remaining of <strong>{{total}}</strong>
+renewTooltip:
+  line1: With our beta plan, you receive 2,000 free minutes of Gitspace usage each month.
+  line2: These minutes automatically renew every 30 days, resetting on the 1st of each month.
+  haveQuestion: Have questions ?
+  contactUs: Contact Us
+changesTooltip:
+  description: You can monitor updates to your Gitspaces using this flag. If there are active changes, this status updates to “Has 変更”.
+  learnMore: Learn more about Gitspace changes
+lastUsedTooltip: 時刻stamp indicating when the Gitspace was last used.
+lastStartedTooltip: 時刻stamp indicating when the Gitspace was most recently started.
 lastStarted: 最終起動
 gitspaceStatus:
   active: アクティブ
@@ -66,3 +617,10 @@ gitspaceOwners:
   myGitspaces: 自分の Gitspaces
 sortBy: 並べ替え
 total: 合計
+errorCard:
+  title: There has been an error in running the Gitspace
+  viewLog: 表示 Container ログ
+  retryGitspace: 再試行 starting Gitspace
+  learnMore: Learn more in Docs
+  unabletoResolve: Unable to resolve?
+  contactUs: Contact Us

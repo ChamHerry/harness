@@ -1,0 +1,28 @@
+page: Artefacto Detalles Page
+downloadsThisWeek: Descargars This Week
+artifactLabelInputPlaceholder: Tipo input and hit enter
+labelsUpdated: Artefacto labels updated successfully!
+totalDownloads: Total Descargars
+createdAsyncDownloadRequest: Descargar request created successfully! Please do not close the window.
+artifactDeleted: Package deleted successfully!
+packageArchived: Package archived successfully!
+deleteModal:
+  title: Eliminar Package
+  contentText: This action will delete package and all it's versions. Are you absolutely sure you want to proceed?
+  inputLabel: Tipo the package name to confirm
+  inputPlaceholder: Package Nombre
+softDeleteModal:
+  title: Eliminar Package
+  contentText: This action will delete package and all it's versions. You can still restore it from the deleted list.
+  inputLabel: Tipo the package name to confirm
+  inputPlaceholder: Package Nombre
+  forceLabel: Permanently delete package and all it's versions.
+  forceSubText: This action will delete package and all it's versions permanently. You can not restore it back.
+restoreModal:
+  title: Restore Package
+  contentText: This action will restore package and all it's versions.
+  inputLabel: Tipo the package name to confirm
+  inputPlaceholder: Package Nombre
+tabs:
+  versions: Versiones
+  properties: Properties

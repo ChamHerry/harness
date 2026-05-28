@@ -1,3 +1,11 @@
+page: Digest List Page
 table:
+  noDigestTitle: No Digest
+  aboutDigest: No Digest available.
   columns:
+    digest: Digest
+    osArch: OS/Arch
     size: Tamaño
+    uploadedBy: Subired At
+    downloads: Descargars
+    scanStatus: Scan Estado

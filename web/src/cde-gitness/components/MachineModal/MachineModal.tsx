@@ -174,7 +174,7 @@ function MachineModal({
                 <CustomInput
                   label={getString('cde.gitspaceInfraHome.diskSize')}
                   name="disk_size"
-                  placeholder="e.g 100"
+                  placeholder={getString('cde.gitspaceInfraHome.sizePlaceholder')}
                   type="text"
                   value={disk_size}
                   autoComplete="off"
@@ -203,7 +203,7 @@ function MachineModal({
                 <CustomInput
                   label={getString('cde.gitspaceInfraHome.bootSize')}
                   name="boot_size"
-                  placeholder="e.g 100"
+                  placeholder={getString('cde.gitspaceInfraHome.sizePlaceholder')}
                   type="text"
                   autoComplete="off"
                   value={boot_size}

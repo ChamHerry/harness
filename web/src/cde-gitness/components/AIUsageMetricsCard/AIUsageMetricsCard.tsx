@@ -31,7 +31,7 @@ export const AIUsageMetricsCard: React.FC<AIUsageMetricsCardProps> = ({ metric }
 
   const renderModelTags = (): JSX.Element => {
     if (llmModels.length === 0) {
-      return <Text className={css.noModelsMessage}>No models</Text>
+      return <Text className={css.noModelsMessage}>{getString('cde.aiTasks.details.noModels')}</Text>
     }
 
     const displayTags = llmModels.slice(0, 1)

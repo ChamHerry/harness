@@ -1,0 +1,91 @@
+page: Incumplimientos List Page
+noViolationsFound: No Incumplimientos Found
+evaluatedAt: Evaluated At {{value}}
+cards:
+  totalViolations: Total Incumplimientos
+  blockedViolations: Blocked Incumplimientos
+  warningViolations: Warning Incumplimientos
+  dependencies: Dependencies
+table:
+  columns:
+    package: Dependency And Version
+    registry: Upstream Proxy
+    policySet: Policy Set Violated
+    status: Estado
+    lastEvaluatedAt: Evaluated At
+    actions:
+      violationDetails: Incumplimiento Detalles
+violationDetailsModal:
+  title: Incumplimiento Detalles
+  basicInformationSection:
+    title: Basic Informatoion
+    packageName: Package Nombre
+    version: Version
+    upstreamProxy: Upstream Proxy
+    status: Estado
+    policySetViolated: Policy Set Violated
+  violatedPoliciesSection:
+    policySetViolated: Policy Set Violated
+    policiesViolated: Policies Violated
+    policyViolated: Policy Violated
+    policyName: 'Policy Nombre: {{{policyName}}}'
+    category: Category
+    title: Violated Policies
+    ossRiskLevelViolation:
+      ossRiskLevel: OSS Risk Level
+    packageAgeViolation:
+      packageAgeThreshold: Package Age Threshold
+      publishedOn: Published On
+    licenseViolation:
+      allowedLicenses: Allowed Licenses
+      blockedLicense: Blocked License
+      packageLicense: Package License
+    securityViolation:
+      cveId: CVE ID
+      cvssScore: CVSS Score
+      cvssThreshold: CVSS Threshold
+  fixInformationSection:
+    title: Fix Informatoion
+    fixAvailable: Fix Disponible
+    fixedVersion: Fixed Version
+    currentVersion: Current Version
+  evaluationDetailsSection:
+    title: Evaluation
+    firstDetected: First Detected
+    lastDetected: Last Detected
+  actions:
+    requestException: Request Exencion
+    reEvaluate: Re-Evaluate
+editExemptionForm:
+  title: Editar dependency exemption
+  subTitle: >-
+    Exencion allow temporary use of blocked dependencies when business-critical. When you submit a request, all users with the "Exencion
+    Approver" role will be notified. Any approver can review and act on your request.
+  actions:
+    submit: Guardar Cambios
+    cancel: Cancelar
+  toasters:
+    success: Exencion request updated successfully
+    error: Failed to update exemption request
+createExemptionForm:
+  title: Request dependency exemption
+  subTitle: >-
+    Exencion allow temporary use of blocked dependencies when business-critical. When you submit a request, all users with the "Exencion
+    Approver" role will be notified. Any approver can review and act on your request.
+  basicInformationSection:
+    title: Basic Informatoion
+    packageName: Package Nombre
+    version: Version
+  exemptionDetailsAndJustificationSection:
+    title: Exencion details and justification
+    exemptionDuration: Exencion duration (in days)
+    businessJustification: Business justification
+    businessJustificationPlaceholder: Explain why this exemption is necessary for your operation
+    remediationPlan: Remediation plan
+    remediationPlanPlaceholder: Describe your plan to upgrade or replace the dependency
+  actions:
+    submit: Send Exencion Request
+    cancel: Cancelar
+  toasters:
+    success: Exencion request submitted successfully
+    error: Failed to submit exemption request

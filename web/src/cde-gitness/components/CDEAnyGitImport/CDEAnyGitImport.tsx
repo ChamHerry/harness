@@ -33,6 +33,7 @@ import {
 import { useQueryParams } from 'hooks/useQueryParams'
 import { isValidUrl, getRepoIdFromURL, getRepoFromURL } from 'cde-gitness/utils/SelectRepository.utils'
 import { useAppContext } from 'AppContext'
+import { useStrings } from 'framework/strings'
 import { GitspaceSelect } from '../GitspaceSelect/GitspaceSelect'
 import css from './CDEAnyGitImport.module.scss'
 
@@ -42,6 +43,7 @@ enum RepoCheckStatus {
 }
 
 export const CDEAnyGitImport = () => {
+  const { getString } = useStrings()
   const repoQueryParams = useQueryParams<RepoQueryParams>()
   const { hooks } = useAppContext()
   const { getRepoURLPromise, useGetPaginatedListOfReposByRefConnector, useGetPaginatedListOfBranchesByRefConnector } =
@@ -262,7 +264,7 @@ export const CDEAnyGitImport = () => {
                 <TextInput
                   inputRef={ref => (repoRef.current = ref)}
                   value={searchTerm}
-                  placeholder="enter url or type repo name"
+                  placeholder={getString('cde.create.repositoryUrlOrNamePlaceholder')}
                   onChange={async event => {
                     const target = event.target as HTMLInputElement
                     setSearchTerm(target?.value?.trim() || '')
@@ -298,7 +300,7 @@ export const CDEAnyGitImport = () => {
             renderMenu={
               <Menu style={{ maxHeight: 300 }}>
                 {loading || repoLoading || onPremRepoLoading ? (
-                  <MenuItem text={<Text>Fetching Repositories</Text>} />
+                  <MenuItem text={<Text>{getString('cde.create.fetchingRepositories')}</Text>} />
                 ) : repoOptions?.length ? (
                   repoOptions?.map(item => {
                     return (
@@ -367,7 +369,7 @@ export const CDEAnyGitImport = () => {
                     )
                   })
                 ) : (
-                  <MenuItem text={<Text>No Repositories Found</Text>} />
+                  <MenuItem text={<Text>{getString('cde.create.noRepositoriesFound')}</Text>} />
                 )}
               </Menu>
             }
@@ -381,7 +383,7 @@ export const CDEAnyGitImport = () => {
                 <TextInput
                   inputRef={ref => (branchRef.current = ref)}
                   value={searchBranch}
-                  placeholder="enter branch name"
+                  placeholder={getString('cde.create.branchNamePlaceholder')}
                   onChange={async event => {
                     const target = event.target as HTMLInputElement
                     setSearchBranch(target?.value?.trim() || '')
@@ -409,7 +411,7 @@ export const CDEAnyGitImport = () => {
             renderMenu={
               <Menu style={{ maxHeight: 300 }}>
                 {loading || branchLoading || scmbranchLoading ? (
-                  <MenuItem text={<Text>Fetching Branches</Text>} />
+                  <MenuItem text={<Text>{getString('cde.create.fetchingBranches')}</Text>} />
                 ) : branchOptions?.length ? (
                   branchOptions?.map(item => {
                     return (
@@ -429,7 +431,7 @@ export const CDEAnyGitImport = () => {
                     )
                   })
                 ) : (
-                  <MenuItem text={<Text>No Branches Found</Text>} />
+                  <MenuItem text={<Text>{getString('cde.create.noBranchesFound')}</Text>} />
                 )}
               </Menu>
             }

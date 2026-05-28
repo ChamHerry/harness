@@ -31,16 +31,16 @@ interface NewRegionModalProps {
 
 type NewRegionModalForm = regionProp
 
-const validationSchema = () =>
+const validationSchema = (getString: ReturnType<typeof useStrings>['getString']) =>
   Yup.object().shape({
-    location: Yup.string().required('Location is required'),
+    location: Yup.string().required(getString('cde.gitspaceInfraHome.locationRequired')),
     defaultSubnet: Yup.string()
-      .matches(cidrRegex({ exact: true }), 'Invalid CIDR format')
-      .required('Default Subnet is required'),
+      .matches(cidrRegex({ exact: true }), getString('cde.gitspaceInfraHome.invalidCidrFormat'))
+      .required(getString('cde.gitspaceInfraHome.defaultSubnetRequired')),
     proxySubnet: Yup.string()
-      .matches(cidrRegex({ exact: true }), 'Invalid CIDR format')
-      .required('Proxy Subnet is required'),
-    domain: Yup.string().required('Domain is required')
+      .matches(cidrRegex({ exact: true }), getString('cde.gitspaceInfraHome.invalidCidrFormat'))
+      .required(getString('cde.gitspaceInfraHome.proxySubnetRequired')),
+    domain: Yup.string().required(getString('cde.gitspaceInfraHome.domainRequired'))
   })
 
 const NewRegionModal = ({
@@ -94,9 +94,9 @@ const NewRegionModal = ({
       isOpen={isOpen}
       onClose={() => setIsOpen(false)}
       width={800}
-      title={isEditMode ? 'Edit Region' : getString('cde.gitspaceInfraHome.newRegion')}>
+      title={isEditMode ? getString('cde.gitspaceInfraHome.editRegion') : getString('cde.gitspaceInfraHome.newRegion')}>
       <Formik<NewRegionModalForm>
-        validationSchema={validationSchema()}
+        validationSchema={validationSchema(getString)}
         onSubmit={formValues => {
           const fullDomain = formValues.domain ? `${formValues.domain}.${values.domain}` : values.domain
           onSubmit({
@@ -118,15 +118,15 @@ const NewRegionModal = ({
                 options={regionOptions}
                 error={formikProps.errors.location}
                 disabled={isEditMode}
-                // placeholder="e.g us-west1"
+                // placeholder={getString('cde.gitspaceInfraHome.locationPlaceholder')}
               />
               <FormInput.Text
-                placeholder="e.g 10.6.0.0/16"
+                placeholder={getString('cde.gitspaceInfraHome.defaultSubnetPlaceholder')}
                 name="defaultSubnet"
                 label={getString('cde.gitspaceInfraHome.defaultSubnet')}
               />
               <FormInput.Text
-                placeholder="e.g 10.3.0.0/16"
+                placeholder={getString('cde.gitspaceInfraHome.proxySubnetPlaceholder')}
                 name="proxySubnet"
                 label={getString('cde.gitspaceInfraHome.proxySubnet')}
               />
@@ -136,7 +136,7 @@ const NewRegionModal = ({
                 </Text>
                 <Container className={css.inputContainer}>
                   <Container className={css.inputWrapper}>
-                    <FormInput.Text name="domain" placeholder="e.g us-west-ga.io" />
+                    <FormInput.Text name="domain" placeholder={getString('cde.gitspaceInfraHome.domainPlaceholder')} />
                     <span className={css.domainSuffix}>.{values?.domain}</span>
                   </Container>
                 </Container>

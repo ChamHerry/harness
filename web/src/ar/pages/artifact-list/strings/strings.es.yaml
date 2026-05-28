@@ -1,8 +1,39 @@
+page: Artefacto List Page
 pageHeading: Artefactos
+deployedArtifacts: Deployed Artefactos
+viewArtifactDetails: Ver Artefacto Detalles
 table:
+  noArtifactsTitle: There are no artifacts available.
+  noArchivedArtifactsTitle: There are no archived artifacts.
+  allRepositories: Registries
+  latestVersions: Latest Versiones
+  allVersions: All Versiones
   columns:
-    tags: Etiquetas
-    repository: Registro
     name: Nombre
+    artifactName: Artefacto Nombre
+    scanStatus: Evaluation Estado
+    repository: Registro
+    tags: Etiquetas
+    downloads: Descargars
+    latestVersion: Latest Version
+    pullCommand: Descargar Command
+    environments: Environments
+    sto: Security Vulnerabilities
+    lastUpdated: Subired At
+    archivedAt: Archived At
+    size: Tamano
+    type: Tipo
+    version: Tags / Version
   actions:
+    editRepository: Editar Registry
     deleteRepository: Eliminar registro
+    deleteArtifact: Eliminar
+    download: Descargar
+    archivePackage: Archive
+    restorePackage: Restore
+    VulnerabilityStatus:
+      scanned: Scanned
+      nonScanned: Not Scanned
+      scanStatus: Evaluation Estado
+      partiallyScanned: '{{ scanned }}/{{ total }} Scanned'
+      digestMenuItemText: '{{archName}} (digest: {{digest}})'

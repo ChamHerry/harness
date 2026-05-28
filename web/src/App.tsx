@@ -72,7 +72,9 @@ const App: React.FC<AppProps> = React.memo(function App({
         setStrings(stringsMap)
       }
     })
-    return () => { cancelled = true }
+    return () => {
+      cancelled = true
+    }
   }, [activeLocale])
 
   const handleLocaleChange = useCallback((newLocale: LangLocale) => {

@@ -1,3 +1,11 @@
+page: 摘要 List Page
 table:
+  noDigestTitle: No 摘要
+  aboutDigest: No 摘要 available.
   columns:
+    digest: 摘要
+    osArch: OS/Arch
     size: 大小
+    uploadedBy: 上传ed At
+    downloads: 下载s
+    scanStatus: Scan 状态

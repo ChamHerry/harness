@@ -82,7 +82,11 @@ export default function TestWrapper(props: PropsWithChildren<TestWrapperProps>) 
           isCurrentSessionPublic,
           accountInfo
         }}>
-        <StringsContextProvider initialStrings={stringsData as any} getString={getString} locale={lang} setLocale={() => {}}>
+        <StringsContextProvider
+          initialStrings={stringsData as any}
+          getString={getString}
+          locale={lang}
+          setLocale={() => {}}>
           <RestfulProvider base="/">
             <IconoirProvider
               iconProps={{

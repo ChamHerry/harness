@@ -12,10 +12,7 @@ const DISPLAY_LOCALES: LangLocale[] = ['en', 'zh-CN', 'es', 'ja']
 export function LanguageSelector(props: LanguageSelectorProps): React.ReactElement {
   const { locale, setLocale } = useStringsContext()
 
-  const items = useMemo(
-    () => DISPLAY_LOCALES.map(l => ({ value: l, label: LOCALE_LABELS[l] })),
-    []
-  )
+  const items = useMemo(() => DISPLAY_LOCALES.map(l => ({ value: l, label: LOCALE_LABELS[l] })), [])
 
   const handleChange = (newLocale: LangLocale) => {
     storeLocale(newLocale)

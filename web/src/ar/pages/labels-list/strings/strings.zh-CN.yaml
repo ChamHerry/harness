@@ -1,0 +1,37 @@
+table:
+  newLabel: New 标签
+  noData: There are no labels available.
+  columns:
+    name: 名称
+    scope: 创建d In
+    description: 描述
+    associations: Associations
+  actions:
+    delete: 删除
+    edit: 编辑
+deleteLabelModal:
+  title: 删除 标签
+  contentText: Are you sure you want to delete the label?
+  labelDeleted: 标签 deleted successfully!
+createLabelModal:
+  title: 创建 标签
+  actions:
+    create: 创建
+    cancel: 取消
+  labelCreated: 标签 created successfully!
+updateLabelModal:
+  title: 更新 标签
+  actions:
+    update: 更新
+    cancel: 取消
+  labelUpdated: 标签 updated successfully!
+labelForm:
+  name: 标签 名称
+  description: 描述
+  values: 标签 Value/s (Optional)
+  dynamic: Allow users to add values
+  preview: 标签 Preview
+  value: Value
+  newValue: Add Value
+defaultLabelName: 标签 名称
+canbeAddedByUsers: '*can be added by users*'

@@ -1,0 +1,51 @@
+page: Upstream Porxy 详情
+form:
+  title: Upstream Proxy Definition
+createForm:
+  title: 创建 a New Upstream Proxy
+  packageType: Package 类型
+  key: Upstream Proxy 密钥
+  url: Remote Registry URL
+  urlPlaceholder: Specify URL
+  customRegistrySuffix: Custom Registry Suffix
+  customRegistrySuffixPlaceholder: Specify Custom Registry Suffix
+  source:
+    title: Source
+    dockerHub: Docker Hub
+    ecr: AWS ECR
+    custom: Custom
+    mavenCentral: Maven Central
+    npmjs: npmjs
+    pypi: PyPI
+    nugetOrg: NuGet.org
+    crates: Crates.io
+    goproxy: GoProxy
+    huggingface: Huggingface
+    bioconda: Bioconda
+    pubdev: Pub.dev
+    packagist: Packagist
+  authentication:
+    title: Authentication
+    userNameAndPassword: Username and Password
+    accessKeyAndSecretKey: Access 密钥 and 密钥 密钥
+    anonymous: Anonymous
+    anonymousSubLabel: (No credentials 必填)
+    username: Username
+    password: Password
+    secretKey: 密钥 密钥
+    accessKey: Access 密钥
+  create: 创建 Upstream Proxy
+editForm:
+  title: 更新 Upstream Proxy
+  update: '{{ $.upstreamProxyDetails.editForm.title }}'
+  enterpriseAdvancedOptionsSubTitle: 配置 {{entities}} for the 制品仓库.
+actions:
+  delete:
+    title: 删除 Upstream Registry
+    contentText: This action will delete registry and all it's images and versions. Are you absolutely sure you want to proceed?
+    repositoryDeleted: Upstream registry deleted successfully
+    inputLabel: 类型 the registry name or ID to confirm
+    inputPlaceholder: Registry 名称 or ID
+  createUpdateModal:
+    createSuccessMessage: Upstream proxy created successfully
+    updateSuccessMessage: Upstream proxy updated successfully
