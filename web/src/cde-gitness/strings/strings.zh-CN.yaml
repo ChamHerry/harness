@@ -67,7 +67,7 @@ deleteInfraSuccess: Gitspace 基础设施 deleted successfully
 deleteMachineSuccess: 机器 type deleted successfully
 atleastOneRegion: Please add atleast one region
 repositoryAndBranch: 仓库和分支
-importInto: 导入 仓库 into Gitness
+importInto: 将仓库导入 Gitness
 status: 状态
 getStarted: Get started with Gitspaces by
 createImport: creating or importing repositories
@@ -424,7 +424,7 @@ create:
   addKey: 添加密钥
   selectSshKey: 选择 SSH 密钥
   subtext: 启动 Coding, no setup 必填. Dedicated cloud development environments with your favorite editor.
-  importWarning: Currently we support only third party 公开 repositories. In order to use a 私有 git repository, please import the repository into Gitness.
+  importWarning: 目前仅支持第三方公开仓库。如需使用私有 Git 仓库，请先
   unsaved:
     title: Unsaved 变更
     message: You have unsaved changes, On switching all unsaved changes will be lost
