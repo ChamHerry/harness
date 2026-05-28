@@ -35,6 +35,7 @@ const (
 	spaceKey
 	repoKey
 	requestIDKey
+	localeKey
 )
 
 // WithAuthSession returns a copy of parent in which the principal
@@ -124,4 +125,13 @@ func RequestIDFrom(ctx context.Context) (string, bool) {
 
 func WithRequestIDSSH(parent ssh.Context, v string) {
 	ssh.Context.SetValue(parent, requestIDKey, v)
+}
+
+func WithLocale(parent context.Context, locale string) context.Context {
+	return context.WithValue(parent, localeKey, locale)
+}
+
+func LocaleFrom(ctx context.Context) string {
+	v, _ := ctx.Value(localeKey).(string)
+	return v
 }

@@ -21,93 +21,71 @@ import (
 )
 
 var (
-	// ErrInternal is returned when an internal error occurred.
-	ErrInternal = New(http.StatusInternalServerError, "Internal error occurred")
+	ErrInternal = NewCode(http.StatusInternalServerError, "internal_error", "Internal error occurred")
 
-	// ErrInvalidToken is returned when the api request token is invalid.
-	ErrInvalidToken = New(http.StatusUnauthorized, "Invalid or missing token")
+	ErrInvalidToken = NewCode(http.StatusUnauthorized, "invalid_token", "Invalid or missing token")
 
-	// ErrBadRequest is returned when there was an issue with the input.
-	ErrBadRequest = New(http.StatusBadRequest, "Bad Request")
+	ErrBadRequest = NewCode(http.StatusBadRequest, "bad_request", "Bad Request")
 
-	// ErrUnauthorized is returned when the acting principal is not authenticated.
-	ErrUnauthorized = New(http.StatusUnauthorized, "Unauthorized")
+	ErrUnauthorized = NewCode(http.StatusUnauthorized, "unauthorized", "Unauthorized")
 
-	// ErrForbidden is returned when the acting principal is not authorized.
-	ErrForbidden = New(http.StatusForbidden, "Forbidden")
+	ErrForbidden = NewCode(http.StatusForbidden, "forbidden", "Forbidden")
 
-	// ErrNotFound is returned when a resource is not found.
-	ErrNotFound = New(http.StatusNotFound, "Not Found")
+	ErrNotFound = NewCode(http.StatusNotFound, "not_found", "Not Found")
 
-	// ErrPreconditionFailed is returned when a precondition failed.
-	ErrPreconditionFailed = New(http.StatusPreconditionFailed, "Precondition failed")
+	ErrPreconditionFailed = NewCode(http.StatusPreconditionFailed, "precondition_failed", "Precondition failed")
 
-	// ErrNotMergeable is returned when a branch can't be merged.
-	ErrNotMergeable = New(http.StatusPreconditionFailed, "Branch can't be merged")
+	ErrNotMergeable = NewCode(http.StatusPreconditionFailed, "not_mergeable", "Branch can't be merged")
 
-	// ErrNoChange is returned when no change was found based on the request.
-	ErrNoChange = New(http.StatusBadRequest, "No Change")
+	ErrNoChange = NewCode(http.StatusBadRequest, "no_change", "No Change")
 
-	// ErrDuplicate is returned when a resource already exits.
-	ErrDuplicate = New(http.StatusConflict, "Resource already exists")
+	ErrDuplicate = NewCode(http.StatusConflict, "duplicate", "Resource already exists")
 
-	// ErrPrimaryPathCantBeDeleted is returned when trying to delete a primary path.
-	ErrPrimaryPathCantBeDeleted = New(http.StatusBadRequest, "The primary path of an object can't be deleted")
+	ErrPrimaryPathCantBeDeleted = NewCode(http.StatusBadRequest, "primary_path_cant_be_deleted", "The primary path of an object can't be deleted")
 
-	// ErrPathTooLong is returned when an action would lead to a path that is too long.
-	ErrPathTooLong = New(http.StatusBadRequest, "The resource path is too long")
+	ErrPathTooLong = NewCode(http.StatusBadRequest, "path_too_long", "The resource path is too long")
 
-	// ErrCyclicHierarchy is returned if the action would create a cyclic dependency between spaces.
-	ErrCyclicHierarchy = New(http.StatusBadRequest,
+	ErrCyclicHierarchy = NewCode(http.StatusBadRequest, "cyclic_hierarchy",
 		"Unable to perform the action as it would lead to a cyclic dependency")
 
-	// ErrSpaceWithChildsCantBeDeleted is returned if the principal is trying to delete a space that
-	// still has child resources.
-	ErrSpaceWithChildsCantBeDeleted = New(http.StatusBadRequest,
+	ErrSpaceWithChildsCantBeDeleted = NewCode(http.StatusBadRequest, "space_has_children",
 		"Space can't be deleted as it still contains child resources")
 
-	// ErrDefaultBranchCantBeDeleted is returned if the user tries to delete the default branch of a repository.
-	ErrDefaultBranchCantBeDeleted = New(http.StatusBadRequest, "The default branch of a repository can't be deleted")
+	ErrDefaultBranchCantBeDeleted = NewCode(http.StatusBadRequest, "default_branch_cant_be_deleted", "The default branch of a repository can't be deleted")
 
-	// ErrPullReqRefsCantBeModified is returned if a user tries to tinker with a pull request git ref.
-	ErrPullReqRefsCantBeModified = New(http.StatusBadRequest, "The pull request git refs can't be modified")
+	ErrPullReqRefsCantBeModified = NewCode(http.StatusBadRequest, "pullreq_refs_cant_be_modified", "The pull request git refs can't be modified")
 
-	// ErrRequestTooLarge is returned if the request it too large.
-	ErrRequestTooLarge = New(http.StatusRequestEntityTooLarge, "The request is too large")
+	ErrRequestTooLarge = NewCode(http.StatusRequestEntityTooLarge, "request_too_large", "The request is too large")
 
-	// ErrWebhookNotRetriggerable is returned if the webhook can't be retriggered.
-	ErrWebhookNotRetriggerable = New(http.StatusMethodNotAllowed,
+	ErrWebhookNotRetriggerable = NewCode(http.StatusMethodNotAllowed, "webhook_not_retriggerable",
 		"The webhook execution is incomplete and can't be retriggered")
 
-	// ErrCodeOwnersNotFound is returned when codeowners file is not found.
-	ErrCodeOwnersNotFound = New(http.StatusNotFound, "CODEOWNERS file not found")
+	ErrCodeOwnersNotFound = NewCode(http.StatusNotFound, "codeowners_not_found", "CODEOWNERS file not found")
 
-	// ErrResponseNotFlushable is returned if the response writer doesn't implement http.Flusher.
-	ErrResponseNotFlushable = New(http.StatusInternalServerError, "Response not streamable")
+	ErrResponseNotFlushable = NewCode(http.StatusInternalServerError, "response_not_streamable", "Response not streamable")
 
-	// ErrResourceLocked is returned if the resource is locked.
-	ErrResourceLocked = New(
-		http.StatusLocked,
+	ErrResourceLocked = NewCode(
+		http.StatusLocked, "resource_locked",
 		"The requested resource is temporarily locked, please retry the operation.",
 	)
 
-	// ErrEmptyRepoNeedsBranch is returned if no branch found on the githook post receieve for empty repositories.
-	ErrEmptyRepoNeedsBranch = New(http.StatusBadRequest,
+	ErrEmptyRepoNeedsBranch = NewCode(http.StatusBadRequest, "empty_repo_needs_branch",
 		"Pushing to an empty repository requires at least one branch with commits.")
 
-	// ErrGitLFSDisabled is returned if the Git LFS is disabled but LFS endpoint is requested.
-	ErrGitLFSDisabled = New(http.StatusBadRequest, "Git LFS is disabled")
+	ErrGitLFSDisabled = NewCode(http.StatusBadRequest, "git_lfs_disabled", "Git LFS is disabled")
 
-	ErrQuarantinedArtifact = New(http.StatusForbidden, "Artifact is quarantined")
+	ErrQuarantinedArtifact = NewCode(http.StatusForbidden, "artifact_quarantined", "Artifact is quarantined")
 
-	ErrArtifactBlocked = New(http.StatusForbidden, "Artifact is blocked due to policy violations")
+	ErrArtifactBlocked = NewCode(http.StatusForbidden, "artifact_blocked", "Artifact is blocked due to policy violations")
 )
 
 // Error represents a json-encoded API error.
 type Error struct {
-	Status  int            `json:"-"`
-	Message string         `json:"message"`
-	Values  map[string]any `json:"values,omitempty"`
+	Status          int            `json:"-"`
+	Code            string         `json:"code,omitempty"`
+	Message         string         `json:"message"`
+	LocalizedMessage string        `json:"localized_message,omitempty"`
+	Values          map[string]any `json:"values,omitempty"`
 }
 
 func (e *Error) Error() string {
@@ -117,6 +95,11 @@ func (e *Error) Error() string {
 // New returns a new user facing error.
 func New(status int, message string) *Error {
 	return &Error{Status: status, Message: message}
+}
+
+// NewCode returns a new user facing error with a machine-readable code.
+func NewCode(status int, code, message string) *Error {
+	return &Error{Status: status, Code: code, Message: message}
 }
 
 // Newf returns a new user facing error.

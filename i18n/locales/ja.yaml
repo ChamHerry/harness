@@ -1,0 +1,29 @@
+Internal error occurred: 内部エラーが発生しました
+Invalid or missing token: 無効または欠落しているトークン
+Bad Request: 不正なリクエスト
+Unauthorized: 認証されていません
+Forbidden: アクセスが禁止されています
+Not Found: 見つかりません
+Precondition failed: 前提条件が失敗しました
+Branch can't be merged: ブランチをマージできません
+No Change: 変更なし
+Resource already exists: リソースはすでに存在します
+The primary path of an object can't be deleted: オブジェクトのプライマリパスは削除できません
+The resource path is too long: リソースパスが長すぎます
+Unable to perform the action as it would lead to a cyclic dependency: 循環依存が発生するため操作を実行できません
+Space can't be deleted as it still contains child resources: 子リソースが含まれているためスペースを削除できません
+The default branch of a repository can't be deleted: リポジトリのデフォルトブランチは削除できません
+The pull request git refs can't be modified: プルリクエストのGit参照は変更できません
+The request is too large: リクエストが大きすぎます
+The webhook execution is incomplete and can't be retriggered: Webhookの実行が不完全で再トリガーできません
+CODEOWNERS file not found: CODEOWNERSファイルが見つかりません
+Response not streamable: レスポンスはストリーミングできません
+The requested resource is temporarily locked, please retry the operation.: 要求されたリソースは一時的にロックされています。操作を再試行してください。
+Pushing to an empty repository requires at least one branch with commits.: 空のリポジトリへのプッシュにはコミットを含むブランチが少なくとも1つ必要です。
+Git LFS is disabled: Git LFSは無効です
+Artifact is quarantined: アーティファクトは検疫されています
+Artifact is blocked due to policy violations: ポリシー違反のためアーティファクトがブロックされています
+Public access on resources is not allowed.: リソースへのパブリックアクセスは許可されていません。
+The request is too large. maximum allowed size is %d bytes: リクエストが大きすぎます。最大許容サイズは%dバイトです
+license expired.: ライセンスの有効期限が切れています。
+license not found.: ライセンスが見つかりません。

@@ -1,0 +1,29 @@
+Internal error occurred: 内部错误
+Invalid or missing token: 无效或缺失令牌
+Bad Request: 错误的请求
+Unauthorized: 未授权
+Forbidden: 禁止访问
+Not Found: 未找到
+Precondition failed: 前置条件失败
+Branch can't be merged: 分支无法合并
+No Change: 无变更
+Resource already exists: 资源已存在
+The primary path of an object can't be deleted: 对象的主路径无法删除
+The resource path is too long: 资源路径过长
+Unable to perform the action as it would lead to a cyclic dependency: 无法执行操作，会导致循环依赖
+Space can't be deleted as it still contains child resources: 项目无法删除，仍包含子资源
+The default branch of a repository can't be deleted: 仓库的默认分支无法删除
+The pull request git refs can't be modified: 合并请求的 Git 引用无法修改
+The request is too large: 请求过大
+The webhook execution is incomplete and can't be retriggered: Webhook 执行未完成，无法重新触发
+CODEOWNERS file not found: 未找到 CODEOWNERS 文件
+Response not streamable: 响应不可流式传输
+The requested resource is temporarily locked, please retry the operation.: 请求的资源被临时锁定，请重试操作
+Pushing to an empty repository requires at least one branch with commits.: 推送到空仓库需要至少一个包含提交的分支
+Git LFS is disabled: Git LFS 已禁用
+Artifact is quarantined: 制品已被隔离
+Artifact is blocked due to policy violations: 制品因策略违规被阻止
+Public access on resources is not allowed.: 不允许对资源进行公共访问
+The request is too large. maximum allowed size is %d bytes: 请求过大，最大允许大小为 %d 字节
+license expired.: 许可证已过期
+license not found.: 未找到许可证

@@ -76,6 +76,7 @@ import (
 	middlewareauthn "github.com/harness/gitness/app/api/middleware/authn"
 	"github.com/harness/gitness/app/api/middleware/encode"
 	"github.com/harness/gitness/app/api/middleware/logging"
+	middlewarelocale "github.com/harness/gitness/app/api/middleware/web"
 	"github.com/harness/gitness/app/api/middleware/nocache"
 	middlewareprincipal "github.com/harness/gitness/app/api/middleware/principal"
 	"github.com/harness/gitness/app/api/request"
@@ -168,8 +169,7 @@ func NewAPIHandler(
 		})
 	})
 
-	// wrap router in terminatedPath encoder.
-	return encode.TerminatedPathBefore(terminatedPathPrefixesAPI, r)
+	return middlewarelocale.AcceptLanguage(encode.TerminatedPathBefore(terminatedPathPrefixesAPI, r))
 }
 
 func corsHandler(config *types.Config) func(http.Handler) http.Handler {

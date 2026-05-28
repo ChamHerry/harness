@@ -1,0 +1,29 @@
+Internal error occurred: Ocurrió un error interno
+Invalid or missing token: Token inválido o faltante
+Bad Request: Solicitud incorrecta
+Unauthorized: No autorizado
+Forbidden: Prohibido
+Not Found: No encontrado
+Precondition failed: Precondición fallida
+Branch can't be merged: La rama no se puede fusionar
+No Change: Sin cambios
+Resource already exists: El recurso ya existe
+The primary path of an object can't be deleted: La ruta principal de un objeto no se puede eliminar
+The resource path is too long: La ruta del recurso es demasiado larga
+Unable to perform the action as it would lead to a cyclic dependency: No se puede realizar la acción ya que llevaría a una dependencia cíclica
+Space can't be deleted as it still contains child resources: El espacio no se puede eliminar ya que todavía contiene recursos secundarios
+The default branch of a repository can't be deleted: La rama predeterminada de un repositorio no se puede eliminar
+The pull request git refs can't be modified: Las referencias git del pull request no se pueden modificar
+The request is too large: La solicitud es demasiado grande
+The webhook execution is incomplete and can't be retriggered: La ejecución del webhook está incompleta y no se puede reactivar
+CODEOWNERS file not found: Archivo CODEOWNERS no encontrado
+Response not streamable: La respuesta no es transmitible
+The requested resource is temporarily locked, please retry the operation.: El recurso solicitado está temporalmente bloqueado, por favor reintente la operación.
+Pushing to an empty repository requires at least one branch with commits.: Empujar a un repositorio vacío requiere al menos una rama con commits.
+Git LFS is disabled: Git LFS está deshabilitado
+Artifact is quarantined: El artefacto está en cuarentena
+Artifact is blocked due to policy violations: El artefacto está bloqueado debido a violaciones de política
+Public access on resources is not allowed.: El acceso público a los recursos no está permitido.
+The request is too large. maximum allowed size is %d bytes: La solicitud es demasiado grande. El tamaño máximo permitido es %d bytes
+license expired.: Licencia expirada.
+license not found.: Licencia no encontrada.

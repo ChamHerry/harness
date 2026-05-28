@@ -46,6 +46,22 @@ build: generate ## Build the all-in-one Harness binary
 	@echo "Building Harness Server"
 	go build -o ./gitness ./cmd/gitness
 
+web-dist-placeholder:
+	@test -f web/dist/index.html || mkdir -p web/dist
+	@test -f web/dist/index.html || printf '<!doctype html><html><body>dev placeholder</body></html>' > web/dist/index.html
+
+dev: generate web-dist-placeholder ## Run backend server in development mode
+	@echo "Starting Harness backend server"
+	go run ./cmd/gitness server
+
+web: ## Run frontend dev server
+	@echo "Starting web frontend dev server"
+	cd web && yarn dev
+
+web-dep: ## Install frontend dependencies
+	@echo "Installing frontend dependencies"
+	cd web && yarn install
+
 test: generate  ## Run the go tests
 	@echo "Running tests"
 	@go test -v -coverprofile=coverage.out `go list ./... | egrep -v "./registry/tests/(maven|cargo|gopkg|npm)"`
@@ -196,4 +212,4 @@ $(GOBIN)/gci:
 help: ## show help message
 	@awk 'BEGIN {FS = ":.*##"; printf "\nUsage:\n  make \033[36m\033[0m\n"} /^[$$()% 0-9a-zA-Z_-]+:.*?##/ { printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2 } /^##@/ { printf "\n\033[1m%s\033[0m\n", substr($$0, 5) } ' $(MAKEFILE_LIST)
 
-.PHONY: delete-tools update-tools help format lint
+.PHONY: delete-tools update-tools help format lint dev web
