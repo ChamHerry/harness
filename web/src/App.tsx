@@ -28,8 +28,9 @@ import { RouteDestinations } from 'RouteDestinations'
 import { routes as _routes } from 'RouteDefinitions'
 import { getConfig } from 'services/config'
 import { ModalProvider } from 'hooks/useModalHook'
-import { languageLoader } from './framework/strings/languageLoader'
-import type { LanguageRecord } from './framework/strings/languageLoader'
+import type { StringsMap } from './framework/strings/StringsContext'
+import { buildStrings, resolveLocale, storeLocale } from './framework/strings/languageLoader'
+import type { LangLocale } from './framework/strings/languageLoader'
 import { StringsContextProvider } from './framework/strings/StringsContextProvider'
 import 'highlight.js/styles/github.css'
 import 'diff2html/bundles/css/diff2html.min.css'
@@ -42,7 +43,7 @@ const App: React.FC<AppProps> = React.memo(function App({
   standalone = false,
   space = '',
   routes = _routes,
-  lang = 'en',
+  lang,
   on401 = handle401,
   children,
   hooks,
@@ -53,25 +54,37 @@ const App: React.FC<AppProps> = React.memo(function App({
   isCurrentSessionPublic = !!window.publicAccessOnGitness,
   accountInfo = {}
 }: AppProps) {
-  const [strings, setStrings] = useState<LanguageRecord>()
+  const [strings, setStrings] = useState<StringsMap>()
+  const [activeLocale, setActiveLocale] = useState<LangLocale>(() => resolveLocale(lang))
   const routingId = useMemo(() => (standalone ? '' : space.split('/').shift() || ''), [standalone, space])
   const queryParams = useMemo(() => (!standalone ? { routingId } : {}), [standalone, routingId])
 
   useEffect(() => {
-    const stringsMaps = languageLoader(lang)
-    if (stringsMaps) {
-      setStrings({
-        ...stringsMaps.stringsRecordsEN,
-        ...{ cde: stringsMaps.cdeStringRecords }
-      })
+    if (lang && lang !== activeLocale) {
+      setActiveLocale(lang)
     }
-  }, [lang, setStrings])
+  }, [lang]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    let cancelled = false
+    buildStrings(activeLocale).then(stringsMap => {
+      if (!cancelled && stringsMap) {
+        setStrings(stringsMap)
+      }
+    })
+    return () => { cancelled = true }
+  }, [activeLocale])
+
+  const handleLocaleChange = useCallback((newLocale: LangLocale) => {
+    storeLocale(newLocale)
+    setActiveLocale(newLocale)
+  }, [])
 
   const Wrapper: React.FC<{ fullPage: boolean }> = useCallback(
     props => {
       return strings ? (
         <Container className={cx(css.main, { [css.fullPage]: standalone && props.fullPage })}>
-          <StringsContextProvider initialStrings={strings}>
+          <StringsContextProvider initialStrings={strings} locale={activeLocale} setLocale={handleLocaleChange}>
             <AppErrorBoundary>
               <RestfulProvider
                 base={standalone ? '/' : getConfig('code')}
@@ -114,7 +127,7 @@ const App: React.FC<AppProps> = React.memo(function App({
         </Container>
       ) : null
     },
-    [strings, space] // eslint-disable-line react-hooks/exhaustive-deps
+    [strings, space, activeLocale, handleLocaleChange] // eslint-disable-line react-hooks/exhaustive-deps
   )
 
   useEffect(() => {

@@ -39,3 +39,12 @@
     pointer-events: none;
   }
 }
+
+.sectionHeading {
+  margin-bottom: var(--spacing-small, 8px);
+}
+
+.sectionHeadingWithTop {
+  margin-top: var(--spacing-small, 8px);
+  margin-bottom: var(--spacing-small, 8px);
+}

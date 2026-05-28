@@ -1,0 +1,1400 @@
+gitness: Gitness
+pageNotFound: Página no encontrada
+signIn: Iniciar sesión
+signUp: Registrarse
+email: Correo electrónico
+emailUser: Correo electrónico / ID de usuario
+password: Contraseña
+confirmPassword: Confirmar contraseña
+noAccount: Sin cuenta
+existingAccount: Cuenta existente
+public: Público
+private: Privado
+cancel: Cancelar
+cancelImport: Cancelar importación
+deleteImport: Eliminar importación
+cancelledImport: Importación cancelada
+deletedImport: Importación eliminada
+failedToCancelImport: No se pudo cancelar la importación
+failedToDeleteImport: No se pudo eliminar la importación
+name: Nombre
+value: Valor
+help: ayuda
+search: Buscar
+description: Descripción
+repositories: Repositorios
+files: Archivos
+commit: Commit
+committed: confirmado
+commits: Commits
+lastCommit: Último commit
+lastCommitDate: Fecha del último commit
+commitChanges: Confirmar cambios
+pullRequests: Pull Requests
+settings: Configuración
+patterns: Patrones
+manageRepository: Gestionar repositorio
+manageRepositories: Gestionar repositorios
+selectRepositories: Seleccionar repositorios
+newFile: Nuevo archivo
+editFile: Editar archivo
+prev: Anterior
+next: Siguiente
+newFolder: Nueva carpeta
+content: Contenido
+history: Historial
+newRepo: Nuevo repositorio
+createARepo: Crear un repositorio
+createRepo: Crear repositorio
+enterRepoName: Ingrese el nombre del repositorio
+enterDescription: Ingrese una descripción (opcional)
+enterRepoDescription: Ingrese la descripción del repositorio
+addDescription: Agregar una descripción
+addLicense: Agregar licencia
+none: Ninguno
+create: Crear
+clone: Clonar
+copy: Copiar
+defaultBranch: Predeterminado
+defaultBranchTitle: Rama predeterminada
+switchBranch: Cambiar rama
+confirmDefaultBranch:
+  title: Cambiar la rama predeterminada
+  message: '¿Está seguro de que desea actualizar la rama predeterminada a <strong style="color: var(--primary-7)">{{currentGitRef}}</strong>?'
+  points: Los pull requests abiertos seguirán apuntando a la rama predeterminada anterior, Las reglas de rama que usan coincidencia de patrones pueden necesitar actualizarse, Clonar el repositorio ahora clonará la nueva rama predeterminada
+in: en
+ok: Aceptar
+at: a las
+on: Activado
+off: Desactivado
+loading: Cargando...
+title: Título
+accessControl: Control de acceso
+permissions: Miembros
+permissionsFor: Miembros de {{name}}
+addGitIgnore: Agregar un .gitignore
+addReadMe: Agregar un archivo README
+failedToCreateRepo: No se pudo crear el repositorio. Inténtelo de nuevo.
+status: Estado
+commitsOn: Commits del {{date}}
+viewCommitDetails: Ver detalles del commit
+copyCommitSHA: Copiar SHA del commit
+branches: Ramas
+branch: Rama
+activeBranches: Ramas activas
+inactiveBranches: Ramas inactivas
+yourBranches: Sus ramas
+allBranches: Todas las ramas
+newBranch: Nueva rama
+createBranch: Crear rama
+createTag: Crear etiqueta
+tagDescription: Ingrese la descripción de la etiqueta aquí
+findBranch: Buscar una rama
+searchBranches: Buscar ramas
+updated: Actualizado
+lastUpdated: Última actualización
+updatedDate: Fecha de actualización
+cloneHTTPS: URL de clonación de Git
+nameYourFile: Nombre su archivo...
+noResultTitle: Lo sentimos, no se encontraron resultados
+noResultMessage: Lo que buscó lamentablemente no se encontró o no existe
+noFilterResultMessage: No se encontraron resultados con los filtros aplicados
+pageTitle:
+  signin: Iniciar sesión
+  register: Registrar una nueva cuenta
+  accessControl: Control de acceso
+  spaceSettings: Configuración del proyecto
+  compare: Comparar Pull Request
+  pullRequest: Pull Request
+  pullRequests: Pull Requests
+  createWebhook: Crear Webhook
+  webhooks: Webhooks
+  repositorySettings: Configuración del repositorio
+  repositories: Repositorios
+  branches: Ramas
+  tags: Etiquetas
+  editFileLocation: Editando {{{path}}}
+  repository: Repositorio
+  home: Inicio
+  users: Usuarios
+  userProfile: Perfil de usuario
+  changePassword: Cambiar contraseña
+  pipelines: Pipelines
+  secrets: Secretos
+  executions: Ejecuciones
+  search: Búsqueda potenciada por IA
+  artifactRegistries: Registros de artefactos
+repos:
+  name: Nombre del repositorio
+  data: Datos del repositorio
+  activities: Actividades mensuales
+  lastChange: Último cambio
+  lastPush: Último push
+  noDataMessage: No hay repositorios en este proyecto.
+  createNewRepoMessage: Cree un nuevo repositorio o importe un repositorio Git existente haciendo clic abajo.
+  enterBranchName: Ingrese un nombre de rama
+  confirmSelection: Confirmar selección
+  specificRepositories: repositorios específicos
+createRepoModal:
+  branchLabel: "Su repositorio se inicializará con una rama "
+  branch: .
+  publicLabel: Cualquier persona que pueda ver el repositorio puede clonarlo.
+  privateLabel: Usted elige quién puede ver y hacer commits en este repositorio.
+  publicWarning: Tenga en cuenta que cualquier persona que pueda ver el repositorio puede clonarlo.
+validation:
+  repoNamePatternIsNotValid: El nombre del registro debe tener entre 1 y 255 caracteres con letras minúsculas, números y ._- y debe comenzar con números o caracteres
+  gitBranchNameInvalid: El nombre de la rama no es válido.
+  gitTagNameInvalid: El nombre de la etiqueta no es válido.
+  uidInvalid: El ID de usuario solo puede contener caracteres alfanuméricos, '-', '_', '.', y '$'
+  nameInvalid: El nombre solo puede contener caracteres alfanuméricos, '-', '_', '.', y '$'
+  emailInvalid: Por favor ingrese una dirección de correo electrónico válida
+  emailRequired: El correo electrónico es obligatorio
+  uidRequired: El ID de usuario es obligatorio
+  nameIsRequired: El nombre es obligatorio
+  pathIsRequired: La ruta es obligatoria
+  imagePathIsRequired: La ruta de la imagen es obligatoria
+  invalidImage: "Expresión de imagen no válida: el carácter comodín '*' puede aparecer como máximo una vez y solo al final."
+  connectorRequired: El conector es obligatorio
+  expirationDateRequired: La fecha de expiración es obligatoria
+  newPasswordRequired: La nueva contraseña es un campo obligatorio
+  confirmPasswordRequired: Confirmar contraseña es un campo obligatorio
+  spaceNamePatternIsNotValid: El nombre debe comenzar con una letra o '_' y contener solo caracteres alfanuméricos
+  nameLogic: El nombre debe comenzar con una letra o _ y contener solo [a-zA-Z0-9-_.]
+  nameTooLong: El nombre es demasiado largo
+  nameTooShort: El nombre es demasiado corto
+  key: La clave no puede estar vacía
+commitMessage: Mensaje del commit
+optionalExtendedDescription: Descripción extendida opcional
+optional: Opcional
+commitDirectlyTo: 'Confirmar directamente en la rama <strong style="color: var(--primary-7)">{{gitRef}}</strong>'
+commitToNewBranch: Crear una <strong>nueva rama</strong> para este commit e iniciar un pull request
+enterNewBranchName: Nombre de la nueva rama
+onDate: el {{date}}
+deleteFile: Eliminar archivo __path__
+confirm: Confirmar
+createABranch: Crear una rama
+createATag: Crear una etiqueta
+delete: Eliminar
+edit: Editar
+archive: Archivar
+unarchive: Desarchivar
+archived: Archivado
+cautionZone: Zona de precaución
+editAsText: Editar como texto
+branchName: Nombre de la rama
+enterBranchPlaceholder: Ingrese el nombre de la rama aquí
+nameYourBranch: Nombre su rama
+nameYourTag: Nombre su etiqueta
+enterTagPlaceholder: Ingrese el nombre de la etiqueta aquí
+branchSource: Origen de la rama
+branchSourceDesc: Elija una rama de origen
+basedOn: Basado en
+failedToCreateBranch: No se pudo crear la rama. Inténtelo de nuevo.
+branchCreated: Rama {branch} creada.
+tagCreated: Etiqueta {{tag}} creada.
+confirmation: Confirmación
+deleteBranch: Eliminar rama
+restoreBranch: Restaurar rama
+deleteTag: Eliminar etiqueta
+deleteTagConfirm: ¿Está seguro de que desea eliminar la etiqueta <strong>{{name}}</strong>? No puede deshacer esta acción.
+deleteBranchConfirm: ¿Está seguro de que desea eliminar la rama <strong>{{name}}</strong>? No puede deshacer esta acción.
+cancelImportConfirm: ¿Está seguro de que desea abortar la importación de <strong>{{name}}</strong>? No puede deshacer esta acción.
+deleteFailedImport: ¿Está seguro de que desea eliminar <strong>{{name}}</strong>?
+browse: Explorar
+browseFiles: Explorar archivos
+compare: Comparar
+commitString: Commit {commit}
+repoDeleted: Repositorio {{repo}} eliminado.
+branchDeleted: Rama {branch} eliminada.
+branchRestored: Rama {branch} restaurada.
+tagDeleted: Etiqueta {tag} eliminada.
+failedToDeleteBranch: No se pudo eliminar la rama. Inténtelo de nuevo.
+deleteBranchDryRunFailed: La ejecución de prueba falló al intentar eliminar la rama. Inténtelo de nuevo.
+deleteTagDryRunFailed: La ejecución de prueba falló al intentar eliminar la etiqueta. Inténtelo de nuevo.
+createFile: Crear __path__
+updateFile: Actualizar __path__
+renameFile: Renombrar __path__ a __newPath__
+switchBranchesTags: Cambiar ramas/etiquetas
+tag: Etiqueta
+tags: Etiquetas
+findOrCreateBranch: Buscar o crear una rama
+findATag: Buscar una etiqueta
+viewAllBranches: Ver todas las ramas
+viewAllTags: Ver todas las etiquetas
+createBranchFromBranch: "Crear rama: <strong>{{newBranch}}</strong> desde <strong>'{{target}}'</strong>"
+createBranchFromTag: "Crear rama: <strong>{{newBranch}}</strong> desde la etiqueta <strong>'{{target}}'</strong>"
+tagNotFound: Etiqueta <strong>{{tag}}</strong> no encontrada.
+branchNotFound: Rama <strong>{{branch}}</strong> no encontrada.
+branchUpToDate: Actualizado con {{defaultBranch}}
+branchUpToDateWith: La rama está actualizada con
+unableToGetDivergence: No se puede obtener la divergencia
+branchCommitCount: "{count} {count|1:commit,commits}"
+behindDivergence: "{behindCommits} {behindCommits|1:commit,commits} detrás de "
+aheadDivergence: "{aheadCommits} {aheadCommits|1:commit,commits} adelante"
+branchDivergenceBehind: "{behind} {behindCommits|1:commit,commits} detrás de {defaultBranch}"
+branchDivergenceAhead: "{ahead} {aheadCommits|1:commit,commits} adelante de {defaultBranch}"
+branchDivergenceAheadBehind: "{ahead} {aheadCommits|1:commit,commits} adelante, {behind} {behindCommits|1:commit,commits} detrás de {defaultBranch}"
+noWebHooks: No hay Webhook aquí. Intente
+deleteNotAllowed: Debe estar en una rama para eliminar este archivo
+editNotAllowed: Debe estar en una rama para editar este archivo
+newFileNotAllowed: Debe estar en una rama para crear un nuevo archivo
+fileDeleted: __path__ eliminado exitosamente.
+newPullRequest: Nuevo Pull Request
+pullRequestEmpty: No hay pull requests en su repositorio. Haga clic en el botón de abajo para crear un pull request.
+pullRequestNotFoundforFilter: Ningún pull request coincide con los filtros aplicados
+comparingChanges: Comparando cambios
+compareAndPullRequest: Comparar y crear pull request
+selectToViewMore: Seleccione una rama para ver más aquí.
+createPullRequest: Crear pull request
+prefixBase: "base: "
+prefixCompare: "comparar: "
+selectBranchPlaceHolder: seleccione una rama aquí
+pullMustBeMadeFromBranches: El Pull Request solo puede crearse desde dos ramas diferentes
+prMustSelectSourceAndTargetBranches: Debe seleccionar ramas de origen y destino
+prSourceAndTargetMustBeDifferent: Las ramas de origen y destino deben ser diferentes
+payloadUrl: URL del payload
+samplePayloadUrl: https://examples.com/harness
+payloadUrlLabel: URL del payload
+secret: Secreto
+webhookEventsLabel: ¿Qué eventos desea que activen este webhook?
+webhookSelectPushEvents: Solo el evento push
+webhookSelectAllEvents: Enviarme todo
+webhookSelectIndividualEvents: Permitirme seleccionar eventos individuales
+webhookAllEventsSelected: Todos los eventos
+branchTagCreation: Creación de rama o etiqueta
+branchTagDeletion: Eliminación de rama o etiqueta
+branchProtectionRules: Reglas de protección de ramas
+ruleBlockedMessage: Todas las actualizaciones de ramas están bloqueadas
+pushBlockedMessage: Todos los pushes a la rama están bloqueados
+checkRuns: Ejecuciones de verificación
+checkSuites: Conjuntos de verificación
+scanAlerts: Alertas de escaneo de código
+botAlerts: Alertas de Dependabot
+security: Seguridad
+deployKeys: Claves de despliegue
+sslVerificationLabel: Verificación SSL
+enableSSLVerification: Habilitar verificación SSL
+newWebhook: Nuevo Webhook
+createAWebhook: Crear un Webhook
+createWebhook: Crear Webhook
+webhook: Webhook
+diff: Diff
+draft: Borrador
+conversation: Conversación
+commandLine: línea de comandos
+include: Incluir
+exclude: Excluir
+pr:
+  toggleComments: Alternar comentarios
+  suggestedChange: Cambio sugerido
+  addSuggestion: Agregar sugerencia al lote
+  removeSuggestion: Eliminar sugerencia del lote
+  commitSuggestions: Confirmar {count|1:sugerencia,sugerencias}
+  commitSuggestion: Confirmar sugerencia
+  applySuggestions: Aplicar {count|1:sugerencia,sugerencias} de la revisión de código
+  suggestionApplied: Sugerencia aplicada
+  commentLineNumbers: Comentar en la línea {{start}} a {{end}}
+  moreComments: "{num} {count|0:Mostrar más,1:1 comentario más,más comentarios}"
+  copyLinkToComment: Copiar enlace al comentario
+  expandFullFile: Expandir todo
+  collapseFullFile: Contraer líneas expandidas
+  ableToMerge: Se puede fusionar.
+  useCmdLineToResolveConflicts: Use {cmd} para resolver conflictos
+  cantBeMerged: Esta rama tiene conflictos con la rama {{name}}.
+  cantMerge: No se puede fusionar. Aún puede crear el pull request.
+  failedToCreate: No se pudo crear el Pull Request.
+  titlePlaceHolder: Ingrese el título del pull request
+  descriptionPlaceHolder: Agregue la descripción del Pull Request aquí.
+  modalTitle: Abrir un pull request
+  createDraftPR: Crear pull request borrador
+  metaLine: "{user} {state|merged:fusionó,desea fusionar} {commits} {commitsCount|1:commit,commits} en {target} desde {source}"
+  executionState: "{state|success:Éxito,failed:Fallido}"
+  state: "{state|closed:Cerrado,merged:Fusionado,rejected:Rechazado,draft:Borrador,Abierto}"
+  statusLine: "#{number} {state|merged:fusionado,closed:cerrado,rejected:rechazado,opened:abierto} {time} por {user}"
+  updatedLine: última actualización {time}
+  diffStatus: "{status|deleted:Eliminado,new:Agregado,renamed:Renombrado,copied:Copiado,Cambiado}"
+  showDiff: Mostrar Diff
+  fileDeleted: Este archivo fue eliminado.
+  fileUnchanged: Archivo sin cambios.
+  diffTooLarge: Los diffs grandes no se muestran por defecto.
+  fileBinary: Archivo binario no mostrado.
+  showLink: "{count} {count|1:archivo,archivos} cambiados"
+  diffStatsLabel: Mostrando {changedFilesLink} con {addedLines} {addedLines|1:adición,adiciones} y {deletedLines} {deletedLines|1:eliminación,eliminaciones} {configuration}
+  diffView: Vista de Diff
+  split: Dividido
+  unified: Unificado
+  reviewChanges: Revisar cambios
+  mergePR: Fusionar pull request
+  branchHasNoConflicts: El pull request se puede fusionar
+  rebaseMergePossible: El pull request se puede fusionar después de hacer rebase
+  checkingToMerge: Verificando la capacidad de fusionar automáticamente...
+  prCanBeMerged: La fusión se puede realizar automáticamente.
+  enterDesc: Ingrese la descripción aquí
+  failedToUpdate: No se pudo actualizar el Pull Request. Inténtelo de nuevo.
+  failedToUpdateTitle: No se pudo actualizar el título del Pull Request. Inténtelo de nuevo.
+  failedToSaveComment: No se pudo guardar el comentario. Inténtelo de nuevo.
+  failedToDeleteComment: No se pudo eliminar el comentario. Inténtelo de nuevo.
+  failedToUpdateCommentStatus: No se pudo actualizar el estado del comentario. Inténtelo de nuevo.
+  prMerged: Este Pull Request fue fusionado
+  prClosed: Este Pull Request fue cerrado.
+  closedPrBranchDelete: La rama {source} tiene cambios sin fusionar.
+  createPRBannerInfo: Hizo push a {branch} {time}
+  reviewSubmitted: Revisión enviada.
+  requestSubmitted: Solicitud de cambios enviada.
+  requestedChanges: "{{user}} solicitó cambios en el pull request"
+  prReviewSubmit: "{user} {state|approved:aprobó, rejected:rechazó,changereq:solicitó cambios a, revisó} este pull request. {time}"
+  prMergedBannerInfo: "{user} {mergeMethod} la rama {source} en {target} {time}"
+  prMergedBannerInfoWithBypassingRules: "{user} ignoró las reglas de rama y {mergeMethod} la rama {source} en {target} {time}"
+  prMergedInfo: "{user} {mergeMethod} la rama {source} en {target} como {mergeSha} {time}"
+  prMergedInfoWithBypassingRules: "{user} ignoró las reglas de rama y {mergeMethod} la rama {source} en {target} como {mergeSha} {time}"
+  prBranchPushInfo: "{user} hizo push de un nuevo commit {commit}"
+  prBranchForcePushInfo: "{user} hizo force-push desde {oldCommit} a {newCommit}"
+  prBranchDeleteInfo: "{user} eliminó la rama de origen con el último commit {commit}"
+  prBranchRestoreInfo: "{user} restauró la rama de origen con el último commit {commit}"
+  prStateChanged: "{user} cambió el estado del pull request de {old} a {new}."
+  prStateChangedDraft: "{user} {changedToDraft|true:marcó el pull request como borrador.,abrió el pull request para revisión.}"
+  titleChanged: "{user} cambió el título de {old} a {new}."
+  titleChangedTable: |
+    ### Otros cambios de título en el historial
+    | Autor       | Nombre anterior | Nuevo nombre | Fecha |
+    | ----------- | --------------- | ------------ | ----- |
+  readyForReview: Listo para revisión
+  openForReview: Abrir para revisión
+  openForReviewSuccess: El estado del PR cambió a Abierto
+  authorCommentedPR: "{author} envió este pull request {time}"
+  mergeOptions:
+    squashAndMerge: Squash y fusionar
+    squashAndMergeDesc: Todos los commits de esta rama se combinarán en un commit en la rama base.
+    createMergeCommit: Fusionar pull request
+    createMergeCommitDesc: Todos los commits de esta rama se agregarán a la rama base mediante un commit de fusión.
+    rebaseAndMerge: Rebase y fusionar
+    rebaseAndMergeDesc: Todos los commits de esta rama se harán rebase y se agregarán a la rama base.
+    fastForwardMerge: Fusión fast-forward
+    fastForwardMergeDesc: Todos los commits de esta rama se agregarán a la rama base sin un commit de fusión. Puede ser necesario hacer rebase.
+    close: Cerrar pull request
+    closeDesc: Cerrar este pull request. Puede volver a abrir la solicitud después de cerrarla.
+    createAMergeCommit: Crear un commit de fusión
+  outdated: Desactualizado
+  titleIsRequired: El título del Pull Request es obligatorio.
+  descIsRequired: La descripción del Pull Request es obligatoria.
+  descIsTooLong: La descripción es demasiado larga ({{len}}/{{max}} caracteres).
+  descHasTooLongLine: Algunas líneas de la descripción exceden la longitud máxima de {{max}} caracteres, lo que puede causar problemas de rendimiento. Considere dividirlas en segmentos más pequeños.
+  draftOpenForReview:
+    title: Listo para revisión
+    desc: Abrir este pull request para revisión.
+  status: Estado de verificaciones del Pull Request
+  checks: Verificaciones
+  checksFailure: "{failedCount}/{total} verificaciones fallidas"
+  addDescription: Agregar descripción
+  reviewRequested: Revisión solicitada
+  changesRequested: Cambios solicitados
+  myPRs: Mis Pull Requests
+  titleUpdated: Título del pull request actualizado
+  targetBranchUpdated: Rama destino actualizada a {{branch}}
+  titleAndBranchUpdated: "Pull request actualizado: Título y rama destino ({{branch}})"
+  revert: Revertir
+  createRevertPR: Crear un nuevo pull request para revertir los cambios
+  revertBranchSuccess: Rama de reversión {{branch}} creada
+  revertOpFailed: La operación de reversión falló
+prState:
+  draftHeading: Este pull request aún es un trabajo en progreso
+  draftDesc: Los pull requests en borrador no se pueden fusionar.
+prChecks:
+  error: "{count}/{total} {count|1:verificación,verificaciones} con errores."
+  failure: "{count}/{total} {count|1:verificación,verificaciones} fallidas."
+  running: "{count}/{total} {count|1:verificación,verificaciones} en ejecución."
+  pending: "{count}/{total} {count|1:verificación,verificaciones} pendientes."
+  skipped: "{count}/{total} {count|1:verificación,verificaciones} omitidas."
+  success: "{count}/{total} {count|1:verificación,verificaciones} exitosas."
+  killed: "{count}/{total} {count|1:verificación,verificaciones} terminadas."
+  failureIgnored: "{count}/{total} {count|1:verificación,verificaciones} fallo ignorado."
+  notFound: No se encontraron pipelines ni verificaciones externas para este repositorio.
+  viewExternal: Ver detalles
+prReview:
+  assigned: "{author} asignó a {reviewer} como revisor"
+  requested: "{author} solicitó una revisión de {reviewer}"
+  selfAssigned: "{reviewer} se asignó automáticamente una revisión"
+  removed: "{author} eliminó la solicitud de revisión de {reviewer}"
+  ugRemoved: "{author} eliminó la solicitud de revisión del grupo de usuarios {reviewer}"
+  selfRemoved: "{author} eliminó su solicitud de revisión"
+  filterByReviews: Filtrar por revisiones
+  codeowners: "{author} solicitó revisión de {codeowners} como {count|1:code owner,code owners}"
+  defaultReviewers: "{author} solicitó revisión de {reviewers} como {count|1:revisor predeterminado,revisores predeterminados}"
+  ugCodeowners: "{author} solicitó revisión de {count|1:grupo de usuarios,grupos de usuarios} {codeowners} como {count|1:code owner,code owners}"
+  ugDefaultReviewers: "{author} solicitó revisión de {count|1:grupo de usuarios,grupos de usuarios} {reviewers} como {count|1:revisor predeterminado,revisores predeterminados}"
+  labelsAssigned: "{count|0:etiqueta,etiquetas}"
+  targetBranchChange: "{user} cambió la rama destino de {old} a {new}"
+webhookListingContent: crear,eliminar,despliegue ...
+general: General
+generalSetting:
+  features: Funciones
+  gitLFSEnable: Git Large File Storage (LFS)
+  gitLFSEnableDesc: Gestionar archivos grandes usando Git LFS.
+webhooks: Webhooks
+open: Abierto
+merged: Fusionado
+enabled: Habilitado
+closed: Cerrado
+close: Cerrar
+reject: Rechazar
+rejected: Rechazado
+yours: Suyos
+all: Todos
+scrollToTop: Ir arriba
+filesChanged: Cambios
+viewed: Visto
+changedSinceLastView: Cambiado desde la última vista
+comment: Comentario
+addComment: Agregar comentario
+replyHere: Responder aquí...
+reply: Responder
+replyAndResolve: Responder y resolver
+replyAndReactivate: Responder y reactivar
+leaveAComment: Dejar un comentario...
+lineBreaks: Saltos de línea
+quote: Citar
+deleteCommentConfirm: ¿Está seguro de que desea eliminar este comentario?
+write: Escribir
+preview: Vista previa
+save: Guardar
+edited: editado
+deleted: eliminado
+commentDeleted: Este comentario fue eliminado.
+enterSecret: Ingrese el secreto
+confirmDeleteWebhook: ¿Está seguro de que desea eliminar este webhook?
+webhookDeleted: Webhook eliminado.
+failedToDeleteWebhook: No se pudo eliminar el Webhook. Inténtelo de nuevo.
+webhookDetails: Detalles del Webhook
+updateWebhook: Actualizar Webhook
+webhookUpdated: Webhook actualizado exitosamente.
+webhookCreated: Webhook creado exitosamente.
+customHeaders: Encabezados personalizados
+headerKey: Clave
+headerKeyPlaceholder: Ingrese la clave del encabezado
+headerValue: Valor
+headerValuePlaceholder: Ingrese el valor del encabezado
+masked: Enmascarado
+addCustomHeader: Agregar encabezado personalizado
+requestHeaders: Encabezados de solicitud
+oneMustBeSelected: Al menos un evento debe ser seleccionado
+webhookBranchCreated: Rama creada
+webhookBranchUpdated: Rama actualizada
+webhookBranchDeleted: Rama eliminada
+webhookTagCreated: Etiqueta creada
+webhookTagUpdated: Etiqueta actualizada
+webhookTagDeleted: Etiqueta eliminada
+webhookPRBranchUpdated: Rama del PR actualizada
+webhookPRCreated: PR creado
+webhookPRUpdated: PR actualizado
+webhookPRReopened: PR reabierto
+webhookPRClosed: PR cerrado
+webhookPRCommentCreated: Comentario del PR creado
+webhookPRCommentStatusUpdated: Estado del comentario del PR actualizado
+webhookPRCommentUpdated: Comentario del PR actualizado
+webhookPRMerged: PR fusionado
+webhookPRLabelAssigned: Etiqueta del PR asignada
+webhookPRReviewSubmitted: Revisión del PR enviada
+nameYourWebhook: Nombre su webhook
+noExecutionsFound: No se encontraron ejecuciones
+noExecutionsFoundForWebhook: No se encontraron ejecuciones para el webhook indicado
+executionHistory: Historial de ejecuciones
+serverResponse: Respuesta del servidor
+requestPayload: Payload de solicitud
+triggeredEvent: Evento activado
+event: Evento
+lastTriggeredAt: Última activación el
+executionId: ID de ejecución
+submitReview: Enviar revisión
+webhookPage: Página de Webhook
+webhookTabs: Pestañas de Webhook
+reTriggeredExecution: Ejecución reactivada
+retriggerExecution: Reactivar ejecución
+atSubTitle: En
+notRetriggerableMessage: Esta ejecución de webhook no se puede reactivar
+approve: Aprobar
+requestChanges: Cambios solicitados
+repoEmptyMarkdown: |
+  ## Este repositorio está vacío
+
+  ### Comience por
+
+  Creando [un nuevo archivo](NEW_FILE_URL).
+repoEmptyMarkdownClone: |
+  ### O puede clonar este repositorio
+
+  Clonar con HTTPS
+  ```sh
+  git clone REPO_URL
+  ```
+repoEmptyMarkdownClonePush: |
+  Luego haga push de algún contenido.
+
+  ```sh
+  cd REPO_NAME
+  git branch -M DEFAULT_BRANCH
+  echo "# Hello World" >> README.md
+  git add README.md
+  git commit -m "Initial commit"
+  git push -u origin DEFAULT_BRANCH
+  ```
+repoEmptyMarkdownExisting: |
+  ### O puede hacer push de un repositorio existente
+
+  ```sh
+  git remote add origin REPO_URL
+  git branch -M DEFAULT_BRANCH
+  git push -u origin DEFAULT_BRANCH
+  ```
+
+  Puede que necesite [crear un token de API](CREATE_API_TOKEN_URL) para hacer pull o push a este repositorio.
+webhookEmpty: No hay webhooks en su repositorio. Haga clic en el botón de abajo para crear un webhook.
+compareEmptyDiffTitle: No hay nada que comparar
+compareEmptyDiffMessage: Las dos ramas son idénticas.
+noCommits: No hay commits
+noCommitsMessage: Este repositorio aún no tiene commits.
+noCommitsPR: Este Pull Request no tiene historial de commits.
+noChanges: No hay cambios
+noChangesPR: Este Pull Request no tiene cambios.
+noChangesCompare: El origen y el destino son idénticos.
+pageLoading: Cargando, por favor espere...
+repoCloneHeader: O puede clonar este repositorio
+repoCloneLabel: Clonar con HTTPS
+emptyRepoHeader: Este repositorio está vacío. Comencemos...
+addNewFile: + Nuevo archivo
+emptyRepoInclude: Recomendamos que cada repositorio incluya {README}, {LICENSE} y {GITIGNORE}.
+readMe: README,
+license: LICENCIA
+gitIgnore: .gitignore
+and: y
+error404Text: Esta no es la página web que está buscando
+branchNotFoundError: Rama no encontrada
+branchNotFoundMessage: La rama '{{gitRef}}' no existe o fue eliminada
+goToDefaultBranch: Ir a la rama predeterminada
+branchDoesNotHaveFile: El repositorio "{repoName}" no contiene la ruta "{fileName}" en la rama "{branchName}"
+webhookDialogTitle: Activar/Desactivar Webhook
+webhookDialogContent: Por favor confirme que desea activar/desactivar este webhook
+pullRequestalreadyExists: El pull request {prLink} ya existe.
+makeRequired: Hacer obligatorio
+makeOptional: Hacer opcional
+remove: Eliminar
+required: Obligatorio
+isRequired: es obligatorio
+noneYet: Ninguno aún
+noOptionalReviewers: Sin revisores opcionales
+noRequiredReviewers: Sin revisores obligatorios
+reviewers: Revisores
+refresh: Actualizar
+enableWebhookTitle: Habilitar el Webhook
+disableWebhookTitle: Deshabilitar el Webhook
+enableWebhookContent: Por favor confirme que desea activar {name}.
+disableWebhookContent: Por favor confirme que desea desactivar {name}.
+ascending: Ascendente
+descending: Descendente
+active: Activo
+pending: Pendiente
+resolved: Resuelto
+showEverything: Mostrar todo
+allComments: Todos los comentarios
+whatsNew: Novedades
+myComments: Mis comentarios/respuestas
+resolvedComments: Comentarios resueltos
+unrsolvedComment: Comentario sin resolver
+resetZoom: Restablecer zoom
+zoomIn: Acercar
+zoomOut: Alejar
+checks: Verificaciones
+blameCommitLine: "{author} confirmó {timestamp}"
+filterByAuthor: Filtrar por autor
+includeSubspacePR: Incluir PRs de subproyectos
+tooltipRepoEdit: No está autorizado para {PERMS}
+missingPerms: "Le falta el siguiente permiso:"
+createRepoPerms: Crear / Editar repositorio
+missingPermsContent: '"{PERMS}" en el proyecto "{PROJECT}"'
+repositoryName: Nombre del repositorio
+deleteRepo: Eliminar este repositorio
+deleteRepoMsg: Una vez eliminado un repositorio, no se puede recuperar. Proceda con precaución.
+dangerDeletePipeline: ¿Peligro, está seguro de que desea eliminar este pipeline?
+dangerDeleteProject: ¿Peligro, está seguro de que desea eliminar este proyecto?
+repoUpdate: Repositorio actualizado
+deleteRepoText: ¿Está seguro de que desea eliminar el repositorio '{REPONAME}'?
+deleteRepoTitle: Eliminar el repositorio
+resolve: Resolver
+reactivate: Reactivar
+generateCloneCred: + Generar credencial de clonación
+generateCloneText: Por favor genere una credencial de clonación si es la primera vez
+getMyCloneTitle: Generar credencial de clonación
+cloneText: Sus credenciales de clonación han sido generadas. Asegúrese de copiar y guardar su contraseña en un lugar seguro, no podrá verla nuevamente.
+manageApiToken: Gestionar token de API
+userName: Nombre de usuario
+passwordApi: Contraseña (Token de API)
+firstTimeTitle: Por favor genere credenciales Git si es la primera vez que clona el repositorio
+manageCredText: También puede gestionar su credencial de Git {URL}
+blame: Blame
+blameEmpty: El archivo está vacío. No hay información de blame disponible.
+viewRaw: Ver raw
+download: Descargar
+changes: Cambios
+contents: Contenidos
+unsavedChanges:
+  title: ¿Cerrar sin guardar?
+  message: Tiene cambios sin guardar. ¿Está seguro de que desea salir de esta página sin guardar?
+  leave: Salir de esta página
+  stay: Permanecer en esta página
+creationDate: Fecha de creación
+viewFiles: Ver archivos
+tagger: Tagger
+confirmDelete: Confirmar eliminación
+tagEmpty: No hay etiquetas en su repositorio. Haga clic en el botón de abajo para crear una etiqueta.
+newTag: Nueva etiqueta
+overview: Resumen
+fileTooLarge: El archivo es demasiado grande para abrirlo. {download}
+lfsInfo: Almacenado con Git LFS
+clickHereToDownload: Haga clic aquí para descargar.
+viewFileHistory: Ver el archivo en este punto del historial
+viewRepo: Ver el repositorio en este punto del historial
+hideCommitHistory: Renombrado de {file} - Ocultar historial
+showCommitHistory: Renombrado de {file} - Mostrar historial
+noReviewers: Sin revisores
+assignPeople: Asignar personas
+add: Agregar +
+addLabel: Agregar
+updateLabel: Actualizar
+users: Usuarios
+findAUser: Buscar un usuario
+findAUserOrUserGroup: Buscar un usuario o grupo de usuarios
+noUsersFound: No se encontraron usuarios
+spaces: Proyectos
+space: Proyecto
+selectSpace: Seleccione un proyecto aquí
+copyBranch: Copiar nombre de rama
+noAccount?: ¿Sin cuenta?
+alreadyHaveAccount: ¿Ya tiene una cuenta?
+privacyPolicy: Política de privacidad
+termsOfUse: Términos de uso
+bySigningIn: Al registrarse, acepta nuestra {policy} y nuestros {terms}
+userId: ID de usuario
+characterLimit: 6+ caracteres
+enterUser: Ingrese el ID de usuario aquí ...
+userNameRequired: El nombre de usuario es obligatorio
+passwordRequired: La contraseña es obligatoria
+emailRequired: El correo electrónico es obligatorio
+minPassLimit: La contraseña es demasiado corta - debe tener al menos 6 caracteres.
+confirmPassRequired: Confirmar contraseña es obligatorio
+matchPassword: Las contraseñas deben coincidir
+userCreated: El usuario fue creado
+admin: Administrador
+removeAdmin: Eliminar como administrador
+setAsAdmin: Establecer como administrador
+createUser: Crear usuario
+editUser: Editar usuario
+updateUser: Actualizar usuario
+deleteUser: Eliminar usuario
+createNewUser: Crear un usuario
+displayName: Nombre para mostrar
+accountEmail: Correo electrónico de la cuenta
+changePassword: Cambiar contraseña
+logoutMsg: ¿Desea cerrar sesión en su cuenta actual?
+logOut: Cerrar sesión
+enterNewPassword: Ingrese la <b>NUEVA</b> contraseña
+confirmNewPassword: Confirme la <b>NUEVA</b> contraseña
+accountSetting: Configuración de la cuenta
+nDays: "{{number}} Días"
+expiration: Expiración
+noExpiration: Sin expiración
+noExpirationDate: ¡El token nunca expirará!
+token: Token
+expired: Expirado
+expirationDate: Fecha de expiración
+created: Creado
+thisRefHas: Esta {isTag|true:etiqueta,rama} tiene
+changePasswordSuccessfully: Contraseña cambiada exitosamente
+applyChanges: Aplicar cambios
+showMore: Ver más
+showLess: Ver menos
+createNewToken: Crear un token
+newToken:
+  text: Nuevo token
+  namePlaceholder: Ingrese el nombre
+  expireOn: El token expirará el {{date}}
+  generateToken: Generar token
+  tokenHelptext: Su token ha sido generado. Asegúrese de copiar y guardar su token en un lugar seguro, no podrá verlo nuevamente.
+deleteToken: Eliminar token
+deleteTokenMsg: Token eliminado exitosamente
+userManagement:
+  text: Gestión de usuarios
+  newUser: Nuevo usuario
+  deleteUser: Eliminar usuario
+  deleteUserMsg: ¿Está seguro de eliminar a {avatar} {{displayName}} (ID de usuario:{{userId}})?
+  resetPassword: Restablecer contraseña
+  resetPasswordMsg: ¿Está seguro de que desea restablecer la contraseña de {avatar} {{displayName}} (ID de usuario:{{userId}})?
+  removeAdminMsg: ¿Está seguro de que desea eliminar a {avatar} {{displayName}} (ID de usuario:{{userId}}) como administrador?
+  setAsAdminMsg: ¿Está seguro de que desea establecer a {avatar} {{displayName}} (ID de usuario:{{userId}}) como administrador?
+selectSpaceText: Seleccionar un proyecto
+user: Usuario
+role: Rol
+addMember: Agregar miembro
+addUserToSpace2: Agregar miembro a este proyecto
+spaceMemberships:
+  addMember: Agregar un miembro a {{name}}
+  changeRole: Cambiar rol
+  removeMember: Eliminar miembro
+  removeMembershipMsg: ¿Está seguro de que desea eliminar este miembro?
+  removeMembershipToast: Miembro eliminado exitosamente
+  memberUpdated: Miembro actualizado exitosamente.
+  memberAdded: Miembro agregado exitosamente.
+failedToCreateSpace: No se pudo crear el proyecto. Inténtelo de nuevo.
+failedToImportSpace: No se pudo importar el proyecto. Inténtelo de nuevo.
+failedToCreatePipeline: No se pudo crear el Pipeline. Inténtelo de nuevo.
+failedToSavePipeline: No se pudo guardar el Pipeline. Inténtelo de nuevo.
+enterName: Ingrese el nombre
+createASpace: Crear un proyecto
+createSpace: Crear proyecto
+newSpace: Nuevo proyecto
+emptySpaceText: Está vacío ahora, por favor cree un nuevo proyecto
+homepage:
+  welcomeText: Bienvenido {{currentUser}}, ¡comencemos con Gitness!
+  firstStep: Los proyectos contienen sus repositorios y pipelines. Cree un nuevo proyecto para comenzar con Gitness
+  selectSpaceTitle: Seleccione un proyecto para comenzar
+  selectSpaceContent: Los proyectos contienen sus repositorios y pipelines. Para comenzar a usar Gitness, seleccione un proyecto o cree uno nuevo.
+  selectSpace: Seleccionar proyecto
+deleteSpace: Eliminar proyecto
+spaceSetting:
+  intentText: Esto eliminará permanentemente el proyecto llamado '{{space}}' y todo su contenido. Todos los repositorios de este proyecto serán eliminados.
+  deleteWarning: Cosas malas e inesperadas sucederán si no lee esto
+  deleteConfirm1: Esto eliminará permanentemente el proyecto "{{space}}" y todo su contenido. Todos los repositorios de este proyecto serán eliminados.
+  deleteConfirmButton1: Quiero eliminar este proyecto
+  deleteConfirm2: Para confirmar, escriba "{{space}}" en el cuadro de abajo
+  deleteConfirmButton2: Eliminar este proyecto
+  deleteToastSuccess: Proyecto eliminado exitosamente
+  settings: Configuración
+contributor: Colaborador
+reader: Lector
+executor: Ejecutor
+owner: Propietario
+changeRole: Cambiar rol
+running: En ejecución
+success: Éxito
+failed: Fallido
+error: Error
+skipped: Omitido
+killed: Terminado
+failureIgnored: Éxito (fallo ignorado)
+repoDelete:
+  title: Eliminar repositorio
+  deleteConfirm1: Esto eliminará permanentemente el repositorio "{{repo}}".
+  deleteConfirmButton1: Quiero eliminar este repositorio
+  deleteConfirm2: Para confirmar, escriba "{{repo}}" en el cuadro de abajo
+  deleteToastSuccess: Repositorio eliminado exitosamente
+  deleteConfirmButton2: Eliminar este repositorio
+repoArchive:
+  titleArchive: Archivar repositorio
+  titleUnarchive: Desarchivar repositorio
+  confirmButton: Entiendo, {archiveVerb} el repositorio.
+  archiveWarning: Archivar este repositorio lo marcará como inactivo y lo establecerá como solo lectura. Los usuarios aún pueden ver y clonar el repositorio, pero no se permitirán nuevos cambios o contribuciones.
+  unarchiveWarning: Este repositorio ya no estará archivado y será restaurado a un estado activo. Todos los usuarios y grupos con permisos pueden contribuir como de costumbre.
+  archive: Archivar este repositorio
+  archiveInfo: Establecer este repositorio como archivado y restringirlo a acceso de solo lectura.
+  unarchive: Desarchivar este repositorio
+  unarchiveInfo: Establecer este repositorio como no archivado y habilitar lectura-escritura.
+  infoText: Este repositorio fue archivado el {{date}}. Ahora es de solo lectura.
+pipelines:
+  noData: No hay pipelines
+  import: Importar Pipelines
+  newPipelineButton: Nuevo Pipeline
+  name: Nombre del Pipeline
+  createNewPipeline: Crear nuevo Pipeline
+  enterPipelineName: Ingrese el nombre del pipeline
+  yamlPath: Ruta YAML
+  enterYAMLPath: Ingrese la ruta YAML
+  failedToCreatePipeline: No se pudo crear el pipeline
+  saveAndRun: Guardar y ejecutar
+  editPipeline: Editar pipeline {{pipeline}}
+  edit: Editar pipeline
+  run: Ejecutar pipeline
+  time: Tiempo
+  lastExecution: Última ejecución
+  created: Pipeline creado exitosamente
+  updated: Pipeline actualizado exitosamente
+  executionStarted: Ejecución del pipeline iniciada exitosamente
+  executionCouldNotStart: Falló al iniciar la ejecución del pipeline
+  deletePipelineWarning: Esto eliminará permanentemente el pipeline {{pipeline}} y todas sus ejecuciones.
+  deletePipelineButton: Eliminar pipeline
+  deletePipelineConfirm: ¿Está seguro de que desea eliminar el pipeline <strong>{{pipeline}}</strong>? No puede deshacer esta acción.
+  deletePipelineSuccess: Pipeline {{pipeline}} eliminado.
+  deletePipelineError: No se pudo eliminar el Pipeline. Inténtelo de nuevo.
+  updatePipelineSuccess: Pipeline {{pipeline}} actualizado.
+  failedToUpdatePipeline: No se pudo actualizar el Pipeline. Inténtelo de nuevo.
+  settings: Configuración del Pipeline
+  executionCancelled: Ejecución del pipeline cancelada.
+  executionCouldNotCancel: Falló al cancelar la ejecución del Pipeline.
+  failedToFindPath: no se pudo encontrar la ruta
+  failedToGenerate: No se pudo generar el pipeline
+selectRange: Shift-clic para seleccionar un rango
+allCommits: Todos los commits
+secrets:
+  noData: No hay secretos
+  newSecretButton: Nuevo secreto
+  create: Crear un secreto
+  name: Nombre del secreto
+  failedToCreate: No se pudo crear el secreto. Inténtelo de nuevo.
+  enterSecretName: Ingrese el nombre del secreto
+  enterSecretValue: Ingrese el valor del secreto
+  createSecret: Crear secreto
+  createSuccess: Secreto creado exitosamente
+  secretDeleted: Secreto {uid} eliminado.
+  secretUpdated: Secreto {uid} actualizado.
+  deleteSecretConfirm: ¿Está seguro de que desea eliminar el secreto <strong>{{uid}}</strong>? No puede deshacer esta acción.
+  failedToDeleteSecret: No se pudo eliminar el secreto. Inténtelo de nuevo.
+  failedToUpdateSecret: No se pudo actualizar el secreto. Inténtelo de nuevo.
+  deleteSecret: Eliminar secreto
+  updateSecret: Actualizar secreto
+  showValue: Mostrar valor
+userUpdateSuccess: Usuario actualizado exitosamente
+viewFile: Ver archivo
+searchResult: Resultado de búsqueda {count}
+aiSearch: Búsqueda AIDA
+enableAISearch: Habilitar búsqueda de IA
+enableAIDAPRDescription: Generar automáticamente descripción del PR
+enableAIDAPRMessange: Para generar una descripción del PR usando Harness AIDA, necesita habilitarlo en la Configuración del Proyecto.
+enableAIDAMessage: Para usar Harness AIDA Search, necesitará habilitarlo en la Configuración del Proyecto
+reviewProjectSettings: Revisar configuración del proyecto
+turnOnSemanticSearch: Activar búsqueda semántica
+AIDA: AIDA
+keywordSearch:
+  sampleQueries:
+    searchForClass: Buscar clase
+    searchForFilesWithCMD: Buscar clase en archivos que comienzan con cmd
+    searchForPattern: Incluir solo resultados de rutas de archivo que coincidan con el patrón de búsqueda dado
+    searchForInitialCommit: Buscar frase exacta initial commit
+codeSearch: Búsqueda de código
+codeSearchModal: Comience la búsqueda describiendo lo que busca
+searchHeader: "Aquí hay algunos ejemplos para ayudarle a comenzar:"
+startSearching: Comience la búsqueda describiendo lo que busca.
+poweredByAI: Desbloquee el poder de la IA con la búsqueda semántica de código. Pruebe frases como "Localizar el código de autenticación".
+semanticSearch:
+  sampleQueries: ¿Dónde está el código que maneja la autenticación?,¿Dónde está el punto de entrada de la aplicación?,¿Dónde configuramos el logger?
+failedToFetchFileContent: "ERROR: No se pudo obtener el contenido del archivo."
+run: Ejecutar
+plugins:
+  title: Plugins
+  stepLabel: paso
+  select: Seleccione un plugin
+createNewRepo: Crear nuevo repositorio
+importGitRepo: Importar repositorio
+importGitRepos: Importar repositorios
+importRepo:
+  title: Importar repositorio
+  url: URL del host
+  org: Organización
+  workspace: Workspace
+  project: Proyecto
+  group: Grupo
+  repo: Repositorio
+  urlPlaceholder: Ingrese la URL del host
+  repoPlaceholder: Ingrese el nombre del repositorio
+  orgPlaceholder: Ingrese el nombre de la organización
+  workspacePlaceholder: Ingrese el nombre del workspace
+  projectPlaceholder: Ingrese el nombre del proyecto
+  groupPlaceholder: Ingrese el nombre del grupo
+  reqAuth: Requiere autorización
+  userPlaceholder: Ingrese el nombre de usuario
+  passToken: Token
+  passTokenPlaceholder: Ingrese el token
+  appPassword: Contraseña de aplicación
+  appPasswordPlaceholder: Ingrese la contraseña de aplicación
+  failedToImportRepo: No se pudo importar el repositorio. Inténtelo de nuevo.
+  validation: URL de GitHub o GitLab no válida
+  required: La URL del repositorio es obligatoria
+  spaceNameReq: Ingrese un nombre para el nuevo proyecto
+  usernameReq: El nombre de usuario es obligatorio
+  passwordReq: La contraseña es obligatoria
+importRepos:
+  title: Importar repositorios
+  content: Importar múltiples repositorios desde un Grupo de GitLab, Organización de GitHub o Proyecto de Bitbucket a este proyecto.
+importSpace:
+  title: Importar proyecto
+  createASpace: Crear un proyecto
+  authorization: Autorización
+  content: Importar un Grupo de GitLab, Organización de GitHub o Proyecto de Bitbucket a un nuevo Proyecto. Las entidades de nivel superior se importarán al proyecto.
+  next: Siguiente paso
+  details: Detalles del destino a importar
+  organizationName: Nombre de la organización
+  orgNamePlaceholder: Ingrese el nombre de la organización aquí
+  spaceName: Nombre del proyecto
+  description: Descripción (opcional)
+  descPlaceholder: Ingrese la descripción
+  importLabel: Qué importar
+  providerRequired: El proveedor de Git es obligatorio
+  orgRequired: El nombre de la organización es obligatorio
+  spaceNameRequired: El nombre del proyecto es obligatorio
+  gitProvider: Proveedor de Git
+  invalidUrl: URL de GitHub o GitLab no válida
+  githubOrg: Nombre de la Organización de GitHub
+  gitlabGroup: Nombre del Grupo de GitLab
+importProgress: Importación en progreso...
+triggers:
+  newTrigger: Nuevo Trigger
+  createTrigger: Crear un Trigger
+  createSuccess: Trigger creado exitosamente
+  failedToCreate: No se pudo crear el Trigger. Inténtelo de nuevo.
+  enterTriggerName: Ingrese el nombre del trigger
+  actions: Acciones
+  updateSuccess: Trigger actualizado exitosamente
+  failedToUpdate: No se pudo actualizar el Trigger. Inténtelo de nuevo.
+  deleteTrigger: Eliminar trigger
+  disableTrigger: Deshabilitar trigger
+  deleteTriggerConfirm: ¿Está seguro de que desea eliminar el trigger <strong>{{name}}</strong>? No puede deshacer esta acción.
+  deleteTriggerSuccess: Trigger {{name}} eliminado.
+  deleteTriggerError: No se pudo eliminar el Trigger. Inténtelo de nuevo.
+step:
+  select: Seleccione un paso
+stepCategory:
+  select: Seleccione categoría de paso
+exportSpace:
+  harness: Harness
+  accIdRequired: El ID de cuenta es obligatorio
+  accesstokenReq: El token de acceso es obligatorio
+  accIdLabel: ID de cuenta de Harness
+  accIdPlaceholder: Ingrese el ID de cuenta de Harness
+  tokenLabel: Token de cuenta de Harness
+  tokenPlaceholder: Ingrese el token de acceso aquí
+  organization: ID de organización
+  orgIdPlaceholder: Ingrese el ID de la organización aquí
+  projectName: ID del proyecto
+  projectIdPlaceholder: Ingrese el ID del proyecto aquí
+  entitiesLabel: Entidades a actualizar
+  projectOrg: Organización del proyecto
+  repoToConvert: "{length} {length|1:repositorio,repositorios} a actualizar"
+  startUpgrade: Iniciar actualización
+  upgradeHarness: Actualizar a Harness
+  newProject: Detalles del proyecto de Harness
+  upgradeConfirmation: Confirmación de actualización
+  upgradeTitle: Actualizar este proyecto a la plataforma Harness Software Delivery
+  upgrade: Actualizar a Harness
+  upgradeContent: La actualización importará todos los repositorios a una organización y proyecto existentes en Harness Code. Obtenga más información sobre Harness Code aquí.
+  upgradeProgress: Actualización en progreso
+  upgradeFailed: ¡Actualización fallida! Valide sus credenciales e inténtelo de nuevo.
+  exportCompleted: Actualización completada
+  exportFailed: Actualización fallida
+  exportRepoCompleted: Se actualizaron {repoCount} {repoCount|1:repositorio,repositorios}
+  exportRepo: Actualizando {repoCount} {repoCount|1:repositorio,repositorios}
+spaceUpdate: Proyecto actualizado
+generate: Generar
+generateHelptext: Deje que Harness construya su Pipeline por usted.
+enterAddress: Ingrese la dirección
+enterGitlabPlaceholder: https://gitlab.com/
+enterGithubPlaceholder: https://api.github.com/
+enterBitbucketPlaceholder: https://bitbucket.org/
+changeRepoVis: Cambiar visibilidad del repositorio
+changeRepoVisContent: ¿Está seguro de que desea hacer este repositorio {repoVis}?
+confirmRepoVisButton: Sí, hacer el repositorio {repoVis}
+repoVisibility: Visibilidad del repositorio
+visibility: Visibilidad
+attachText: Adjunte imágenes y videos arrastrando y soltando, seleccionando o pegándolos.
+key: Clave
+setting: Configuración
+mergeCommit: Commit de fusión
+squashMerge: Squash y fusionar
+rebaseMerge: Rebase y fusionar
+fastForwardMerge: Fusión fast-forward
+Enable: Habilitar
+imageUpload:
+  title: Subir adjunto
+  readyToUpload: Listo para subir
+  upload: Subir
+  text: Arrastre y suelte un archivo aquí o haga clic en examinar para seleccionar un archivo.
+protectionRules:
+  namePlaceholder: Ingrese el nombre de la regla aquí
+  descPlaceholder: Ingrese la descripción aquí
+  title: Reglas
+  edit: Editar regla de {{ruleType}}
+  create: Crear regla de {{ruleType}}
+  targetRepositories: Repositorios objetivo
+  targetPatterns: Patrones objetivo
+  targetPlaceholder: Ingrese los patrones de {{target}}
+  targetPatternHint: Coincidir {{target}} usando patrones globstar (ej. "golden", "feature-*", "releases/**")
+  repoSelectionHint: Si no se seleccionan repositorios, la regla se aplica a todos
+  defaultBranch: Rama predeterminada
+  bypassList: Lista de omisión
+  defaultReviewersList: Lista de revisores predeterminados
+  newRule: Nueva regla de {{ruleType}}
+  allRepoOwners: Permitir a usuarios con permiso de edición en el repositorio omitir reglas
+  protectionSelectAll: "Reglas: Seleccione todas las que apliquen"
+  requireMinReviewersTitle: Requerir un número mínimo de revisores
+  requireMinReviewersContent: Requerir aprobación en pull requests de un número mínimo de revisores
+  minNumber: Número mínimo
+  minNumberPlaceholder: Ingrese el número mínimo
+  numberOfRulesApplied: "{{count}} {{type}} {{rulesLabel}} aplicadas"
+  addCodeownersToReviewTitle: Agregar Code Owners como revisores
+  addCodeownersToReviewText: Agregar automáticamente los Code Owners relevantes como revisores
+  reqReviewFromCodeOwnerTitle: Requerir revisión de code owners
+  reqReviewFromCodeOwnerText: Requerir aprobación en pull requests de un revisor por cada regla de Code Owner
+  reqNewChangesTitle: Requerir aprobación de cambios nuevos
+  reqResOfChanges: Requerir resolución de solicitudes de cambio
+  reqResOfChangesText: Todas las solicitudes de cambio en un pull request deben resolverse antes de poder fusionarlo
+  reqNewChangesText: Requerir reaprobación cuando haya cambios nuevos en el pull request
+  reqCommentResolutionTitle: Requerir resolución de comentarios
+  reqCommentResolutionText: Todos los comentarios en un pull request deben resolverse antes de poder fusionarlo
+  reqStatusChecksTitle: Requerir que las verificaciones de estado pasen
+  reqStatusChecksText: Las verificaciones de estado seleccionadas deben pasar antes de que un pull request pueda fusionarse
+  statusCheck: Verificaciones de estado
+  limitMergeStrategies: Limitar estrategias de fusión
+  limitMergeStrategiesText: Limitar qué estrategias de fusión están disponibles para fusionar un pull request
+  autoDeleteTitle: Auto eliminar rama al fusionar
+  autoDeleteText: Eliminar automáticamente la rama de origen de un pull request después de fusionarlo
+  blockCreation: Bloquear creación de {{ruleType}}
+  blockUpdate: Bloquear actualización de {{ruleType}}
+  blockUpdateText: Solo permitir a usuarios con permiso de omisión actualizar {{refs}} coincidentes
+  blockCreationText: Solo permitir a usuarios con permiso de omisión crear {{refs}} coincidentes
+  blockDeletion: Bloquear eliminación de {{ruleType}}
+  blockDeletionText: Solo permitir a usuarios con permiso de omisión eliminar {{refs}} coincidentes
+  blockForcePush: Bloquear force push
+  blockForcePushText: Solo permitir a usuarios con permiso de omisión hacer force push a {{refs}} coincidentes
+  editRule: Editar regla
+  saveRule: Guardar regla
+  deleteRule: Eliminar regla
+  ruleDeleted: Regla eliminada
+  ruleEmpty: No hay reglas en su repositorio. Haga clic en el botón de abajo para crear una regla.
+  showRulesScope: Mostrar reglas de ámbitos superiores
+  createRule: Crear regla
+  deleteProtectionRule: Eliminar regla de protección
+  deleteText: ¿Está seguro de eliminar la regla '{{rule}}'?
+  disableTheRule: Deshabilitar la regla
+  ruleUpdated: Regla de {{ruleType}} actualizada
+  enableTheRule: Habilitar la regla
+  ruleCreated: Regla de {{ruleType}} creada
+  requirePr: Requerir pull request
+  requirePrText: No permitir cambios en las ramas coincidentes sin un pull request
+  prFailedText: No se puede fusionar el pull request
+  mergePrAlertTitle: Alerta de fusión de pull request
+  mergePrAlertText: "La fusión no se puede completar. {{ruleCount}} reglas de rama fallaron: "
+  mergeCheckboxAlert: Omitir y fusionar de todos modos
+  createRefAlertBtn: Omitir reglas y crear {{ref}}
+  createRefAlertText: Algunas reglas serán omitidas al crear {{ref}}
+  createRefBlockText: Algunas reglas no permiten crear {{ref}}
+  deleteRefAlertBtn: Omitir regla y confirmar eliminación
+  deleteRefAlertText: Algunas reglas serán omitidas al eliminar {{ref}}
+  deleteRefBlockText: Algunas reglas no permiten eliminar {{ref}}
+  commitNewBranchAlertBtn: Omitir reglas y confirmar vía nueva rama
+  commitNewBranchAlertText: Algunas reglas serán omitidas al confirmar creando una rama
+  commitNewBranchBlockText: Algunas reglas no permiten crear una nueva rama para confirmar
+  commitDirectlyBlockText: Algunas reglas no permiten confirmar directamente
+  commitDirectlyAlertText: Algunas reglas serán omitidas al confirmar directamente
+  commitDirectlyAlertBtn: Omitir reglas y confirmar directamente
+  enableDefaultReviewersTitle: Habilitar revisores predeterminados
+  enableDefaultReviewersText: Requerir aprobación del revisor predeterminado para cada pull request
+  requireMinDefaultReviewersTitle: Requerir un número mínimo de revisores predeterminados
+  requireMinDefaultReviewersContent: Requerir aprobación en pull requests de un número mínimo de revisores predeterminados
+  atLeastMinReviewers: Seleccione al menos {{count}} revisores predeterminados
+  atLeastMinReviewer: Seleccione al menos {{count}} revisor predeterminado
+codeOwner:
+  title: Code Owner
+  changesRequested: "{count} {count|1:cambio,cambios} solicitados"
+  waitToApprove: "{count} {count|1:aprobación,aprobaciones} pendientes "
+  approvalCompleted: "{count}/{total} aprobaciones completadas"
+  pendingLatestApprovals: "{count} {count|1:aprobación,aprobaciones} pendientes en los últimos cambios"
+comingSoon: Próximamente...
+enterANumber: Ingrese un número
+selectUsers: Seleccionar usuarios
+selectReviewers: Seleccionar revisores
+selectUsersAndUserGroups: Seleccionar usuarios y grupos de usuarios
+selectUsersAndServiceAcc: Seleccionar usuarios y cuentas de servicio
+selectUsersUserGroupsAndServiceAcc: Seleccionar usuarios, grupos de usuarios y cuentas de servicio
+selectStatuses: Seleccionar estados
+featureRoadmap: Hoja de ruta de funciones
+pipelineConfig:
+  label: Configuración del Pipeline
+  yamlUpdated: Parece que el YAML fue modificado. ¿Actualizar cambios?
+language: Idioma
+selectLanguagePlaceholder: "- Seleccione idioma aquí -"
+selectRepositoryPlaceholder: "- Seleccione repositorio aquí -"
+results: Resultados
+showNMoreMatches: Mostrar {{ n }} coincidencias más
+showLessMatches: Mostrar menos
+clear: Limpiar
+searchExamples: Ejemplos de búsqueda
+nMoreMatches: Este archivo contiene {{ n }} coincidencias más no mostradas.
+seeNMoreMatches: Ver las {{ n }} coincidencias en el archivo completo
+bottom: Abajo
+top: Arriba
+customTime: "{{days}} {{hours}} {{minutes}} {{seconds}}"
+customDay: "{{days}}d"
+customHour: "{{hours}}h"
+customMin: "{{minutes}}m"
+customSecond: "{{seconds}}s"
+reqChanges: Solicitar cambios
+summary: Resumen
+prGenSummary: AIDA genera un resumen del PR, se inserta en el cursor o reemplaza solo el texto seleccionado.
+aidaGenSummary: AIDA está generando un resumen...
+generateSummary: Generar resumen del PR
+invalidResponse: Respuesta de resumen no válida generada
+allCommentsResolved: Todos los comentarios resueltos
+resolveComments: Hay {{n}} comentarios sin resolver
+view: Ver
+mergeCheckInProgress: Verificación de fusión en progreso...
+allConflictsNeedToBeResolved: Todos los conflictos deben resolverse antes de fusionar
+conflictsFoundInThisBranch: Conflictos encontrados en esta rama
+details: Detalles
+showCheckAll: Mostrar todas las verificaciones
+showLessCheck: Mostrar menos verificaciones
+markAsDraft: Marcar como borrador
+mergeSetting: Configuración de fusión
+deleteBranchText: Eliminar la rama después de fusionar
+customizeMergeCommitMessage: Personalizar mensaje del commit de fusión
+mergeStrategy: Estrategia de fusión
+selectMergeStrat: Seleccionar estrategia de fusión
+writeDownCommit: Escriba el mensaje del commit aquí
+prHasNoConflicts: Esta rama no tiene conflictos con la rama {name}
+checkStatus:
+  succeeded: Exitoso en {time}
+  failed: Fallido en {time}
+  running: En ejecución...
+  pending: Pendiente...
+  error: Con error en {time}
+changesSection:
+  prMergeBlockedTitle: La rama base no permite actualizaciones
+  prMergeBlockedMessage: Lea sobre Ramas Protegidas
+  reqChangeFromCodeOwners: Cambios solicitados por code owner
+  codeOwnerReqChanges: Code owner solicitó cambios
+  pendingAppFromCodeOwners: Aprobaciones pendientes de code owners
+  pendingLatestApprovalCodeOwners: Los últimos cambios están pendientes de aprobación de code owners
+  waitingOnCodeOwner: Los cambios están pendientes de aprobación de code owners
+  pendingLatestApprovalDefaultReviewers: Los últimos cambios están pendientes de aprobación de revisores predeterminados
+  waitingOnDefaultReviewers: Los cambios están pendientes de aprobación de revisores predeterminados
+  waitingOnReviewers: Los cambios están pendientes de aprobación de revisores requeridos
+  waitingOnLatestCodeOwner: Esperando revisiones de code owner de los últimos cambios
+  waitingOnLatestDefaultReviewers: Esperando revisiones de revisores predeterminados de los últimos cambios
+  approvalPending: Aprobaciones pendientes
+  changesApproved: Cambios aprobados
+  noReviewsReq: No se requieren revisiones
+  noCodeOwnerReviewsReq: Sin revisiones de code owner
+  pullReqWithoutAnyReviews: El pull request se puede fusionar sin revisiones
+  changesAppByRev: Los cambios fueron aprobados por los revisores
+  changesApprovedByXReviewers: Los cambios fueron aprobados por {length} {length|1:revisor,revisores}
+  latestChangesApprovedByXReviewers: Los últimos cambios fueron aprobados por {length} {length|1:revisor,revisores}
+  latestChangesWereAppByCodeOwner: Los últimos cambios fueron aprobados por code owners
+  latestChangesWereAppByDefaultReviewers: Los últimos cambios fueron aprobados por revisores predeterminados
+  latestChangesPendingReqRev: Los últimos cambios están pendientes de aprobación de revisores requeridos
+  changesWereAppByCodeOwner: Los cambios fueron aprobados por code owners
+  changesWereAppByDefaultReviewers: Los cambios fueron aprobados por revisores predeterminados
+  defaultReviewersStatus: Se agregaron revisores predeterminados al PR
+  changesWereAppByLatestReqRev: Los cambios fueron aprobados por revisores requeridos
+  latestChangesWereApprovedByReq: Los últimos cambios fueron aprobados por revisores requeridos
+  someChangesWereAppByCodeOwner: Algunos cambios fueron aprobados por code owners
+  xApprovalsArePending: "{approved}/{min} aprobaciones están pendientes"
+  codeOwnerReqChangesToPr: Code owners solicitaron cambios en el pull request
+  defaultReviewersChangesToPr: Revisores predeterminados solicitaron cambios en el pull request
+checkSection:
+  someReqChecksFailed: Algunas verificaciones requeridas han fallado
+  someReqChecksPending: Algunas verificaciones requeridas están pendientes
+  someReqChecksRunning: Algunas verificaciones requeridas están en ejecución
+  someChecksNotComplete: Algunas verificaciones no se han completado aún
+  allChecksSucceeded: Todas las verificaciones han sido exitosas
+  allReqChecksPassed: Todas las verificaciones requeridas pasaron
+  someChecksFailed: Algunas verificaciones han fallado
+  someChecksRunning: Algunas verificaciones están en ejecución
+rebaseSource:
+  title: Esta rama está desactualizada con la rama base
+  message: Fusionar los últimos cambios de {target} en {source}
+importFailed: Importación fallida
+uploadAFileError: No se subió ninguna imagen o video. Por favor suba una imagen o video.
+securitySettings:
+  scanningSecret: Escaneo de secretos
+  scanningSecretDesc: Bloquear commits que contengan secretos como contraseñas, claves de API y tokens
+  vulnerabilityScanning: Escaneo de vulnerabilidades
+  vulnerabilityScanningDesc: Escanear commits entrantes en busca de vulnerabilidades conocidas
+  verifyCommitterIdentity: Verificar identidad del committer
+  verifyCommitterIdentityDesc: Bloquear commits no realizados por el usuario que hace push de los cambios
+  failedToUpdate: No se pudo actualizar la configuración de seguridad
+  updateSuccess: Configuración de seguridad actualizada
+  detect: Detectar
+  detectDesc: la vulnerabilidad pasiva reportará errores pero no bloqueará
+  block: Bloquear
+  blockDesc: la vulnerabilidad activa bloquea el commit si se encuentra alguna vulnerabilidad
+suggestion: Agregar una sugerencia, <Ctrl-g>
+heading: Encabezado
+bold: Negrita
+italic: Cursiva
+upload: Subir
+unorderedList: Lista desordenada
+checklist: Lista de verificación
+code: Código
+approvedBy: Aprobado por
+ownersHeading: OWNERS
+defaultReviewers: REVISORES PREDETERMINADOS
+changesRequestedBy: Cambios solicitados por
+changesRequested: cambiosSolicitados
+owners: Propietarios
+showMoreText: Mostrar más
+addOptionalCommitMessage: Agregar mensaje de commit (opcional)
+confirmStrat: Confirmar {{strat}}
+waiting: Esperando
+mergeBranchTitle: Fusionar rama {{branchName}} de {{repoPath}} (#{{prNum}})
+http: HTTP
+ssh: SSH
+stepNum: PASO {{num}}
+cmdlineInfo:
+  title: Resolver conflictos vía línea de comandos
+  content: Si los conflictos en esta rama son demasiado complejos para resolver en el editor web, puede revisarla vía línea de comandos para resolver los conflictos
+  stepOne: Clonar el repositorio o actualizar su repositorio local con los últimos cambios
+  stepOneSub: git pull origin {target}
+  stepTwo: Cambiar a la rama de origen del pull request
+  stepTwoSub: git checkout {source}
+  stepThree: Fusionar la rama base en la rama de origen
+  stepThreeSub: git merge {target}
+  stepFour: Corregir los conflictos y confirmar el resultado
+  stepFourSub: Vea Resolución de conflictos de fusión usando la línea de comandos para instrucciones paso a paso sobre cómo resolver conflictos de fusión
+  stepFive: Hacer push de los cambios
+  stepFiveSub: git push -u origin {source}
+sshCard:
+  newSshKey: Nueva clave SSH
+  sshkey: Clave SSH
+  publicKey: Clave pública
+  noSshKeyText: No hay claves SSH asociadas con esta cuenta
+  mySshKeys: Mis claves SSH
+  sshContent: Las claves SSH le permiten establecer una conexión segura con su repositorio de código.
+  beginsWithContent: Comienza con 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ecdsa-sha2-nistp384', 'ecdsa-sha2-nistp521', 'ssh-ed25519', 'sk-ecdsa-sha2-nistp256@openssh.com', o 'sk-ssh-ed25519@openssh.com'.
+  deleteSshTitle: Eliminar clave SSH
+  deleteSshMsg: ¿Está seguro de que desea eliminar esta clave SSH?
+  successSshKeyMsg: Clave SSH eliminada exitosamente
+  addedOn: Agregada el
+  personalAccessToken: Token de acceso personal
+  noTokensText: No hay tokens de acceso personal asociados con esta cuenta
+  lastUsed: Último uso
+artifacts: Artefactos
+recursiveSearchTooltip: Deshabilitar la búsqueda recursiva solo buscará a nivel de cuenta y excluirá los repositorios de organizaciones y proyectos.
+recursiveSearchLabel: "Búsqueda recursiva: mostrar resultados en repositorios dentro de {account} Organización y Proyectos"
+accounts: De la cuenta
+scope: Alcance
+searchScope:
+  base: "Alcance de búsqueda: {scope}"
+  allScopes: Cuenta, organizaciones y proyectos
+  accOnly: Solo cuenta
+  orgOnly: Solo organizaciones
+  orgAndProj: Organizaciones y proyectos
+  title: Alcance de búsqueda
+regex:
+  tooltip: "{regex} búsqueda {enable}. Clic para {disable}"
+  enable: habilitar
+  disable: deshabilitar
+  enabled: habilitado
+  disabled: deshabilitado
+  string: RegEx
+labels:
+  labels: Etiquetas
+  newLabel: Nueva etiqueta
+  labelName: Nombre de etiqueta
+  labelValue: Valor de etiqueta
+  labelNotFound: " etiqueta no encontrada"
+  allowDynamic: Permitir a los usuarios agregar valores
+  addNewValue: "Agregar nuevo valor  "
+  addValue: Agregar valor
+  removeLabel: Eliminar etiqueta
+  deleteLabel: Eliminar etiqueta
+  deletedLabel: "Etiqueta eliminada: {tag}"
+  provideLabelName: Proporcionar nombre de etiqueta
+  labelCreated: Etiqueta creada
+  labelUpdated: Etiqueta actualizada
+  labelNameReq: El nombre de etiqueta es obligatorio
+  labelValueReq: El valor de etiqueta es obligatorio
+  noLabels: Sin etiquetas
+  updated: "actualizada "
+  applied: "aplicada "
+  label: " etiqueta"
+  labelTo: " etiqueta a "
+  removed: "eliminada "
+  anyValue: cualquier valor
+  anyValueOption: (cualquier valor)
+  failedToDeleteLabel: No se pudo eliminar la etiqueta
+  findALabel: Buscar una etiqueta
+  canbeAddedByUsers: "*puede ser agregada por usuarios*"
+  removedLabel: Etiqueta '{label}' eliminada
+  showLabelsScope: Mostrar etiquetas de ámbitos superiores
+  createLabel: Crear etiqueta
+  updateLabel: Actualizar etiqueta
+  appliedLabel: Crear una <strong>nueva rama</strong> para este commit e iniciar un pull request
+  labelsApplied: "{labelCount|1:Etiqueta,Etiquetas} Aplicadas"
+  createdIn: Creada en
+  labelCreationFailed: No se pudo crear la etiqueta
+  labelUpdateFailed: No se pudo actualizar la etiqueta
+  noLabelsFound: No se encontraron etiquetas. Haga clic en el botón de abajo para crear una etiqueta.
+  noRepoLabelsFound: No hay etiquetas en su repositorio. Haga clic en el botón de abajo para crear una etiqueta.
+  noScopeLabelsFound: No hay etiquetas en el ámbito actual. Haga clic en el botón de abajo para crear una etiqueta.
+  scopeMessage: (Mostrando etiquetas creadas en el ámbito actual o superior)
+  deleteLabelConfirm: ¿Está seguro de que desea eliminar la etiqueta <strong>{{name}}</strong>? No puede deshacer esta acción.
+  intentText: Editar/eliminar una etiqueta o sus valores impactará todas las áreas donde se ha utilizado.
+  prCount: Mostrando {count} {count|1:resultado,resultados}
+  failedtoFetchLabels: No se pudieron obtener las etiquetas
+  failedtoFetchValues: No se pudieron obtener los valores de las etiquetas
+  noResults: No se encontraron resultados
+  labelPreview: Vista previa de etiqueta
+  filterByLabels: Filtrar por etiqueta/s
+  provideLabelValue: Proporcionar valor de etiqueta
+  findaValue: Buscar un valor
+  findOrAdd: Buscar o agregar un nuevo valor
+  labelValuesOptional: Valor/es de etiqueta (Opcional)
+  descriptionOptional: Descripción (Opcional)
+  placeholderDescription: Ingrese una breve descripción para la etiqueta
+  addaValue: Agregar un valor
+  stringMax: "{entity} debe tener 50 caracteres o menos"
+  noNewLine: "{entity} no puede contener saltos de línea"
+rebase: Rebase
+rebaseBranch: Hacer rebase de la rama
+updateWithRebase: Actualizar con rebase
+updatedBranchMessageRebase: Rama actualizada con rebase
+onLatestChanges: en los últimos cambios
+favorite:
+  add: Agregar a favoritos
+  remove: Eliminar de favoritos
+  errorFavorite: No se pudo marcar esta entidad como favorita.
+  errorUnFavorite: No se pudo eliminar esta entidad de sus favoritos.
+profile: Perfil
+newUserModal:
+  uidPlaceholder: Ingrese el ID de usuario aquí
+  uidWarning: El ID de usuario no se puede cambiar una vez creado
+  emailPlaceholder: Ingrese el correo electrónico aquí
+  displayNamePlaceholder: Ingrese el nombre para mostrar aquí
+  passwordHelptext: Su contraseña ha sido generada. Asegúrese de copiar y guardar su contraseña en un lugar seguro, no podrá verla nuevamente.
+  userCreated: Usuario creado exitosamente
+  userUpdated: Usuario actualizado exitosamente
+  userDeleted: Usuario '{{name}}' eliminado exitosamente
+executions:
+  noData: No hay ejecuciones
+  newExecutionButton: Ejecutar Pipeline
+  name: Nombre de la ejecución
+  description: Descripción
+  time: Tiempo
+  completedTime: completada hace {{timeString}}
+  canceledTime: cancelada hace {{timeString}}
+  started: Ejecución iniciada
+  failed: Falló al iniciar la construcción
+  newExecution: Ejecutar Pipeline
+keywordSearchPlaceholder: Buscar código o archivos...
+pluginsPanel:
+  plugins:
+    helptext: Ejecutar un paso de plugin
+  run:
+    helptext: Ejecutar un contenedor o un comando de shell
+    script: Script
+    shell: Shell
+    sh: Sh
+    bash: Bash
+    powershell: Powershell
+    pwsh: Pwsh
+    image: Imagen
+    credentials: Credenciales
+    username: Nombre de usuario
+    password: Contraseña
+    pull: Pull
+    entrypoint: Punto de entrada
+    network: Red
+    networkMode: Modo de red
+    privileged: Privilegiado
+    path: Ruta
+    always: Siempre
+    never: Nunca
+    ifNotExists: Si no existe
+approved: Aprobado
+discard: Descartar
+userProfile:
+  deleteTokenMsg: ¿Está seguro de que desea eliminar este token?

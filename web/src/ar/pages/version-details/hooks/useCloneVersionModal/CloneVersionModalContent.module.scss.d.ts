@@ -14,9 +14,12 @@
  * limitations under the License.
  */
 
-export { useStrings, String } from './String'
-export type { UseStringsReturn } from './String'
-export { useStringsContext, StringsContext } from './StringsContext'
-export type { StringKeys } from './StringsContext'
-export { LOCALE_LABELS, SUPPORTED_LOCALES, resolveLocale, storeLocale, getStoredLocale, detectBrowserLanguage } from './languageLoader'
-export type { LangLocale, LanguageRecord } from './languageLoader'
+/* eslint-disable */
+// This is an auto-generated file
+export declare const form: string
+export declare const inputWithSpinner: string
+export declare const sectionHeading: string
+export declare const sectionHeadingWithTop: string
+export declare const selectSpinner: string
+export declare const separator: string
+export declare const sourceSection: string

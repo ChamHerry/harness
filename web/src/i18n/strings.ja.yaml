@@ -1,0 +1,1402 @@
+gitness: Gitness
+pageNotFound: ページが見つかりません
+signIn: サインイン
+signUp: サインアップ
+email: メールアドレス
+emailUser: メールアドレス / ユーザーID
+password: パスワード
+confirmPassword: パスワードの確認
+noAccount: アカウントをお持ちでない場合
+existingAccount: 既存のアカウント
+public: 公開
+private: 非公開
+cancel: キャンセル
+cancelImport: インポートをキャンセル
+deleteImport: インポートを削除
+cancelledImport: インポートをキャンセルしました
+deletedImport: インポートを削除しました
+failedToCancelImport: インポートのキャンセルに失敗しました
+failedToDeleteImport: インポートの削除に失敗しました
+name: 名前
+value: 値
+help: ヘルプ
+search: 検索
+description: 説明
+repositories: リポジトリ
+files: ファイル
+commit: コミット
+committed: コミット済み
+commits: コミット
+lastCommit: 最新コミット
+lastCommitDate: 最新コミット日時
+commitChanges: 変更をコミット
+pullRequests: プルリクエスト
+settings: 設定
+patterns: パターン
+manageRepository: リポジトリを管理
+manageRepositories: リポジトリを管理
+selectRepositories: リポジトリを選択
+newFile: 新しいファイル
+editFile: ファイルを編集
+prev: 前へ
+next: 次へ
+newFolder: 新しいフォルダー
+content: コンテンツ
+history: 履歴
+newRepo: 新しいリポジトリ
+createARepo: リポジトリを作成
+createRepo: リポジトリを作成
+enterRepoName: リポジトリ名を入力
+enterDescription: 説明を入力（任意）
+enterRepoDescription: リポジトリの説明を入力
+addDescription: 説明を追加
+addLicense: ライセンスを追加
+none: なし
+create: 作成
+clone: クローン
+copy: コピー
+defaultBranch: デフォルト
+defaultBranchTitle: デフォルトブランチ
+switchBranch: ブランチを切り替え
+confirmDefaultBranch:
+  title: デフォルトブランチを変更
+  message: 'デフォルトブランチを <strong style="color: var(--primary-7)">{{currentGitRef}}</strong> に変更してもよろしいですか？'
+  points: 'オープン中のプルリクエストは以前のデフォルトブランチを引き続き指します。パターンマッチングを使用しているブランチルールの更新が必要になる場合があります。リポジトリのクローン時は新しいデフォルトブランチがクローンされます'
+in: in
+ok: OK
+at: at
+on: オン
+off: オフ
+loading: 読み込み中...
+title: タイトル
+accessControl: アクセス管理
+permissions: メンバー
+permissionsFor: '{{name}} のメンバー'
+addGitIgnore: .gitignore を追加
+addReadMe: README ファイルを追加
+failedToCreateRepo: リポジトリの作成に失敗しました。もう一度お試しください。
+status: ステータス
+commitsOn: '{{date}} のコミット'
+viewCommitDetails: コミットの詳細を表示
+copyCommitSHA: コミット SHA をコピー
+branches: ブランチ
+branch: ブランチ
+activeBranches: アクティブなブランチ
+inactiveBranches: 非アクティブなブランチ
+yourBranches: 自分のブランチ
+allBranches: すべてのブランチ
+newBranch: 新しいブランチ
+createBranch: ブランチを作成
+createTag: タグを作成
+tagDescription: ここにタグの説明を入力
+findBranch: ブランチを検索
+searchBranches: ブランチを検索
+updated: 更新済み
+lastUpdated: 最終更新
+updatedDate: 更新日時
+cloneHTTPS: Git クローン URL
+nameYourFile: ファイル名を入力...
+noResultTitle: 検索結果が見つかりませんでした
+noResultMessage: 検索した内容は見つからないか存在しません
+noFilterResultMessage: 適用されたフィルターに一致する結果が見つかりませんでした
+pageTitle:
+  signin: サインイン
+  register: 新規アカウントの登録
+  accessControl: アクセス管理
+  spaceSettings: プロジェクト設定
+  compare: プルリクエストの比較
+  pullRequest: プルリクエスト
+  pullRequests: プルリクエスト
+  createWebhook: Webhook の作成
+  webhooks: Webhook
+  repositorySettings: リポジトリ設定
+  repositories: リポジトリ
+  branches: ブランチ
+  tags: タグ
+  editFileLocation: '{{{path}}} を編集中'
+  repository: リポジトリ
+  home: ホーム
+  users: ユーザー
+  userProfile: ユーザープロフィール
+  changePassword: パスワードの変更
+  pipelines: パイプライン
+  secrets: シークレット
+  executions: 実行
+  search: AI 搭載検索
+  artifactRegistries: アーティファクトレジストリ
+repos:
+  name: リポジトリ名
+  data: リポジトリデータ
+  activities: 月間アクティビティ
+  lastChange: 最終変更
+  lastPush: 最終プッシュ
+  noDataMessage: このプロジェクトにはリポジトリがありません。
+  createNewRepoMessage: 下のボタンをクリックして、新しいリポジトリを作成するか、既存の Git リポジトリをインポートしてください。
+  enterBranchName: ブランチ名を入力
+  confirmSelection: 選択を確認
+  specificRepositories: 特定のリポジトリ
+createRepoModal:
+  branchLabel: 'リポジトリは '
+  branch: ' ブランチで初期化されます。'
+  publicLabel: リポジトリを閲覧できるユーザーは誰でもクローンできます。
+  privateLabel: このリポジトリの閲覧とコミットができるユーザーを選択します。
+  publicWarning: リポジトリを閲覧できるユーザーは誰でもクローンできることにご注意ください。
+validation:
+  repoNamePatternIsNotValid: レジストリ名は1〜255文字で、小文字、数字、._- のみ使用可能で、数字または文字で始める必要があります
+  gitBranchNameInvalid: ブランチ名が無効です。
+  gitTagNameInvalid: タグ名が無効です。
+  uidInvalid: ユーザーIDは英数字、'-'、'_'、'.'、'$' のみ使用できます
+  nameInvalid: 名前は英数字、'-'、'_'、'.'、'$' のみ使用できます
+  emailInvalid: 有効なメールアドレスを入力してください
+  emailRequired: メールアドレスは必須です
+  uidRequired: ユーザーIDは必須です
+  nameIsRequired: 名前は必須です
+  pathIsRequired: パスは必須です
+  imagePathIsRequired: イメージパスは必須です
+  invalidImage: "無効なイメージ表現: ワイルドカード文字 '*' は最大1回のみ、末尾にのみ使用できます。"
+  connectorRequired: コネクターは必須です
+  expirationDateRequired: 有効期限は必須です
+  newPasswordRequired: 新しいパスワードは必須項目です
+  confirmPasswordRequired: パスワードの確認は必須項目です
+  spaceNamePatternIsNotValid: "名前は文字または '_' で始まり、英数字のみ使用可能です"
+  nameLogic: 名前は文字または _ で始まり、[a-zA-Z0-9-_.] のみ使用できます
+  nameTooLong: 名前が長すぎます
+  nameTooShort: 名前が短すぎます
+  key: キーを空にすることはできません
+commitMessage: コミットメッセージ
+optionalExtendedDescription: 拡張説明（任意）
+optional: 任意
+commitDirectlyTo: '<strong style="color: var(--primary-7)">{{gitRef}}</strong> ブランチに直接コミット'
+commitToNewBranch: このコミットに対して<strong>新しいブランチ</strong>を作成し、プルリクエストを開始
+enterNewBranchName: 新しいブランチ名
+onDate: '{{date}}'
+deleteFile: ファイル __path__ を削除
+confirm: 確認
+createABranch: ブランチを作成
+createATag: タグを作成
+delete: 削除
+edit: 編集
+archive: アーカイブ
+unarchive: アーカイブ解除
+archived: アーカイブ済み
+cautionZone: 注意ゾーン
+editAsText: テキストとして編集
+branchName: ブランチ名
+enterBranchPlaceholder: ブランチ名を入力
+nameYourBranch: ブランチ名を入力
+nameYourTag: タグ名を入力
+enterTagPlaceholder: タグ名を入力
+branchSource: ブランチソース
+branchSourceDesc: ソースブランチを選択
+basedOn: ベース
+failedToCreateBranch: ブランチの作成に失敗しました。もう一度お試しください。
+branchCreated: ブランチ {branch} を作成しました。
+tagCreated: タグ {{tag}} を作成しました。
+confirmation: 確認
+deleteBranch: ブランチを削除
+restoreBranch: ブランチを復元
+deleteTag: タグを削除
+deleteTagConfirm: タグ <strong>{{name}}</strong> を削除してもよろしいですか？この操作は取り消せません。
+deleteBranchConfirm: ブランチ <strong>{{name}}</strong> を削除してもよろしいですか？この操作は取り消せません。
+cancelImportConfirm: <strong>{{name}}</strong> のインポートを中止してもよろしいですか？この操作は取り消せません。
+deleteFailedImport: <strong>{{name}}</strong> を削除してもよろしいですか？
+browse: 閲覧
+browseFiles: ファイルを閲覧
+compare: 比較
+commitString: 'コミット {commit}'
+repoDeleted: リポジトリ {{repo}} を削除しました。
+branchDeleted: ブランチ {branch} を削除しました。
+branchRestored: ブランチ {branch} を復元しました。
+tagDeleted: タグ {tag} を削除しました。
+failedToDeleteBranch: ブランチの削除に失敗しました。もう一度お試しください。
+deleteBranchDryRunFailed: ブランチ削除のドライランに失敗しました。もう一度お試しください。
+deleteTagDryRunFailed: タグ削除のドライランに失敗しました。もう一度お試しください。
+createFile: __path__ を作成
+updateFile: __path__ を更新
+renameFile: __path__ の名前を __newPath__ に変更
+switchBranchesTags: ブランチ/タグを切り替え
+tag: タグ
+tags: タグ
+findOrCreateBranch: ブランチを検索または作成
+findATag: タグを検索
+viewAllBranches: すべてのブランチを表示
+viewAllTags: すべてのタグを表示
+createBranchFromBranch: "ブランチを作成: <strong>{{newBranch}}</strong> を <strong>'{{target}}'</strong> から"
+createBranchFromTag: "ブランチを作成: <strong>{{newBranch}}</strong> をタグ <strong>'{{target}}'</strong> から"
+tagNotFound: 'タグ <strong>{{tag}}</strong> が見つかりません。'
+branchNotFound: 'ブランチ <strong>{{branch}}</strong> が見つかりません。'
+branchUpToDate: '{{defaultBranch}} と同期済み'
+branchUpToDateWith: ブランチは以下と同期済み
+unableToGetDivergence: 差分を取得できません
+branchCommitCount: '{count} 件の{count|1:コミット,コミット}'
+behindDivergence: '{behindCommits} 件の{behindCommits|1:コミット,コミット} 遅れ '
+aheadDivergence: '{aheadCommits} 件の{aheadCommits|1:コミット,コミット} 先行'
+branchDivergenceBehind: '{defaultBranch} に対して {behind} 件の{behindCommits|1:コミット,コミット} 遅れ'
+branchDivergenceAhead: '{defaultBranch} に対して {ahead} 件の{aheadCommits|1:コミット,コミット} 先行'
+branchDivergenceAheadBehind: '{defaultBranch} に対して {ahead} 件の{aheadCommits|1:コミット,コミット} 先行、{behind} 件の{behindCommits|1:コミット,コミット} 遅れ'
+noWebHooks: 'Webhookがありません。'
+deleteNotAllowed: ファイルを削除するにはブランチ上にいる必要があります
+editNotAllowed: ファイルを編集するにはブランチ上にいる必要があります
+newFileNotAllowed: 新しいファイルを作成するにはブランチ上にいる必要があります
+fileDeleted: '__path__ を削除しました。'
+newPullRequest: 新しいプルリクエスト
+pullRequestEmpty: リポジトリにプルリクエストがありません。下のボタンをクリックしてプルリクエストを作成してください。
+pullRequestNotFoundforFilter: 適用されたフィルターに一致するプルリクエストがありません
+comparingChanges: 変更を比較
+compareAndPullRequest: 比較してプルリクエストを作成
+selectToViewMore: ブランチを選択して詳細を表示
+createPullRequest: プルリクエストを作成
+prefixBase: 'ベース: '
+prefixCompare: '比較: '
+selectBranchPlaceHolder: ブランチを選択
+pullMustBeMadeFromBranches: プルリクエストは異なる2つのブランチからのみ作成できます
+prMustSelectSourceAndTargetBranches: ソースとターゲットのブランチを選択してください
+prSourceAndTargetMustBeDifferent: ソースとターゲットのブランチは異なる必要があります
+payloadUrl: 'ペイロード URL'
+samplePayloadUrl: 'https://examples.com/harness'
+payloadUrlLabel: 'ペイロード URL'
+secret: 'シークレット'
+webhookEventsLabel: 'この Webhook をトリガーするイベントを選択'
+webhookSelectPushEvents: 'プッシュイベントのみ'
+webhookSelectAllEvents: 'すべてのイベントを送信'
+webhookSelectIndividualEvents: '個別にイベントを選択'
+webhookAllEventsSelected: 'すべてのイベント'
+branchTagCreation: 'ブランチまたはタグの作成'
+branchTagDeletion: 'ブランチまたはタグの削除'
+branchProtectionRules: 'ブランチ保護ルール'
+ruleBlockedMessage: 'すべてのブランチ更新がブロックされています'
+pushBlockedMessage: 'すべてのブランチプッシュがブロックされています'
+checkRuns: 'チェック実行'
+checkSuites: 'チェックスイート'
+scanAlerts: 'コードスキャンアラート'
+botAlerts: 'Dependabot アラート'
+security: 'セキュリティ'
+deployKeys: 'デプロイキー'
+sslVerificationLabel: 'SSL 検証'
+enableSSLVerification: 'SSL 検証を有効にする'
+newWebhook: 新しい Webhook
+createAWebhook: Webhook を作成
+createWebhook: Webhook を作成
+webhook: Webhook
+diff: 差分
+draft: ドラフト
+conversation: 会話
+commandLine: コマンドライン
+include: 含める
+exclude: 除外
+pr:
+  toggleComments: コメントの切り替え
+  suggestedChange: 変更の提案
+  addSuggestion: 提案をバッチに追加
+  removeSuggestion: バッチから提案を削除
+  commitSuggestions: '{count|1:件の提案,件の提案}をコミット'
+  commitSuggestion: 提案をコミット
+  applySuggestions: 'コードレビューから{count|1:件の提案,件の提案}を適用'
+  suggestionApplied: 提案を適用しました
+  commentLineNumbers: '{{start}} 行目から {{end}} 行目にコメント'
+  moreComments: '{num} {count|0:もっと表示,1:1件のコメント,件のコメント}'
+  copyLinkToComment: コメントへのリンクをコピー
+  expandFullFile: すべて展開
+  collapseFullFile: 展開した行を折りたたむ
+  ableToMerge: マージ可能です。
+  useCmdLineToResolveConflicts: '{cmd} を使用してコンフリクトを解決'
+  cantBeMerged: このブランチは {{name}} ブランチとコンフリクトがあります。
+  cantMerge: マージできません。プルリクエストを作成することは可能です。
+  failedToCreate: プルリクエストの作成に失敗しました。
+  titlePlaceHolder: プルリクエストのタイトルを入力
+  descriptionPlaceHolder: プルリクエストの説明を入力
+  modalTitle: プルリクエストを開く
+  createDraftPR: ドラフトプルリクエストを作成
+  metaLine: '{user} が {commits} 件の{commitsCount|1:コミット,コミット}を {source} から {target} へ{state|merged:マージ,マージ希望}'
+  executionState: '{state|success:成功,failed:失敗}'
+  state: '{state|closed:クローズ,merged:マージ済み,rejected:却下,draft:ドラフト,オープン}'
+  statusLine: '#{number} {state|merged:マージ済み,closed:クローズ,rejected:却下,opened:オープン} {time} by {user}'
+  updatedLine: '最終更新 {time}'
+  diffStatus: '{status|deleted:削除,new:追加,renamed:名前変更,copied:コピー,変更}'
+  showDiff: 差分を表示
+  fileDeleted: このファイルは削除されました。
+  fileUnchanged: 変更のないファイル
+  diffTooLarge: 大きな差分はデフォルトで表示されません。
+  fileBinary: バイナリファイルは表示されません。
+  showLink: '{count} 件の{count|1:ファイル,ファイル}が変更'
+  diffStatsLabel: '{changedFilesLink} を表示、{addedLines} 件の{addedLines|1:追加,追加}と {deletedLines} 件の{deletedLines|1:削除,削除} {configuration}'
+  diffView: 差分表示
+  split: 分割
+  unified: 統合
+  reviewChanges: 変更をレビュー
+  mergePR: プルリクエストをマージ
+  branchHasNoConflicts: プルリクエストはマージ可能です
+  rebaseMergePossible: リベース後にプルリクエストをマージ可能です
+  checkingToMerge: 自動マージ可能性を確認中...
+  prCanBeMerged: マージを自動的に実行できます。
+  enterDesc: 説明を入力
+  failedToUpdate: プルリクエストの更新に失敗しました。もう一度お試しください。
+  failedToUpdateTitle: プルリクエストのタイトル更新に失敗しました。もう一度お試しください。
+  failedToSaveComment: コメントの保存に失敗しました。もう一度お試しください。
+  failedToDeleteComment: コメントの削除に失敗しました。もう一度お試しください。
+  failedToUpdateCommentStatus: コメントのステータス更新に失敗しました。もう一度お試しください。
+  prMerged: このプルリクエストはマージされました
+  prClosed: このプルリクエストはクローズされました。
+  closedPrBranchDelete: '{source} ブランチに未マージの変更があります。'
+  createPRBannerInfo: '{branch} に {time} にプッシュしました'
+  reviewSubmitted: レビューが送信されました。
+  requestSubmitted: 変更リクエストが送信されました。
+  requestedChanges: '{{user}} がプルリクエストに変更を要求しました'
+  prReviewSubmit: '{user} がこのプルリクエストを{state|approved:承認, rejected:却下,changereq:変更要求, レビュー}しました。  {time}'
+  prMergedBannerInfo: '{user} がブランチ {source} を {target} に {mergeMethod} しました {time}'
+  prMergedBannerInfoWithBypassingRules: '{user} がブランチルールをバイパスしてブランチ {source} を {target} に {mergeMethod} しました {time}'
+  prMergedInfo: '{user} がブランチ {source} を {target} に {mergeSha} として {mergeMethod} しました {time}'
+  prMergedInfoWithBypassingRules: '{user} がブランチルールをバイパスしてブランチ {source} を {target} に {mergeSha} として {mergeMethod} しました {time}'
+  prBranchPushInfo: '{user} が新しいコミット {commit} をプッシュしました'
+  prBranchForcePushInfo: '{user} が {oldCommit} から {newCommit} へ強制プッシュしました'
+  prBranchDeleteInfo: '{user} がソースブランチを最新コミット {commit} で削除しました'
+  prBranchRestoreInfo: '{user} がソースブランチを最新コミット {commit} で復元しました'
+  prStateChanged: '{user} がプルリクエストのステータスを {old} から {new} に変更しました。'
+  prStateChangedDraft: '{user} {changedToDraft|true:がプルリクエストをドラフトとしてマークしました。,がプルリクエストをレビュー用にオープンしました。}'
+  titleChanged: '{user} がタイトルを {old} から {new} に変更しました。'
+  titleChangedTable: |
+    ### 履歴内のその他のタイトル変更
+    | 作成者      | 旧名称 | 新名称 | 日付 |
+    | ----------- | -------- | -------- | ---- |
+  readyForReview: レビュー準備完了
+  openForReview: レビュー用にオープン
+  openForReviewSuccess: PR のステータスがオープンに変更されました
+  authorCommentedPR: '{author} がこのプルリクエストを {time} に提出しました'
+  mergeOptions:
+    squashAndMerge: スカッシュしてマージ
+    squashAndMergeDesc: このブランチのすべてのコミットがベースブランチの1つのコミットにまとめられます。
+    createMergeCommit: プルリクエストをマージ
+    createMergeCommitDesc: このブランチのすべてのコミットがマージコミットを通じてベースブランチに追加されます。
+    rebaseAndMerge: リベースしてマージ
+    rebaseAndMergeDesc: このブランチのすべてのコミットがリベースされてベースブランチに追加されます。
+    fastForwardMerge: ファストフォワードマージ
+    fastForwardMergeDesc: このブランチのすべてのコミットがマージコミットなしでベースブランチに追加されます。リベースが必要な場合があります。
+    close: プルリクエストをクローズ
+    closeDesc: このプルリクエストをクローズします。クローズ後も再度オープンできます。
+    createAMergeCommit: マージコミットを作成
+  outdated: 古い
+  titleIsRequired: プルリクエストのタイトルは必須です。
+  descIsRequired: プルリクエストの説明は必須です。
+  descIsTooLong: '説明が長すぎます（{{len}}/{{max}} 文字）。'
+  descHasTooLongLine: '説明の一部の行が最大 {{max}} 文字を超えており、パフォーマンスに影響する可能性があります。より小さなセグメントに分割することを検討してください。'
+  draftOpenForReview:
+    title: レビュー準備完了
+    desc: このプルリクエストをレビュー用にオープンします。
+  status: プルリクエストのチェックステータス
+  checks: チェック
+  checksFailure: '{failedCount}/{total} のチェックが失敗'
+  addDescription: 説明を追加
+  reviewRequested: レビューがリクエストされました
+  changesRequested: 変更がリクエストされました
+  myPRs: 自分のプルリクエスト
+  titleUpdated: プルリクエストのタイトルが更新されました
+  targetBranchUpdated: ターゲットブランチが {{branch}} に更新されました
+  titleAndBranchUpdated: 'プルリクエストが更新されました: タイトルとターゲットブランチ（{{branch}}）'
+  revert: 取り消し
+  createRevertPR: 変更を取り消す新しいプルリクエストを作成
+  revertBranchSuccess: 取り消しブランチ {{branch}} を作成しました
+  revertOpFailed: 取り消し操作に失敗しました
+prState:
+  draftHeading: このプルリクエストはまだ作業中です
+  draftDesc: ドラフトのプルリクエストはマージできません。
+prChecks:
+  error: '{count}/{total} {count|1:件のチェック,件のチェック}でエラーが発生しました。'
+  failure: '{count}/{total} {count|1:件のチェック,件のチェック}が失敗しました。'
+  running: '{count}/{total} {count|1:件のチェック,件のチェック}が実行中です。'
+  pending: '{count}/{total} {count|1:件のチェック,件のチェック}が保留中です。'
+  skipped: '{count}/{total} {count|1:件のチェック,件のチェック}がスキップされました。'
+  success: '{count}/{total} {count|1:件のチェック,件のチェック}が成功しました。'
+  killed: '{count}/{total} {count|1:件のチェック,件のチェック}が強制終了されました。'
+  failureIgnored: '{count}/{total} {count|1:件のチェック,件のチェック}の失敗が無視されました。'
+  notFound: このリポジトリにパイプラインまたは外部チェックが見つかりません。
+  viewExternal: 詳細を表示
+prReview:
+  assigned: '{author} が {reviewer} をレビュアーに割り当てました'
+  requested: '{author} が {reviewer} にレビューをリクエストしました'
+  selfAssigned: '{reviewer} が自身にレビューをリクエストしました'
+  removed: '{author} が {reviewer} へのレビューリクエストを取り下げました'
+  ugRemoved: '{author} がユーザーグループ {reviewer} へのレビューリクエストを取り下げました'
+  selfRemoved: '{author} が自身のレビューリクエストを取り下げました'
+  filterByReviews: レビューで絞り込み
+  codeowners: '{author} が{count|1:コードオーナー,コードオーナー}として {codeowners} にレビューをリクエストしました'
+  defaultReviewers: '{author} が{count|1:デフォルトレビュアー,デフォルトレビュアー}として {reviewers} にレビューをリクエストしました'
+  ugCodeowners: '{author} が{count|1:ユーザーグループ,ユーザーグループ}の {codeowners} に{count|1:コードオーナー,コードオーナー}としてレビューをリクエストしました'
+  ugDefaultReviewers: '{author} が{count|1:ユーザーグループ,ユーザーグループ}の {reviewers} に{count|1:デフォルトレビュアー,デフォルトレビュアー}としてレビューをリクエストしました'
+  labelsAssigned: '{count|0:ラベル,ラベル}'
+  targetBranchChange: '{user} がターゲットブランチを {old} から {new} に変更しました'
+webhookListingContent: '作成、削除、デプロイ ...'
+general: '全般'
+generalSetting:
+  features: 機能
+  gitLFSEnable: Git Large File Storage (LFS)
+  gitLFSEnableDesc: Git LFS を使用して大きなファイルを管理します。
+webhooks: 'Webhook'
+open: オープン
+merged: マージ済み
+enabled: 有効
+closed: クローズ
+close: クローズ
+reject: 却下
+rejected: 却下済み
+yours: 自分
+all: すべて
+scrollToTop: トップにスクロール
+filesChanged: 変更
+viewed: 閲覧済み
+changedSinceLastView: 前回閲覧以降の変更
+comment: コメント
+addComment: コメントを追加
+replyHere: ここに返信...
+reply: 返信
+replyAndResolve: 返信して解決
+replyAndReactivate: 返信して再有効化
+leaveAComment: コメントを残す...
+lineBreaks: 改行
+quote: 引用
+deleteCommentConfirm: このコメントを削除してもよろしいですか？
+write: 作成
+preview: プレビュー
+save: 保存
+edited: 編集済み
+deleted: 削除済み
+commentDeleted: このコメントは削除されました。
+enterSecret: シークレットを入力
+confirmDeleteWebhook: この Webhook を削除してもよろしいですか？
+webhookDeleted: Webhook を削除しました。
+failedToDeleteWebhook: Webhook の削除に失敗しました。もう一度お試しください。
+webhookDetails: Webhook の詳細
+updateWebhook: Webhook を更新
+webhookUpdated: Webhook を更新しました。
+webhookCreated: Webhook を作成しました。
+customHeaders: カスタムヘッダー
+headerKey: キー
+headerKeyPlaceholder: ヘッダーキーを入力
+headerValue: 値
+headerValuePlaceholder: ヘッダー値を入力
+masked: マスク済み
+addCustomHeader: カスタムヘッダーを追加
+requestHeaders: リクエストヘッダー
+oneMustBeSelected: 少なくとも1つのイベントを選択してください
+webhookBranchCreated: ブランチが作成されました
+webhookBranchUpdated: ブランチが更新されました
+webhookBranchDeleted: ブランチが削除されました
+webhookTagCreated: タグが作成されました
+webhookTagUpdated: タグが更新されました
+webhookTagDeleted: タグが削除されました
+webhookPRBranchUpdated: PR ブランチが更新されました
+webhookPRCreated: PR が作成されました
+webhookPRUpdated: PR が更新されました
+webhookPRReopened: PR が再オープンされました
+webhookPRClosed: PR がクローズされました
+webhookPRCommentCreated: PR コメントが作成されました
+webhookPRCommentStatusUpdated: PR コメントのステータスが更新されました
+webhookPRCommentUpdated: PR コメントが更新されました
+webhookPRMerged: PR がマージされました
+webhookPRLabelAssigned: PR ラベルが割り当てられました
+webhookPRReviewSubmitted: PR レビューが送信されました
+nameYourWebhook: Webhook 名を入力
+noExecutionsFound: 実行が見つかりません
+noExecutionsFoundForWebhook: この Webhook の実行が見つかりません
+executionHistory: 実行履歴
+serverResponse: サーバーレスポンス
+requestPayload: リクエストペイロード
+triggeredEvent: トリガーされたイベント
+event: イベント
+lastTriggeredAt: 最終トリガー日時
+executionId: 実行 ID
+submitReview: レビューを送信
+webhookPage: Webhook ページ
+webhookTabs: Webhook タブ
+reTriggeredExecution: 実行を再トリガーしました
+retriggerExecution: 実行を再トリガー
+atSubTitle: At
+notRetriggerableMessage: この Webhook 実行は再トリガーできません
+approve: 承認
+requestChanges: 変更をリクエスト
+repoEmptyMarkdown: |
+  ## このリポジトリは空です
+
+  ### 始めましょう
+
+  [新しいファイル](NEW_FILE_URL)を作成する。
+repoEmptyMarkdownClone: |
+  ### またはこのリポジトリをクローン
+
+  HTTPS でクローン
+  ```sh
+  git clone REPO_URL
+  ```
+repoEmptyMarkdownClonePush: |
+  次にコンテンツをプッシュします。
+
+  ```sh
+  cd REPO_NAME
+  git branch -M DEFAULT_BRANCH
+  echo "# Hello World" >> README.md
+  git add README.md
+  git commit -m "Initial commit"
+  git push -u origin DEFAULT_BRANCH
+  ```
+repoEmptyMarkdownExisting: |
+  ### または既存のリポジトリをプッシュ
+
+  ```sh
+  git remote add origin REPO_URL
+  git branch -M DEFAULT_BRANCH
+  git push -u origin DEFAULT_BRANCH
+  ```
+
+  このリポジトリにプルまたはプッシュするには、[API トークンの作成](CREATE_API_TOKEN_URL)が必要な場合があります。
+webhookEmpty: リポジトリに Webhook がありません。下のボタンをクリックして Webhook を作成してください。
+compareEmptyDiffTitle: 比較するものがありません
+compareEmptyDiffMessage: 2つのブランチは同一です。
+noCommits: コミットがありません
+noCommitsMessage: このリポジトリにはまだコミットがありません。
+noCommitsPR: このプルリクエストにはコミット履歴がありません。
+noChanges: 変更はありません
+noChangesPR: このプルリクエストに変更はありません。
+noChangesCompare: ソースとターゲットは同一です。
+pageLoading: 読み込み中、お待ちください...
+repoCloneHeader: またはこのリポジトリをクローン
+repoCloneLabel: HTTPS でクローン
+emptyRepoHeader: このリポジトリは空です。始めましょう...
+addNewFile: + 新しいファイル
+emptyRepoInclude: すべてのリポジトリに {README}、{LICENSE}、{GITIGNORE} を含めることをお勧めします。
+readMe: README,
+license: LICENSE
+gitIgnore: .gitignore
+and: および
+error404Text: お探しのページは見つかりませんでした
+branchNotFoundError: ブランチが見つかりません
+branchNotFoundMessage: ブランチ '{{gitRef}}' が見つからないか削除されています
+goToDefaultBranch: デフォルトブランチに移動
+branchDoesNotHaveFile: リポジトリ "{repoName}" にはブランチ "{branchName}" のパス "{fileName}" が含まれていません
+webhookDialogTitle: Webhook のオン/オフ
+webhookDialogContent: この Webhook をオン/オフすることを確認してください
+pullRequestalreadyExists: プルリクエスト {prLink} は既に存在します。
+makeRequired: 必須にする
+makeOptional: 任意にする
+remove: 削除
+required: 必須
+isRequired: は必須です
+noneYet: なし
+noOptionalReviewers: 任意のレビュアーはいません
+noRequiredReviewers: 必須のレビュアーはいません
+reviewers: レビュアー
+refresh: 更新
+enableWebhookTitle: Webhook を有効にする
+disableWebhookTitle: Webhook を無効にする
+enableWebhookContent: '{name} をオンにしてもよろしいですか？'
+disableWebhookContent: '{name} をオフにしてもよろしいですか？'
+ascending: 昇順
+descending: 降順
+active: アクティブ
+pending: 保留中
+resolved: 解決済み
+showEverything: すべて表示
+allComments: すべてのコメント
+whatsNew: 新着情報
+myComments: 自分のコメント/返信
+resolvedComments: 解決済みのコメント
+unrsolvedComment: 未解決のコメント
+resetZoom: ズームをリセット
+zoomIn: ズームイン
+zoomOut: ズームアウト
+checks: チェック
+blameCommitLine: '{author} が {timestamp} にコミット'
+filterByAuthor: 作成者で絞り込み
+includeSubspacePR: サブプロジェクトの PR を含む
+tooltipRepoEdit: '{PERMS} の権限がありません'
+missingPerms: '以下の権限が不足しています:'
+createRepoPerms: 'リポジトリの作成 / 編集'
+missingPermsContent: 'プロジェクト "{PROJECT}" の "{PERMS}"'
+repositoryName: リポジトリ名
+deleteRepo: このリポジトリを削除
+deleteRepoMsg: リポジトリを削除すると復元できません。慎重に操作してください。
+dangerDeletePipeline: このパイプラインを削除してもよろしいですか？
+dangerDeleteProject: このプロジェクトを削除してもよろしいですか？
+repoUpdate: リポジトリを更新しました
+deleteRepoText: リポジトリ '{REPONAME}' を削除してもよろしいですか？
+deleteRepoTitle: リポジトリを削除
+resolve: 解決
+reactivate: 再有効化
+generateCloneCred: + クローン認証情報を生成
+generateCloneText: '初めての場合はクローン認証情報を生成してください'
+getMyCloneTitle: クローン認証情報を生成
+cloneText: クローン認証情報が生成されました。パスワードをコピーして安全な場所に保管してください。再表示することはできません。
+manageApiToken: API トークンを管理
+userName: ユーザー名
+passwordApi: パスワード（API トークン）
+firstTimeTitle: 初めてリポジトリをクローンする場合は Git 認証情報を生成してください
+manageCredText: Git 認証情報は {URL} で管理することもできます
+blame: Blame
+blameEmpty: ファイルは空です。Blame 情報はありません。
+viewRaw: Raw を表示
+download: ダウンロード
+changes: 変更
+contents: コンテンツ
+unsavedChanges:
+  title: 保存せずに閉じますか？
+  message: '未保存の変更があります。保存せずにこのページを離れてもよろしいですか？'
+  leave: このページを離れる
+  stay: このページに留まる
+creationDate: 作成日
+viewFiles: ファイルを表示
+tagger: タガー
+confirmDelete: 削除の確認
+tagEmpty: リポジトリにタグがありません。下のボタンをクリックしてタグを作成してください。
+newTag: 新しいタグ
+overview: 概要
+fileTooLarge: ファイルが大きすぎて開けません。{download}
+lfsInfo: Git LFS で保存されています
+clickHereToDownload: ここをクリックしてダウンロード。
+viewFileHistory: 履歴のこの時点でのファイルを表示
+viewRepo: 履歴のこの時点でのリポジトリを表示
+hideCommitHistory: '{file} から名前変更 - 履歴を非表示'
+showCommitHistory: '{file} から名前変更 - 履歴を表示'
+noReviewers: レビュアーはいません
+assignPeople: ユーザーを割り当て
+add: 追加 +
+addLabel: 追加
+updateLabel: 更新
+users: ユーザー
+findAUser: ユーザーを検索
+findAUserOrUserGroup: ユーザーまたはユーザーグループを検索
+noUsersFound: ユーザーが見つかりません
+spaces: プロジェクト
+space: プロジェクト
+selectSpace: プロジェクトを選択
+copyBranch: ブランチ名をコピー
+noAccount?: アカウントをお持ちでないですか？
+alreadyHaveAccount: 既にアカウントをお持ちですか？
+privacyPolicy: プライバシーポリシー
+termsOfUse: 利用規約
+bySigningIn: サインアップすることで、{policy} と {terms} に同意したことになります
+userId: ユーザーID
+characterLimit: 6文字以上
+enterUser: ユーザーIDを入力 ...
+userNameRequired: ユーザー名は必須です
+passwordRequired: パスワードは必須です
+emailRequired: メールアドレスは必須です
+minPassLimit: パスワードが短すぎます - 6文字以上にしてください。
+confirmPassRequired: パスワードの確認は必須です
+matchPassword: パスワードが一致しません
+userCreated: ユーザーが作成されました
+admin: 管理者
+removeAdmin: 管理者権限を削除
+setAsAdmin: 管理者に設定
+createUser: ユーザーを作成
+editUser: ユーザーを編集
+updateUser: ユーザーを更新
+deleteUser: ユーザーを削除
+createNewUser: ユーザーを作成
+displayName: 表示名
+accountEmail: アカウントメールアドレス
+changePassword: パスワードの変更
+logoutMsg: 現在のアカウントからログアウトしますか？
+logOut: ログアウト
+enterNewPassword: <b>新しい</b>パスワードを入力
+confirmNewPassword: <b>新しい</b>パスワードを確認
+accountSetting: アカウント設定
+nDays: '{{number}} 日'
+expiration: 有効期限
+noExpiration: 有効期限なし
+noExpirationDate: このトークンは有効期限がありません！
+token: トークン
+expired: 有効期限切れ
+expirationDate: 有効期限
+created: 作成日
+thisRefHas: 'この{isTag|true:タグ,ブランチ}には'
+changePasswordSuccessfully: パスワードが変更されました
+applyChanges: 変更を適用
+showMore: もっと表示
+showLess: 閉じる
+createNewToken: トークンを作成
+newToken:
+  text: 新しいトークン
+  namePlaceholder: 名前を入力
+  expireOn: トークンは {{date}} に有効期限が切れます
+  generateToken: トークンを生成
+  tokenHelptext:
+    トークンが生成されました。トークンをコピーして安全な場所に保管してください。再表示することはできません。
+deleteToken: トークンを削除
+deleteTokenMsg: トークンを削除しました
+userProfile:
+  deleteTokenMsg: このトークンを削除してもよろしいですか？
+profile: プロフィール
+userManagement:
+  text: ユーザー管理
+  newUser: 新しいユーザー
+  deleteUser: ユーザーを削除
+  deleteUserMsg: '{avatar} {{displayName}}（ユーザーID:{{userId}}）を削除してもよろしいですか？'
+  resetPassword: パスワードをリセット
+  resetPasswordMsg: '{avatar} {{displayName}}（ユーザーID:{{userId}}）のパスワードをリセットしてもよろしいですか？'
+  removeAdminMsg: '{avatar} {{displayName}}（ユーザーID:{{userId}}）の管理者権限を削除してもよろしいですか？'
+  setAsAdminMsg: '{avatar} {{displayName}}（ユーザーID:{{userId}}）を管理者に設定してもよろしいですか？'
+newUserModal:
+  uidPlaceholder: 'ユーザーIDを入力'
+  uidWarning: ユーザーIDは作成後変更できません
+  emailPlaceholder: メールアドレスを入力
+  displayNamePlaceholder: 表示名を入力
+  passwordHelptext:
+    パスワードが生成されました。パスワードをコピーして安全な場所に保管してください。再表示することはできません。
+  userCreated: ユーザーが作成されました
+  userUpdated: ユーザーが更新されました
+  userDeleted: ユーザー '{{name}}' が削除されました
+selectSpaceText: プロジェクトを選択
+user: ユーザー
+role: ロール
+addMember: メンバーを追加
+addUserToSpace2: このプロジェクトにメンバーを追加
+spaceMemberships:
+  addMember: '{{name}} にメンバーを追加'
+  changeRole: ロールを変更
+  removeMember: メンバーを削除
+  removeMembershipMsg: このメンバーを削除してもよろしいですか？
+  removeMembershipToast: メンバーを削除しました
+  memberUpdated: メンバーを更新しました。
+  memberAdded: メンバーを追加しました。
+failedToCreateSpace: プロジェクトの作成に失敗しました。もう一度お試しください。
+failedToImportSpace: プロジェクトのインポートに失敗しました。もう一度お試しください。
+failedToCreatePipeline: パイプラインの作成に失敗しました。もう一度お試しください。
+failedToSavePipeline: パイプラインの保存に失敗しました。もう一度お試しください。
+enterName: 名前を入力
+createASpace: プロジェクトを作成
+createSpace: プロジェクトを作成
+newSpace: 新しいプロジェクト
+emptySpaceText: "まだ空です。新しいプロジェクトを作成してください"
+homepage:
+  welcomeText: '{{currentUser}} さん、Gitness を始めましょう！'
+  firstStep: プロジェクトにはリポジトリとパイプラインが含まれます。新しいプロジェクトを作成して Gitness を始めましょう
+  selectSpaceTitle: 始めるプロジェクトを選択
+  selectSpaceContent: プロジェクトにはリポジトリとパイプラインが含まれます。Gitness を使い始めるには、プロジェクトを選択するか新しいプロジェクトを作成してください。
+  selectSpace: プロジェクトを選択
+deleteSpace: プロジェクトを削除
+spaceSetting:
+  intentText: 'プロジェクト ''{{space}}'' とその中のすべての内容が完全に削除されます。このプロジェクト内のすべてのリポジトリが削除されます。'
+  deleteWarning: これを読まないと予期しない問題が発生します
+  deleteConfirm1: プロジェクト "{{space}}" とその中のすべての内容が完全に削除されます。このプロジェクト内のすべてのリポジトリが削除されます。
+  deleteConfirmButton1: このプロジェクトを削除する
+  deleteConfirm2: 確認するには、下のボックスに "{{space}}" と入力してください
+  deleteConfirmButton2: このプロジェクトを削除
+  deleteToastSuccess: プロジェクトを削除しました
+  settings: 設定
+contributor: コントリビューター
+reader: 閲覧者
+executor: 実行者
+owner: オーナー
+changeRole: ロールを変更
+running: 実行中
+success: 成功
+failed: 失敗
+error: エラー
+skipped: スキップ
+killed: 強制終了
+failureIgnored: 成功（失敗を無視）
+repoDelete:
+  title: リポジトリを削除
+  deleteConfirm1: リポジトリ "{{repo}}" が完全に削除されます。
+  deleteConfirmButton1: このリポジトリを削除する
+  deleteConfirm2: 確認するには、下のボックスに "{{repo}}" と入力してください
+  deleteToastSuccess: リポジトリを削除しました
+  deleteConfirmButton2: このリポジトリを削除
+repoArchive:
+  titleArchive: リポジトリをアーカイブ
+  titleUnarchive: リポジトリのアーカイブ解除
+  confirmButton: 了解しました、リポジトリを{archiveVerb}します。
+  archiveWarning: このリポジトリをアーカイブすると、非アクティブとしてマークされ、読み取り専用になります。ユーザーは引き続きリポジトリを閲覧およびクローンできますが、新しい変更やコントリビューションは許可されません。
+  unarchiveWarning: このリポジトリはアーカイブが解除され、アクティブな状態に復元されます。権限を持つすべてのユーザーとグループは通常通りコントリビュートできます。
+  archive: このリポジトリをアーカイブ
+  archiveInfo: このリポジトリをアーカイブし、読み取り専用に制限します。
+  unarchive: このリポジトリのアーカイブを解除
+  unarchiveInfo: このリポジトリのアーカイブを解除し、読み書き可能にします。
+  infoText: このリポジトリは {{date}} にアーカイブされました。現在は読み取り専用です。
+pipelines:
+  noData: パイプラインがありません
+  import: パイプラインをインポート
+  newPipelineButton: 新しいパイプライン
+  name: パイプライン名
+  createNewPipeline: 新しいパイプラインを作成
+  enterPipelineName: パイプライン名を入力
+  yamlPath: YAML パス
+  enterYAMLPath: YAML パスを入力
+  failedToCreatePipeline: パイプラインの作成に失敗しました
+  saveAndRun: 保存して実行
+  editPipeline: パイプライン {{pipeline}} を編集
+  edit: パイプラインを編集
+  run: パイプラインを実行
+  time: 時間
+  lastExecution: 最終実行
+  created: パイプラインを作成しました
+  updated: パイプラインを更新しました
+  executionStarted: パイプラインの実行を開始しました
+  executionCouldNotStart: パイプライン実行の開始に失敗しました
+  deletePipelineWarning: パイプライン {{pipeline}} とすべての実行が完全に削除されます。
+  deletePipelineButton: パイプラインを削除
+  deletePipelineConfirm: パイプライン <strong>{{pipeline}}</strong> を削除してもよろしいですか？この操作は取り消せません。
+  deletePipelineSuccess: パイプライン {{pipeline}} を削除しました。
+  deletePipelineError: パイプラインの削除に失敗しました。もう一度お試しください。
+  updatePipelineSuccess: パイプライン {{pipeline}} を更新しました。
+  failedToUpdatePipeline: パイプラインの更新に失敗しました。もう一度お試しください。
+  settings: パイプライン設定
+  executionCancelled: パイプラインの実行をキャンセルしました。
+  executionCouldNotCancel: パイプライン実行のキャンセルに失敗しました。
+  failedToFindPath: パスが見つかりませんでした
+  failedToGenerate: パイプラインの生成に失敗しました
+executions:
+  noData: 実行がありません
+  newExecutionButton: パイプラインを実行
+  name: 実行名
+  description: 説明
+  time: 時間
+  completedTime: '{{timeString}} 前に完了'
+  canceledTime: '{{timeString}} 前にキャンセル'
+  started: 実行を開始しました
+  failed: ビルドの開始に失敗しました
+  newExecution: パイプラインを実行
+selectRange: Shift+クリックで範囲を選択
+allCommits: すべてのコミット
+secrets:
+  noData: シークレットがありません
+  newSecretButton: 新しいシークレット
+  create: シークレットを作成
+  name: シークレット名
+  failedToCreate: シークレットの作成に失敗しました。もう一度お試しください。
+  enterSecretName: シークレット名を入力
+  enterSecretValue: シークレット値を入力
+  createSecret: シークレットを作成
+  createSuccess: シークレットを作成しました
+  secretDeleted: シークレット {uid} を削除しました。
+  secretUpdated: シークレット {uid} を更新しました。
+  deleteSecretConfirm: シークレット <strong>{{uid}}</strong> を削除してもよろしいですか？この操作は取り消せません。
+  failedToDeleteSecret: シークレットの削除に失敗しました。もう一度お試しください。
+  failedToUpdateSecret: シークレットの更新に失敗しました。もう一度お試しください。
+  deleteSecret: シークレットを削除
+  updateSecret: シークレットを更新
+  showValue: 値を表示
+userUpdateSuccess: 'ユーザーを更新しました'
+viewFile: ファイルを表示
+searchResult: '検索結果 {count}'
+aiSearch: AIDA 検索
+enableAISearch: AI 検索を有効にする
+enableAIDAPRDescription: PR 説明を自動生成
+enableAIDAPRMessange: Harness AIDA を使用して PR 説明を生成するには、プロジェクト設定で有効にする必要があります。
+enableAIDAMessage: Harness AIDA 検索を使用するには、プロジェクト設定で有効にする必要があります
+reviewProjectSettings: プロジェクト設定を確認
+turnOnSemanticSearch: セマンティック検索をオンにする
+AIDA: AIDA
+keywordSearch:
+  sampleQueries:
+    searchForClass: クラスを検索
+    searchForFilesWithCMD: cmd で始まるファイル内のクラスを検索
+    searchForPattern: 指定された検索パターンに一致するファイルパスの結果のみを表示
+    searchForInitialCommit: フレーズ "initial commit" を検索
+keywordSearchPlaceholder: コードまたはファイルを検索...
+codeSearch: コード検索
+codeSearchModal: 探しているものを説明して検索を開始
+searchHeader: '始めやすいようにいくつかの例を紹介します:'
+startSearching: 探しているものを説明して検索を開始。
+poweredByAI: セマンティックコード検索で AI の力を解放。「認証コードを見つけて」などのフレーズを試してください。
+semanticSearch:
+  sampleQueries: 認証を処理するコードはどこにありますか？,アプリケーションのエントリポイントはどこですか？,ロガーはどこで設定していますか？
+failedToFetchFileContent: 'エラー: ファイル内容の取得に失敗しました。'
+run: 実行
+plugins:
+  title: プラグイン
+  stepLabel: ステップ
+  select: プラグインを選択
+pluginsPanel:
+  plugins:
+    helptext: プラグインステップを実行
+  run:
+    helptext: コンテナまたはシェルコマンドを実行
+    script: スクリプト
+    shell: シェル
+    sh: Sh
+    bash: Bash
+    powershell: Powershell
+    pwsh: Pwsh
+    image: イメージ
+    credentials: 認証情報
+    username: ユーザー名
+    password: パスワード
+    pull: プル
+    entrypoint: エントリポイント
+    network: ネットワーク
+    networkMode: ネットワークモード
+    privileged: 特権
+    path: パス
+    always: 常に
+    never: なし
+    ifNotExists: 存在しない場合
+createNewRepo: 新しいリポジトリを作成
+importGitRepo: リポジトリをインポート
+importGitRepos: リポジトリをインポート
+importRepo:
+  title: リポジトリをインポート
+  url: ホスト URL
+  org: 組織
+  workspace: ワークスペース
+  project: プロジェクト
+  group: グループ
+  repo: リポジトリ
+  urlPlaceholder: ホスト URL を入力
+  repoPlaceholder: リポジトリ名を入力
+  orgPlaceholder: 組織名を入力
+  workspacePlaceholder: ワークスペース名を入力
+  projectPlaceholder: プロジェクト名を入力
+  groupPlaceholder: グループ名を入力
+  reqAuth: 認証が必要
+  userPlaceholder: ユーザー名を入力
+  passToken: トークン
+  passTokenPlaceholder: トークンを入力
+  appPassword: アプリパスワード
+  appPasswordPlaceholder: アプリパスワードを入力
+  failedToImportRepo: リポジトリのインポートに失敗しました。もう一度お試しください。
+  validation: 無効な GitHub または GitLab URL です
+  required: リポジトリ URL は必須です
+  spaceNameReq: 新しいプロジェクト名を入力
+  usernameReq: ユーザー名は必須です
+  passwordReq: パスワードは必須です
+importRepos:
+  title: リポジトリをインポート
+  content: GitLab グループ、GitHub 組織、または Bitbucket プロジェクトからこのプロジェクトに複数のリポジトリをインポートします。
+importSpace:
+  title: プロジェクトをインポート
+  createASpace: プロジェクトを作成
+  authorization: 認証
+  content: GitLab グループ、GitHub 組織、または Bitbucket プロジェクトを新しいプロジェクトにインポートします。トップレベルのエンティティはプロジェクトにインポートされます。
+  next: 次のステップ
+  details: インポート先の詳細
+  organizationName: 組織名
+  orgNamePlaceholder: 組織名を入力
+  spaceName: プロジェクト名
+  description: 説明（任意）
+  descPlaceholder: 説明を入力
+  importLabel: インポート対象
+  providerRequired: Git プロバイダーは必須です
+  orgRequired: 組織名は必須です
+  spaceNameRequired: プロジェクト名は必須です
+  gitProvider: Git プロバイダー
+  invalidUrl: 無効な GitHub または GitLab URL です
+  githubOrg: GitHub 組織名
+  gitlabGroup: GitLab グループ名
+importProgress: 'インポート中...'
+triggers:
+  newTrigger: 新しいトリガー
+  createTrigger: トリガーを作成
+  createSuccess: トリガーを作成しました
+  failedToCreate: トリガーの作成に失敗しました。もう一度お試しください。
+  enterTriggerName: トリガー名を入力
+  actions: アクション
+  updateSuccess: トリガーを更新しました
+  failedToUpdate: トリガーの更新に失敗しました。もう一度お試しください。
+  deleteTrigger: トリガーを削除
+  disableTrigger: トリガーを無効にする
+  deleteTriggerConfirm: トリガー <strong>{{name}}</strong> を削除してもよろしいですか？この操作は取り消せません。
+  deleteTriggerSuccess: トリガー {{name}} を削除しました。
+  deleteTriggerError: トリガーの削除に失敗しました。もう一度お試しください。
+step:
+  select: ステップを選択
+stepCategory:
+  select: ステップカテゴリを選択
+exportSpace:
+  harness: Harness
+  accIdRequired: アカウント ID は必須です
+  accesstokenReq: アクセストークンは必須です
+  accIdLabel: 'Harness アカウント ID'
+  accIdPlaceholder: 'Harness アカウント ID を入力'
+  tokenLabel: 'Harness アカウントトークン'
+  tokenPlaceholder: 'アクセストークンを入力'
+  organization: 組織 ID
+  orgIdPlaceholder: 組織 ID を入力
+  projectName: プロジェクト ID
+  projectIdPlaceholder: プロジェクト ID を入力
+  entitiesLabel: アップグレードするエンティティ
+  projectOrg: プロジェクト組織
+  repoToConvert: '{length} 件の{length|1:リポジトリ,リポジトリ}をアップグレード'
+  startUpgrade: アップグレードを開始
+  upgradeHarness: Harness にアップグレード
+  newProject: Harness プロジェクトの詳細
+  upgradeConfirmation: アップグレードの確認
+  upgradeTitle: このプロジェクトを Harness ソフトウェアデリバリープラットフォームにアップグレード
+  upgrade: Harness にアップグレード
+  upgradeContent: アップグレードにより、すべてのリポジトリが Harness Code の既存の組織とプロジェクトにインポートされます。Harness Code の詳細はこちら。
+  upgradeProgress: 'アップグレード中'
+  upgradeFailed: 'アップグレードに失敗しました！認証情報を確認してもう一度お試しください。'
+  exportCompleted: アップグレード完了
+  exportFailed: アップグレード失敗
+  exportRepoCompleted: '{repoCount} 件の{repoCount|1:リポジトリ,リポジトリ}をアップグレードしました'
+  exportRepo: '{repoCount} 件の{repoCount|1:リポジトリ,リポジトリ}をアップグレード中'
+spaceUpdate: プロジェクトを更新しました
+generate: 生成
+generateHelptext: Harness にパイプラインを構築させます。
+enterAddress: アドレスを入力
+enterGitlabPlaceholder: https://gitlab.com/
+enterGithubPlaceholder: https://api.github.com/
+enterBitbucketPlaceholder: https://bitbucket.org/
+changeRepoVis: リポジトリの公開設定を変更
+changeRepoVisContent: このリポジトリを {repoVis} にしてもよろしいですか？
+confirmRepoVisButton: はい、リポジトリを {repoVis} にします
+repoVisibility: リポジトリの公開設定
+visibility: 公開設定
+attachText: ドラッグ＆ドロップ、選択、または貼り付けで画像や動画を添付。
+key: キー
+setting: 設定
+mergeCommit: マージコミット
+squashMerge: スカッシュしてマージ
+rebaseMerge: リベースしてマージ
+fastForwardMerge: ファストフォワードマージ
+Enable: 有効
+imageUpload:
+  title: 添付ファイルをアップロード
+  readyToUpload: アップロード準備完了
+  upload: アップロード
+  text: ここにファイルをドラッグ＆ドロップするか、クリックしてファイルを選択。
+protectionRules:
+  namePlaceholder: ルール名を入力
+  descPlaceholder: 説明を入力
+  title: ルール
+  edit: '{{ruleType}} ルールを編集'
+  create: '{{ruleType}} ルールを作成'
+  targetRepositories: 対象リポジトリ
+  targetPatterns: 対象パターン
+  targetPlaceholder: '{{target}} パターンを入力'
+  targetPatternHint: 'globstar パターンを使用して {{target}} にマッチ（例: "golden"、"feature-*"、"releases/**"）'
+  repoSelectionHint: リポジトリが選択されていない場合、ルールはすべてに適用されます
+  defaultBranch: デフォルトブランチ
+  bypassList: バイパスリスト
+  defaultReviewersList: デフォルトレビュアーリスト
+  newRule: 新しい {{ruleType}} ルール
+  allRepoOwners: リポジトリの編集権限を持つユーザーにバイパスを許可
+  protectionSelectAll: 'ルール: 以下のすべてを選択'
+  requireMinReviewersTitle: 最小レビュアー数を必須にする
+  requireMinReviewersContent: 最小数のレビュアーからのプルリクエストの承認を必須にする
+  minNumber: 最小数
+  minNumberPlaceholder: 最小数を入力
+  numberOfRulesApplied: '{{count}} 件の{{type}} {{rulesLabel}}が適用されています'
+  addCodeownersToReviewTitle: コードオーナーをレビュアーに追加
+  addCodeownersToReviewText: 関連するコードオーナーを自動的にレビュアーに追加
+  reqReviewFromCodeOwnerTitle: コードオーナーからのレビューを必須にする
+  reqReviewFromCodeOwnerText: 各コードオーナールールについて1人のレビュアーからのプルリクエストの承認を必須にする
+  reqNewChangesTitle: 新しい変更の承認を必須にする
+  reqResOfChanges: 変更リクエストの解決を必須にする
+  reqResOfChangesText: プルリクエストのすべての変更リクエストはマージ前に解決する必要があります
+  reqNewChangesText: プルリクエストに新しい変更がある場合、再承認を必須にする
+  reqCommentResolutionTitle: コメントの解決を必須にする
+  reqCommentResolutionText: プルリクエストのすべてのコメントはマージ前に解決する必要があります
+  reqStatusChecksTitle: ステータスチェックの成功を必須にする
+  reqStatusChecksText: 選択されたステータスチェックはプルリクエストのマージ前に成功する必要があります
+  statusCheck: ステータスチェック
+  limitMergeStrategies: マージ戦略を制限
+  limitMergeStrategiesText: プルリクエストのマージに使用できるマージ戦略を制限
+  autoDeleteTitle: マージ時にブランチを自動削除
+  autoDeleteText: プルリクエストのマージ後、ソースブランチを自動的に削除
+  blockCreation: '{{ruleType}} の作成をブロック'
+  blockUpdate: '{{ruleType}} の更新をブロック'
+  blockUpdateText: バイパス権限を持つユーザーのみが一致する {{refs}} を更新できます
+  blockCreationText: バイパス権限を持つユーザーのみが一致する {{refs}} を作成できます
+  blockDeletion: '{{ruleType}} の削除をブロック'
+  blockDeletionText: バイパス権限を持つユーザーのみが一致する {{refs}} を削除できます
+  blockForcePush: 強制プッシュをブロック
+  blockForcePushText: バイパス権限を持つユーザーのみが一致する {{refs}} に強制プッシュできます
+  editRule: ルールを編集
+  saveRule: ルールを保存
+  deleteRule: ルールを削除
+  ruleDeleted: ルールを削除しました
+  ruleEmpty: リポジトリにルールがありません。下のボタンをクリックしてルールを作成してください。
+  showRulesScope: 親スコープのルールを表示
+  createRule: ルールを作成
+  deleteProtectionRule: 保護ルールを削除
+  deleteText: "ルール '{{rule}}' を削除してもよろしいですか？"
+  disableTheRule: ルールを無効にする
+  ruleUpdated: '{{ruleType}} ルールを更新しました'
+  enableTheRule: ルールを有効にする
+  ruleCreated: '{{ruleType}} ルールを作成しました'
+  requirePr: プルリクエストを必須にする
+  requirePrText: プルリクエストなしで一致するブランチへの変更を禁止
+  prFailedText: 'プルリクエストをマージできません'
+  mergePrAlertTitle: プルリクエストのマージアラート
+  mergePrAlertText: 'マージを完了できません。{{ruleCount}} 件のブランチルールが失敗: '
+  mergeCheckboxAlert: バイパスしてマージ
+  createRefAlertBtn: ルールをバイパスして {{ref}} を作成
+  createRefAlertText: '{{ref}} の作成中に一部のルールがバイパスされます'
+  createRefBlockText: 一部のルールにより {{ref}} を作成できません
+  deleteRefAlertBtn: ルールをバイパスして削除を確認
+  deleteRefAlertText: '{{ref}} の削除中に一部のルールがバイパスされます'
+  deleteRefBlockText: 一部のルールにより {{ref}} を削除できません
+  commitNewBranchAlertBtn: ルールをバイパスして新しいブランチでコミット
+  commitNewBranchAlertText: ブランチ作成によるコミットで一部のルールがバイパスされます
+  commitNewBranchBlockText: 一部のルールによりコミット用の新しいブランチを作成できません
+  commitDirectlyBlockText: 一部のルールにより直接コミットできません
+  commitDirectlyAlertText: 直接コミットで一部のルールがバイパスされます
+  commitDirectlyAlertBtn: ルールをバイパスして直接コミット
+  enableDefaultReviewersTitle: デフォルトレビュアーを有効にする
+  enableDefaultReviewersText: 各プルリクエストでデフォルトレビュアーの承認を必須にする
+  requireMinDefaultReviewersTitle: 最小デフォルトレビュアー数を必須にする
+  requireMinDefaultReviewersContent: 最小数のデフォルトレビュアーからのプルリクエストの承認を必須にする
+  atLeastMinReviewers: '{{count}} 人以上のデフォルトレビュアーを選択'
+  atLeastMinReviewer: '{{count}} 人以上のデフォルトレビュアーを選択'
+codeOwner:
+  title: コードオーナー
+  changesRequested: '{count} 件の{count|1:変更要求,変更要求}'
+  waitToApprove: '{count} 件の{count|1:承認,承認}保留中 '
+  approvalCompleted: '{count}/{total} 件の承認が完了'
+  pendingLatestApprovals: '最新の変更に対して {count} 件の{count|1:承認,承認}が保留中'
+approved: 承認済み
+comingSoon: 近日公開...
+enterANumber: 数値を入力
+selectUsers: ユーザーを選択
+selectReviewers: レビュアーを選択
+selectUsersAndUserGroups: ユーザーとユーザーグループを選択
+selectUsersAndServiceAcc: ユーザーとサービスアカウントを選択
+selectUsersUserGroupsAndServiceAcc: ユーザー、ユーザーグループ、サービスアカウントを選択
+selectStatuses: ステータスを選択
+featureRoadmap: 機能ロードマップ
+pipelineConfig:
+  label: パイプライン設定
+  yamlUpdated: YAML が変更されたようです。変更を更新しますか？
+discard: 破棄
+language: 言語
+selectLanguagePlaceholder: '- 言語を選択 -'
+selectRepositoryPlaceholder: '- リポジトリを選択 -'
+results: 結果
+showNMoreMatches: '{{ n }} 件の一致を表示'
+showLessMatches: 閉じる
+clear: クリア
+searchExamples: 検索例
+nMoreMatches: このファイルには {{ n }} 件の未表示の一致があります。
+seeNMoreMatches: ファイル全体の {{ n }} 件の一致をすべて表示
+bottom: 下
+top: 上
+customTime: '{{days}} {{hours}} {{minutes}} {{seconds}}'
+customDay: '{{days}}日'
+customHour: '{{hours}}時間'
+customMin: '{{minutes}}分'
+customSecond: '{{seconds}}秒'
+reqChanges: '変更をリクエスト'
+summary: サマリー
+prGenSummary: AIDA が PR サマリーを生成し、カーソル位置に挿入または選択テキストを置換します。
+aidaGenSummary: 'AIDA がサマリーを生成中...'
+generateSummary: PR サマリーを生成
+invalidResponse: 無効なサマリーレスポンスが生成されました
+allCommentsResolved: すべてのコメントが解決済み
+resolveComments: '{{n}} 件の未解決コメントがあります'
+view: 表示
+mergeCheckInProgress: マージチェック中...
+allConflictsNeedToBeResolved: マージ前にすべてのコンフリクトを解決する必要があります
+conflictsFoundInThisBranch: このブランチにコンフリクトが見つかりました
+details: 詳細
+showCheckAll: すべてのチェックを表示
+showLessCheck: チェックを閉じる
+markAsDraft: ドラフトとしてマーク
+mergeSetting: マージ設定
+deleteBranchText: マージ後にブランチを削除
+customizeMergeCommitMessage: マージコミットメッセージをカスタマイズ
+mergeStrategy: マージ戦略
+selectMergeStrat: マージ戦略を選択
+writeDownCommit: コミットメッセージを入力
+prHasNoConflicts: このブランチは {name} ブランチとコンフリクトがありません
+checkStatus:
+  succeeded: '{time} で成功'
+  failed: '{time} で失敗'
+  running: 実行中...
+  pending: 保留中...
+  error: '{time} でエラー'
+changesSection:
+  prMergeBlockedTitle: ベースブランチは更新を許可していません
+  prMergeBlockedMessage: 保護ブランチについて読む
+  reqChangeFromCodeOwners: コードオーナーから変更がリクエストされました
+  codeOwnerReqChanges: コードオーナーが変更をリクエストしました
+  pendingAppFromCodeOwners: コードオーナーからの承認が保留中
+  pendingLatestApprovalCodeOwners: 最新の変更がコードオーナーの承認保留中
+  waitingOnCodeOwner: 変更がコードオーナーの承認保留中
+  pendingLatestApprovalDefaultReviewers: 最新の変更がデフォルトレビュアーの承認保留中
+  waitingOnDefaultReviewers: 変更がデフォルトレビュアーの承認保留中
+  waitingOnReviewers: 変更が必須レビュアーの承認保留中
+  waitingOnLatestCodeOwner: 最新の変更のコードオーナーレビューを待機中
+  waitingOnLatestDefaultReviewers: 最新の変更のデフォルトレビュアーレビューを待機中
+  approvalPending: 承認保留中
+  changesApproved: 変更が承認されました
+  noReviewsReq: レビューは不要
+  noCodeOwnerReviewsReq: コードオーナーレビューなし
+  pullReqWithoutAnyReviews: レビューなしでプルリクエストをマージできます
+  changesAppByRev: 変更はレビュアーによって承認されました
+  changesApprovedByXReviewers: '{length} {length|1:人のレビュアー,人のレビュアー}によって変更が承認されました'
+  latestChangesApprovedByXReviewers: '{length} {length|1:人のレビュアー,人のレビュアー}によって最新の変更が承認されました'
+  latestChangesWereAppByCodeOwner: 最新の変更はコードオーナーによって承認されました
+  latestChangesWereAppByDefaultReviewers: 最新の変更はデフォルトレビュアーによって承認されました
+  latestChangesPendingReqRev: 最新の変更が必須レビュアーの承認保留中
+  changesWereAppByCodeOwner: 変更はコードオーナーによって承認されました
+  changesWereAppByDefaultReviewers: 変更はデフォルトレビュアーによって承認されました
+  defaultReviewersStatus: デフォルトレビュアーが PR に追加されました
+  changesWereAppByLatestReqRev: 変更は必須レビュアーによって承認されました
+  latestChangesWereApprovedByReq: 最新の変更は必須レビュアーによって承認されました
+  someChangesWereAppByCodeOwner: 一部の変更はコードオーナーによって承認されました
+  xApprovalsArePending: '{approved}/{min} 件の承認が保留中'
+  codeOwnerReqChangesToPr: コードオーナーがプルリクエストに変更をリクエストしました
+  defaultReviewersChangesToPr: デフォルトレビュアーがプルリクエストに変更をリクエストしました
+checkSection:
+  someReqChecksFailed: 一部の必須チェックが失敗しました
+  someReqChecksPending: 一部の必須チェックが保留中です
+  someReqChecksRunning: 一部の必須チェックが実行中です
+  someChecksNotComplete: 一部のチェックがまだ完了していません
+  allChecksSucceeded: すべてのチェックが成功しました
+  allReqChecksPassed: すべての必須チェックが成功しました
+  someChecksFailed: 一部のチェックが失敗しました
+  someChecksRunning: 一部のチェックが実行中です
+rebaseSource:
+  title: このブランチはベースブランチに対して古くなっています
+  message: '{target} から {source} に最新の変更をマージ'
+importFailed: インポートに失敗しました
+uploadAFileError: アップロードされた画像または動画がありません。画像または動画をアップロードしてください。
+securitySettings:
+  scanningSecret: シークレットスキャン
+  scanningSecretDesc: パスワード、API キー、トークンなどのシークレットを含むコミットをブロック
+  vulnerabilityScanning: 脆弱性スキャン
+  vulnerabilityScanningDesc: 受信コミットの既知の脆弱性をスキャン
+  verifyCommitterIdentity: コミッターIDの確認
+  verifyCommitterIdentityDesc: 変更をプッシュしたユーザー以外がコミットしたコミットをブロック
+  failedToUpdate: セキュリティ設定の更新に失敗しました
+  updateSuccess: セキュリティ設定を更新しました
+  detect: 検出
+  detectDesc: パッシブ脆弱性はエラーを報告しますがブロックしません
+  block: ブロック
+  blockDesc: アクティブ脆弱性は脆弱性が見つかった場合コミットをブロックします
+suggestion: '提案を追加、<Ctrl-g>'
+heading: 見出し
+bold: 太字
+italic: 斜体
+upload: アップロード
+unorderedList: 箇条書き
+checklist: チェックリスト
+code: コード
+approvedBy: 承認者
+ownersHeading: OWNERS
+defaultReviewers: デフォルトレビュアー
+changesRequestedBy: 変更リクエスト者
+changesRequested: changesRequested
+owners: オーナー
+showMoreText: もっと表示
+addOptionalCommitMessage: コミットメッセージを追加（任意）
+confirmStrat: '{{strat}} を確認'
+waiting: 待機中
+mergeBranchTitle: '{{repoPath}} のブランチ {{branchName}} をマージ (#{{prNum}})'
+http: HTTP
+ssh: SSH
+stepNum: ステップ {{num}}
+cmdlineInfo:
+  title: コマンドラインでコンフリクトを解決
+  content: このブランチのコンフリクトが複雑すぎて Web エディタで解決できない場合、コマンドラインでチェックアウトしてコンフリクトを解決できます
+  stepOne: リポジトリをクローンするか、最新の変更でローカルリポジトリを更新
+  stepOneSub: git pull origin {target}
+  stepTwo: プルリクエストのヘッドブランチに切り替え
+  stepTwoSub: git checkout {source}
+  stepThree: ベースブランチをヘッドブランチにマージ
+  stepThreeSub: git merge {target}
+  stepFour: コンフリクトを修正して結果をコミット
+  stepFourSub: コマンドラインを使用したマージコンフリクトの解決手順については、マージコンフリクトの解決を参照
+  stepFive: 変更をプッシュ
+  stepFiveSub: git push -u origin {source}
+sshCard:
+  newSshKey: 新しい SSH キー
+  sshkey: SSH キー
+  publicKey: 公開キー
+  noSshKeyText: このアカウントに関連付けられた SSH キーはありません
+  mySshKeys: マイ SSH キー
+  sshContent: SSH キーを使用するとコードリポジトリへの安全な接続を確立できます。
+  beginsWithContent: "'ssh-rsa'、'ecdsa-sha2-nistp256'、'ecdsa-sha2-nistp384'、'ecdsa-sha2-nistp521'、'ssh-ed25519'、'sk-ecdsa-sha2-nistp256@openssh.com'、または 'sk-ssh-ed25519@openssh.com' で始まる必要があります。"
+  deleteSshTitle: SSH キーを削除
+  deleteSshMsg: この SSH キーを削除してもよろしいですか？
+  successSshKeyMsg: SSH キーを削除しました
+  addedOn: 追加日
+  personalAccessToken: 個人アクセストークン
+  noTokensText: このアカウントに関連付けられた個人アクセストークンはありません
+  lastUsed: 最終使用日
+artifacts: アーティファクト
+recursiveSearchTooltip: 再帰検索を無効にすると、アカウントレベルのみを検索し、組織とプロジェクトのリポジトリは除外されます。
+recursiveSearchLabel: '再帰検索: {account} の組織とプロジェクト内のリポジトリの結果を表示'
+accounts: "アカウント"
+scope: スコープ
+searchScope:
+  base: '検索スコープ: {scope}'
+  allScopes: アカウント、組織、プロジェクト
+  accOnly: アカウントのみ
+  orgOnly: 組織のみ
+  orgAndProj: 組織とプロジェクト
+  title: 検索スコープ
+regex:
+  tooltip: '{regex} 検索{enable}。クリックして{disable}'
+  enable: 有効
+  disable: 無効
+  enabled: 有効
+  disabled: 無効
+  string: 正規表現
+labels:
+  labels: ラベル
+  newLabel: 新しいラベル
+  labelName: ラベル名
+  labelValue: ラベル値
+  labelNotFound: ' ラベルが見つかりません'
+  allowDynamic: ユーザーが値を追加できるようにする
+  addNewValue: '新しい値を追加  '
+  addValue: '値を追加'
+  removeLabel: ラベルを削除
+  deleteLabel: ラベルを削除
+  deletedLabel: 'ラベルを削除しました: {tag}'
+  provideLabelName: ラベル名を入力
+  labelCreated: ラベルを作成しました
+  labelUpdated: ラベルを更新しました
+  labelNameReq: ラベル名は必須です
+  labelValueReq: ラベル値は必須です
+  noLabels: ラベルなし
+  updated: '更新 '
+  applied: '適用 '
+  label: ' ラベル'
+  labelTo: ' ラベルを '
+  removed: '削除 '
+  anyValue: '任意の値'
+  anyValueOption: '(任意の値)'
+  failedToDeleteLabel: ラベルの削除に失敗しました
+  findALabel: ラベルを検索
+  canbeAddedByUsers: '*ユーザーが追加可能*'
+  removedLabel: ラベル '{label}' を削除しました
+  showLabelsScope: 親スコープのラベルを表示
+  createLabel: ラベルを作成
+  updateLabel: ラベルを更新
+  appliedLabel: このコミットに対して<strong>新しいブランチ</strong>を作成し、プルリクエストを開始
+  labelsApplied: '{labelCount|1:ラベル,ラベル}を適用'
+  createdIn: 作成場所
+  labelCreationFailed: ラベルの作成に失敗しました
+  labelUpdateFailed: ラベルの更新に失敗しました
+  noLabelsFound: ラベルが見つかりません。下のボタンをクリックしてラベルを作成してください。
+  noRepoLabelsFound: リポジトリにラベルがありません。下のボタンをクリックしてラベルを作成してください。
+  noScopeLabelsFound: 現在のスコープにラベルがありません。下のボタンをクリックしてラベルを作成してください。
+  scopeMessage: (現在のスコープ以上で作成されたラベルを表示)
+  deleteLabelConfirm: ラベル <strong>{{name}}</strong> を削除してもよろしいですか？この操作は取り消せません。
+  intentText: ラベルまたはその値を編集/削除すると、使用されているすべての箇所に影響します。
+  prCount: '{count} 件の{count|1:結果,結果}を表示'
+  failedtoFetchLabels: ラベルの取得に失敗しました
+  failedtoFetchValues: ラベル値の取得に失敗しました
+  noResults: 結果が見つかりません
+  labelPreview: ラベルプレビュー
+  filterByLabels: ラベルで絞り込み
+  provideLabelValue: 'ラベル値を入力'
+  findaValue: 値を検索
+  findOrAdd: 新しい値を検索または追加
+  labelValuesOptional: 'ラベル値（任意）'
+  descriptionOptional: '説明（任意）'
+  placeholderDescription: ラベルの短い説明を入力
+  addaValue: 値を追加
+  stringMax: '{entity} は50文字以内にしてください'
+  noNewLine: '{entity} に改行を含めることはできません'
+rebase: リベース
+rebaseBranch: ブランチをリベース
+updateWithRebase: リベースで更新
+updatedBranchMessageRebase: リベースでブランチを更新しました
+onLatestChanges: 最新の変更に対して
+favorite:
+  add: お気に入りに追加
+  remove: お気に入りから削除
+  errorFavorite: お気に入りへのマークに失敗しました。
+  errorUnFavorite: お気に入りからの削除に失敗しました。

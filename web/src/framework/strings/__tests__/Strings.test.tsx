@@ -15,11 +15,11 @@
  */
 
 import React from 'react'
-import { render } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import { renderHook } from '@testing-library/react-hooks'
 
 import { String, useStrings } from '../String'
-import { StringsContext } from '../StringsContext'
+import { StringsContext, useStringsContext } from '../StringsContext'
 
 const value = {
   data: {
@@ -175,5 +175,64 @@ describe('useString tests', () => {
         </span>
       </div>
     `)
+  })
+})
+
+describe('StringsContext locale tests', () => {
+  test('locale and setLocale are provided via context', () => {
+    const setLocale = jest.fn()
+    const wrapper = ({ children }: React.PropsWithChildren<unknown>): React.ReactElement => (
+      <StringsContext.Provider value={{ ...value, locale: 'zh-CN', setLocale } as any}>
+        {children}
+      </StringsContext.Provider>
+    )
+    const { result } = renderHook(() => useStringsContext(), { wrapper })
+
+    expect(result.current.locale).toBe('zh-CN')
+    expect(result.current.setLocale).toBe(setLocale)
+  })
+
+  test('setLocale changes locale in context', () => {
+    const TestComponent = () => {
+      const { locale, setLocale } = useStringsContext()
+      return (
+        <>
+          <span data-testid="locale">{locale}</span>
+          <button onClick={() => setLocale?.('ja')} />
+        </>
+      )
+    }
+
+    let currentLocale = 'en'
+    const setLocale = jest.fn((newLocale: string) => {
+      currentLocale = newLocale
+    })
+
+    render(
+      <StringsContext.Provider value={{ ...value, locale: currentLocale, setLocale } as any}>
+        <TestComponent />
+      </StringsContext.Provider>
+    )
+
+    expect(screen.getByTestId('locale').textContent).toBe('en')
+
+    fireEvent.click(screen.getByRole('button'))
+    expect(setLocale).toHaveBeenCalledWith('ja')
+  })
+
+  test('fallback to English when key is missing in non-English locale', () => {
+    const enValue = {
+      data: {
+        hello: 'Hello',
+        world: 'World'
+      }
+    }
+
+    const wrapper = ({ children }: React.PropsWithChildren<unknown>): React.ReactElement => (
+      <StringsContext.Provider value={enValue as any}>{children}</StringsContext.Provider>
+    )
+    const { result } = renderHook(() => useStrings(), { wrapper })
+
+    expect(result.current.getString('hello' as any)).toBe('Hello')
   })
 })

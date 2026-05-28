@@ -25,6 +25,7 @@ import { useDocumentTitle } from 'hooks/useDocumentTitle'
 import { NavMenuItem } from './menu/NavMenuItem'
 import { HarnessLogo } from '../components/HarnessLogo/HarnessLogo'
 import { DefaultMenu } from './menu/DefaultMenu'
+import { LanguageSelector } from 'components/LanguageSelector'
 import css from './layout.module.scss'
 
 interface LayoutWithSideNavProps {
@@ -48,6 +49,10 @@ export const LayoutWithSideNav: React.FC<LayoutWithSideNavProps> = ({ title, chi
           </Layout.Vertical>
 
           <FlexExpander />
+
+          <Container className={css.navContainer}>
+            <LanguageSelector />
+          </Container>
 
           <Render when={currentUser?.admin}>
             <Container className={css.userManagement}>
