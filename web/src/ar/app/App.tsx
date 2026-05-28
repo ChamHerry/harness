@@ -19,6 +19,7 @@ import { Page } from '@harnessio/uicore'
 import { QueryClientProvider } from '@tanstack/react-query'
 
 import { StringsContextProvider } from '@ar/frameworks/strings/StringsContextProvider'
+import { useStringsContext as useGitnessStringsContext } from 'framework/strings/StringsContext'
 import { AppStoreContext, RepositoryListViewTypeEnum } from '@ar/contexts/AppStoreContext'
 import ParentProvider from '@ar/contexts/ParentProvider'
 import type { ParentProviderProps } from '@ar/contexts/ParentProvider'
@@ -72,6 +73,7 @@ export default function ChildApp(props: PropsWithChildren<MFEAppProps>): React.R
   } = props
 
   const appStoreData = React.useContext(parentContextObj.appStoreContext)
+  const { locale } = useGitnessStringsContext()
   const { usePreferenceStore } = customHooks
   const { preference: repositoryListViewType, setPreference: setRepositoryListViewType } = usePreferenceStore<
     RepositoryListViewTypeEnum | undefined
@@ -103,7 +105,7 @@ export default function ChildApp(props: PropsWithChildren<MFEAppProps>): React.R
             isPublicAccessEnabledOnResources,
             isCurrentSessionPublic
           }}>
-          <StringsContextProvider initialStrings={strings}>
+          <StringsContextProvider initialStrings={strings} locale={locale}>
             <ParentProvider
               hooks={
                 {

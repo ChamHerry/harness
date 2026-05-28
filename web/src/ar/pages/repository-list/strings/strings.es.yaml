@@ -1,0 +1,54 @@
+pageHeading: Registros de artefactos
+newRepository: Nuevo registro de artefactos
+newRegistry: Nuevo registro
+registryCount: Total {{count}} registros
+artifactRegistry:
+  label: Registro de artefactos
+  subLabel: Administre paquetes internos y dependencias externas mediante un registro unificado.
+upstreamProxy:
+  label: Proxy ascendente
+  subLabel: Conéctese a un registro externo para acceder a paquetes y dependencias adicionales.
+selectEnvironments: Entornos
+selectPackageTypes: Tipos de paquete
+selectRegistryType: Tipo de registro
+selectScope: Alcance
+scope:
+  accountOnly: Solo cuenta
+  orgOnly: Solo organización
+  accountRecursive: Cuenta, organizaciones y proyectos
+  orgRecursive: Organización y proyectos
+selectLabels: '{{ $.artifactList.table.columns.tags }}'
+compact: Vista compacta
+deleteModal:
+  title: '{{ $.artifactList.table.actions.deleteRepository }}'
+  contentText: Esta acción eliminará el registro y todas sus imágenes y versiones. ¿Seguro que desea continuar?
+  inputLabel: Escriba el nombre del registro para confirmar
+  inputPlaceholder: Nombre del registro
+softDeleteModal:
+  title: Eliminar registro
+  contentText: Esta acción eliminará el registro y todos sus paquetes y versiones. Aún puede restaurarlo desde la lista de eliminados.
+  inputLabel: Escriba el nombre o ID del registro para confirmar
+  inputPlaceholder: Nombre o ID del registro
+  forceLabel: Eliminar permanentemente el registro y todos sus paquetes y versiones.
+  forceSubText: Esta acción eliminará permanentemente el registro y todos sus paquetes y versiones. No se puede restaurar.
+restoreModal:
+  title: Restaurar registro
+  contentText: Esta acción restaurará el registro y todos sus artefactos y versiones.
+  inputLabel: Escriba el nombre o ID del registro para confirmar
+  inputPlaceholder: Nombre o ID del registro
+table:
+  noRepositoriesTitle: No hay registros disponibles.
+  noArchivedRepositoriesTitle: No hay registros archivados.
+  columns:
+    nameAndEnvironment: '{{ $.artifactList.table.columns.name }}'
+    lastModified: Última modificación
+    archivedAt: Archivado el
+    url: URL
+    size: '{{ $.digestList.table.columns.size }}'
+    artifacts: '{{ $.artifactList.pageHeading }}'
+    upstreamProxies: '{{ $.repositoryDetails.repositoryForm.upstreamProxiesTitle }}'
+    downloads: Descargas
+    type: Tipo
+  copyUrl: Copiar URL
+  copyRegistryUrl: Copiar URL del registro
+  copyUpstreamUrl: Copiar URL del proxy

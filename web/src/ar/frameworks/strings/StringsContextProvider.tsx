@@ -15,23 +15,42 @@
  */
 
 import React from 'react'
-import languageLoader from './languageLoader'
+import languageLoader, { buildStrings } from './languageLoader'
 
 import { StringsContext, StringsContextValue } from './StringsContext'
+import type { StringsMap } from './StringsContext'
 
 export interface StringsContextProviderProps extends Pick<StringsContextValue, 'getString'> {
   children: React.ReactNode
   initialStrings?: Record<string, any> // temp prop for backward compatibility
+  locale?: string
 }
 
 export function StringsContextProvider(props: StringsContextProviderProps): React.ReactElement {
+  const [strings, setStrings] = React.useState<Record<string, any>>({
+    ...props.initialStrings,
+    ...(languageLoader() as any)
+  })
+
+  React.useEffect(() => {
+    let cancelled = false
+    buildStrings(props.locale).then(loadedStrings => {
+      if (!cancelled) {
+        setStrings({
+          ...props.initialStrings,
+          ...loadedStrings
+        })
+      }
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [props.initialStrings, props.locale])
+
   return (
     <StringsContext.Provider
       value={{
-        data: {
-          ...props.initialStrings,
-          ...(languageLoader() as any)
-        },
+        data: strings as StringsMap,
         getString: props.getString
       }}>
       {props.children}

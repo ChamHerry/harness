@@ -1,0 +1,73 @@
+moduleName: '{{ $.repositoryList.artifactRegistry.label }}'
+add: 添加
+clearFilters: 清除筛选
+save: 保存
+apply: 应用
+discard: 放弃
+delete: 删除
+restore: 恢复
+prod: 生产
+nonProd: 非生产
+copy: 复制
+view: 查看
+search: 搜索
+copied: 已复制
+download: 下载
+loading: 正在加载...
+available: '可用({{count}})'
+deleted: '已删除({{count}})'
+archived: '已归档({{count}})'
+lastUpdated: 上次更新
+createdAt: 创建时间
+modifiedAt: 修改时间
+all: 全部
+noResultsFound: 未找到结果
+noMatchingFilterData: 未找到符合筛选条件的结果
+failedToLoadData: 数据加载失败，请重试！
+actions:
+  edit: 编辑
+  delete: '{{ $.delete }}'
+  softDelete: 归档
+  restore: 恢复
+  setupClient: 设置客户端
+  deleteForce: 永久删除
+packageTypes:
+  dockerPackage: Docker 包
+  helmPackage: Helm 包
+  genericPackage: Generic 包
+  mavenPackage: Maven 包
+  npmPackage: npm 包
+  pythonPackage: Python 包
+  nugetPackage: NuGet 包
+  rpmPackage: RPM 包
+  cargoPackage: Cargo 包
+  swiftPackage: Swift 包
+  goPackage: Go 包
+  huggingfacePackage: Huggingface 包
+  condaPackage: Conda 包
+  dartPackage: Dart 包
+  package: '{{ name }} 包'
+repositoryTypes:
+  docker: Docker
+  helm: Helm
+  generic: Generic
+  raw: Raw
+  maven: Maven
+  npm: NPM
+  gradle: Gradle
+  pypi: Python
+  nuget: NuGet
+  rpm: RPM
+  go: Go
+  debian: Debian
+  cargo: Cargo
+  swift: Swift
+  alpine: Alpine
+  huggingface: Huggingface
+  conda: Conda
+  dart: Dart
+  composer: Composer
+badges:
+  projectScope: 项目
+  orgScope: 组织
+  accountScope: 账户

@@ -1,0 +1,8 @@
+pageHeading: アーティファクト
+table:
+  columns:
+    tags: タグ
+    repository: レジストリ
+    name: 名前
+  actions:
+    deleteRepository: レジストリを削除

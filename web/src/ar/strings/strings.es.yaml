@@ -1,0 +1,73 @@
+moduleName: '{{ $.repositoryList.artifactRegistry.label }}'
+add: Agregar
+clearFilters: Limpiar filtros
+save: Guardar
+apply: Aplicar
+discard: Descartar
+delete: Eliminar
+restore: Restaurar
+prod: Prod
+nonProd: No prod
+copy: Copiar
+view: Ver
+search: Buscar
+copied: Copiado
+download: Descargar
+loading: Cargando...
+available: 'Disponibles({{count}})'
+deleted: 'Eliminados({{count}})'
+archived: 'Archivados({{count}})'
+lastUpdated: Última actualización
+createdAt: Creado el
+modifiedAt: Modificado el
+all: Todo
+noResultsFound: No se encontraron resultados
+noMatchingFilterData: No se encontraron resultados que coincidan con los filtros
+failedToLoadData: No se pudieron cargar los datos. Inténtelo de nuevo.
+actions:
+  edit: Editar
+  delete: '{{ $.delete }}'
+  softDelete: Archivar
+  restore: Restaurar
+  setupClient: Configurar cliente
+  deleteForce: Eliminar permanentemente
+packageTypes:
+  dockerPackage: Paquete Docker
+  helmPackage: Paquete Helm
+  genericPackage: Genérico
+  mavenPackage: Paquete Maven
+  npmPackage: npm
+  pythonPackage: Paquete Python
+  nugetPackage: Paquete NuGet
+  rpmPackage: Paquete RPM
+  cargoPackage: Paquete Cargo
+  swiftPackage: Paquete Swift
+  goPackage: Paquete Go
+  huggingfacePackage: Paquete Huggingface
+  condaPackage: Paquete Conda
+  dartPackage: Paquete Dart
+  package: 'Paquete {{ name }}'
+repositoryTypes:
+  docker: Docker
+  helm: Helm
+  generic: Genérico
+  raw: Raw
+  maven: Maven
+  npm: NPM
+  gradle: Gradle
+  pypi: Python
+  nuget: NuGet
+  rpm: RPM
+  go: Go
+  debian: Debian
+  cargo: Cargo
+  swift: Swift
+  alpine: Alpine
+  huggingface: Huggingface
+  conda: Conda
+  dart: Dart
+  composer: Composer
+badges:
+  projectScope: Proyecto
+  orgScope: Organización
+  accountScope: Cuenta

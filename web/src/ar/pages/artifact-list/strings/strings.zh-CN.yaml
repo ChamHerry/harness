@@ -1,0 +1,8 @@
+pageHeading: 制品
+table:
+  columns:
+    tags: 标签
+    repository: 注册表
+    name: 名称
+  actions:
+    deleteRepository: 删除注册表

@@ -1,0 +1,54 @@
+pageHeading: アーティファクトレジストリ
+newRepository: 新しいアーティファクトレジストリ
+newRegistry: 新しいレジストリ
+registryCount: 合計 {{count}} レジストリ
+artifactRegistry:
+  label: アーティファクトレジストリ
+  subLabel: 統合レジストリで内部パッケージと外部依存関係を管理します。
+upstreamProxy:
+  label: アップストリームプロキシ
+  subLabel: 外部レジストリに接続して追加のパッケージと依存関係にアクセスします。
+selectEnvironments: 環境
+selectPackageTypes: パッケージタイプ
+selectRegistryType: レジストリタイプ
+selectScope: スコープ
+scope:
+  accountOnly: アカウントのみ
+  orgOnly: 組織のみ
+  accountRecursive: アカウント、組織、プロジェクト
+  orgRecursive: 組織とプロジェクト
+selectLabels: '{{ $.artifactList.table.columns.tags }}'
+compact: コンパクト表示
+deleteModal:
+  title: '{{ $.artifactList.table.actions.deleteRepository }}'
+  contentText: この操作によりレジストリとすべてのイメージおよびバージョンが削除されます。続行してもよろしいですか？
+  inputLabel: 確認のためレジストリ名を入力してください
+  inputPlaceholder: レジストリ名
+softDeleteModal:
+  title: レジストリを削除
+  contentText: この操作によりレジストリとすべてのパッケージおよびバージョンが削除されます。削除済みリストから復元できます。
+  inputLabel: 確認のためレジストリ名または ID を入力してください
+  inputPlaceholder: レジストリ名または ID
+  forceLabel: レジストリとすべてのパッケージおよびバージョンを完全に削除します。
+  forceSubText: この操作によりレジストリとすべてのパッケージおよびバージョンが完全に削除され、復元できません。
+restoreModal:
+  title: レジストリを復元
+  contentText: この操作によりレジストリとすべてのアーティファクトおよびバージョンが復元されます。
+  inputLabel: 確認のためレジストリ名または ID を入力してください
+  inputPlaceholder: レジストリ名または ID
+table:
+  noRepositoriesTitle: 利用可能なレジストリはありません。
+  noArchivedRepositoriesTitle: アーカイブ済みレジストリはありません。
+  columns:
+    nameAndEnvironment: '{{ $.artifactList.table.columns.name }}'
+    lastModified: 最終更新
+    archivedAt: アーカイブ日時
+    url: URL
+    size: '{{ $.digestList.table.columns.size }}'
+    artifacts: '{{ $.artifactList.pageHeading }}'
+    upstreamProxies: '{{ $.repositoryDetails.repositoryForm.upstreamProxiesTitle }}'
+    downloads: ダウンロード
+    type: タイプ
+  copyUrl: URL をコピー
+  copyRegistryUrl: レジストリ URL をコピー
+  copyUpstreamUrl: プロキシ URL をコピー

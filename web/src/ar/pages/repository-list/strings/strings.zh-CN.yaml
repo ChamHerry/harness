@@ -1,0 +1,54 @@
+pageHeading: 制品注册表
+newRepository: 新建制品注册表
+newRegistry: 新建注册表
+registryCount: 总计 {{count}} 个注册表
+artifactRegistry:
+  label: 制品注册表
+  subLabel: 通过统一注册表管理内部包和外部依赖。
+upstreamProxy:
+  label: 上游代理
+  subLabel: 连接到外部注册表以访问更多包和依赖。
+selectEnvironments: 环境
+selectPackageTypes: 包类型
+selectRegistryType: 注册表类型
+selectScope: 范围
+scope:
+  accountOnly: 仅账户
+  orgOnly: 仅组织
+  accountRecursive: 账户、组织和项目
+  orgRecursive: 组织和项目
+selectLabels: '{{ $.artifactList.table.columns.tags }}'
+compact: 紧凑视图
+deleteModal:
+  title: '{{ $.artifactList.table.actions.deleteRepository }}'
+  contentText: 此操作将删除注册表及其所有镜像和版本。确定要继续吗？
+  inputLabel: 输入注册表名称以确认
+  inputPlaceholder: 注册表名称
+softDeleteModal:
+  title: 删除注册表
+  contentText: 此操作将删除注册表及其所有包和版本。你仍可从已删除列表中恢复。
+  inputLabel: 输入注册表名称或 ID 以确认
+  inputPlaceholder: 注册表名称或 ID
+  forceLabel: 永久删除注册表及其所有包和版本。
+  forceSubText: 此操作将永久删除注册表及其所有包和版本，无法恢复。
+restoreModal:
+  title: 恢复注册表
+  contentText: 此操作将恢复注册表及其所有制品和版本。
+  inputLabel: 输入注册表名称或 ID 以确认
+  inputPlaceholder: 注册表名称或 ID
+table:
+  noRepositoriesTitle: 当前没有可用注册表。
+  noArchivedRepositoriesTitle: 当前没有已归档注册表。
+  columns:
+    nameAndEnvironment: '{{ $.artifactList.table.columns.name }}'
+    lastModified: 上次修改
+    archivedAt: 归档时间
+    url: URL
+    size: '{{ $.digestList.table.columns.size }}'
+    artifacts: '{{ $.artifactList.pageHeading }}'
+    upstreamProxies: '{{ $.repositoryDetails.repositoryForm.upstreamProxiesTitle }}'
+    downloads: 下载量
+    type: 类型
+  copyUrl: 复制 URL
+  copyRegistryUrl: 复制注册表 URL
+  copyUpstreamUrl: 复制代理 URL

@@ -1,0 +1,68 @@
+lastUsed: Último uso
+deleteGitspace: Eliminar Gitspace
+resetGitspace: Restablecer Gitspace
+reset: Restablecer
+editGitspace: Editar Gitspace
+viewGitspace: Ver detalles de Gitspace
+gitspaces: Gitspaces
+newGitspace: + Nuevo Gitspace
+manageGitspaces: Administrar Gitspaces
+noGitspaces: Aún no ha creado ningún Gitspace
+used: Usado
+hours: Horas
+na: N/D
+retry: Reintentar
+created: Creado
+startingGitspace: Iniciando Gitspace
+stopingGitspace: Deteniendo Gitspace
+deleteGitspaceText: Esta acción no se puede deshacer. ¿Seguro que desea continuar con la eliminación?
+resetGitspaceText: Esta acción no se puede deshacer. ¿Seguro que desea continuar con el restablecimiento?
+resetGitspaceSuccess: Gitspace restablecido correctamente
+deleteSuccess: Gitspace eliminado correctamente
+repositoryAndBranch: Repositorio y rama
+status: Estado
+id: ID
+project: Proyecto
+account: Cuenta
+homePage:
+  start: Comenzar
+  noSetupRequired: sin configuración requerida
+  noteOne: Entornos dedicados de desarrollo en la nube con su editor favorito
+  noteTwo: Obtenga entornos de desarrollo siempre consistentes que mejoran la productividad y la colaboración.
+  getStartedNow: Comenzar ahora
+  learnMoreAboutGitspaces: Más información sobre Gitspaces
+listing:
+  online: Activo
+  offline: Detenido
+  error: Error
+  starting: Iniciando
+  stopping: Deteniendo
+  uninitialized: No inicializado
+  cleaning: Limpiando
+  ownerAndCreated: Propietario y fecha de creación
+  infrastructureDetails: Detalles de infraestructura
+details:
+  actions: Más acciones
+  openCursor: Abrir Cursor
+  connectToWindsurf: Conectar a Windsurf
+  openEditor: Abrir editor VS Code
+  openBrowser: Abrir VS Code en línea
+  openJetBrain: Abrir JetBrains Gateway
+  goToDashboard: Ir al panel
+  startGitspace: Iniciar Gitspace
+  stopGitspace: Detener Gitspace
+ide:
+  openVSCode: Abrir en VS Code Desktop
+  openBrowser: Abrir en el navegador
+  errorEmptyURL: URL base no configurada, actualice e inténtelo de nuevo
+lastStarted: Último inicio
+gitspaceStatus:
+  active: Activo
+  stopped: Detenido
+  error: Error
+owners: Propietarios
+gitspaceOwners:
+  allGitspaces: Todos los Gitspaces
+  myGitspaces: Mis Gitspaces
+sortBy: Ordenar por
+total: Total

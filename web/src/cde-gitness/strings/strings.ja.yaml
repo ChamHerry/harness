@@ -1,0 +1,68 @@
+lastUsed: 最終使用
+deleteGitspace: Gitspace を削除
+resetGitspace: Gitspace をリセット
+reset: リセット
+editGitspace: Gitspace を編集
+viewGitspace: Gitspace 詳細を表示
+gitspaces: Gitspaces
+newGitspace: + 新しい Gitspace
+manageGitspaces: Gitspaces を管理
+noGitspaces: まだ Gitspace が作成されていません
+used: 使用済み
+hours: 時間
+na: N/A
+retry: 再試行
+created: 作成済み
+startingGitspace: Gitspace を起動中
+stopingGitspace: Gitspace を停止中
+deleteGitspaceText: この操作は元に戻せません。削除を続行してもよろしいですか？
+resetGitspaceText: この操作は元に戻せません。リセットを続行してもよろしいですか？
+resetGitspaceSuccess: Gitspace をリセットしました
+deleteSuccess: Gitspace を削除しました
+repositoryAndBranch: リポジトリとブランチ
+status: ステータス
+id: ID
+project: プロジェクト
+account: アカウント
+homePage:
+  start: 開始
+  noSetupRequired: セットアップ不要
+  noteOne: お気に入りのエディタで使える専用クラウド開発環境
+  noteTwo: 常に一貫した開発環境で生産性とコラボレーションを向上させます。
+  getStartedNow: 今すぐ開始
+  learnMoreAboutGitspaces: Gitspaces の詳細
+listing:
+  online: アクティブ
+  offline: 停止中
+  error: エラー
+  starting: 起動中
+  stopping: 停止中
+  uninitialized: 未初期化
+  cleaning: クリーンアップ中
+  ownerAndCreated: 所有者と作成日時
+  infrastructureDetails: インフラ詳細
+details:
+  actions: その他の操作
+  openCursor: Cursor を開く
+  connectToWindsurf: Windsurf に接続
+  openEditor: VS Code エディタを開く
+  openBrowser: VS Code Online を開く
+  openJetBrain: JetBrains Gateway を開く
+  goToDashboard: ダッシュボードへ移動
+  startGitspace: Gitspace を開始
+  stopGitspace: Gitspace を停止
+ide:
+  openVSCode: VS Code Desktop で開く
+  openBrowser: ブラウザで開く
+  errorEmptyURL: ベース URL が設定されていません。更新して再試行してください
+lastStarted: 最終起動
+gitspaceStatus:
+  active: アクティブ
+  stopped: 停止中
+  error: エラー
+owners: 所有者
+gitspaceOwners:
+  allGitspaces: すべての Gitspaces
+  myGitspaces: 自分の Gitspaces
+sortBy: 並べ替え
+total: 合計

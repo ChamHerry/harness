@@ -1,0 +1,68 @@
+lastUsed: 上次使用
+deleteGitspace: 删除 Gitspace
+resetGitspace: 重置 Gitspace
+reset: 重置
+editGitspace: 编辑 Gitspace
+viewGitspace: 查看 Gitspace 详情
+gitspaces: Gitspaces
+newGitspace: + 新建 Gitspace
+manageGitspaces: 管理 Gitspaces
+noGitspaces: 你尚未创建任何 Gitspace
+used: 已用
+hours: 小时
+na: 不适用
+retry: 重试
+created: 已创建
+startingGitspace: 正在启动 Gitspace
+stopingGitspace: 正在停止 Gitspace
+deleteGitspaceText: 此操作无法撤销。确定要继续删除吗？
+resetGitspaceText: 此操作无法撤销。确定要继续重置吗？
+resetGitspaceSuccess: Gitspace 重置成功
+deleteSuccess: Gitspace 删除成功
+repositoryAndBranch: 仓库和分支
+status: 状态
+id: ID
+project: 项目
+account: 账户
+homePage:
+  start: 开始
+  noSetupRequired: 无需设置
+  noteOne: 使用你喜爱的编辑器创建专属云开发环境
+  noteTwo: 获得始终一致的开发环境，提升效率并促进协作。
+  getStartedNow: 立即开始
+  learnMoreAboutGitspaces: 了解 Gitspaces
+listing:
+  online: 活跃
+  offline: 已停止
+  error: 错误
+  starting: 启动中
+  stopping: 停止中
+  uninitialized: 未初始化
+  cleaning: 清理中
+  ownerAndCreated: 所有者和创建时间
+  infrastructureDetails: 基础设施详情
+details:
+  actions: 更多操作
+  openCursor: 打开 Cursor
+  connectToWindsurf: 连接到 Windsurf
+  openEditor: 打开 VS Code 编辑器
+  openBrowser: 打开 VS Code 在线版
+  openJetBrain: 打开 JetBrains Gateway
+  goToDashboard: 前往仪表板
+  startGitspace: 启动 Gitspace
+  stopGitspace: 停止 Gitspace
+ide:
+  openVSCode: 在 VS Code 桌面版中打开
+  openBrowser: 在浏览器中打开
+  errorEmptyURL: 未设置基础 URL，请刷新后重试
+lastStarted: 上次启动
+gitspaceStatus:
+  active: 活跃
+  stopped: 已停止
+  error: 错误
+owners: 所有者
+gitspaceOwners:
+  allGitspaces: 所有 Gitspaces
+  myGitspaces: 我的 Gitspaces
+sortBy: 排序方式
+total: 总数
