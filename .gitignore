@@ -50,3 +50,8 @@ registry/tests/gopkg/go_conformance_report.json
 registry/tests/maven/maven_conformance_report.json
 registry/tests/npm/npm_conformance_report.json
 
+.claude/
+.spec-workflow/
+docs/
+AGENTS.md
+CLAUDE.md
